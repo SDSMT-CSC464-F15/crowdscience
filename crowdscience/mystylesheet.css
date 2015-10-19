@@ -13,7 +13,7 @@ h2 {
 
 #navbar {
 	position: relative;
-	top: 40px;
+	top: 0px;
 	left: 70%;
 	margin-right: 20px;
 }
@@ -26,13 +26,13 @@ h2 {
 	border-top-right-radius: 15px;
 }
 
-ul {
+#navbar > ul {
 	list-style-type: none;
-	position: fixed;
+	position: relative;
 	margin: 10px;
 }
 
-li {
+#navbar li {
 	display: inline;
 	border: 2px solid #000000;
 	font-family: cursive, sans-serif;
@@ -44,31 +44,40 @@ li {
 
 #left {
 	width: 70%;
-	height: 400px;
 	float: left;
 	background-color: green;
-	text-align: center;
+	border-radius: 10px;
+	margin: 1%;
+}
+
+.left-admin {
+	width: 10%;
+	float: left;
 	border-radius: 10px;
 }
 
-#left-admin {
-	width: 20%;
-	float: left;
-	height: 150px;
-	border-radius: 10px;
-	background-color: #00004e;
+.left-admin li {
+	display: block;
+	border: 2px solid #000000;
+	font-family: cursive, sans-serif;
+	width: 90%;
+	color: #ffffff;
+	padding: 5px;
+	border-radius: 5px 5px;
+	background-color: #983e76;
 }
 
 #right {
-	width: 30%;
+	width: 28%;
 	float: right;
+	margin-top:1%;
 }
 
 #right-admin {
-	width: 80%;
+	width: 90%;
 	float: right;
 	border-radius: 10px;
-	background-color: green;
+	background-color: #c1ffc1;
 }
 
 table {
@@ -104,4 +113,13 @@ td {
 
 a {
 	text-decoration: none;
+}
+
+#content {
+	width: 60%;
+	height: 300px;
+	background-color: #c0fff4;
+	position: relative;
+	margin-left: 20%;
+	margin-right: 20%;
 }
