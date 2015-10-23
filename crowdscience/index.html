@@ -1,31 +1,55 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- css -->
-		<link type="text/css" rel="stylesheet" href="bootstrap/bootstrap.css">
-		<link type="text/css" rel="stylesheet" href="mystylesheet.css"/>
-		<link type="text/css" rel="stylesheet" href="leaflet/leaflet.css">
-		<!-- jquery -->
-		<script type="text/javascript" src="leaflet/leaflet.js"></script>
-		<script type="text/javascript" src="leaflet/jquery.js"></script>
-		<script type="text/javascript" src="bootstrap/jquery.js"></script>
-		<!-- favicon link-->
-		<link rel="shortcut icon" href="images/simplecloud.ico" />
-		<title>Crowd Science Map</title>
-	</head>
-	<body>
-		<div id="header">
-			<h2>Crowd Science</h2>
-			<div id="navbar">
-				<ul>
-					<li><a href="submit.html">Submit</a></li>
-					<li><a href="admin.html">Admiin</a></li>
-					<li><a href="index.html">Log out</a></li>
-					<li><a href="login.html">Log in/Register</a></li>
-				</ul>
-			</div>			
-		</div>
-		<div id="left">
+
+  <meta charset="utf-8">
+  <title>Crowd Science Mapper</title>
+  
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js" ></script>
+	
+	<!-- scripts -->
+   <script type="text/javascript" src="checkLogin.js"></script>
+   <script type="text/javascript" src="js/bootstrap.js"></script>
+<link rel="shortcut icon" href="images/simplecloud.ico" />
+
+</head>
+	
+	<body style="padding-left: 15px; padding-bottom: 50px; overflow-x: hidden; background-color: #eee;">
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+   
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></ul>
+      <div class="nav navbar-nav navbar-right"><ul  class="nav navbar-nav navbar-right">
+        <li><a id="user-area" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		  <li><a id="register" href="register.html"><span class="glyphicon glyphicon-edit"></span> Register</a></li>
+		  <li><a id="admin" href="admin.html"><span class="glyphicon glyphicon-wrench"></span> Admin</a></li>
+		  <li><a id="report" href="login.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>        
+		  <li><p class="navbar-text pull-right">
+          <a href="#" id="logout" style="display: none;" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+          </p></li>
+
+        
+      </ul></div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<h2>Crowd Science</h2>
+	
+<div class="row">
+<div class="col-md-8">
+  <div id="map" style="width: 100%; height: 500px">
 			<!-- map code from Location Change Mapper (failed to zoom in/out or move)-->
 			<div tabindex="0" class="leaflet-container leaflet-fade-anim" id="map" style="width: 100%; height: 500px; position: relative;">
 				<div style="transform: translate(0px, 0px);" class="leaflet-map-pane">
@@ -93,21 +117,16 @@
 			</div>
 			<!-- map code end -->
 		</div>
-		<div id="right">
-			<table>
-				<th colspan="2">Category</th>
-				<tr>
-					<td>details</td>
-					<td>details</td>
-				</tr>
-				<tr>
-					<td>details</td>
-					<td>details</td>
-				</tr>
-			</table>
 		</div>
-		<div id="footer">
-			<h2>footer information</h2>
+		
+<div class="col-md-4">
+		<div class="well well-lg"><h3>Event Details Here</h3>
+Lions! Tigers! Bears! Oh My!
 		</div>
+		<div class="well well-lg"><h3>Report an Event</h3>
+  <a href="login.html"><button type="button" class="btn btn-lg btn-primary">Report it!</button></a>
+		</div>
+		</div>
+
 	</body>
 </html>
