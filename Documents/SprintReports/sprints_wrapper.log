@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  1 OCT 2015 11:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  31 OCT 2015 16:09
 entering extended mode
 **sprints_wrapper.tex
 
@@ -304,40 +304,35 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 \c@lstlisting=\count116
 
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\SprintReports\s
-print1.tex
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
+print2.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 8.
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 15.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 5.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 13.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsphv.fd"
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
- [1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+) [1
 
 {C:/Users/7121625/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 30.
-) [2] [3]
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\SprintReports\s
 prints_wrapper.aux) ) 
 Here is how much of TeX's memory you used:
- 4534 strings out of 493921
- 65884 string characters out of 3147276
+ 4527 strings out of 493921
+ 65793 string characters out of 3147276
  162233 words of memory out of 3000000
- 7765 multiletter control sequences out of 15000+200000
- 22408 words of font info for 29 fonts, out of 3000000 for 9000
+ 7760 multiletter control sequences out of 15000+200000
+ 15212 words of font info for 24 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 37i,6n,49p,378b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,6n,49p,729b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.e
 nc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on sprints_wrapper.pdf (3 pages, 33763 bytes).
+Output written on sprints_wrapper.pdf (1 page, 30155 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
+ 19 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
