@@ -89,15 +89,14 @@ showstringspaces=false,tabsize = 3}
 
 
 \usepackage{titlesec}
-\titleformat{\chapter}[display]
-{\normalfont\bfseries\color{MSBlue1}}    %\normalfont\bfseries\filcenter}
-{\LARGE\thechapter}
-{1ex}
-{\titlerule[2pt]
-\vspace{2ex}%
-\LARGE}
-[\vspace{1ex}%
-{\titlerule[2pt]}]
+\titleformat{\chapter}{\normalfont\bfseries\LARGE}
+{\thechapter.}{5pt}{}[{\titlerule[3pt]}]
+
+\titleformat{\section}{\normalfont\bfseries\Large}
+{\thesection.}{5pt}{}[{\titlerule[2pt]}]
+
+\titleformat{\subsection}{\normalfont\bfseries\large}
+{\thesubsection.}{5pt}{}[{\titlerule[1pt]}]
 
 \definecolor{MSBlue}{rgb}{.204,.353,.541}
 \definecolor{MSLightBlue}{rgb}{.31,.506,.741}
@@ -110,9 +109,9 @@ showstringspaces=false,tabsize = 3}
 %\titleformat*{\section}{\Large\bfseries\color{MSBlue1}}
 %\titleformat*{\subsection}{\large\bfseries\color{MSBlue2}}
 
-\titleformat*{\section}{\Large\bfseries\color{MSBlue}}
-\titleformat*{\subsection}{\large\bfseries\color{MSLightBlue}}
-\titleformat*{\subsubsection}{\large\bfseries\color{MSBlue3}}
+%\titleformat*{\section}{\Large\bfseries}
+%\titleformat*{\subsection}{\large\bfseries}
+\titleformat*{\subsubsection}{\large\bfseries}
 \setcounter{secnumdepth}{3}
 \renewcommand{\thesubsubsection}{\thesubsection.\alph{subsubsection}}
 

@@ -1,0 +1,91 @@
+% !TEX root = ../SystemTemplate.tex
+\chapter{User Stories, Backlog and Requirements}
+\section{Overview}
+
+This section contains basic requirements for the Crowd Science Mapper project. The Crowd Science Mapper will be a generic crowdsourcing website, where ordinary citizens can report events such as butterfly or bird sightings, and view these events. Administrators in this system will be able to approve individual events and modify event sets, with no programming experience using a graphical user interface.
+
+\subsection{Scope}
+
+This section contains stakeholder information, initial user stories, requirements, product backlog, and proof of concept results.
+
+\subsection{Purpose of the System}
+The purpose of this crowdsourcing website is to provide a customizable interface for researchers and academics to collect data about scientific events from ordinary citizens. 
+
+\section{ Stakeholder Information}
+
+Stakeholders for this project are academics and researchers who would eventually be the administrators of this project, and ordinary citizens who would be the main users, in the feild reporting events. 
+
+\subsection{Customer or End User (Product Owner)}
+
+Product owners are Dr. Mengyu Qiao and Gail Schmidt, who will assist in the project in mentor roles. As needed, they will assist with prioritizing the product backlog, and identify important features. Intellicetual property in this project belongs to South Dakota School of Mines and Technology. 
+
+\subsection{Developers --Testers}
+Developers and testers are Jiasong Yan and Hannah Aker. Testers will eventually include SDSMT faculty and students, with faculty as administrators and students as ordinary users reporting events.
+
+\section{Requirements and Design Constraints}
+
+This project will be a HTML based webpage using Java Script to connect to a Mongo database, and hosted on an Apache server.
+
+\subsection{System  Requirements}
+Webpage should be able to run on all operating systems and all internet browsers. This project is not required to have mobile functionality.
+
+\subsection{Network Requirements}
+This project will be server based, hosted on an Apache 2.0 server, access supplied to us by Gail Schmidt. The server is a cloud based server operated by SGT. Information about Apache 2.0 servers can be found here: \url{http://httpd.apache.org/docs/2.0/}.
+
+\subsection{Development Environment Requirements}
+Development will be done in HTML, CSS, PHP and Java Script. The project will connect to a Mongo database. Information about HTML, CSS, PHP and Javascript can be found here: \url{http://html.net/}.
+
+\subsection{Project  Management Methodology}
+Source control will be Github; github issues will be used to keep track of backlog and sprint status. The github repository is located at: \url{https://github.com/SDSMT-CSC464-F15/crowdscience} All parties have access to the Sprint and Product Backlogs. There will be 6 sprints total in this project, each lasting 3 weeks.
+
+
+\section{User Stories}
+
+\subsection{User Story \#1}
+As a user, I want all the core functionality of the landscape change mapper to be maintained. These functions include, but are not limited to:
+\begin{itemize}
+\item Visual map representation of events
+\item Detailed event list
+\item Event reporting interface
+\item New user registration
+\item User login
+\end{itemize}
+
+\subsection{User Story \#2} 
+As an administrator, I want to be able to customize a set of events to fit my needs. This may include user input and display items, database design, digital map, webpage color and style, logo, etc. 
+
+\subsection{User Story \#3} 
+As an administrator, I want to be able to edit existing event reports.
+
+\subsection{User Story \#4} 
+As a user, I want to be able to select which set of events I would like to view.
+
+\section{Requirements}
+The requirements are directly derived from the user stories, but much more refined. These requirements will map directly to test cases in a tracibility matrix.
+\subsection{Global}
+\begin{itemize}
+\item Each page shall contain a navigation bar at the top of the page.
+\item The navigation bar will have buttons for logging in, new user registration, administration, and event reporting.
+\end{itemize}
+\subsection{New User Registration}
+\begin{itemize}
+\item When no user is logged in, there will be a button on the main page leading to a new user registration page.
+\item The registration page will have a feild for username, password and password verification, and a ``submit'' button.
+\item If the passwords do not match, the user will be notified, and need to reenter one or both passwords.
+\item After registering, a user will automatically be logged in.
+\end{itemize}
+\subsection{User Login}
+\begin{itemize}
+\item When no user is logged in, there will be a button on the main page leading to a login page
+\item The login page will have fields for entering username and passwords, a ``login'' button and a link to the user registration page.
+\item The user will be notified if the username or password was incorrect, and may need to reenter one or both feilds.
+\item When the user is logged in, an icon indicating the logged in user and a log out button will replace the login button on the navigation page.
+\end{itemize}
+\subsection{Event reporting interface}
+\subsection{Detailed event list}
+\subsection{Map representation of events}
+\subsection{Administrator Login}
+\subsection{Administrator editing of existing events}
+\subsection{Administrator customization of event sets}
+\subsection{User selection of data to view}
+
