@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  30 OCT 2015 21:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  13 NOV 2015 23:42
 entering extended mode
 **SystemTemplate.tex
 
@@ -1624,9 +1624,9 @@ InputDocs/requirements.tex [3
 
 ]
 Chapter 3.
-[5] [6])
+[5] [6] [7] [8])
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/design.tex [7] [8
+InputDocs/design.tex [9] [10
 
 ]
 Chapter 4.
@@ -1641,7 +1641,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 Underfull \vbox (badness 1389) has occurred while \output is active []
 
- [9]
+ [11]
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 65.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
@@ -1651,33 +1651,33 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 65.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 70.
- [10])
+ [12])
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/testing.tex [11] [12
+InputDocs/testing.tex [13] [14
 
 ]
 Chapter 5.
 )
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/develop.tex [13] [14
+InputDocs/develop.tex [15] [16
 
 ]
 Chapter 6.
 )
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/userdocs.tex [15] [16
+InputDocs/userdocs.tex [17] [18
 
 ]
 Chapter 7.
 )
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/refman.tex [17] [18
+InputDocs/refman.tex [19] [20
 
 ]
 Chapter 8.
 
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-annotated.tex) [19] [20
+annotated.tex) [21] [22
 
 ]
 Chapter 9.
@@ -1685,12 +1685,12 @@ Chapter 9.
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
 class_poly.tex))
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-SystemTemplate.bbl [21] [22
+SystemTemplate.bbl [23] [24
 
-]) [23] [24
+]) [25] [26
 
 ]
-<InputDocs/SoftwareContract.pdf, id=865, 614.295pt x 794.97pt>
+<InputDocs/SoftwareContract.pdf, id=873, 614.295pt x 794.97pt>
 File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
 <use InputDocs/SoftwareContract.pdf>
@@ -1701,7 +1701,7 @@ File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: InputDocs/SoftwareContract.pdf used on input line 67.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<InputDocs/SoftwareContract.pdf, id=868, page=1, 614.295pt x 794.97pt>
+<InputDocs/SoftwareContract.pdf, id=876, page=1, 614.295pt x 794.97pt>
 File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
 <use InputDocs/SoftwareContract.pdf, page 1>
@@ -1733,7 +1733,7 @@ Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page1 used on input li
 ne 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [1 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=889, p
+ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=898, p
 age=2, 614.295pt x 794.97pt>
 File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
@@ -1754,7 +1754,7 @@ Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page2 used on input li
 ne 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [2 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=894, p
+ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=903, p
 age=3, 614.295pt x 794.97pt>
 File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
@@ -1775,7 +1775,7 @@ Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page3 used on input li
 ne 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=900, p
+ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=908, p
 age=4, 614.295pt x 794.97pt>
 File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
@@ -1796,7 +1796,7 @@ Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page4 used on input li
 ne 67.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [4 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=905, p
+ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=913, p
 age=5, 614.295pt x 794.97pt>
 File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
@@ -1859,11 +1859,15 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `SystemTemplate.out' has not changed.
 (rerunfilecheck)             Checksum: 9124F5049C0F9C1C0EE5AED88F481690;8209.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 25978 strings out of 493921
- 465898 string characters out of 3147276
+ 25980 strings out of 493921
+ 465912 string characters out of 3147276
  589607 words of memory out of 3000000
  28432 multiletter control sequences out of 15000+200000
  15779 words of font info for 63 fonts, out of 3000000 for 9000
@@ -1883,9 +1887,9 @@ r9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Progr
 am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on SystemTemplate.pdf (58 pages, 380213 bytes).
+Output written on SystemTemplate.pdf (60 pages, 384735 bytes).
 PDF statistics:
- 1071 PDF objects out of 1200 (max. 8388607)
- 238 named destinations out of 1000 (max. 500000)
+ 1079 PDF objects out of 1200 (max. 8388607)
+ 240 named destinations out of 1000 (max. 500000)
  1018 words of extra memory for PDF output out of 10000 (max. 10000000)
 
