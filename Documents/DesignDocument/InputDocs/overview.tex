@@ -1,74 +1,61 @@
-% !TEX root = SystemTemplate.tex
+% !TEX root = ../SystemTemplate.tex
 
 \chapter{Overview and concept of operations}
 
-The overview should take the form of an executive summary.  Give the reader a feel 
-for the purpose of the document, what is contained in the document, and an idea 
-of the purpose for the system or product. 
-
-
 \section{Scope}
-What scope does this document cover? 
+This section covers an overview of the Crowd Science Mapper. This section will contain information about the prupose, goals, major system components, and technology used.
 
 
 \section{Purpose}
-What is the purpose of the system or product? 
+The purpose of of this system is to provide a generic crowdsourcing website, where ordinary citizens can report events such as butterfly or bird sightings; where researchers can view event reports; and administrators can edit event report data sets and make changes to event data.
 
 
-\subsection{Major System Component \#1}
-Describe briefly the role this major component plays in this system. 
+\subsection{Event Reporting}
+Ordinary citizens will be able to report events that can then be viewed by researchers and academics. 
 
-\subsection{Major System Component \#2}
-Describe briefly the role this major component plays in this system. 
+\subsection{Event Set Editing}
+Administrators can edit existing events sets to refine what users report, and create new event sets to allow users to start reporting events. 
 
-\subsection{Major System Component \#3}
-Describe briefly the role this major component plays in this system. 
+\subsection{Event Viewing}
+Researchers will be able to view events in a map representation. This project may be extended to include database queries about the event sets.
 
 \section{Systems Goals}
-Briefly describe the overall goals this system plans to achieve.
-These goals are typically provided by the stakeholders.  This is not
-intended to be a detailed requirements listing.  Keep in mind that
-this section is still part of the Overview.
+The goal of this system is to fulfill the purpose of this system, and create a generic crowdsourcing webstie.
 
 \section{System Overview and Diagram}
-Provide a more detailed description of the major system components
-without getting too detailed.  This section should contain a
-high-level block and/or flow diagram of the system highlighting the
-major components.  See Figure~\ref{systemdiagram}.  This is a floating
-figure environment.  \LaTeX\ will try to put it close to where it was
-typeset but will not allow the figure to be split if moving it can not
-happen.  Figures, tables, algorithms and many other floating
-environments are automatically numbered and placed in the appropriate
-type of table of contents.  You can move these and the numbers will
-update correctly.
+The webpage will consist of the major components. The main page will contain a map and detailed list of events for the selected event set. There will be a button on the main page that will take the user to a reporting interface. The user can login, and if the user is an administrator, the main page will contain buttons leading to the pages for editing and creating event sets and editing individual events. See Figure~\ref{mainpage}..
 
 \begin{figure}[tbh]
 \begin{center}
-\includegraphics[width=0.75\textwidth]{diagram.png}
+\includegraphics[width=0.75\textwidth]{./Images/crowdscience_mainpagesketch.png}
 \end{center}
-\caption{A sample figure .... System Diagram \label{systemdiagram}}
+\caption{Design of Crowd Science Main Page\label{mainpage}}
 \end{figure}
 
 \section{Technologies Overview}
-This section should contain a list of specific technologies used to
-develop the system.  The list should contain the name of the
-technology, brief description, link to reference material for further
-understanding, and briefly how/where/why it was used in the system.
-See Table~\ref{somenumbers}.  This is a floating table environment.
-\LaTeX\ will try to put it close to where it was typeset but will not
-allow the table to be split.
+This section contains a list of specific technologies used to
+develop the system.  See Table~\ref{technologies}.  
 
 \begin{table}[tbh]
-\caption{A sample Table ... some numbers. \label{somenumbers}}
+\caption{Technologies Used \label{technologies}}
 \begin{center}
-\begin{tabular}{|r|l|}
+\begin{tabular}{|>{\raggedright}p{2cm}|>{\raggedright}p{4cm}|>{\raggedright}p{4cm}|>{\raggedright}p{4cm}|}
+
   \hline
-  7C0 & hexadecimal \\
-  3700 & octal \\ \cline{2-2}
-  11111000000 & binary \\
-  \hline \hline
-  1984 & decimal \\
-  \hline
+\textit{\textbf{Technology}} &  \textit{\textbf{Description}} & \textit{\textbf{Reference Material}} & \textit{\textbf{System Usage}}\tabularnewline
+\hline
+ \textit{\textbf{Apache 2.0}} & \textit{Used for website server hosting.} & \textit{\url{http://httpd.apache.org/docs/2.0/}} & \textit{Used to host Crowd Science Mapper website.}\tabularnewline
+\hline
+ \textit{\textbf{HTML}} & \textit{Hypertext Markup Language, basic webpage scripting language.} & \textit{\url{http://html.net/}} & \textit{Used to tie together JavaScript, PHP, and CSS webpages.}\tabularnewline
+ \hline
+  \textit{\textbf{JavaScript}} & \textit{More advanced language to create more complex objects.} & \textit{\url{http://html.net/}} & \textit{Used to create more complex objects, such as the event map.}\tabularnewline
+ \hline
+  \textit{\textbf{PHP}} & \textit{Hypertext Preprocesser, used with HTML to provide stateful webpages.} & \textit{\url{http://html.net/}} & \textit{Used to send and recieve information from the Mongo Database.}\tabularnewline
+ \hline
+  \textit{\textbf{CSS}} & \textit{Cascading Style Sheet, used to create a unified look and feel for websites.} & \textit{\url{http://html.net/}} & \textit{Used to create look and feel of Crowd Science Mapper.}\tabularnewline
+ \hline
+  \textit{\textbf{Mongo Database}} & \textit{Used to store information.} & \textit{\url{http://www.mongodb.org/}} & \textit{Used to store user login information and event reports.}\tabularnewline
+\hline
 \end{tabular}
 \end{center}
 \end{table}
