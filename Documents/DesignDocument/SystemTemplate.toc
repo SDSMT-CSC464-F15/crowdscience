@@ -122,9 +122,9 @@
 \contentsline {section}{\numberline {4}Sprint Report ...}{B-3}{section.B.4}
 \contentsline {chapter}{\numberline {C}Industrial Experience and Resumes}{C-1}{appendix.C}
 \contentsline {section}{\numberline {1}Resumes}{C-1}{section.C.1}
-\contentsline {section}{\numberline {2}ABET: Industrial Experience Reports}{C-1}{section.C.2}
-\contentsline {subsection}{\numberline {2.1}Name1}{C-1}{subsection.C.2.1}
-\contentsline {subsection}{\numberline {2.2}Name2}{C-1}{subsection.C.2.2}
-\contentsline {subsection}{\numberline {2.3}Name3}{C-1}{subsection.C.2.3}
+\contentsline {section}{\numberline {2}ABET: Industrial Experience Reports}{C-3}{section.C.2}
+\contentsline {subsection}{\numberline {2.1}Name1}{C-3}{subsection.C.2.1}
+\contentsline {subsection}{\numberline {2.2}Name2}{C-3}{subsection.C.2.2}
+\contentsline {subsection}{\numberline {2.3}Name3}{C-3}{subsection.C.2.3}
 \contentsline {chapter}{\numberline {D}Acknowledgment}{D-1}{appendix.D}
 \contentsline {chapter}{\numberline {E}Supporting Materials}{E-1}{appendix.E}
