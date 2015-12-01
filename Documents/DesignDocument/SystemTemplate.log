@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  15 NOV 2015 22:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  28 NOV 2015 10:16
 entering extended mode
 **SystemTemplate.tex
 
@@ -1548,15 +1548,15 @@ SystemTemplate.out)
 
 ]
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-SystemTemplate.toc [3] [4])
+SystemTemplate.toc [3] [4] [5])
 \tf@toc=\write6
- [5] [6
-
-]
+ [6]
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
 SystemTemplate.lof)
 \tf@lof=\write7
- [7] [8
+ [7
+
+] [8
 
 ]
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
@@ -1602,12 +1602,12 @@ Overfull \hbox (7.03629pt too wide) in paragraph at lines 16--37
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
 InputDocs/overview.tex
 Chapter 1.
-<./Images/crowdscience_mainpagesketch.png, id=689, 529.22719pt x 301.125pt>
+<./Images/crowdscience_mainpagesketch.png, id=800, 529.22719pt x 301.125pt>
 File: ./Images/crowdscience_mainpagesketch.png Graphic file (type png)
 
 <use ./Images/crowdscience_mainpagesketch.png>
 Package pdftex.def Info: ./Images/crowdscience_mainpagesketch.png used on input
- line 30.
+ line 25.
 (pdftex.def)             Requested size: 352.31624pt x 200.46616pt.
 )
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
@@ -1642,36 +1642,19 @@ InputDocs/design.tex [9] [10
 
 ]
 Chapter 4.
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 10.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
 
-Underfull \vbox (badness 1389) has occurred while \output is active []
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 7.
 
- [11]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 65.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
-File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 65.
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 70.
- [12])
+[11] [12] [13])
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/testing.tex [13] [14
-
-]
+InputDocs/testing.tex [14]
 Chapter 5.
 )
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/develop.tex [15] [16
+InputDocs/develop.tex [15
+
+] [16
 
 ]
 Chapter 6.
@@ -1702,7 +1685,7 @@ SystemTemplate.bbl [23] [24
 ]) [25] [26
 
 ]
-<InputDocs/SoftwareContract.pdf, id=880, 614.295pt x 794.97pt>
+<InputDocs/SoftwareContract.pdf, id=948, 614.295pt x 794.97pt>
 File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
 <use InputDocs/SoftwareContract.pdf>
@@ -1713,7 +1696,7 @@ File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: InputDocs/SoftwareContract.pdf used on input line 68.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<InputDocs/SoftwareContract.pdf, id=883, page=1, 614.295pt x 794.97pt>
+<InputDocs/SoftwareContract.pdf, id=951, page=1, 614.295pt x 794.97pt>
 File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
 <use InputDocs/SoftwareContract.pdf, page 1>
@@ -1745,7 +1728,7 @@ Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page1 used on input li
 ne 68.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [1 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=905, p
+ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=973, p
 age=2, 614.295pt x 794.97pt>
 File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
@@ -1766,7 +1749,7 @@ Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page2 used on input li
 ne 68.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [2 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=910, p
+ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=978, p
 age=3, 614.295pt x 794.97pt>
 File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
@@ -1787,7 +1770,7 @@ Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page3 used on input li
 ne 68.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [3 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=915, p
+ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=983, p
 age=4, 614.295pt x 794.97pt>
 File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
@@ -1808,7 +1791,7 @@ Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page4 used on input li
 ne 68.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
  [4 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=920, p
+ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=988, p
 age=5, 614.295pt x 794.97pt>
 File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
@@ -1850,7 +1833,7 @@ Appendix C.
 
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
 InputDocs/industrial.tex
-<./InputDocs/AkerResume9-8-2015.pdf, id=962, 614.295pt x 794.97pt>
+<./InputDocs/AkerResume9-8-2015.pdf, id=1030, 614.295pt x 794.97pt>
 File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
 
 <use ./InputDocs/AkerResume9-8-2015.pdf>
@@ -1864,7 +1847,7 @@ Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf used on input line
 6.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<./InputDocs/AkerResume9-8-2015.pdf, id=965, page=1, 614.295pt x 794.97pt>
+<./InputDocs/AkerResume9-8-2015.pdf, id=1033, page=1, 614.295pt x 794.97pt>
 File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
 
 <use ./InputDocs/AkerResume9-8-2015.pdf, page 1>
@@ -1918,34 +1901,32 @@ SystemTemplate.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `SystemTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: D17AEAA0C7C5F1AA8740AB878C79E7D1;8170.
+(rerunfilecheck)             Checksum: 3174C14E212730048B53AF9C767DA48B;9768.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 25995 strings out of 493921
- 466433 string characters out of 3147276
- 589592 words of memory out of 3000000
- 28440 multiletter control sequences out of 15000+200000
+ 25600 strings out of 493921
+ 463087 string characters out of 3147276
+ 586559 words of memory out of 3000000
+ 28066 multiletter control sequences out of 15000+200000
  15947 words of font info for 64 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 64i,18n,65p,3300b,1359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 64i,18n,65p,3300b,531s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\7121625\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\tcrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on SystemTemplate.pdf (62 pages, 670778 bytes).
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on SystemTemplate.pdf (62 pages, 653559 bytes).
 PDF statistics:
- 1141 PDF objects out of 1200 (max. 8388607)
- 242 named destinations out of 1000 (max. 500000)
- 1038 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1199 PDF objects out of 1200 (max. 8388607)
+ 227 named destinations out of 1000 (max. 500000)
+ 1222 words of extra memory for PDF output out of 10000 (max. 10000000)
 

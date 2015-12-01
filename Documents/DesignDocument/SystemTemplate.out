@@ -12,109 +12,132 @@
 \BOOKMARK [0][-]{chapter*.6}{Document Preparation and Updates}{}% 12
 \BOOKMARK [0][-]{chapter.1}{Overview and concept of operations}{}% 13
 \BOOKMARK [1][-]{section.1.1}{Scope}{chapter.1}% 14
-\BOOKMARK [1][-]{section.1.2}{Purpose}{chapter.1}% 15
+\BOOKMARK [1][-]{section.1.2}{Purpose and System Goals}{chapter.1}% 15
 \BOOKMARK [2][-]{subsection.1.2.1}{Event Reporting}{section.1.2}% 16
 \BOOKMARK [2][-]{subsection.1.2.2}{Event Set Editing}{section.1.2}% 17
 \BOOKMARK [2][-]{subsection.1.2.3}{Event Viewing}{section.1.2}% 18
-\BOOKMARK [1][-]{section.1.3}{Systems Goals}{chapter.1}% 19
-\BOOKMARK [1][-]{section.1.4}{System Overview and Diagram}{chapter.1}% 20
-\BOOKMARK [1][-]{section.1.5}{Technologies Overview}{chapter.1}% 21
-\BOOKMARK [0][-]{chapter.2}{Project Overview}{}% 22
-\BOOKMARK [1][-]{section.2.1}{Team Members and Roles}{chapter.2}% 23
-\BOOKMARK [1][-]{section.2.2}{Project Management Approach}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.3}{Phase Overview}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.4}{Terminology and Acronyms}{chapter.2}% 26
-\BOOKMARK [0][-]{chapter.3}{User Stories, Backlog and Requirements}{}% 27
-\BOOKMARK [1][-]{section.3.1}{Overview}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.1.1}{Scope}{section.3.1}% 29
-\BOOKMARK [2][-]{subsection.3.1.2}{Purpose of the System}{section.3.1}% 30
-\BOOKMARK [1][-]{section.3.2}{ Stakeholder Information}{chapter.3}% 31
-\BOOKMARK [2][-]{subsection.3.2.1}{Customer or End User \(Product Owner\)}{section.3.2}% 32
-\BOOKMARK [2][-]{subsection.3.2.2}{Developers \205Testers}{section.3.2}% 33
-\BOOKMARK [1][-]{section.3.3}{Requirements and Design Constraints}{chapter.3}% 34
-\BOOKMARK [2][-]{subsection.3.3.1}{System Requirements}{section.3.3}% 35
-\BOOKMARK [2][-]{subsection.3.3.2}{Network Requirements}{section.3.3}% 36
-\BOOKMARK [2][-]{subsection.3.3.3}{Development Environment Requirements}{section.3.3}% 37
-\BOOKMARK [2][-]{subsection.3.3.4}{Project Management Methodology}{section.3.3}% 38
-\BOOKMARK [1][-]{section.3.4}{User Stories}{chapter.3}% 39
-\BOOKMARK [2][-]{subsection.3.4.1}{User Story \0431}{section.3.4}% 40
-\BOOKMARK [2][-]{subsection.3.4.2}{User Story \0432}{section.3.4}% 41
-\BOOKMARK [2][-]{subsection.3.4.3}{User Story \0433}{section.3.4}% 42
-\BOOKMARK [2][-]{subsection.3.4.4}{User Story \0434}{section.3.4}% 43
-\BOOKMARK [1][-]{section.3.5}{Requirements}{chapter.3}% 44
-\BOOKMARK [2][-]{subsection.3.5.1}{Global}{section.3.5}% 45
-\BOOKMARK [2][-]{subsection.3.5.2}{New User Registration}{section.3.5}% 46
-\BOOKMARK [2][-]{subsection.3.5.3}{User Login}{section.3.5}% 47
-\BOOKMARK [2][-]{subsection.3.5.4}{Event reporting interface}{section.3.5}% 48
-\BOOKMARK [2][-]{subsection.3.5.5}{Detailed event list}{section.3.5}% 49
-\BOOKMARK [2][-]{subsection.3.5.6}{Map representation of events}{section.3.5}% 50
-\BOOKMARK [2][-]{subsection.3.5.7}{Administrator Login}{section.3.5}% 51
-\BOOKMARK [2][-]{subsection.3.5.8}{Administrator editing of existing events}{section.3.5}% 52
-\BOOKMARK [2][-]{subsection.3.5.9}{Administrator customization of event sets}{section.3.5}% 53
-\BOOKMARK [2][-]{subsection.3.5.10}{User selection of data to view}{section.3.5}% 54
-\BOOKMARK [0][-]{chapter.4}{Design and Implementation}{}% 55
-\BOOKMARK [1][-]{section.4.1}{Major Component \0431 }{chapter.4}% 56
-\BOOKMARK [2][-]{subsection.4.1.1}{Technologies Used}{section.4.1}% 57
-\BOOKMARK [2][-]{subsection.4.1.2}{Component Overview}{section.4.1}% 58
-\BOOKMARK [2][-]{subsection.4.1.3}{Phase Overview}{section.4.1}% 59
-\BOOKMARK [2][-]{subsection.4.1.4}{ Architecture Diagram}{section.4.1}% 60
-\BOOKMARK [2][-]{subsection.4.1.5}{Data Flow Diagram}{section.4.1}% 61
-\BOOKMARK [2][-]{subsection.4.1.6}{Design Details}{section.4.1}% 62
-\BOOKMARK [1][-]{section.4.2}{Major Component \0432 }{chapter.4}% 63
-\BOOKMARK [2][-]{subsection.4.2.1}{Technologies Used}{section.4.2}% 64
-\BOOKMARK [2][-]{subsection.4.2.2}{Component Overview}{section.4.2}% 65
-\BOOKMARK [2][-]{subsection.4.2.3}{Phase Overview}{section.4.2}% 66
-\BOOKMARK [2][-]{subsection.4.2.4}{ Architecture Diagram}{section.4.2}% 67
-\BOOKMARK [2][-]{subsection.4.2.5}{Data Flow Diagram}{section.4.2}% 68
-\BOOKMARK [2][-]{subsection.4.2.6}{Design Details}{section.4.2}% 69
-\BOOKMARK [1][-]{section.4.3}{Major Component \0433 }{chapter.4}% 70
-\BOOKMARK [2][-]{subsection.4.3.1}{Technologies Used}{section.4.3}% 71
-\BOOKMARK [2][-]{subsection.4.3.2}{Component Overview}{section.4.3}% 72
-\BOOKMARK [2][-]{subsection.4.3.3}{Phase Overview}{section.4.3}% 73
-\BOOKMARK [2][-]{subsection.4.3.4}{ Architecture Diagram}{section.4.3}% 74
-\BOOKMARK [2][-]{subsection.4.3.5}{Data Flow Diagram}{section.4.3}% 75
-\BOOKMARK [2][-]{subsection.4.3.6}{Design Details}{section.4.3}% 76
-\BOOKMARK [0][-]{chapter.5}{System and Unit Testing}{}% 77
-\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 78
-\BOOKMARK [1][-]{section.5.2}{Dependencies}{chapter.5}% 79
-\BOOKMARK [1][-]{section.5.3}{Test Setup and Execution}{chapter.5}% 80
-\BOOKMARK [0][-]{chapter.6}{Development Environment}{}% 81
-\BOOKMARK [1][-]{section.6.1}{Development IDE and Tools}{chapter.6}% 82
-\BOOKMARK [1][-]{section.6.2}{Source Control}{chapter.6}% 83
-\BOOKMARK [1][-]{section.6.3}{Dependencies}{chapter.6}% 84
-\BOOKMARK [1][-]{section.6.4}{Build Environment}{chapter.6}% 85
-\BOOKMARK [1][-]{section.6.5}{Development Machine Setup}{chapter.6}% 86
-\BOOKMARK [0][-]{chapter.7}{User Documentation}{}% 87
-\BOOKMARK [1][-]{section.7.1}{User Guide}{chapter.7}% 88
-\BOOKMARK [1][-]{section.7.2}{Installation Guide}{chapter.7}% 89
-\BOOKMARK [1][-]{section.7.3}{Programmer Manual}{chapter.7}% 90
-\BOOKMARK [0][-]{chapter.8}{Class Index}{}% 91
-\BOOKMARK [1][-]{section.8.1}{Class List}{chapter.8}% 92
-\BOOKMARK [0][-]{chapter.9}{Class Documentation}{}% 93
-\BOOKMARK [1][-]{section.9.1}{Poly Class Reference}{chapter.9}% 94
-\BOOKMARK [2][-]{subsection.9.1.1}{Constructor \046 Destructor Documentation}{section.9.1}% 95
-\BOOKMARK [2][-]{subsection.9.1.2}{Member Function Documentation}{section.9.1}% 96
-\BOOKMARK [0][-]{chapter*.7}{Bibliography}{}% 97
-\BOOKMARK [0][-]{chapter.10}{Software Agreement}{}% 98
-\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 99
-\BOOKMARK [0][-]{appendix.B}{Sprint Reports}{}% 100
-\BOOKMARK [1][-]{section.B.1}{Sprint Report \0431}{appendix.B}% 101
-\BOOKMARK [2][-]{subsection.B.1.1}{Team Members}{section.B.1}% 102
-\BOOKMARK [2][-]{subsection.B.1.2}{Project Sponsors}{section.B.1}% 103
-\BOOKMARK [2][-]{subsection.B.1.3}{Sponsor/User Description}{section.B.1}% 104
-\BOOKMARK [2][-]{subsection.B.1.4}{Project Overview}{section.B.1}% 105
-\BOOKMARK [2][-]{subsection.B.1.5}{Project Environment}{section.B.1}% 106
-\BOOKMARK [2][-]{subsection.B.1.6}{Project Deliverables}{section.B.1}% 107
-\BOOKMARK [2][-]{subsection.B.1.7}{Backlog}{section.B.1}% 108
-\BOOKMARK [2][-]{subsection.B.1.8}{Potential Issues}{section.B.1}% 109
-\BOOKMARK [1][-]{section.B.2}{Sprint Report \0432}{appendix.B}% 110
-\BOOKMARK [1][-]{section.B.3}{Sprint Report \0433}{appendix.B}% 111
-\BOOKMARK [1][-]{section.B.4}{Sprint Report ...}{appendix.B}% 112
-\BOOKMARK [0][-]{appendix.C}{Industrial Experience and Resumes}{}% 113
-\BOOKMARK [1][-]{section.C.1}{Resumes}{appendix.C}% 114
-\BOOKMARK [1][-]{section.C.2}{ABET: Industrial Experience Reports}{appendix.C}% 115
-\BOOKMARK [2][-]{subsection.C.2.1}{Name1}{section.C.2}% 116
-\BOOKMARK [2][-]{subsection.C.2.2}{Name2}{section.C.2}% 117
-\BOOKMARK [2][-]{subsection.C.2.3}{Name3}{section.C.2}% 118
-\BOOKMARK [0][-]{appendix.D}{Acknowledgment}{}% 119
-\BOOKMARK [0][-]{appendix.E}{Supporting Materials}{}% 120
+\BOOKMARK [1][-]{section.1.3}{System Overview and Diagram}{chapter.1}% 19
+\BOOKMARK [1][-]{section.1.4}{Technologies Overview}{chapter.1}% 20
+\BOOKMARK [0][-]{chapter.2}{Project Overview}{}% 21
+\BOOKMARK [1][-]{section.2.1}{Team Members and Roles}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.2}{Project Management Approach}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.3}{Phase Overview}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.4}{Terminology and Acronyms}{chapter.2}% 25
+\BOOKMARK [0][-]{chapter.3}{User Stories, Backlog and Requirements}{}% 26
+\BOOKMARK [1][-]{section.3.1}{Overview}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.1.1}{Scope}{section.3.1}% 28
+\BOOKMARK [2][-]{subsection.3.1.2}{Purpose of the System}{section.3.1}% 29
+\BOOKMARK [1][-]{section.3.2}{ Stakeholder Information}{chapter.3}% 30
+\BOOKMARK [2][-]{subsection.3.2.1}{Customer or End User \(Product Owner\)}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.2}{Developers \205Testers}{section.3.2}% 32
+\BOOKMARK [1][-]{section.3.3}{Requirements and Design Constraints}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.3.1}{System Requirements}{section.3.3}% 34
+\BOOKMARK [2][-]{subsection.3.3.2}{Network Requirements}{section.3.3}% 35
+\BOOKMARK [2][-]{subsection.3.3.3}{Development Environment Requirements}{section.3.3}% 36
+\BOOKMARK [2][-]{subsection.3.3.4}{Project Management Methodology}{section.3.3}% 37
+\BOOKMARK [1][-]{section.3.4}{User Stories}{chapter.3}% 38
+\BOOKMARK [2][-]{subsection.3.4.1}{User Story \0431}{section.3.4}% 39
+\BOOKMARK [2][-]{subsection.3.4.2}{User Story \0432}{section.3.4}% 40
+\BOOKMARK [2][-]{subsection.3.4.3}{User Story \0433}{section.3.4}% 41
+\BOOKMARK [2][-]{subsection.3.4.4}{User Story \0434}{section.3.4}% 42
+\BOOKMARK [1][-]{section.3.5}{Requirements}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.5.1}{Global}{section.3.5}% 44
+\BOOKMARK [2][-]{subsection.3.5.2}{New User Registration}{section.3.5}% 45
+\BOOKMARK [2][-]{subsection.3.5.3}{User Login}{section.3.5}% 46
+\BOOKMARK [2][-]{subsection.3.5.4}{Event reporting interface}{section.3.5}% 47
+\BOOKMARK [2][-]{subsection.3.5.5}{Detailed event list}{section.3.5}% 48
+\BOOKMARK [2][-]{subsection.3.5.6}{Map representation of events}{section.3.5}% 49
+\BOOKMARK [2][-]{subsection.3.5.7}{Administrator editing of existing events}{section.3.5}% 50
+\BOOKMARK [2][-]{subsection.3.5.8}{Administrator customization of event sets}{section.3.5}% 51
+\BOOKMARK [2][-]{subsection.3.5.9}{User selection of data to view}{section.3.5}% 52
+\BOOKMARK [0][-]{chapter.4}{Design and Implementation}{}% 53
+\BOOKMARK [1][-]{subsection.4.0.10}{Technologies Used}{chapter.4}% 54
+\BOOKMARK [1][-]{section.4.1}{Global Features }{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.1.1}{Component Overview}{section.4.1}% 56
+\BOOKMARK [2][-]{subsection.4.1.2}{Phase Overview}{section.4.1}% 57
+\BOOKMARK [2][-]{subsection.4.1.3}{Diagram}{section.4.1}% 58
+\BOOKMARK [2][-]{subsection.4.1.4}{Design Details}{section.4.1}% 59
+\BOOKMARK [1][-]{section.4.2}{New User Registration }{chapter.4}% 60
+\BOOKMARK [2][-]{subsection.4.2.1}{Component Overview}{section.4.2}% 61
+\BOOKMARK [2][-]{subsection.4.2.2}{Phase Overview}{section.4.2}% 62
+\BOOKMARK [2][-]{subsection.4.2.3}{Diagram}{section.4.2}% 63
+\BOOKMARK [2][-]{subsection.4.2.4}{Design Details}{section.4.2}% 64
+\BOOKMARK [1][-]{section.4.3}{User Login }{chapter.4}% 65
+\BOOKMARK [2][-]{subsection.4.3.1}{Component Overview}{section.4.3}% 66
+\BOOKMARK [2][-]{subsection.4.3.2}{Phase Overview}{section.4.3}% 67
+\BOOKMARK [2][-]{subsection.4.3.3}{Diagram}{section.4.3}% 68
+\BOOKMARK [2][-]{subsection.4.3.4}{Design Details}{section.4.3}% 69
+\BOOKMARK [1][-]{section.4.4}{Event Reporting Interface }{chapter.4}% 70
+\BOOKMARK [2][-]{subsection.4.4.1}{Component Overview}{section.4.4}% 71
+\BOOKMARK [2][-]{subsection.4.4.2}{Phase Overview}{section.4.4}% 72
+\BOOKMARK [2][-]{subsection.4.4.3}{Diagram}{section.4.4}% 73
+\BOOKMARK [2][-]{subsection.4.4.4}{Design Details}{section.4.4}% 74
+\BOOKMARK [1][-]{section.4.5}{Detailed Event List }{chapter.4}% 75
+\BOOKMARK [2][-]{subsection.4.5.1}{Component Overview}{section.4.5}% 76
+\BOOKMARK [2][-]{subsection.4.5.2}{Phase Overview}{section.4.5}% 77
+\BOOKMARK [2][-]{subsection.4.5.3}{Diagram}{section.4.5}% 78
+\BOOKMARK [2][-]{subsection.4.5.4}{Design Details}{section.4.5}% 79
+\BOOKMARK [1][-]{section.4.6}{Map Representation of Events }{chapter.4}% 80
+\BOOKMARK [2][-]{subsection.4.6.1}{Component Overview}{section.4.6}% 81
+\BOOKMARK [2][-]{subsection.4.6.2}{Phase Overview}{section.4.6}% 82
+\BOOKMARK [2][-]{subsection.4.6.3}{Diagram}{section.4.6}% 83
+\BOOKMARK [2][-]{subsection.4.6.4}{Design Details}{section.4.6}% 84
+\BOOKMARK [1][-]{section.4.7}{Administrator Editing of Existing Events}{chapter.4}% 85
+\BOOKMARK [2][-]{subsection.4.7.1}{Component Overview}{section.4.7}% 86
+\BOOKMARK [2][-]{subsection.4.7.2}{Phase Overview}{section.4.7}% 87
+\BOOKMARK [2][-]{subsection.4.7.3}{Diagram}{section.4.7}% 88
+\BOOKMARK [2][-]{subsection.4.7.4}{Design Details}{section.4.7}% 89
+\BOOKMARK [1][-]{section.4.8}{Administrator Customization of Event Sets }{chapter.4}% 90
+\BOOKMARK [2][-]{subsection.4.8.1}{Component Overview}{section.4.8}% 91
+\BOOKMARK [2][-]{subsection.4.8.2}{Phase Overview}{section.4.8}% 92
+\BOOKMARK [2][-]{subsection.4.8.3}{Diagram}{section.4.8}% 93
+\BOOKMARK [2][-]{subsection.4.8.4}{Design Details}{section.4.8}% 94
+\BOOKMARK [1][-]{section.4.9}{User Selection of Data to View }{chapter.4}% 95
+\BOOKMARK [2][-]{subsection.4.9.1}{Component Overview}{section.4.9}% 96
+\BOOKMARK [2][-]{subsection.4.9.2}{Phase Overview}{section.4.9}% 97
+\BOOKMARK [2][-]{subsection.4.9.3}{Diagram}{section.4.9}% 98
+\BOOKMARK [2][-]{subsection.4.9.4}{Design Details}{section.4.9}% 99
+\BOOKMARK [0][-]{chapter.5}{System and Unit Testing}{}% 100
+\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 101
+\BOOKMARK [1][-]{section.5.2}{Dependencies}{chapter.5}% 102
+\BOOKMARK [1][-]{section.5.3}{Test Setup and Execution}{chapter.5}% 103
+\BOOKMARK [0][-]{chapter.6}{Development Environment}{}% 104
+\BOOKMARK [1][-]{section.6.1}{Development IDE and Tools}{chapter.6}% 105
+\BOOKMARK [1][-]{section.6.2}{Source Control}{chapter.6}% 106
+\BOOKMARK [1][-]{section.6.3}{Dependencies}{chapter.6}% 107
+\BOOKMARK [1][-]{section.6.4}{Build Environment}{chapter.6}% 108
+\BOOKMARK [1][-]{section.6.5}{Development Machine Setup}{chapter.6}% 109
+\BOOKMARK [0][-]{chapter.7}{User Documentation}{}% 110
+\BOOKMARK [1][-]{section.7.1}{User Guide}{chapter.7}% 111
+\BOOKMARK [1][-]{section.7.2}{Installation Guide}{chapter.7}% 112
+\BOOKMARK [1][-]{section.7.3}{Programmer Manual}{chapter.7}% 113
+\BOOKMARK [0][-]{chapter.8}{Class Index}{}% 114
+\BOOKMARK [1][-]{section.8.1}{Class List}{chapter.8}% 115
+\BOOKMARK [0][-]{chapter.9}{Class Documentation}{}% 116
+\BOOKMARK [1][-]{section.9.1}{Poly Class Reference}{chapter.9}% 117
+\BOOKMARK [2][-]{subsection.9.1.1}{Constructor \046 Destructor Documentation}{section.9.1}% 118
+\BOOKMARK [2][-]{subsection.9.1.2}{Member Function Documentation}{section.9.1}% 119
+\BOOKMARK [0][-]{chapter*.7}{Bibliography}{}% 120
+\BOOKMARK [0][-]{chapter.10}{Software Agreement}{}% 121
+\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 122
+\BOOKMARK [0][-]{appendix.B}{Sprint Reports}{}% 123
+\BOOKMARK [1][-]{section.B.1}{Sprint Report \0431}{appendix.B}% 124
+\BOOKMARK [2][-]{subsection.B.1.1}{Team Members}{section.B.1}% 125
+\BOOKMARK [2][-]{subsection.B.1.2}{Project Sponsors}{section.B.1}% 126
+\BOOKMARK [2][-]{subsection.B.1.3}{Sponsor/User Description}{section.B.1}% 127
+\BOOKMARK [2][-]{subsection.B.1.4}{Project Overview}{section.B.1}% 128
+\BOOKMARK [2][-]{subsection.B.1.5}{Project Environment}{section.B.1}% 129
+\BOOKMARK [2][-]{subsection.B.1.6}{Project Deliverables}{section.B.1}% 130
+\BOOKMARK [2][-]{subsection.B.1.7}{Backlog}{section.B.1}% 131
+\BOOKMARK [2][-]{subsection.B.1.8}{Potential Issues}{section.B.1}% 132
+\BOOKMARK [1][-]{section.B.2}{Sprint Report \0432}{appendix.B}% 133
+\BOOKMARK [1][-]{section.B.3}{Sprint Report \0433}{appendix.B}% 134
+\BOOKMARK [1][-]{section.B.4}{Sprint Report ...}{appendix.B}% 135
+\BOOKMARK [0][-]{appendix.C}{Industrial Experience and Resumes}{}% 136
+\BOOKMARK [1][-]{section.C.1}{Resumes}{appendix.C}% 137
+\BOOKMARK [1][-]{section.C.2}{ABET: Industrial Experience Reports}{appendix.C}% 138
+\BOOKMARK [2][-]{subsection.C.2.1}{Name1}{section.C.2}% 139
+\BOOKMARK [2][-]{subsection.C.2.2}{Name2}{section.C.2}% 140
+\BOOKMARK [2][-]{subsection.C.2.3}{Name3}{section.C.2}% 141
+\BOOKMARK [0][-]{appendix.D}{Acknowledgment}{}% 142
+\BOOKMARK [0][-]{appendix.E}{Supporting Materials}{}% 143
