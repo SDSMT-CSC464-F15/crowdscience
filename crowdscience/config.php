@@ -12,7 +12,7 @@
 		$m = new MongoClient();
 
 		// select a database
-		$db = $m->cwsusers;
+		$db = $m->crowdsciencemapper;
 	
 	}
 	catch (MongoException $e)
