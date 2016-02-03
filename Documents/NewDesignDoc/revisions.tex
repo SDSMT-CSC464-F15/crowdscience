@@ -1,0 +1,54 @@
+% !TEX root = DesignDocument.tex
+
+
+\chapter{Project Revisions}\label{chap:revisions}
+This chapter includes information about the project revisions made regarding the removal of Jiasong Yan from the project in January 2016. Major content changes are listed here, other minor changes are noted in the rest of the document.
+
+\section{Overview and Concept of Operations}
+Team member revisions are noted in the ``Team Members and Team Name'' section.  Figure~\ref{overviewdesign_orginal} was replaced with Figure~\ref{overviewdesign}. The ``Event Set Editing'' subsection in the Major Components Section was removed. The remainder of the chapter was similarily revised to exclude this subsection.
+
+\subsection{Event Set Editing}
+Administrators can edit existing events sets to refine what users report, and create new event sets to allow users to start reporting events.  Administrators will be able to moderate the events that users report.
+
+\begin{figure}[tbh]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{./figures/overviewdesign_original.png}
+\end{center}
+\caption{Design of Crowd Science Main Page\label{overviewdesign_original}}
+\end{figure}
+
+\section{User Stories, Requirements, and Product Backlog}
+User Stories \#4 and \#5 were removed from this chapter. Subsections ``Administrator editing of existing events'' and ``Administrator customization of event sets'' were removed from the Product Backlog section.
+
+\subsection{User Story \#4} 
+As an administrator, I want to be able to customize a set of events to fit my needs. This may include user input and display items, database design, digital map, webpage color and style, logo, etc. 
+\subsection{User Story \#5} 
+As an administrator, I want to be able to edit existing event reports.
+
+\subsection{Administrator editing of existing events}
+\begin{itemize}
+\item The detailed data list shall be displayed in a seperate window.
+\item Each event report in the list will have an ``edit'' button.
+\item When an administrator clicks the ``edit'' button, they will be taken to the event reporting interface, with the added feild ``Reason for editing''.
+\item When an administrator edits an event report, the administrator name, reason for editing, and date and time shall be recorded and added to the event's history.
+\item An administrator may mark an event report as false, the administrator name, reason for declaring false, and date and time shall be added to the event's history.
+\end{itemize}
+
+\subsection{Administrator customization of event sets}
+\begin{itemize}
+\item The administrator will be able to create a new event data set.
+\item The administrator will be able to edit the details of an existing event data set.
+\item When the administrator clicks on the new event data set, a blank event data set will be created. 
+\item The display name and identification name of an event data set cannot be empty or null.
+\item The identification name will be used to reference the database, and cannot be changed after creation.
+\item The administrator will be able to add feilds to their event data set by clicking an ``Add new Feild'' button.
+\item The administrator will be able to designate the feild identification name, display name, data type, display method if appliciable, and acceptable values if appliciable. 
+\item If the administrator wants to change the data type of the feild, they will need to remove the current feild and recreate it with the new data type, and data stored in the previous type will be lost.
+\item The administrator will be able to edit display name, display method, and acceptable values with ease.
+\item The data types that can be selected will be number, short text, long text, radio button group, check box group, and picture upload.
+\item When the administrator is finished editing or creating their event data set, they will be able to click ``save'' to save their data. 
+\item If there are problems with what the administrator has entered, the administrator will be notified and prompted to fix the errors.
+\end{itemize}
+
+\section{Project Overview}
+Team Member Roles were revised to reflect the team member removal. Timeline and Sprint Backlogs were revised to reflect the revised requirements and timeline.

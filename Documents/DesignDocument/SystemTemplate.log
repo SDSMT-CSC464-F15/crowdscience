@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  28 NOV 2015 10:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  10 DEC 2015 14:37
 entering extended mode
 **SystemTemplate.tex
 
@@ -1548,15 +1548,155 @@ SystemTemplate.out)
 
 ]
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-SystemTemplate.toc [3] [4] [5])
-\tf@toc=\write6
- [6]
-(C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-SystemTemplate.lof)
-\tf@lof=\write7
- [7
+SystemTemplate.toc [3] [4]
+Overfull \hbox (0.33331pt too wide) detected at line 106
+ []\OT1/cmr/m/n/10 A-1
+ []
 
-] [8
+
+Overfull \hbox (0.33331pt too wide) detected at line 107
+ []\OT1/cmr/m/n/10 A-1
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 108
+ []\OT1/cmr/m/n/10 A-1
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 109
+ []\OT1/cmr/m/n/10 A-1
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 113
+ []\OT1/cmr/m/n/10 A-1
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 114
+ []\OT1/cmr/m/n/10 A-2
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 119
+ []\OT1/cmr/m/n/10 A-2
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 120
+ []\OT1/cmr/m/n/10 A-2
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 121
+ []\OT1/cmr/m/n/10 A-2
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 122
+ []\OT1/cmr/m/n/10 A-2
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 123
+ []\OT1/cmr/m/n/10 A-3
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 124
+ []\OT1/cmr/m/n/10 A-3
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 125
+ []\OT1/cmr/m/n/10 A-3
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 126
+ []\OT1/cmr/m/n/10 A-3
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 127
+ []\OT1/cmr/m/n/10 A-3
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 128
+ []\OT1/cmr/m/n/10 A-3
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 129
+ []\OT1/cmr/m/n/10 A-3
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 130
+ []\OT1/cmr/m/n/10 A-3
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 131
+ []\OT1/cmr/m/n/10 A-4
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 132
+ []\OT1/cmr/m/n/10 A-4
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 133
+ []\OT1/cmr/m/n/10 A-4
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 134
+ []\OT1/cmr/m/n/10 A-4
+ []
+
+
+Overfull \hbox (0.33331pt too wide) detected at line 135
+ []\OT1/cmr/m/n/10 A-4
+ []
+
+
+Overfull \hbox (0.4722pt too wide) detected at line 142
+ []\OT1/cmr/m/n/10 D-1
+ []
+
+
+Overfull \hbox (0.4722pt too wide) detected at line 143
+ []\OT1/cmr/m/n/10 D-1
+ []
+
+)
+\tf@toc=\write6
+ [5] [6
+
+]
+(C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
+SystemTemplate.lof
+Overfull \hbox (0.4722pt too wide) detected at line 16
+ []\OT1/cmr/m/n/10 D-1
+ []
+
+
+Overfull \hbox (0.4722pt too wide) detected at line 17
+ []\OT1/cmr/m/n/10 D-2
+ []
+
+
+Overfull \hbox (0.4722pt too wide) detected at line 18
+ []\OT1/cmr/m/n/10 D-2
+ []
+
+)
+\tf@lof=\write7
+ [7] [8
 
 ]
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
@@ -1592,7 +1732,17 @@ Overfull \hbox (5.92586pt too wide) in paragraph at lines 30--30
  []
 
 
-Overfull \hbox (7.03629pt too wide) in paragraph at lines 16--37
+Overfull \hbox (5.92586pt too wide) in paragraph at lines 32--32
+[]|\OT1/cmr/bx/it/10 11/27/15|  
+ []
+
+
+Overfull \hbox (5.92586pt too wide) in paragraph at lines 34--34
+[]|\OT1/cmr/bx/it/10 12/10/15|  
+ []
+
+
+Overfull \hbox (7.03629pt too wide) in paragraph at lines 16--39
 [] 
  []
 
@@ -1602,7 +1752,7 @@ Overfull \hbox (7.03629pt too wide) in paragraph at lines 16--37
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
 InputDocs/overview.tex
 Chapter 1.
-<./Images/crowdscience_mainpagesketch.png, id=800, 529.22719pt x 301.125pt>
+<./Images/crowdscience_mainpagesketch.png, id=771, 529.22719pt x 301.125pt>
 File: ./Images/crowdscience_mainpagesketch.png Graphic file (type png)
 
 <use ./Images/crowdscience_mainpagesketch.png>
@@ -1660,239 +1810,322 @@ InputDocs/develop.tex [15
 Chapter 6.
 )
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/userdocs.tex [17] [18
+InputDocs/refman.tex [17] [18
 
 ]
 Chapter 7.
-)
-(C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/refman.tex [19] [20
+[19] [20
 
 ]
 Chapter 8.
-
-(C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-annotated.tex) [21] [22
+) [21] [22
 
 ]
-Chapter 9.
 
-(C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-class_poly.tex))
-(C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-SystemTemplate.bbl [23] [24
+pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC464
+/crowdscience/Documents/DesignDocument/InputDocs/SoftwareContractSigned.pdf): P
+DF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<InputDocs/SoftwareContractSigned.pdf, id=882, 614.295pt x 844.11362pt>
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
 
-]) [25] [26
+<use InputDocs/SoftwareContractSigned.pdf>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf used on input lin
+e 68.
+(pdftex.def)             Requested size: 614.29349pt x 844.11156pt.
 
-]
-<InputDocs/SoftwareContract.pdf, id=948, 614.295pt x 794.97pt>
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
-<use InputDocs/SoftwareContract.pdf>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf used on input line 68.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
- <use InputDocs/SoftwareContract.pdf>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf used on input line 68.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC464
+/crowdscience/Documents/DesignDocument/InputDocs/SoftwareContractSigned.pdf): P
+DF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
+<use InputDocs/SoftwareContractSigned.pdf>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf used on input lin
+e 68.
+(pdftex.def)             Requested size: 614.29349pt x 844.11156pt.
 
-<InputDocs/SoftwareContract.pdf, id=951, page=1, 614.295pt x 794.97pt>
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
-<use InputDocs/SoftwareContract.pdf, page 1>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page1 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC464
+/crowdscience/Documents/DesignDocument/InputDocs/SoftwareContractSigned.pdf): P
+DF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<use InputDocs/SoftwareContract.pdf, page 1>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page1 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
 
-<use InputDocs/SoftwareContract.pdf, page 1>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page1 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC464
+/crowdscience/Documents/DesignDocument/InputDocs/SoftwareContractSigned.pdf): P
+DF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<use InputDocs/SoftwareContract.pdf, page 1>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page1 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+<InputDocs/SoftwareContractSigned.pdf, id=885, page=1, 614.295pt x 844.11362pt>
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
+<use InputDocs/SoftwareContractSigned.pdf, page 1>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page1 used on in
+put line 68.
+(pdftex.def)             Requested size: 614.29349pt x 844.11156pt.
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
 
-<use InputDocs/SoftwareContract.pdf, page 1>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page1 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+<use InputDocs/SoftwareContractSigned.pdf, page 1>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page1 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
+
+<use InputDocs/SoftwareContractSigned.pdf, page 1>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page1 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
+
+<use InputDocs/SoftwareContractSigned.pdf, page 1>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page1 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
+
+<use InputDocs/SoftwareContractSigned.pdf, page 1>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page1 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
  [1 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=973, p
-age=2, 614.295pt x 794.97pt>
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+ent/InputDocs/SoftwareContractSigned.pdf>]
 
-<use InputDocs/SoftwareContract.pdf, page 2>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page2 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC464
+/crowdscience/Documents/DesignDocument/InputDocs/SoftwareContractSigned.pdf): P
+DF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<use InputDocs/SoftwareContract.pdf, page 2>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page2 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+<InputDocs/SoftwareContractSigned.pdf, id=900, page=2, 614.295pt x 844.11362pt>
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
+<use InputDocs/SoftwareContractSigned.pdf, page 2>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page2 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
 
-<use InputDocs/SoftwareContract.pdf, page 2>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page2 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+<use InputDocs/SoftwareContractSigned.pdf, page 2>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page2 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
+
+<use InputDocs/SoftwareContractSigned.pdf, page 2>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page2 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
  [2 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=978, p
-age=3, 614.295pt x 794.97pt>
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+ent/InputDocs/SoftwareContractSigned.pdf>]
 
-<use InputDocs/SoftwareContract.pdf, page 3>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page3 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC464
+/crowdscience/Documents/DesignDocument/InputDocs/SoftwareContractSigned.pdf): P
+DF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<use InputDocs/SoftwareContract.pdf, page 3>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page3 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+<InputDocs/SoftwareContractSigned.pdf, id=914, page=3, 614.295pt x 844.11362pt>
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
+<use InputDocs/SoftwareContractSigned.pdf, page 3>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page3 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
 
-<use InputDocs/SoftwareContract.pdf, page 3>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page3 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+<use InputDocs/SoftwareContractSigned.pdf, page 3>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page3 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
+
+<use InputDocs/SoftwareContractSigned.pdf, page 3>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page3 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
  [3 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=983, p
-age=4, 614.295pt x 794.97pt>
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+ent/InputDocs/SoftwareContractSigned.pdf>]
 
-<use InputDocs/SoftwareContract.pdf, page 4>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page4 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC464
+/crowdscience/Documents/DesignDocument/InputDocs/SoftwareContractSigned.pdf): P
+DF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<use InputDocs/SoftwareContract.pdf, page 4>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page4 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+<InputDocs/SoftwareContractSigned.pdf, id=927, page=4, 614.295pt x 844.11362pt>
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
+<use InputDocs/SoftwareContractSigned.pdf, page 4>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page4 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
 
-<use InputDocs/SoftwareContract.pdf, page 4>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page4 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+<use InputDocs/SoftwareContractSigned.pdf, page 4>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page4 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
+
+<use InputDocs/SoftwareContractSigned.pdf, page 4>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page4 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
  [4 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/SoftwareContract.pdf>] <InputDocs/SoftwareContract.pdf, id=988, p
-age=5, 614.295pt x 794.97pt>
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+ent/InputDocs/SoftwareContractSigned.pdf>]
 
-<use InputDocs/SoftwareContract.pdf, page 5>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page5 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC464
+/crowdscience/Documents/DesignDocument/InputDocs/SoftwareContractSigned.pdf): P
+DF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
-<use InputDocs/SoftwareContract.pdf, page 5>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page5 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: InputDocs/SoftwareContract.pdf Graphic file (type pdf)
+<InputDocs/SoftwareContractSigned.pdf, id=963, page=5, 614.295pt x 844.11362pt>
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
+<use InputDocs/SoftwareContractSigned.pdf, page 5>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page5 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
 
-<use InputDocs/SoftwareContract.pdf, page 5>
-Package pdftex.def Info: InputDocs/SoftwareContract.pdf, page5 used on input li
-ne 68.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+<use InputDocs/SoftwareContractSigned.pdf, page 5>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page5 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
+File: InputDocs/SoftwareContractSigned.pdf Graphic file (type pdf)
+
+<use InputDocs/SoftwareContractSigned.pdf, page 5>
+Package pdftex.def Info: InputDocs/SoftwareContractSigned.pdf, page5 used on in
+put line 68.
+(pdftex.def)             Requested size: 578.59967pt x 795.06406pt.
  [5 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/SoftwareContract.pdf>] [6
+ent/InputDocs/SoftwareContractSigned.pdf>] [6
 
 ]
 Appendix A.
 
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/productdescription.tex) [1] [2
-
-]
+InputDocs/sprints.tex
+(C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
+InputDocs/sprint1.tex [1])
+(C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
+InputDocs/sprint2.tex [2])
+(C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
+InputDocs/sprint3.tex [3])) [4]
 Appendix B.
 
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/sprints.tex
-(C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/sprint1.tex [1])) [2] [3] [4
+InputDocs/industrial.tex
+<./InputDocs/AkerResume9-8-2015.pdf, id=1006, 614.295pt x 794.97pt>
+File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
+
+<use ./InputDocs/AkerResume9-8-2015.pdf>
+Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf used on input line 
+19.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
+
+<use ./InputDocs/AkerResume9-8-2015.pdf>
+Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf used on input line 
+19.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+<./InputDocs/AkerResume9-8-2015.pdf, id=1009, page=1, 614.295pt x 794.97pt>
+File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
+
+<use ./InputDocs/AkerResume9-8-2015.pdf, page 1>
+Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf, page1 used on inpu
+t line 19.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
+
+<use ./InputDocs/AkerResume9-8-2015.pdf, page 1>
+Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf, page1 used on inpu
+t line 19.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [1
+
+]
+File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
+
+<use ./InputDocs/AkerResume9-8-2015.pdf, page 1>
+Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf, page1 used on inpu
+t line 19.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
+
+<use ./InputDocs/AkerResume9-8-2015.pdf, page 1>
+Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf, page1 used on inpu
+t line 19.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
+
+<use ./InputDocs/AkerResume9-8-2015.pdf, page 1>
+Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf, page1 used on inpu
+t line 19.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [2 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
+ent/InputDocs/AkerResume9-8-2015.pdf>]
+<./InputDocs/AkerResume9-8-2015.pdf, id=1045, page=2, 614.295pt x 794.97pt>
+File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
+
+<use ./InputDocs/AkerResume9-8-2015.pdf, page 2>
+Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf, page2 used on inpu
+t line 19.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
+
+<use ./InputDocs/AkerResume9-8-2015.pdf, page 2>
+Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf, page2 used on inpu
+t line 19.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
+
+<use ./InputDocs/AkerResume9-8-2015.pdf, page 2>
+Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf, page2 used on inpu
+t line 19.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [3 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
+ent/InputDocs/AkerResume9-8-2015.pdf>]) [4
 
 ]
 Appendix C.
-
-(C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/industrial.tex
-<./InputDocs/AkerResume9-8-2015.pdf, id=1030, 614.295pt x 794.97pt>
-File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
-
-<use ./InputDocs/AkerResume9-8-2015.pdf>
-Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf used on input line 
-6.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
-
-<use ./InputDocs/AkerResume9-8-2015.pdf>
-Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf used on input line 
-6.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-<./InputDocs/AkerResume9-8-2015.pdf, id=1033, page=1, 614.295pt x 794.97pt>
-File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
-
-<use ./InputDocs/AkerResume9-8-2015.pdf, page 1>
-Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf, page1 used on inpu
-t line 6.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
-
-<use ./InputDocs/AkerResume9-8-2015.pdf, page 1>
-Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf, page1 used on inpu
-t line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [1]
-File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
-
-<use ./InputDocs/AkerResume9-8-2015.pdf, page 1>
-Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf, page1 used on inpu
-t line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
-
-<use ./InputDocs/AkerResume9-8-2015.pdf, page 1>
-Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf, page1 used on inpu
-t line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: ./InputDocs/AkerResume9-8-2015.pdf Graphic file (type pdf)
-
-<use ./InputDocs/AkerResume9-8-2015.pdf, page 1>
-Package pdftex.def Info: ./InputDocs/AkerResume9-8-2015.pdf, page1 used on inpu
-t line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [2 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Documents/DesignDocum
-ent/InputDocs/AkerResume9-8-2015.pdf>]) [3] [4
-
-]
-Appendix D.
 [1] [2
 
 ]
-Appendix E.
+Appendix D.
 
 (C:\Users\7121625\Documents\Notes\CSC464\crowdscience\Documents\DesignDocument\
-InputDocs/supporting.tex) [1] [2
+InputDocs/supporting.tex
+<./Images/prototype_main.png, id=1066, 764.10469pt x 470.50781pt>
+File: ./Images/prototype_main.png Graphic file (type png)
 
-]
+<use ./Images/prototype_main.png>
+Package pdftex.def Info: ./Images/prototype_main.png used on input line 11.
+(pdftex.def)             Requested size: 352.31624pt x 216.94595pt.
+
+<./Images/prototype_login.png, id=1067, 619.56468pt x 380.92313pt>
+File: ./Images/prototype_login.png Graphic file (type png)
+
+<use ./Images/prototype_login.png>
+Package pdftex.def Info: ./Images/prototype_login.png used on input line 18.
+(pdftex.def)             Requested size: 352.31624pt x 216.61111pt.
+
+<./Images/prototype_register.png, id=1068, 618.81187pt x 379.4175pt>
+File: ./Images/prototype_register.png Graphic file (type png)
+
+<use ./Images/prototype_register.png>
+Package pdftex.def Info: ./Images/prototype_register.png used on input line 25.
+
+(pdftex.def)             Requested size: 352.31624pt x 216.02705pt.
+) [1pdfTeX warning (ext4): destination with the same identifier (name{figure.D.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.95 \backmatter
+                 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Document
+s/DesignDocument/Images/prototype_main.png>] [2pdfTeX warning (ext4): destinati
+on with the same identifier (name{figure.D.2}) has been already used, duplicate
+ ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.95 \backmatter
+                pdfTeX warning (ext4): destination with the same identifier (na
+me{figure.D.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.95 \backmatter
+                 <C:/Users/7121625/Documents/Notes/CSC464/crowdscience/Document
+s/DesignDocument/Images/prototype_login.png> <C:/Users/7121625/Documents/Notes/
+CSC464/crowdscience/Documents/DesignDocument/Images/prototype_register.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
 
@@ -1901,15 +2134,15 @@ SystemTemplate.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `SystemTemplate.out' has not changed.
-(rerunfilecheck)             Checksum: 3174C14E212730048B53AF9C767DA48B;9768.
+(rerunfilecheck)             Checksum: 79DBBDC6ACCA3F71325BF24C95510771;9370.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 25600 strings out of 493921
- 463087 string characters out of 3147276
- 586559 words of memory out of 3000000
- 28066 multiletter control sequences out of 15000+200000
- 15947 words of font info for 64 fonts, out of 3000000 for 9000
+ 25568 strings out of 493921
+ 462510 string characters out of 3147276
+ 586327 words of memory out of 3000000
+ 28063 multiletter control sequences out of 15000+200000
+ 14943 words of font info for 61 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  64i,18n,65p,3300b,531s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\7121625\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
@@ -1920,13 +2153,12 @@ ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on SystemTemplate.pdf (62 pages, 653559 bytes).
+ublic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmtt10.pfb>
+Output written on SystemTemplate.pdf (56 pages, 6279836 bytes).
 PDF statistics:
- 1199 PDF objects out of 1200 (max. 8388607)
- 227 named destinations out of 1000 (max. 500000)
- 1222 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1153 PDF objects out of 1200 (max. 8388607)
+ 204 named destinations out of 1000 (max. 500000)
+ 1186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
