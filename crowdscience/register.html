@@ -48,13 +48,24 @@
 <!-- outside form -->
 <form class="form-register" role="form" id="register_form_id" >
 	<table class="table-register">
-		
+		<tr><td><input class="form-control" name="email" id="new_email" required placeholder="Email" value="" type="email" /> </td>
 		<td><input class="form-control" name="username" id="new_username" required placeholder="Username" value="" type="text" /> </td>
 		</tr>
 		<tr><td><input class="form-control" name="password" id="new_password1" required placeholder="Password" value="" type="password" /> </td>
-		</tr>
+		<td> <input class="form-control" name="fname" id="fname" placeholder="First Name*" value="" type="text" /> </td></tr>
 		<tr><td> <input class="form-control" name="password" id="new_password2" required placeholder="Confirm Password"  value="" type="password" /></td>
-		
+		<td> <input class="form-control" name="lname" id="lname" placeholder="Last Name*" value="" type="text" /> </td></tr>
+		<tr><td>
+			<select id="role" class="form-control">
+				<option value="">Please Select Your Role</option>
+				<option value="scientist">Scientist</option>
+				<option value="citizen">Citizen</option>
+			</select>
+
+		</td>
+		<td><input class="form-control" name="location" id="location" placeholder="City, State, Country*" value="" type="text" /></td>
+		</tr>
+		<tr>Fields with * are optional</tr>
 	</table>
 	<br>
 	<div class="alert alert-danger" role="alert" style="display:none" id="passwordmsg">Passwords Don't Match</div>

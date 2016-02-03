@@ -19,7 +19,9 @@ function registerUser()
 	$collection = $db->user;
 	$arr = $request["register"];
 	$username = $arr["username"];
+	$email = $arr["email"];
 	$pass = $arr["password"];
+	$details = $arr["details"];
 	$score = 0;
 	
 	//Check if username is already taken
@@ -32,10 +34,20 @@ function registerUser()
 		$messages[] = "Username taken";
 	}
 	
+		//Check if email already used
+	$findQuery = array("email" => "$email");
+	$found = $collection ->findOne($findQuery);
+	if(count($found) > 0)
+	{
+		//Return to the webpage that the email is already used
+		//$responseXML->addChild("Message", "Email used");
+		$messages[] = "Email used";
+	}
+	
 	// add a record if there were no messages added to the response
 	if(count($messages) == 0)
 	{
-		$document = array( "username" => "$username", "password" => "$pass");
+		$document = array( "username" => "$username", "email" => "$email", "password" => "$pass", "score" => "$score", "details" => $details );
 		$errors = $collection->insert($document, array( 'w' => 1 ));
 		//$responseXML->addChild("Status", "0"); 
 		//$responseXML->addChild("Message", "Success");

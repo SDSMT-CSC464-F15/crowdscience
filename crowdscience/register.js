@@ -62,6 +62,8 @@ function onRegisterSuccess(response)
 			for( var i in response.messages){
 				if(response.messages[i] == "Username taken")
 					document.getElementById("usernamemsg").style.display="";
+					if(response.messages[i] == "Email used")
+					document.getElementById("emailmsg").style.display="";
 				
 			}
 		}
