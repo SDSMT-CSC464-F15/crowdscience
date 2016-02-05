@@ -59,9 +59,7 @@ function refreshEventSetSelect()
 		//get the previously selected event set
 		$response["eventsetselect"] = $_SESSION['eventsetselect'];
 	}
-	else {
-		$response["status"] = "1";
-	}
+
 	//collection to use
 	$eventsetsinfo = $db->eventsetsinfo;
 	//Get all event sets info
