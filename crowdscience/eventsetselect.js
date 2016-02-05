@@ -46,29 +46,33 @@ var request = {"action" : "refresh"}
 function updateEventSetOptions (eventsetsinfo)
 {
 //variable to the event selection bar
-var selecteventset = document.getElementById("selecteventset");
 
 //clear the event set options
-for (var i = $("#selecteventset").options.length - 1; i >= 0; i--)
-	{
-	$("#selecteventset").remove(i);
-	}
+//for (var i = $("#selecteventset").options.length - 1; i >= 0; i--)
+//	{
+//	$("#selecteventset").remove(i);
+//	}
+
+$("#selecteventset").empty();
 //refill it
 for (var i = $("#selecteventset").length - 1; i >= 0; i--)
 	{
-	var option = document.createElement("option");
-	option.text = eventsetsinfo[i].name;
-	option.value = eventsetsinfo[i].id;
-	$("#selecteventset").add(option);
+	
+	$("#selecteventset").append('<option value="'+ eventsetsinfo[i].id +'">'eventsetsinfo[i].name'</option>');
+	
+	
+	//var option = document.createElement("option");
+	//option.text = eventsetsinfo[i].name;
+	//option.value = eventsetsinfo[i].id;
+	//$("#selecteventset").add(option);
 	}
 
 }
 
 function updateEventSetSelect (eventsetselectedval) {
-//variable to the event selection bar
-var selecteventset = document.getElementById("selecteventset");
+
 var index;
-for (var i = $("#selecteventset").options.length - 1; i >= 0; i--)
+for (var i = $("#selecteventset").length - 1; i >= 0; i--)
 	{
 	if ( $("#selecteventset")[i].value == eventsetselectedval)
 		{
