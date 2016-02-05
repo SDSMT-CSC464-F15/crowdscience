@@ -55,7 +55,7 @@ function updateEventSetOptions (eventsetsinfo)
 
 $("#selecteventset").empty();
 //refill it
-for (var i = $("#selecteventset").length - 1; i >= 0; i--)
+for (var i = eventsetsinfo.length - 1; i >= 0; i--)
 	{
 	
 	$("#selecteventset").append('<option value=\"'+ eventsetsinfo[i].id +'\">'eventsetsinfo[i].name'</option>');
