@@ -45,6 +45,7 @@ $_SESSION['eventsetselect'] = $request["eventsetselect"];
 foreach ($cursor as $eventsetinfo) {
 		$response["eventsetsinfo"][] = $eventsetinfo;
 	}
+	return $response;
 
 }
 
@@ -69,7 +70,7 @@ function refreshEventSetSelect()
 	foreach ($cursor as $eventsetinfo) {
 		$response["eventsetsinfo"][] = $eventsetinfo;
 	}
-
+return $response;
 }
 
 ?>
