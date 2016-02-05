@@ -43,7 +43,7 @@ session_start();
 $_SESSION['eventsetselect'] = $request["eventsetselect"];
 
 foreach ($cursor as $eventsetinfo) {
-		$response[] = $eventsetinfo;
+		$response["eventsetsinfo"][] = $eventsetinfo;
 	}
 
 }
@@ -53,6 +53,7 @@ function refreshEventSetSelect()
 {
 	global $db,$response,$request;
 	
+	session_start();
 	if(isset($_SESSION['eventsetselect'])) {
 		$response["status"] = "0";
 		//get the previously selected event set
