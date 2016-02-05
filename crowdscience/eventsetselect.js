@@ -5,9 +5,7 @@ $(function () {
 //populate event select box
 //check if already have selected event
 
-$("#selecteventset").on('change', function() { 
-function changeEventSetSelect (); 
-});
+$("#selecteventset").on('change', function() { changeEventSetSelect (); });
 
 
 });
@@ -30,6 +28,9 @@ var request = {"action" : "change", "eventsetselect" : collection }
 
 function refreshEventSetSelect (argument) {
 //go to the php, do the db
+
+
+
 var request = {"action" : "refresh"}
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
@@ -48,17 +49,17 @@ function updateEventSetOptions (eventsetsinfo)
 var selecteventset = document.getElementById("selecteventset");
 
 //clear the event set options
-for (var i = selecteventset.options.length - 1; i >= 0; i--)
+for (var i = $("#selecteventset").options.length - 1; i >= 0; i--)
 	{
-	selecteventset.remove(i);
+	$("#selecteventset").remove(i);
 	}
 //refill it
-for (var i = eventsetsinfo.length - 1; i >= 0; i--)
+for (var i = $("#selecteventset").length - 1; i >= 0; i--)
 	{
 	var option = document.createElement("option");
 	option.text = eventsetsinfo[i].name;
 	option.value = eventsetsinfo[i].id;
-	selecteventset.add(option);
+	$("#selecteventset").add(option);
 	}
 
 }
@@ -67,13 +68,13 @@ function updateEventSetSelect (eventsetselectedval) {
 //variable to the event selection bar
 var selecteventset = document.getElementById("selecteventset");
 var index;
-for (var i = selecteventset.options.length - 1; i >= 0; i--)
+for (var i = $("#selecteventset").options.length - 1; i >= 0; i--)
 	{
-	if ( selecteventset[i].value == eventsetselectedval)
+	if ( $("#selecteventset")[i].value == eventsetselectedval)
 		{
 		index = i;
 		break;
 		}
 	}
-selecteventset.selectedIndex = index;
+$("#selecteventset").selectedIndex = index;
 }
