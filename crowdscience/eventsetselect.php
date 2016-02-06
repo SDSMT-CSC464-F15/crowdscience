@@ -4,13 +4,16 @@
 	
 	require 'config.php';
 	
-	if($db === false){
+	if($db === false)
+	{
 		return;
 	}
 	
 	$postdata = file_get_contents('php://input');
 	$request = json_decode($postdata , true);
+	
 	$action = $request["action"];
+
 	session_start();
 	
 	switch($action)
@@ -21,33 +24,27 @@
 			break;
 		//Refresh the Event Set Selection
 		case "refresh":
-			$response = refresheventsetselect();
+			$response = refreshEventSetSelect();
 			break;
-		//Change the selected event set
 		case "change":
-			$response = changeeventsetselectedval();
+			$response = changeEventSetSelect();
 			break;
 	}
 	echo json_encode($response);
 	
-function changeeventsetselectedval()
+function changeEventSetSelect()
 {
-	global $db,$response,$request;
-	$response["status"] = "0";
-	session_start();
-	
-	//put the new selection in
-	$_SESSION['eventsetselect'] = $request["eventsetselect"];
-	//add it to the response
-	$response["eventsetselecte"] = $request["eventsetselect"];
+global $db,$response,$request;
 
-	//collection to use
-	$eventsetsinfo = $db->eventsetsinfo;
-	//Get all event sets info
-	$cursor = $eventsetsinfo->find();
+$response["status"] = "0";
+session_start();
 
-	//get a list of collections and add to response
-	foreach ($cursor as $eventsetinfo) {
+//put the new selection in
+$_SESSION['eventsetselect'] = $request["eventsetselect"];
+
+$response["eventsetselect"] = $request["eventsetselect"];
+
+foreach ($cursor as $eventsetinfo) {
 		$response["eventsetsinfo"][] = $eventsetinfo;
 	}
 	return $response;
@@ -55,14 +52,15 @@ function changeeventsetselectedval()
 }
 
 
-function refresheventsetselect()
+function refreshEventSetSelect()
 {
 	global $db,$response,$request;
-	$response["status"] = "0";
-	session_start();
 	
+	$response["status"] = "0";
+	
+	session_start();
 	if(isset($_SESSION['eventsetselect'])) {
-		//get the previously selected event set
+	//get the previously selected event set
 		$response["eventsetselect"] = $_SESSION['eventsetselect'];
 	}
 

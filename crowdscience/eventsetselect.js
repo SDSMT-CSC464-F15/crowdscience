@@ -1,17 +1,22 @@
 $(function () {
+
+
 	refreshEventSetSelect();
 
-	$("#selecteventset").on('change', function() { changeEventSetSelect(); });
+$("#selecteventset").on('change', function() { changeEventSetSelect(); });
+
 
 });
 
 function changeEventSetSelect (argument) {
-	var selection = $("#selecteventset option:selected").val();
-	var request = {"action" : "change", "eventsetselect":selection}
+var eventsetselect = $("#selecteventset option:selected").val();
+
+var request = {"action" : "change", "eventsetselect":eventsetselect}
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0) {
-			updateEventSetSelect(data);
+			updateEventSetOptions(data.eventsetsinfo);
+			updateEventSetSelect(data.eventsetselect);
 			}
 	})
 	.fail(function(data) {
@@ -20,11 +25,13 @@ function changeEventSetSelect (argument) {
 }
 
 function refreshEventSetSelect (argument) {
-	var request = {"action" : "refresh"}
+
+var request = {"action" : "refresh"}
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0){ 
-			updateEventSetSelect(data);
+			updateEventSetOptions(data.eventsetsinfo);
+			updateEventSetSelect(data.eventsetselect);
 			}
 	})
 	.fail(function(data) {
@@ -32,14 +39,17 @@ function refreshEventSetSelect (argument) {
 	})
 }
 
-function updateEventSetSelect (data) {
-	//empty the options
-	alert(data.eventsetselect);
-	$("#selecteventset").empty();
-	//refill it
-	for (var i = data.eventsetsinfo.length - 1; i >= 0; i--) {
-		$("#selecteventset").append('<option value=\"'+ data.eventsetsinfo[i].id +'\">'+data.eventsetsinfo[i].name+'</option>');
+function updateEventSetOptions (eventsetsinfo)
+{
+$("#selecteventset").empty();
+//refill it
+for (var i = eventsetsinfo.length - 1; i >= 0; i--)
+	{
+	$("#selecteventset").append('<option value=\"'+ eventsetsinfo[i].id +'\">'+eventsetsinfo[i].name+'</option>');
 	}
-	//change selected val to saved session selection
-	$("#selecteventset").val(data.eventsetselect);
+}
+
+function updateEventSetSelect (eventsetselectedval) {
+
+$("#selecteventset").val(eventsetselectedval);
 }
