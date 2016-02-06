@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+alert('Got Bugs? I do!');
 	refreshEventSetSelect();
 
 //$("#selecteventset").on('change', function() { changeEventSetSelect(); });
