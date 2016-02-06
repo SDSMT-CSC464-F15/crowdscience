@@ -35,7 +35,7 @@ var request = {"action" : "refresh"}
 			//updateEventSetSelect(data.eventsetselect);
 	})
 	.fail(function(data) {
-		alert(data.status)
+		alert(data.status+' Got Bugs? PHP sure does!')
 	})
 }
 
