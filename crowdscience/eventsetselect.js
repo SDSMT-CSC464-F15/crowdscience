@@ -12,9 +12,9 @@ $("#selecteventset").on('change', function() { changeEventSetSelect(); });
 
 function changeEventSetSelect (argument) {
 //go to the php, do the db
-var collection = document.getElementById("selecteventset")[document.getElementById("selecteventset").selectedIndex].value;
+//var collection = document.getElementById("selecteventset")[document.getElementById("selecteventset").selectedIndex].value;
 
-var request = {"action" : "change", "eventsetselect" : collection }
+var request = {"action" : "change"}
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		//if (data.status == 0) 
@@ -59,7 +59,7 @@ $("#selecteventset").empty();
 for (var i = eventsetsinfo.length - 1; i >= 0; i--)
 	{
 	
-	$("#selecteventset").append('<option value=\"'+ eventsetsinfo[i].id +'\">'eventsetsinfo[i].name'</option>');
+	$("#selecteventset").add('<option value=\"'+ eventsetsinfo[i].id +'\">'eventsetsinfo[i].name'</option>');
 	
 	
 	//var option = document.createElement("option");
