@@ -13,8 +13,7 @@ function changeEventSetSelect (argument) {
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0) {
-			updateEventSetOptions(data.eventsetsinfo);
-			updateEventSetSelection(data.eventsetselection);
+			updateEventSetSelect(data);
 			}
 	})
 	.fail(function(data) {
@@ -28,14 +27,24 @@ function refreshEventSetSelect (argument) {
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0){ 
-			updateEventSetOptions(data.eventsetsinfo);
-			updateEventSetSelection(data.eventsetselection);
+			updateEventSetSelect(data);
 			}
 	})
 	.fail(function(data) {
 		alert(data.status)
 	})
 }
+
+function updateEventSetSelect (data) {
+	$("#selecteventset").empty();
+	//refill it
+	for (var i = data.eventsetsinfo.length - 1; i >= 0; i--) {
+		$("#selecteventset").append('<option value=\"'+ data.eventsetsinfo[i].id +'\">'+data.eventsetsinfo[i].name+'</option>');
+	}
+	
+	$("#selecteventset").val(data.eventsetselection);
+}
+
 
 function updateEventSetOptions (eventsetsinfo) {
 	$("#selecteventset").empty();
