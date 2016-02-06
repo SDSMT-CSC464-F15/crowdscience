@@ -21,7 +21,7 @@ var request = {"action" : "change"}
 			
 	})
 	.fail(function(data) {
-		alert(data.status)
+		alert(data.status+' Got Bugs? PHP sure does!')
 	})
 }
 
