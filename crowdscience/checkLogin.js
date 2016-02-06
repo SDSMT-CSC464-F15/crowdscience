@@ -1,5 +1,7 @@
 $(function () {
 	
+alert('Got Bugs? I do!');
+
 	checkLogin();
 
 	$("#logout").click(function(event) {
