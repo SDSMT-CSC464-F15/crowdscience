@@ -6,7 +6,8 @@ $(function () {
 });
 
 function changeEventSetSelect (argument) {
-	var request = {"action" : "change", "eventsetselect":$("#selecteventset option:selected").val()}
+	var selection = $("#selecteventset option:selected").val();
+	var request = {"action" : "change", "eventsetselect":selection}
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0) {
@@ -33,7 +34,7 @@ function refreshEventSetSelect (argument) {
 
 function updateEventSetSelect (data) {
 	//empty the options
-	alert(data);
+	alert(data.eventsetselectedval);
 	$("#selecteventset").empty();
 	//refill it
 	for (var i = data.eventsetsinfo.length - 1; i >= 0; i--) {

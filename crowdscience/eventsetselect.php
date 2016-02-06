@@ -21,7 +21,7 @@
 			break;
 		//Refresh the Event Set Selection
 		case "refresh":
-			$response = refresheventsetselectedval();
+			$response = refresheventsetselect();
 			break;
 		//Change the selected event set
 		case "change":
@@ -55,7 +55,7 @@ function changeeventsetselectedval()
 }
 
 
-function refresheventsetselectedval()
+function refresheventsetselect()
 {
 	global $db,$response,$request;
 	$response["status"] = "0";
