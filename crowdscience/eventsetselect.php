@@ -56,12 +56,12 @@ function refreshEventSetSelect()
 {
 	global $db,$response,$request;
 	
-	session_start();
-	if(isset($_SESSION['eventsetselect'])) {
-		$response["status"] = "0";
-		//get the previously selected event set
-		$response["eventsetselect"] = $_SESSION['eventsetselect'];
-	}
+	//session_start();
+	//if(isset($_SESSION['eventsetselect'])) {
+	//	$response["status"] = "0";
+	//	//get the previously selected event set
+	//	$response["eventsetselect"] = $_SESSION['eventsetselect'];
+	//}
 
 	//collection to use
 	$eventsetsinfo = $db->eventsetsinfo;
@@ -70,7 +70,7 @@ function refreshEventSetSelect()
 	
 	//get a list of collections and add to response - need name and id
 	foreach ($cursor as $eventsetinfo) {
-		$response["eventsetsinfo"][] = $eventsetinfo;
+		$response[] = $eventsetinfo;
 	}
 return $response;
 }
