@@ -4,16 +4,13 @@
 	
 	require 'config.php';
 	
-	if($db === false)
-	{
+	if($db === false){
 		return;
 	}
 	
 	$postdata = file_get_contents('php://input');
 	$request = json_decode($postdata , true);
-	
 	$action = $request["action"];
-
 	session_start();
 	
 	switch($action)
@@ -24,32 +21,32 @@
 			break;
 		//Refresh the Event Set Selection
 		case "refresh":
-			$response = refreshEventSetSelect();
+			$response = refresheventsetselectedval();
 			break;
+		//Change the selected event set
 		case "change":
-			$response = changeEventSetSelect();
+			$response = changeeventsetselectedval();
 			break;
 	}
 	echo json_encode($response);
 	
-function changeEventSetSelect()
+function changeeventsetselectedval()
 {
-global $db,$response,$request;
+	global $db,$response,$request;
+	$response["status"] = "0";
 
-$response["status"] = "0";
-session_start();
+	//put the new selection in
+	$_SESSION['eventsetselectedval'] = $request["eventsetselectedval"];
+	//add it to the response
+	$response["eventsetselectedval"] = $request["eventsetselectedval"];
 
-//put the new selection in
-$_SESSION['eventsetselect'] = $request["eventsetselect"];
-
-$response["eventsetselect"] = $request["eventsetselect"];
-
-//collection to use
+	//collection to use
 	$eventsetsinfo = $db->eventsetsinfo;
 	//Get all event sets info
 	$cursor = $eventsetsinfo->find();
 
-foreach ($cursor as $eventsetinfo) {
+	//get a list of collections and add to response
+	foreach ($cursor as $eventsetinfo) {
 		$response["eventsetsinfo"][] = $eventsetinfo;
 	}
 	return $response;
@@ -57,16 +54,14 @@ foreach ($cursor as $eventsetinfo) {
 }
 
 
-function refreshEventSetSelect()
+function refresheventsetselectedval()
 {
 	global $db,$response,$request;
-	
 	$response["status"] = "0";
 	
-	session_start();
-	if(isset($_SESSION['eventsetselect'])) {
-	//get the previously selected event set
-		$response["eventsetselect"] = $_SESSION['eventsetselect'];
+	if(isset($_SESSION['eventsetselectedval'])) {
+		//get the previously selected event set
+		$response["eventsetselectedval"] = $_SESSION['eventsetselectedval'];
 	}
 
 	//collection to use

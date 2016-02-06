@@ -1,69 +1,43 @@
 $(function () {
-
-alert('Got Bugs? I don\'t anymore, apparently!!');
 	refreshEventSetSelect();
 
-$("#selecteventset").on('change', function() { changeEventSetSelect(); });
-
+	$("#selecteventset").on('change', function() { changeEventSetSelect(); });
 
 });
 
 function changeEventSetSelect (argument) {
-//go to the php, do the db
-//var collection = document.getElementById("selecteventset")[document.getElementById("selecteventset").selectedIndex].value;
-var eventsetselect = $("#selecteventset option:selected").val();
-alert(eventsetselect);
-var request = {"action" : "change", "eventsetselect":eventsetselect}
+	var request = {"action" : "change", "eventsetselect":$("#selecteventset option:selected").val()}
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0) {
-			updateEventSetOptions(data.eventsetsinfo);
-			updateEventSetSelect(data.eventsetselect);
+			updateEventSetSelect(data);
 			}
-			else alert('Got Bugs? PHP sure does! Status wasn\'t 0!');
 	})
 	.fail(function(data) {
-		alert(data.status+' Got Bugs? PHP sure does!')
+		alert(data.status)
 	})
 }
 
 function refreshEventSetSelect (argument) {
-
-var request = {"action" : "refresh"}
+	var request = {"action" : "refresh"}
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0){ 
-			updateEventSetOptions(data.eventsetsinfo);
-			updateEventSetSelect(data.eventsetselect);
+			updateEventSetSelect(data);
 			}
-			else alert('Got Bugs? PHP sure does! Status wasn\'t 0!');
-			
 	})
 	.fail(function(data) {
-		alert(data.status+' Got Bugs? PHP sure does!')
+		alert(data.status)
 	})
 }
 
-function updateEventSetOptions (eventsetsinfo)
-{
-$("#selecteventset").empty();
-//refill it
-for (var i = eventsetsinfo.length - 1; i >= 0; i--)
-	{
-	$("#selecteventset").append('<option value=\"'+ eventsetsinfo[i].id +'\">'+eventsetsinfo[i].name+'</option>');
+function updateEventSetSelect (data) {
+	//empty the options
+	$("#selecteventset").empty();
+	//refill it
+	for (var i = data.eventsetsinfo.length - 1; i >= 0; i--) {
+		$("#selecteventset").append('<option value=\"'+ data.eventsetsinfo[i].id +'\">'+data.eventsetsinfo[i].name+'</option>');
 	}
-}
-
-function updateEventSetSelect (eventsetselectedval) {
-
-/*var index;
-for (var i = $("#selecteventset").length - 1; i >= 0; i--)
-	{
-	if ( $("#selecteventset")[i].value == eventsetselectedval)
-		{
-		index = i;
-		break;
-		}
-	}*/
-$("#selecteventset").val(eventsetselectedval);
+	//change selected val to saved session selection
+	$("#selecteventset").val(data.eventsetselectedval);
 }
