@@ -30,9 +30,12 @@ function refreshEventSetSelect (argument) {
 var request = {"action" : "refresh"}
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
-		//if (data.status == 0) 
+		if (data.status == 0){ 
 			updateEventSetOptions(data);
 			//updateEventSetSelect(data.eventsetselect);
+			}
+			else alert('Got Bugs? PHP sure does! Status wasn\'t 0!');
+			
 	})
 	.fail(function(data) {
 		alert(data.status+' Got Bugs? PHP sure does!')
