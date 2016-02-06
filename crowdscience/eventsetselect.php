@@ -34,7 +34,8 @@ function changeeventsetselectedval()
 {
 	global $db,$response,$request;
 	$response["status"] = "0";
-
+	session_start();
+	
 	//put the new selection in
 	$_SESSION['eventsetselectedval'] = $request["eventsetselectedval"];
 	//add it to the response
@@ -58,6 +59,7 @@ function refresheventsetselectedval()
 {
 	global $db,$response,$request;
 	$response["status"] = "0";
+	session_start();
 	
 	if(isset($_SESSION['eventsetselectedval'])) {
 		//get the previously selected event set
