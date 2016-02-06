@@ -4,6 +4,14 @@ $(function () {
 //things to do when page loads
 //populate event select box
 //check if already have selected event
+var request = {"action" : "refresh"}
+	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
+	.done(function(data) {
+			updateEventSetOptions(data);
+	})
+	.fail(function(data) {
+		alert(data.status)
+	})
 
 //$("#selecteventset").on('change', function() { changeEventSetSelect(); });
 
