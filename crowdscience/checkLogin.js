@@ -12,6 +12,9 @@ $(function () {
 	   	
 
     });
+	
+	refreshEventSetSelect();
+	
 });
 
 function checkLogin (argument) {
@@ -33,4 +36,27 @@ function updateUserStatus (username) {
 	$("#user-area").replaceWith(user);
 	$("#register").hide();
 	$("#logout").show();
+}
+
+function refreshEventSetSelect (argument) {
+
+
+var request = {"action" : "refresh"}
+	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
+	.done(function(data) {
+			updateEventSetOptions(data);})
+	.fail(function(data) {
+		alert(data.status)
+	})
+}
+
+function updateEventSetOptions (eventsetsinfo)
+{
+$("#selecteventset").empty();
+
+for (var i = eventsetsinfo.length - 1; i >= 0; i--)
+	{
+	$("#selecteventset").add('<option value=\"'+ eventsetsinfo[i].id +'\">'eventsetsinfo[i].name'</option>');
+	}
+
 }
