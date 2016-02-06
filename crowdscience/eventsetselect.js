@@ -1,6 +1,6 @@
-$(document).ready(function(){
+$(function () {
 
-alert('Got Bugs? I do!');
+alert('Got Bugs? I don\'t anymore, apparently!!');
 	refreshEventSetSelect();
 
 //$("#selecteventset").on('change', function() { changeEventSetSelect(); });
