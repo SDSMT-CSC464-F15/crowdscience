@@ -66,7 +66,7 @@ function refreshEventSetSelect()
 	//collection to use
 	$eventsetsinfo = $db->eventsetsinfo;
 	//Get all event sets info
-	$cursor = $collection->find();
+	$cursor = $eventsetsinfo->find();
 	
 	//get a list of collections and add to response - need name and id
 	foreach ($cursor as $eventsetinfo) {

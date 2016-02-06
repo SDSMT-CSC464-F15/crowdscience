@@ -17,10 +17,10 @@ var collection = document.getElementById("selecteventset")[document.getElementBy
 var request = {"action" : "change", "eventsetselect" : collection }
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
-		if (data.status == 0) 
-			{updateEventSetOptions(data);
+		//if (data.status == 0) 
+			updateEventSetOptions(data);
 			//updateEventSetSelect(data.eventsetselect);
-			}
+			
 	})
 	.fail(function(data) {
 		alert(data.status)
