@@ -1,5 +1,6 @@
 $(function () {
 
+//alert('Got Bugs? I don\'t anymore, apparently!!');
 	refreshEventSetSelect();
 
 $("#selecteventset").on('change', function() { changeEventSetSelect(); });
@@ -10,7 +11,7 @@ $("#selecteventset").on('change', function() { changeEventSetSelect(); });
 function changeEventSetSelect (argument) {
 //go to the php, do the db
 //var collection = document.getElementById("selecteventset")[document.getElementById("selecteventset").selectedIndex].value;
-var eventsetselect = $("#selecteventset")[$("#selecteventset").selectedIndex].value;
+var eventsetselect = $("#selecteventset option:selected").val();
 else alert(eventsetselect);
 var request = {"action" : "change", "eventsetselect":eventsetselect}
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
