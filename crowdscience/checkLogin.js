@@ -1,6 +1,4 @@
 $(function () {
-	
-alert('Got Bugs? I do! Why does CheckLogin.js work when eventsetselect.js doesn\'t??');
 
 	checkLogin();
 
