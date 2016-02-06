@@ -34,7 +34,7 @@ function refreshEventSetSelect (argument) {
 
 function updateEventSetSelect (data) {
 	//empty the options
-	alert(data.eventsetselectedval);
+	alert(data.eventsetselect);
 	$("#selecteventset").empty();
 	//refill it
 	for (var i = data.eventsetsinfo.length - 1; i >= 0; i--) {
