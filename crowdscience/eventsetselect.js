@@ -54,7 +54,7 @@ $("#selecteventset").empty();
 for (var i = eventsetsinfo.length - 1; i >= 0; i--)
 	{
 	
-	$("#selecteventset").add('<option value=\"'+ eventsetsinfo[i].id +'\">'+eventsetsinfo[i].name+'</option>');
+	$("#selecteventset").append('<option value=\"'+ eventsetsinfo[i].id +'\">'+eventsetsinfo[i].name+'</option>');
 	
 	
 	//var option = document.createElement("option");
