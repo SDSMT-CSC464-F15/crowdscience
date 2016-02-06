@@ -26,7 +26,7 @@ var request = {"action" : "change", "eventsetselect" : collection }
 	})
 }
 
-function refreshEventSetSelect (argument) {
+function refreshEventSetSelect () {
 //go to the php, do the db
 
 

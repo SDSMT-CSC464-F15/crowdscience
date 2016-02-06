@@ -25,9 +25,11 @@
 		//Refresh the Event Set Selection
 		case "refresh":
 			$response = refreshEventSetSelect();
+			echo json_encode($response);
 			break;
 		case "change":
 			$response = changeEventSetSelect();
+			echo json_encode($response);
 			break;
 	}
 	echo json_encode($response);
