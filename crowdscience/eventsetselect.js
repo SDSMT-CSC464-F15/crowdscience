@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function(){
 	$.notify("Hello World");
 	refreshEventSetSelect();
 //things to do when page loads
