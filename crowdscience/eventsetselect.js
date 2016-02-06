@@ -1,17 +1,6 @@
 $(document).ready(function(){
-	$.notify("Hello World");
+
 	refreshEventSetSelect();
-//things to do when page loads
-//populate event select box
-//check if already have selected event
-var request = {"action" : "refresh"}
-	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
-	.done(function(data) {
-			updateEventSetOptions(data);
-	})
-	.fail(function(data) {
-		alert(data.status)
-	})
 
 //$("#selecteventset").on('change', function() { changeEventSetSelect(); });
 
@@ -36,9 +25,6 @@ var request = {"action" : "change"}
 }
 
 function refreshEventSetSelect (argument) {
-//go to the php, do the db
-
-
 
 var request = {"action" : "refresh"}
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
@@ -54,9 +40,6 @@ var request = {"action" : "refresh"}
 
 function updateEventSetOptions (eventsetsinfo)
 {
-//variable to the event selection bar
-
-//clear the event set options
 //for (var i = $("#selecteventset").options.length - 1; i >= 0; i--)
 //	{
 //	$("#selecteventset").remove(i);
