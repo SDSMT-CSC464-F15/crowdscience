@@ -40,9 +40,9 @@ $response["status"] = "0";
 session_start();
 
 //put the new selection in
-$_SESSION['eventsetselect'] = $request["eventsetselect"];
+$_SESSION['eventsetselection'] = $request["eventsetselection"];
 
-$response["eventsetselect"] = $request["eventsetselect"];
+$response["eventsetselection"] = $request["eventsetselection"];
 
 //collection to use
 	$eventsetsinfo = $db->eventsetsinfo;
@@ -64,9 +64,9 @@ function refreshEventSetSelect()
 	$response["status"] = "0";
 	
 	session_start();
-	if(isset($_SESSION['eventsetselect'])) {
+	if(isset($_SESSION['eventsetselection'])) {
 	//get the previously selected event set
-		$response["eventsetselect"] = $_SESSION['eventsetselect'];
+		$response["eventsetselection"] = $_SESSION['eventsetselection'];
 	}
 
 	//collection to use

@@ -7,14 +7,14 @@ $(function () {
 
 function changeEventSetSelect (argument) {
 
-	var eventsetselect = $("#selecteventset option:selected").val();
-	var request = {"action" : "change", "eventsetselect":eventsetselect}
+	var eventsetselection = $("#selecteventset option:selected").val();
+	var request = {"action" : "change", "eventsetselection":eventsetselection}
 	
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0) {
 			updateEventSetOptions(data.eventsetsinfo);
-			updateEventSetSelection(data.eventsetselect);
+			updateEventSetSelection(data.eventsetselection);
 			}
 	})
 	.fail(function(data) {
@@ -29,7 +29,7 @@ function refreshEventSetSelect (argument) {
 	.done(function(data) {
 		if (data.status == 0){ 
 			updateEventSetOptions(data.eventsetsinfo);
-			updateEventSetSelection(data.eventsetselect);
+			updateEventSetSelection(data.eventsetselection);
 			}
 	})
 	.fail(function(data) {
