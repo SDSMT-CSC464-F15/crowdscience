@@ -9,6 +9,7 @@ $("#selecteventset").on('change', function() { changeEventSetSelect(); });
 });
 
 function changeEventSetSelect (argument) {
+
 var eventsetselect = $("#selecteventset option:selected").val();
 
 var request = {"action" : "change", "eventsetselect":eventsetselect}
