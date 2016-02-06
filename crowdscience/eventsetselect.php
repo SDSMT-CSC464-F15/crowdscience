@@ -56,7 +56,7 @@ function refreshEventSetSelect()
 	
 	//session_start();
 	//if(isset($_SESSION['eventsetselect'])) {
-	//	$response["status"] = "0";
+		$response["status"] = "0";
 	//	//get the previously selected event set
 	//	$response["eventsetselect"] = $_SESSION['eventsetselect'];
 	//}
@@ -68,7 +68,7 @@ function refreshEventSetSelect()
 	
 	//get a list of collections and add to response - need name and id
 	foreach ($cursor as $eventsetinfo) {
-		$response[] = $eventsetinfo;
+		$response["eventsetsinfo"][] = $eventsetinfo;
 	}
 return $response;
 }
