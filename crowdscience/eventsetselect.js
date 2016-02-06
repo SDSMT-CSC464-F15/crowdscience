@@ -5,7 +5,7 @@ $(function () {
 //populate event select box
 //check if already have selected event
 
-$("#selecteventset").on('change', function() { changeEventSetSelect(); });
+//$("#selecteventset").on('change', function() { changeEventSetSelect(); });
 
 
 });
@@ -27,7 +27,7 @@ var request = {"action" : "change"}
 	})
 }
 
-function refreshEventSetSelect () {
+function refreshEventSetSelect (argument) {
 //go to the php, do the db
 
 
