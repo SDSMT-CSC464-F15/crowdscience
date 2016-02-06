@@ -1,5 +1,5 @@
 $(function () {
-	$("#bugs").add("IT bugs!!");
+	$.notify("Hello World");
 	refreshEventSetSelect();
 //things to do when page loads
 //populate event select box
