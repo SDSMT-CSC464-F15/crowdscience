@@ -5,7 +5,7 @@ $(function () {
 //populate event select box
 //check if already have selected event
 
-$("#selecteventset").on('change', function() { changeEventSetSelect (); });
+$("#selecteventset").on('change', function() { changeEventSetSelect(); });
 
 
 });
@@ -35,9 +35,9 @@ function refreshEventSetSelect () {
 var request = {"action" : "refresh"}
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
-		if (data.status == 0) 
-			{updateEventSetOptions(data.eventsetsinfo);
-			updateEventSetSelect(data.eventsetselect);}
+		//if (data.status == 0) 
+			updateEventSetOptions(data);
+			//updateEventSetSelect(data.eventsetselect);
 	})
 	.fail(function(data) {
 		alert(data.status)
