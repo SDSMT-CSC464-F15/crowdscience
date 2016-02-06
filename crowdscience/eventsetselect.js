@@ -41,5 +41,5 @@ function updateEventSetSelect (data) {
 		$("#selecteventset").append('<option value=\"'+ data.eventsetsinfo[i].id +'\">'+data.eventsetsinfo[i].name+'</option>');
 	}
 	//change selected val to saved session selection
-	$("#selecteventset").val(data.eventsetselectedval);
+	$("#selecteventset").val(data.eventsetselect);
 }
