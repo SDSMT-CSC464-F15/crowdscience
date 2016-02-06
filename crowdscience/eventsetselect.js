@@ -56,7 +56,7 @@ for (var i = eventsetsinfo.length - 1; i >= 0; i--)
 
 function updateEventSetSelect (eventsetselectedval) {
 
-var index;
+/*var index;
 for (var i = $("#selecteventset").length - 1; i >= 0; i--)
 	{
 	if ( $("#selecteventset")[i].value == eventsetselectedval)
@@ -64,6 +64,6 @@ for (var i = $("#selecteventset").length - 1; i >= 0; i--)
 		index = i;
 		break;
 		}
-	}
-$("#selecteventset").selectedIndex = index;
+	}*/
+$("#selecteventset").val(eventsetselectedval);
 }

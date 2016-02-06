@@ -42,6 +42,13 @@ session_start();
 //put the new selection in
 $_SESSION['eventsetselect'] = $request["eventsetselect"];
 
+$response["eventsetselect"] = $request["eventsetselect"];
+
+//collection to use
+	$eventsetsinfo = $db->eventsetsinfo;
+	//Get all event sets info
+	$cursor = $eventsetsinfo->find();
+
 foreach ($cursor as $eventsetinfo) {
 		$response["eventsetsinfo"][] = $eventsetinfo;
 	}
