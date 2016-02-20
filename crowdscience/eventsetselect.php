@@ -47,7 +47,7 @@ $eventsetsinfo = $db->eventsetsinfo;
 
 $details = $eventsetsinfo->findOne( array('id' => $eventset), array('details', '_id' => 0 ) );
 
-$response["details"] = $details;
+$response["details"][] = $details;
 return $response;
 }
 	
