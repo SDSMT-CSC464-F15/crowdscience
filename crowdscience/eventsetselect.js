@@ -62,7 +62,7 @@ $("#ev_table_head").empty();
 		
 		alert(data.details.length);
 		for (var i = data.details.length - 1; i >= 0; i--) {
-		ev_head_text = ev_head_text + "<th>" + data.details[i]+ "</th>";
+		ev_head_text = ev_head_text + "<th>" + data.details[i].name + "</th>";
 		}
 		ev_head_text = ev_head_text + "</tr>";
 
