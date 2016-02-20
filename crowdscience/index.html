@@ -33,10 +33,14 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></ul>
-      <div class="nav navbar-nav navbar-right"><ul  class="nav navbar-nav navbar-right">
+		
+      <div class="nav navbar-nav navbar-form form-control"><ul  class="nav navbar-nav navbar-form form-control">		
+	  <li>Event Set: <select id="selecteventset">
+				<option value="1">Please Select an Event Set</option></select></li></ul></div>
+		
+      <div class="nav navbar-nav navbar-right"><ul  class="nav navbar-nav navbar-right">		
         <li><a id="user-area" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 		  <li><a id="register" href="register.html"><span class="glyphicon glyphicon-edit"></span> Register</a></li>
-		  <li><a id="admin" href="admin.html"><span class="glyphicon glyphicon-wrench"></span> Admin</a></li>
 		  <li><a id="report" href="login.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>        
 		  <li><p class="navbar-text pull-right">
           <a href="#" id="logout" style="display: none;" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
@@ -51,12 +55,7 @@
 	
 <div class="row"> 
 	<div class="col-md-4">
-		<div class="well well-lg"><h3>Select Event Set</h3>
-		<select id="selecteventset" class="form-control">
-				<option value="">Please Select an Event Set</option>
-				
-			</select>
-		</div>
+
 		<div class="well well-lg"><h3 id="bugs">Event Details Here</h3>
 		Lions! Tigers! Bears! Oh My!
 		</div>

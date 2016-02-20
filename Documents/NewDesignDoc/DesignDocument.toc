@@ -1,13 +1,14 @@
 \contentsline {chapter}{Title}{i}{Doc-Start}
-\contentsline {chapter}{Contents}{v}{chapter*.1}
+\contentsline {chapter}{Contents}{vi}{chapter*.1}
 \contentsline {chapter}{List of Figures}{vii}{chapter*.2}
 \contentsline {chapter}{List of Tables}{ix}{chapter*.3}
-\contentsline {chapter}{Overview Statements}{xi}{chapter*.4}
-\contentsline {section}{\numberline {0.1}Mission Statement}{xi}{section.0.1}
-\contentsline {subsection}{\numberline {0.1.1}Product Description}{xi}{subsection.0.1.1}
-\contentsline {subsection}{\numberline {0.1.2}Goals}{xi}{subsection.0.1.2}
-\contentsline {section}{\numberline {0.2}Elevator Pitch}{xi}{section.0.2}
-\contentsline {chapter}{Document Preparation and Updates}{xiii}{chapter*.5}
+\contentsline {chapter}{List of Algorithms}{xi}{chapter*.4}
+\contentsline {chapter}{Overview Statements}{xiii}{chapter*.5}
+\contentsline {section}{\numberline {0.1}Mission Statement}{xiii}{section.0.1}
+\contentsline {subsection}{\numberline {0.1.1}Product Description}{xiii}{subsection.0.1.1}
+\contentsline {subsection}{\numberline {0.1.2}Goals}{xiii}{subsection.0.1.2}
+\contentsline {section}{\numberline {0.2}Elevator Pitch}{xiii}{section.0.2}
+\contentsline {chapter}{Document Preparation and Updates}{xv}{chapter*.6}
 \contentsline {chapter}{\numberline {1}Overview and concept of operations}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Team Members and Team Name}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Client}{1}{section.1.2}
@@ -74,7 +75,55 @@
 \contentsline {subsection}{\numberline {4.2.3}Administrator editing of existing events}{13}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Administrator customization of event sets}{14}{subsection.4.2.4}
 \contentsline {section}{\numberline {4.3}Project Overview}{15}{section.4.3}
-\contentsline {chapter}{Software Agreement}{SA-1}{chapter.5}
+\contentsline {chapter}{\numberline {5}Design and Implementation}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}Architecture and System Design}{17}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Design Selection}{17}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Data Structures and Algorithms}{17}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Data Flow}{17}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Communications}{17}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Classes}{17}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}UML}{17}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.7}GUI}{17}{subsection.5.1.7}
+\contentsline {subsection}{\numberline {5.1.8}MVVM, etc}{17}{subsection.5.1.8}
+\contentsline {section}{\numberline {5.2}Major Component \#1 }{17}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Technologies Used}{17}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Component Overview}{17}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Phase Overview}{18}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4} Architecture Diagram}{18}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Data Flow Diagram}{18}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Design Details}{18}{subsection.5.2.6}
+\contentsline {chapter}{\numberline {6}System and Unit Testing}{19}{chapter.6}
+\contentsline {section}{\numberline {6.1}Overview}{19}{section.6.1}
+\contentsline {section}{\numberline {6.2}Dependencies}{19}{section.6.2}
+\contentsline {section}{\numberline {6.3}Test Setup and Execution}{19}{section.6.3}
+\contentsline {section}{\numberline {6.4}System Testing}{19}{section.6.4}
+\contentsline {section}{\numberline {6.5}System Integration Analysis}{19}{section.6.5}
+\contentsline {section}{\numberline {6.6}Risk Analysis}{19}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Risk Mitigation}{19}{subsection.6.6.1}
+\contentsline {section}{\numberline {6.7}Successes, Issues and Problems}{19}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Changes to the Backlog}{19}{subsection.6.7.1}
+\contentsline {chapter}{\numberline {7}Prototypes}{21}{chapter.7}
+\contentsline {section}{\numberline {7.1}Sprint 1 Prototype}{21}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Deliverable}{21}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Backlog}{21}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Success/Fail}{21}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Sprint 2 Prototype}{21}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Deliverable}{21}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Backlog}{21}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Success/Fail}{21}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Sprint 3 Prototype}{22}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Deliverable}{22}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Backlog}{22}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Success/Fail}{22}{subsection.7.3.3}
+\contentsline {section}{\numberline {7.4}Sprint 4 Prototype}{22}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Deliverable}{22}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Backlog}{23}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Success/Fail}{23}{subsection.7.4.3}
+\contentsline {section}{\numberline {7.5}Sprint 5 Prototype}{23}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Deliverable}{23}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Backlog}{23}{subsection.7.5.2}
+\contentsline {subsection}{\numberline {7.5.3}Success/Fail}{23}{subsection.7.5.3}
+\contentsline {chapter}{Software Agreement}{SA-1}{chapter.8}
 \contentsline {chapter}{\numberline {A}Product Description}{A-1}{appendix.A}
 \contentsline {section}{\numberline {1}Project Title}{A-1}{section.A.1}
 \contentsline {section}{\numberline {2}Proposed/Advised by}{A-1}{section.A.2}
@@ -113,8 +162,16 @@
 \contentsline {subsection}{\numberline {3.4}Client Communication}{B-4}{subsection.B.3.4}
 \contentsline {subsection}{\numberline {3.5}Sprint 4 Backlog}{B-4}{subsection.B.3.5}
 \contentsline {subsection}{\numberline {3.6}Sprint 3 Issues}{B-4}{subsection.B.3.6}
-\contentsline {section}{\numberline {4}Sprint Report ...}{B-4}{section.B.4}
+\contentsline {section}{\numberline {4}Sprint Report \#4}{B-4}{section.B.4}
+\contentsline {subsection}{\numberline {4.1}Backlog Completed}{B-4}{subsection.B.4.1}
+\contentsline {subsection}{\numberline {4.2}Prototype Features}{B-4}{subsection.B.4.2}
+\contentsline {subsection}{\numberline {4.3}Client Communication}{B-4}{subsection.B.4.3}
+\contentsline {subsection}{\numberline {4.4}Revised Deliverables}{B-5}{subsection.B.4.4}
+\contentsline {subsection}{\numberline {4.5}Sprint 5 Backlog}{B-5}{subsection.B.4.5}
+\contentsline {subsection}{\numberline {4.6}Sprint 6 Backlog}{B-5}{subsection.B.4.6}
+\contentsline {subsection}{\numberline {4.7}Sprint 4 Successes/Issues}{B-5}{subsection.B.4.7}
 \contentsline {chapter}{\numberline {C}Industrial Experience and Resumes}{C-1}{appendix.C}
 \contentsline {section}{\numberline {1}ABET: Industrial Experience Reports}{C-1}{section.C.1}
 \contentsline {subsection}{\numberline {1.1}Hannah Aker}{C-1}{subsection.C.1.1}
 \contentsline {section}{\numberline {2}Resumes}{C-1}{section.C.2}
+\contentsline {chapter}{\numberline {D}Acknowledgment}{D-1}{appendix.D}

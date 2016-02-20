@@ -1,17 +1,15 @@
 <?php
-
 	header('content-type: text/json; charset=utf-8');	
 	
+	//connect to DB
 	require 'config.php';
-	
-	if($db === false)
-	{
+	if($db === false){
 		return;
 	}
 	
+	//get request info
 	$postdata = file_get_contents('php://input');
 	$request = json_decode($postdata , true);
-	
 	$action = $request["action"];
 
 	session_start();
@@ -22,10 +20,11 @@
 			$response["status"] = 1; 
 			$response["messages"][] = "No action"; 
 			break;
-		//Refresh the Event Set Selection
+		//Refresh the Event Set Options
 		case "refresh":
 			$response = refreshEventSetSelect();
 			break;
+		//Change the Event Set Selection
 		case "change":
 			$response = changeEventSetSelect();
 			break;
@@ -34,38 +33,33 @@
 	
 function changeEventSetSelect()
 {
-global $db,$response,$request;
+	global $db,$response,$request;
+	$response["status"] = "0";
 
-$response["status"] = "0";
-session_start();
+	//put the new selection in session and response
+	$_SESSION['eventsetselection'] = $request["eventsetselection"];
+	$response["eventsetselection"] = $request["eventsetselection"];
 
-//put the new selection in
-$_SESSION['eventsetselection'] = $request["eventsetselection"];
-
-$response["eventsetselection"] = $request["eventsetselection"];
-
-//collection to use
+	//collection to use
 	$eventsetsinfo = $db->eventsetsinfo;
 	//Get all event sets info
 	$cursor = $eventsetsinfo->find();
 
-foreach ($cursor as $eventsetinfo) {
+	//get a list of collections and add to response
+	foreach ($cursor as $eventsetinfo) {
 		$response["eventsetsinfo"][] = $eventsetinfo;
 	}
 	return $response;
-
 }
 
 
 function refreshEventSetSelect()
 {
-	global $db,$response,$request;
-	
+	global $db,$response,$request;	
 	$response["status"] = "0";
 	
-	session_start();
-	if(isset($_SESSION['eventsetselection'])) {
 	//get the previously selected event set
+	if(isset($_SESSION['eventsetselection'])) {
 		$response["eventsetselection"] = $_SESSION['eventsetselection'];
 	}
 
@@ -74,11 +68,11 @@ function refreshEventSetSelect()
 	//Get all event sets info
 	$cursor = $eventsetsinfo->find();
 	
-	//get a list of collections and add to response - need name and id
+	//get a list of collections and add to response
 	foreach ($cursor as $eventsetinfo) {
 		$response["eventsetsinfo"][] = $eventsetinfo;
 	}
-return $response;
+	return $response;
 }
 
 ?>

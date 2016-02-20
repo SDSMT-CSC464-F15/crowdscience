@@ -1,11 +1,13 @@
+//Things to do when the script is loaded
 $(function () {
 	refreshEventSetSelect();
-
+	//set what to do when the event set selection is changed
 	$("#selecteventset").on('change', function() { changeEventSetSelect(); });
 
 });
 
 function changeEventSetSelect (argument) {
+	//POST request to the PHP, PHP will query DB, and echo data back
 	var request = {"action" : "change", "eventsetselection":$("#selecteventset option:selected").val()}
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
@@ -19,7 +21,7 @@ function changeEventSetSelect (argument) {
 }
 
 function refreshEventSetSelect (argument) {
-
+	//POST request to the PHP, PHP will query DB, and echo data back
 	var request = {"action" : "refresh"}
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {

@@ -1,0 +1,70 @@
+
+C:\mongodb\bin>mongo.exe
+MongoDB shell version: 2.4.9
+connecting to: test
+> show dbs
+comedy  0.203125GB
+crowdsciencemapper      0.203125GB
+cwsusers        (empty)
+lcmapper        0.453125GB
+local   0.078125GB
+test    (empty)
+> use crowdsciencemapper
+switched to db crowdsciencemapper
+> load("db_user_init.js");
+true
+> db.user.find();
+{ "_id" : ObjectId("546e81372f32a09417000048"), "username" : "danhalloran", "ema
+il" : "drhalloran@gmail.com", "password" : "asdf", "score" : "0", "details" : {
+"lname" : "Halloran", "fname" : "Dan", "location" : "Rapid City, SD, USA", "role
+" : "Citizen" } }
+{ "_id" : ObjectId("552fea292f32a0a426000047"), "username" : "Ryan", "email" : "
+ryan@test.org", "password" : "hh", "score" : "0", "details" : { "lname" : "Test"
+, "fname" : "Ryan", "location" : "Rapid City, SD, USA", "role" : "Citizen" } }
+{ "_id" : ObjectId("5629c3362f32a0940e000029"), "username" : "haker", "email" :
+"hannah.aker@mines.sdsmt.edu", "password" : "password", "score" : "0", "details"
+ : { "lname" : "Aker", "fname" : "Hannah", "location" : "Okalhoma City, OK, USA"
+, "role" : "Citizen" } }
+> load("db_eventsetsinfo_init.js");
+true
+> db.eventsetsinfo.find();
+{ "_id" : ObjectId("56c7bcdb8f5810aace517124"), "id" : "wildflower", "name" : "W
+ildflower Sightings", "details" : [     {       "id" : "species",       "name" :
+ "Species",     "type" : "shorttext" },         {       "id" : "count",
+"name" : "Number of Flowers",   "type" : "number",      "restriction" : ">0" },
+        {       "id" : "description",   "name" : "Description",         "type" :
+ "longtext" },  {       "id" : "date",  "name" : "Date",        "type" : "date"
+} ] }
+{ "_id" : ObjectId("56c7bcdb8f5810aace517125"), "id" : "bird", "name" : "Bird Si
+ghtings", "details" : [         {       "id" : "species",       "name" : "Specie
+s",     "type" : "shorttext" },         {       "id" : "count",         "name" :
+ "Number of Birds",     "type" : "number",      "restriction" : ">0" },
+{       "id" : "description",   "name" : "Description",         "type" : "longte
+xt" },  {       "id" : "date",  "name" : "Date",        "type" : "date" } ] }
+{ "_id" : ObjectId("56c7bcdb8f5810aace517126"), "id" : "landscapechange", "name"
+ : "Landscape Changes", "details" : [   {       "id" : "nat_event_name",
+"name" : "Natural Event Name",  "type" : "shorttext" },         {       "id" : "
+category",      "name" : "Category",    "type" : "selection",   "options" : [
+{       "id" : "fire",  "name" : "Fire" },      {       "id" : "wind",  "name" :
+ "Wind Damage" },       {       "id" : "avalanche",     "name" : "Avalanche Dama
+ge" },  {       "id" : "timber",        "name" : "Thinning/Timber Harvest" },
+{       "id" : "insect",        "name" : "Insect Infestation" },        {
+"id" : "landslide",     "name" : "Landslide" },         {       "id" : "earthqua
+ke",    "name" : "Earthquake" },        {       "id" : "flooding",      "name" :
+ "Flooding" },  {       "id" : "mining",        "name" : "Surface Mining" },
+{       "id" : "construction",  "name" : "Road/House Construction" } ] },
+{       "id" : "status",        "name" : "Status",      "type" : "selection",
+"options" : [   {       "id" : "ongoing",       "name" : "Ongoing" },   {
+"id" : "finished",      "name" : "Finished" } ] },      {       "id" : "size",
+"name" : "Size",        "type" : "selection",   "options" : [   {       "id" : "
+large",         "name" : "Larger than Baseball Diamond" },      {       "id" : "
+small",         "name" : "Smaller than Baseball Diamond" } ] },         {
+"id" : "description",   "name" : "Description",         "type" : "longtext" },
+{       "id" : "date",  "name" : "Date",        "type" : "date" } ] }
+> load("db_bird_init.js");
+true
+> load("db_landscapechange_init.js");
+true
+> load("db_wildflower_init.js");
+true
+>

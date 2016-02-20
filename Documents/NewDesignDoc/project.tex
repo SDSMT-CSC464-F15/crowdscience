@@ -139,12 +139,16 @@ The server requires Apache 2.2 and Mongo DB version 2.4.9 installed to run the p
 The code in this project does not need to be built. The project uses scripted languages, which do not need compilation or building. 
 
 \subsection{Development Machine Setup}
-A remote desktop connection is required to connect to the server hosting the code. The rdp file for this remote desktop connection is show in . The development machine should also install a plaintext editor such as Notepad++ to view and edit project files.
-\begin{lstlisting}[caption=Remote Desktop Connection (.rdp) file, label=alg_rdp]
+A remote desktop connection is required to connect to the server hosting the code. The rdp file for this remote desktop connection is show in Algorithm~\ref{alg_rdp}. The development machine should also install a plaintext editor such as Notepad++ to view and edit project files. 
+\begin{algorithm} [tbh]                     
+\caption{Remote Desktop Connection (.rdp) file}
+\label{alg_rdp}    
+\begin{lstlisting}
 auto connect:i:1
 full address:s:52.23.113.55
 username:s:lcmapper
 password:s:jP\%7Fen\%JK
 \end{lstlisting}
+\end{algorithm}
 
 
