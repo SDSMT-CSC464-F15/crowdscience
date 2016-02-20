@@ -39,9 +39,9 @@
 				<option value="1">Please Select an Event Set</option></select></li></ul></div>
 		
       <div class="nav navbar-nav navbar-right"><ul  class="nav navbar-nav navbar-right">		
+		  <li><a id="report" href="login.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>    
         <li><a id="user-area" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-		  <li><a id="register" href="register.html"><span class="glyphicon glyphicon-edit"></span> Register</a></li>
-		  <li><a id="report" href="login.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>        
+		  <li><a id="register" href="register.html"><span class="glyphicon glyphicon-edit"></span> Register</a></li>    
 		  <li><p class="navbar-text pull-right">
           <a href="#" id="logout" style="display: none;" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
           </p></li>
@@ -55,15 +55,32 @@
 	
 <div class="row"> 
 	<div class="col-md-4">
-
-		<div class="well well-lg"><h3 id="bugs">Event Details Here</h3>
-		Lions! Tigers! Bears! Oh My!
-		</div>
 		<div class="well well-lg"><h3>Report an Event</h3>
 		<a href="login.html"><button type="button" class="btn btn-lg btn-primary">Report it!</button></a>
 		</div>
-		
 	</div>
+</div>
+
+<div class="row">
+  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+    <div class="well well-lg" id="ev_table">
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead id="ev_table_head">
+            <tr>
+              <th>Date</th>
+              <th>Observer</th>
+              <th>Event Name</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody id="ev_table_body">
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
 	</body>
 </html>

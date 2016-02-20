@@ -43,4 +43,28 @@ function updateEventSetSelect (data) {
 	}
 	//set the selected value to the session's value
 	$("#selecteventset").val(data.eventsetselection);
+	
+		var request = {"action" : "update", "eventsetselection":$("#selecteventset option:selected").val()}
+	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
+	.done(function(data) {
+		if (data.status == 0) {
+			updateEventSetSelect(data);
+			}
+	})
+	.fail(function(data) {
+		alert(data.status)
+	})
+}
+
+function updateEventSetData (data){
+$("#ev_table_head").empty();
+		ev_head_text = "<tr><th> User </th>"
+		for (var i = data.details.length - 1; i >= 0; i--) {
+		ev_head_text+="<th>" + data.details[i]+ "</th>"
+		}
+		ev_head_text+="</tr>";
+
+		$("#ev_table_head").append(ev_text);
+		
+		
 }

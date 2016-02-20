@@ -28,8 +28,24 @@
 		case "change":
 			$response = changeEventSetSelect();
 			break;
+		case "update":
+			$response = updateEventSetData();
+			break;
 	}
 	echo json_encode($response);
+	
+function updateEventSetData()
+{
+
+	global $db,$response,$request;
+	$response["status"] = "0";
+
+$eventsetinfo = $db->$request["eventsetselection"];
+$details = $eventsetinfo->findOne( { id : $request["eventsetselection"] } ).details;
+
+$response["details"] = $details;
+return $response;
+}
 	
 function changeEventSetSelect()
 {
@@ -72,6 +88,7 @@ function refreshEventSetSelect()
 	foreach ($cursor as $eventsetinfo) {
 		$response["eventsetsinfo"][] = $eventsetinfo;
 	}
+	
 	return $response;
 }
 
