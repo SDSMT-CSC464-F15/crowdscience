@@ -42,7 +42,7 @@ function updateEventSetData()
 	
 	$eventset = $request["eventsetselection"];
 
-//$eventdata = $db->$eventset;
+$eventdata = $db->$eventset;
 $eventsetsinfo = $db->eventsetsinfo;
 
 $details = $eventsetsinfo->findOne( array('id' => $eventset), array('details') );

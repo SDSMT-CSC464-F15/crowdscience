@@ -64,7 +64,7 @@ $("#ev_table_head").empty();
 		}
 		ev_head_text+="</tr>";
 
-		$("#ev_table_head").append(ev_text);
+		$("#ev_table_head").append(ev_head_text);
 		
 		
 }
