@@ -48,7 +48,7 @@ function updateEventSetSelect (data) {
 	$.post( "eventsetselect.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0) {
-			updateEventSetData(Data);
+			updateEventSetData(data);
 			}
 	})
 	.fail(function(data) {
