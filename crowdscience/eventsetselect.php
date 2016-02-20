@@ -41,9 +41,7 @@ function updateEventSetData()
 	$response["status"] = "0";
 
 $eventsetinfo = $db->$request["eventsetselection"];
-$details = $eventsetinfo->findOne( { id : $request["eventsetselection"] } ).details;
 
-$response["details"] = $details;
 return $response;
 }
 	
