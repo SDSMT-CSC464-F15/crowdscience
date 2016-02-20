@@ -39,9 +39,15 @@ function updateEventSetData()
 
 	global $db,$response,$request;
 	$response["status"] = "0";
+	
+	$eventset = $request["eventsetselection"]
 
-$eventsetinfo = $db->$request["eventsetselection"];
+$eventdata = $db->$eventset;
+$eventsetsinfo = $db->eventsetsinfo;
 
+$details = $eventsetsinfo->findOne( { id : "$eventset" } ).details;
+
+$response["details"] = $details;
 return $response;
 }
 	
