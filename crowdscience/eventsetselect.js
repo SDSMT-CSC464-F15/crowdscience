@@ -59,10 +59,12 @@ function updateEventSetSelect (data) {
 function updateEventSetData (data){
 $("#ev_table_head").empty();
 		ev_head_text = "<tr><th> User </th>";
+		
+		alert(data.details.length)
 		for (var i = data.details.length - 1; i >= 0; i--) {
-		ev_head_text+="<th>" + data.details[i]+ "</th>";
+		ev_head_text = ev_head_text + "<th>" + data.details[i]+ "</th>";
 		}
-		ev_head_text+="</tr>";
+		ev_head_text = ev_head_text + "</tr>";
 
 		$("#ev_table_head").append(ev_head_text);
 		
