@@ -4,6 +4,6 @@ $( document ).ready(function() {
 	POST_UpdateEventSetOptions();
 	
 	//fill map and table
-	//POST_UpdateEventSetTable();
+	POST_UpdateEventSetTable();
 	
 });
