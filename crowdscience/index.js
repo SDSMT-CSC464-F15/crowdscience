@@ -92,5 +92,5 @@ function UpdateEventSetTable (data){
 		}
 		tableHeader += "</tr>";
 	}
-	$("#eventtablebody").append(tableHeader);
+	$("#eventtablebody").append(tableData);
 }
