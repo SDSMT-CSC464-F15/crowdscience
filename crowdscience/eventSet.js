@@ -16,7 +16,7 @@ function POST_ChangeEventSetSelection (argument) {
 		}
 	})
 	.fail(function(data) {
-		alert(data.status)
+		alert(data.status + ": Error changing Event Set Selection")
 	})
 }
 
@@ -30,7 +30,7 @@ function POST_UpdateEventSetOptions (argument) {
 		}
 	})
 	.fail(function(data) {
-		alert(data.status)
+		alert(data.status + ": Error loading Event Set Options")
 	})
 }
 
@@ -54,7 +54,7 @@ function POST_UpdateEventSetTable (argument){
 		}
 	})
 	.fail(function(data) {
-		alert(data.status)
+		alert(data.status  + ": Error loading Event Set Table")
 	})
 }
 
