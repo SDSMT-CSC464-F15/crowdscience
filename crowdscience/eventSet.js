@@ -46,7 +46,7 @@ function UpdateEventSetOptions (data) {
 }
 
 function POST_UpdateEventSetTable (argument){
-	alert ($("#selecteventset").val());
+	alert ($("#select.selecteventset option:selected").val());
 	var request = {"action" : "updatetable", "eventsetselection":$("#selecteventset option:selected").val()}
 	$.post( "eventSet.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
