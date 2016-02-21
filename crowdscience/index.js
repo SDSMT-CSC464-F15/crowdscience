@@ -86,12 +86,13 @@ function UpdateEventSetTable (data){
 					}
 				}
 			}
-			else {
+		else { */
 				tableBody += "<td>" + data.eventdata[i].details[data.details[j].id] + "</td>";
-			}
+	/*}
 		}
 		*/
 		tableBody += "</tr>";
+		$("#eventtablebody").append(tableBody);
 	}
-	$("#eventtablebody").append(tableBody);
+	
 }
