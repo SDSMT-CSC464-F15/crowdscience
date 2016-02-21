@@ -48,8 +48,32 @@
 		
 		$eventsetinfo = $eventsetsinfo->findOne( array('id' => $eventset), array('details', '_id' => 0) );
 		foreach ($eventsetinfo['details'] as $detail) {
-				$response["details"][] = $detail;
+			$response["details"][] = $detail;
 		}
+		
+		$cursor = $eventdata->find();
+		foreach ($cursor as $event) {
+			try
+			{
+				$userinfo = $usertable->findOne(array('_id' => $event['user']));
+			}
+			catch (MongoException $e)
+			{
+				$response["status"] = 1; 
+				$response["messages"][] = "$e->getMessage()";
+				return;
+			}
+			$event['user'] = $userinfo['details']['fname'] + " " + $userinfo['details']['lname'] ;
+			$date = $event['details']['date'];
+			$date = $date->sec;
+			$date = date("Y-m-d", $date);
+			$event['details']['date'] = $date;
+			
+			$response[] = $event;
+		}
+		
+		
+		
 		return $response;
 	}
 	

@@ -3,9 +3,9 @@ $( document ).ready(function() {
 	//update event set selection options - defined in eventSet.js
 	POST_UpdateEventSetOptions();
 	
-
+	
 	//set what to do when the event set selection is changed	
-		$("#selecteventset").on('change', function() { POST_ChangeEventSetSelection(); });
+	$("#selecteventset").on('change', function() { POST_ChangeEventSetSelection(); });
 });
 
 function POST_ChangeEventSetSelection (argument) {
@@ -73,4 +73,22 @@ function UpdateEventSetTable (data){
 	$("#eventtableheader").append(tableHeader);
 	
 	
+	$("#eventtablebody").empty();
+	for (var i = data.eventdata.length - 1; i >= 0; i--) {
+		tableBody = "<tr><td>" + data.eventdata[i].user + "</td>";	
+		for (var j = data.details.length - 1; j >= 0; j--) {
+			
+			if( data.details[i].type == "selection){
+			for ( var k = data.details[j].options.length -1; k >=0; k-- ){
+				if ( data.eventdata[i].details[data.details[j].id] == data.details[j].options[k].id ) {
+					tableBody += "<td>" + data.details[j].options[k].name + "</td>";
+				}
+			}
+		}
+		else{
+			tableBody += "<td>" + data.eventdata[i].details[data.details[j].id] + "</td>";
+		}
+		tableHeader += "</tr>";
+	}
+	$("#eventtablebody").append(tableHeader);
 }
