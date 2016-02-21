@@ -64,7 +64,7 @@
 				$response["messages"][] = "$e->getMessage()";
 				return;
 			}
-			$event['user'] = $userinfo['details']['fname'] + " " + $userinfo['details']['lname'] ;
+			$event['user'] = $userinfo['username'];
 			$date = $event['details']['date'];
 			$date = $date->sec;
 			$date = date("Y-m-d", $date);
