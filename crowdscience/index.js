@@ -76,6 +76,7 @@ function UpdateEventSetTable (data){
 	$("#eventtablebody").empty();
 	for (var i = data.eventdata.length - 1; i >= 0; i--) {
 		tableBody = "<tr><td>" + data.eventdata[i].user + "</td>";	
+		
 		for (var j = data.details.length - 1; j >= 0; j--) {
 			
 			if( data.details[i].type == "selection){
@@ -84,9 +85,10 @@ function UpdateEventSetTable (data){
 					tableBody += "<td>" + data.details[j].options[k].name + "</td>";
 				}
 			}
-		}
-		else{
-			tableBody += "<td>" + data.eventdata[i].details[data.details[j].id] + "</td>";
+			
+			else{
+				tableBody += "<td>" + data.eventdata[i].details[data.details[j].id] + "</td>";
+			}
 		}
 		tableHeader += "</tr>";
 	}
