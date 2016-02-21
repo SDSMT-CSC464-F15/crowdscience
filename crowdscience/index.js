@@ -50,7 +50,6 @@ function UpdateEventSetOptions (data) {
 }
 
 function POST_UpdateEventSetTable (argument){
-	alert ($("#selecteventset option:selected").val());
 	var request = {"action" : "updatetable", "eventsetselection":$("#selecteventset option:selected").val()}
 	$.post( "eventSet.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
@@ -66,8 +65,7 @@ function POST_UpdateEventSetTable (argument){
 function UpdateEventSetTable (data){
 	$("#ev_table_head").empty();
 	ev_head_text = "<tr><th> User </th>";
-	
-	alert(data.details.length);
+
 	for (var i = data.details.length - 1; i >= 0; i--) {
 		ev_head_text = ev_head_text + "<th>" + data.details[i].name + "</th>";
 	}
