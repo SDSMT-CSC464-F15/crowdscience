@@ -45,6 +45,7 @@
 		
 		$eventdata = $db->$eventset;
 		$eventsetsinfo = $db->eventsetsinfo;
+		$usertable = $db->user;
 		
 		$eventsetinfo = $eventsetsinfo->findOne( array('id' => $eventset), array('details', '_id' => 0) );
 		foreach ($eventsetinfo['details'] as $detail) {
@@ -69,7 +70,7 @@
 			$date = date("Y-m-d", $date);
 			$event['details']['date'] = $date;
 			
-			$response[] = $event;
+			$response['eventdata'][] = $event;
 		}
 		
 		
