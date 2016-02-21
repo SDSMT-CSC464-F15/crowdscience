@@ -1,7 +1,9 @@
 $( document ).ready(function() {
-
-//check event set select bar, refresh it
-
-//fill map and table
+	
+	//update event set selection options - defined in eventSet.js
+	POST_UpdateEventSetOptions();
+	
+	//fill map and table
+	POST_UpdateEventSetTable();
 	
 });

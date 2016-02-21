@@ -1,86 +1,97 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
-  <meta charset="utf-8">
-  <title>Crowd Science Mapper</title>
-  
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
-  <!-- Bootstrap core CSS -->
-  <link href="bootstrapbill/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		
+		<meta charset="utf-8">
+		<title>Crowd Science Mapper</title>
+		
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+		<!-- Bootstrap core CSS -->
+		<link href="bootstrapbill/bootstrap.min.css" rel="stylesheet">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		
+		<!-- jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		
+		<!-- scripts -->
+		<script type="text/javascript" src="bootstrapbill/bootstrap.js"></script>
+		<script type="text/javascript" src="checkLogin.js"></script>
+		<!-- index.js calls functions defined in eventSet.js, so eve -->
+		<script type="text/javascript" src="eventSet.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+		<link rel="shortcut icon" href="images/simplecloud.ico" />
+		
+	</head>
 	
-	<!-- jQuery -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<!--<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js" ></script>-->
-	
-	<!-- scripts -->
 
-   <script type="text/javascript" src="checkLogin.js"></script>
-   <script type="text/javascript" src="bootstrapbill/bootstrap.js"></script>
-   <script type="text/javascript" src="eventsetselect.js"></script>
-<link rel="shortcut icon" href="images/simplecloud.ico" />
-
-</head>
-	
 	<body style="padding-left: 15px; padding-bottom: 50px; overflow-x: hidden; background-color: #eee;">
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-   
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></ul>
 		
-      <div class="nav navbar-nav navbar-form form-control"><ul  class="nav navbar-nav navbar-form form-control">		
-	  <li>Event Set: <select id="selecteventset">
-				<option value="1">Please Select an Event Set</option></select></li></ul></div>
+		<!-- Navigation Bar -->		
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					
+					<!-- Home -->
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
+						</li>
+					</ul>
+					
+					<!-- Event Selection Box -->
+					<div class="nav navbar-nav navbar-form form-control">
+						<ul class="nav navbar-nav navbar-form form-control">
+							<li>Event Set: <select id="selecteventset"></select></li>
+						</ul>
+					</div>
+					
+					<div class="nav navbar-nav navbar-right">
+						<ul class="nav navbar-nav navbar-right">
+							
+							<!-- Report Event -->
+							<li><a id="report" href="login.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>
+							
+							<!-- Login -->
+							<li><a id="user-area" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+							
+							<!-- Register -->
+							<li><a id="register" href="register.html"><span class="glyphicon glyphicon-edit"></span> Register</a></li>
+							
+							<!-- Logout -->
+							<li><p class="navbar-text pull-right">
+									<a href="#" id="logout" style="display: none;" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
+								</p></li>
+						</ul>
+					</div>
+					
+				</div> <!-- /.navbar-collapse -->
+			</div> <!-- /.container-fluid -->
+		</nav>
 		
-      <div class="nav navbar-nav navbar-right"><ul  class="nav navbar-nav navbar-right">		
-		  <li><a id="report" href="login.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>    
-        <li><a id="user-area" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-		  <li><a id="register" href="register.html"><span class="glyphicon glyphicon-edit"></span> Register</a></li>    
-		  <li><p class="navbar-text pull-right">
-          <a href="#" id="logout" style="display: none;" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
-          </p></li>
-
-        
-      </ul></div>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-	<h2>Crowd Science</h2>
-	
-<div class="row"> 
-	<div class="col-md-4">
-		<div class="well well-lg"><h3>Report an Event</h3>
-		<a href="login.html"><button type="button" class="btn btn-lg btn-primary">Report it!</button></a>
+		<h2>Crowd Science</h2>
+		
+		<div class="row">
+			<div class="col-md-4">
+				<div class="well well-lg">
+					<h3>Report an Event</h3>
+					<a href="login.html">
+					<button type="button" class="btn btn-lg btn-primary">Report it!</button></a>
+				</div>
+			</div>
 		</div>
-	</div>
-</div>
-
-<div class="row">
-  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-    <div class="well well-lg" id="ev_table">
-      <div class="table-responsive">
-        <table class="table table-hover">
-          <thead id="ev_table_head">
-            <tr>
-              <th>Date</th>
-              <th>Observer</th>
-              <th>Event Name</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody id="ev_table_body">
-            
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
+		
+		<div class="row">
+			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+				<div class="well well-lg" id="ev_table">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead id="ev_table_head"></thead>
+							<tbody id="ev_table_body"></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
