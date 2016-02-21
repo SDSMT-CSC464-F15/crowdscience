@@ -14,7 +14,7 @@ function POST_ChangeEventSetSelection (argument) {
 	$.post( "eventSet.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0) {
-			updateEventSetOptions(data);
+			UpdateEventSetOptions(data);
 		}
 	})
 	.fail(function(data) {
