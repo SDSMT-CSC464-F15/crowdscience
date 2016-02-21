@@ -80,12 +80,12 @@ function UpdateEventSetTable (data){
 		for (var j = data.details.length - 1; j >= 0; j--) {
 			
 			if( data.details[j].type == "selection"){
-			for ( var k = data.details[j].options.length -1; k >=0; k-- ){
-				if ( data.eventdata[i].details[data.details[j].id] == data.details[j].options[k].id ) {
-					tableBody += "<td>" + data.details[j].options[k].name + "</td>";
+				for ( var k = data.details[j].options.length -1; k >=0; k-- ){
+					if ( data.eventdata[i].details[data.details[j].id] == data.details[j].options[k].id ) {
+						tableBody += "<td>" + data.details[j].options[k].name + "</td>";
+					}
 				}
 			}
-			
 			else {
 				tableBody += "<td>" + data.eventdata[i].details[data.details[j].id] + "</td>";
 			}
