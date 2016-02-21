@@ -63,15 +63,14 @@ function POST_UpdateEventSetTable (argument){
 }
 
 function UpdateEventSetTable (data){
-	$("#ev_table_head").empty();
-	ev_head_text = "<tr><th> User </th>";
-
-	for (var i = data.details.length - 1; i >= 0; i--) {
-		ev_head_text = ev_head_text + "<th>" + data.details[i].name + "</th>";
-	}
-	ev_head_text = ev_head_text + "</tr>";
 	
-	$("#ev_table_head").append(ev_head_text);
+	$("#eventtableheader").empty();
+	tableHeader = "<tr><th> User </th>";
+	for (var i = data.details.length - 1; i >= 0; i--) {
+		tableHeader += "<th>" + data.details[i].name + "</th>";
+	}
+	tableHeader += "</tr>";
+	$("#eventtableheader").append(tableHeader);
 	
 	
 }

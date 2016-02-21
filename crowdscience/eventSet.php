@@ -47,10 +47,8 @@
 		$eventsetsinfo = $db->eventsetsinfo;
 		
 		$eventsetinfo = $eventsetsinfo->findOne( array('id' => $eventset), array('details', '_id' => 0) );
-		foreach ($eventsetinfo as $details) {
-			foreach ($details as $detail){
+		foreach ($eventsetinfo['details'] as $detail) {
 				$response["details"][] = $detail;
-			}
 		}
 		return $response;
 	}
