@@ -87,9 +87,8 @@ function UpdateEventSetTable (data){
 				}
 			}
 		else { 
-		detailname = data.details[j].id;
-		alert( detailname );
-				tableBody += "<td>" + data.eventdata[i].details[detailname] + "</td>";
+
+				tableBody += "<td>" + data.eventdata[i].details[data.details[j].id] + "</td>";
 		}
 	}
 		tableBody += "</tr>";
