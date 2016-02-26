@@ -1,7 +1,7 @@
 var picture_id = [];
 var lat = 0;
 var lon = 0;
-var event_set_details = new Array();
+var event_set_fields = new Array();
 
 $(document).ready(function(){
 	initmap(); //load map
@@ -30,7 +30,7 @@ $(document).ready(function(){
 function POST_SubmitEventReport(argument) {
 	//json for request
 	alert ( "In the function at least");
-	alert( event_set_details.length);
+	alert( event_set_fields.length);
 	
 	var request = { 
 		action: "submiteventreport",
@@ -43,12 +43,13 @@ function POST_SubmitEventReport(argument) {
 		}
 	};
 	
-	alert( event_set_details.length);
+	alert( event_set_fields.length);
 	
-	for (var i = event_set_details.length - 1; i >= 0; i--) {
+	for (var i = event_set_fields.length - 1; i >= 0; i--) {
 		//are we correctly accessing the html form here?
-		alert( $(event_set_details[i].id).val());
-	request.newreport.details[event_set_details[i].id] = $(event_set_details[i].id).val();
+		alert( event_set_fields[i].id);
+		alert( event_set_fields[i].val());
+	request.newreport.details[event_set_fields[i].id] = event_set_fields[i].val();
 		}
 		
 	//add image id to json only if one was uploaded
@@ -186,40 +187,37 @@ function UpdateReportFields (data) {
 	alert(data.details.length);
 	
 	for (var i = data.details.length - 1; i >= 0; i--) {
-		
-		event_set_details.push(data.details[i]);
-		
 		//type: selection
 		if( data.details[i].type === "selection"){
-			eventFields = "<select id=\"" + data.details[i].id + "\" class=\"form-control\"> <option selected disabled value=\"\">" + data.details[i].name + "</option>";
+			eventField = "<select id=\"" + data.details[i].id + "\" class=\"form-control\"> <option selected disabled value=\"\">" + data.details[i].name + "</option>";
 			for ( var j = data.details[i].options.length -1; j >=0; j-- )
-			eventFields += "<option value=\"" + data.details[i].options[j].id + "\">" + data.details[i].options[j].name + "</option>";
-			eventFields+= "</select>";
+			eventField += "<option value=\"" + data.details[i].options[j].id + "\">" + data.details[i].options[j].name + "</option>";
+			eventField+= "</select>";
 		}
 		//type: short text
 		if( data.details[i].type === "shorttext"){
-			eventFields = "<input class=\"form-control\" name=\"" + data.details[i].id + "\" id=\"" + data.details[i].id + "\" placeholder=\"" +data.details[i].name + "\" value=\"\" type=\"text\" />";
+			eventField = "<input class=\"form-control\" name=\"" + data.details[i].id + "\" id=\"" + data.details[i].id + "\" placeholder=\"" +data.details[i].name + "\" value=\"\" type=\"text\" />";
 		}
 		//type: long text
 		if( data.details[i].type === "longtext"){
-			eventFields = "<textarea id=\"" + data.details[i].id + "\" class=\"form-control\" placeholder=\"" + data.details[i].name + "\" rows=\"4\"></textarea>";
+			eventField = "<textarea id=\"" + data.details[i].id + "\" class=\"form-control\" placeholder=\"" + data.details[i].name + "\" rows=\"4\"></textarea>";
 		}
 		//type: date
 		if( data.details[i].type === "date"){
-			eventFields = "<input class=\"form-control\" name=\"" + data.details[i].id + "\" id=\"" + data.details[i].id + "\" onfocus=\"this.type='date'\" placeholder=\"" + data.details[i].name + "\" value=\"\" type=\"text\" />";
+			eventField = "<input class=\"form-control\" name=\"" + data.details[i].id + "\" id=\"" + data.details[i].id + "\" onfocus=\"this.type='date'\" placeholder=\"" + data.details[i].name + "\" value=\"\" type=\"text\" />";
 		}
 		//type: number
 		if( data.details[i].type === "number"){
-			eventFields = "<input class=\"form-control\" name=\"" + data.details[i].id + "\" id=\"" + data.details[i].id + "\" placeholder=\"" +data.details[i].name + "\" value=\"\" type=\"number\"";
+			eventField = "<input class=\"form-control\" name=\"" + data.details[i].id + "\" id=\"" + data.details[i].id + "\" placeholder=\"" +data.details[i].name + "\" value=\"\" type=\"number\"";
 			if ( !(data.details[i].max === "none")){
-				eventFields += "max=\"" + data.details[i].max + "\" ";
+				eventField += "max=\"" + data.details[i].max + "\" ";
 				}
 			if ( !(data.details[i].min === "none")){
-				eventFields += "min=\"" + data.details[i].min + "\" ";
+				eventField += "min=\"" + data.details[i].min + "\" ";
 			}
-			eventFields += "step=\"" + data.details[i].step + "\"/>";
+			eventField += "step=\"" + data.details[i].step + "\"/>";
 		}
-		$("#event_fields").append(eventFields);
+		event_set_fields.push($(eventField).appendTo($("#event_fields")));
 	}
 	
 	
