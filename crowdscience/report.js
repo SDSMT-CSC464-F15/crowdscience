@@ -172,11 +172,12 @@ function POST_UpdateReportFields (argument) {
 
 function UpdateReportFields (data) {
 	
+	alert( data.details.length);
+	
 	event_set_details = data.details;
 	
 	$("#event_fields").empty();
 	
-	alert( data.details.length);
 	
 	for (var i = data.details.length - 1; i >= 0; i--) {
 		//type: selection
