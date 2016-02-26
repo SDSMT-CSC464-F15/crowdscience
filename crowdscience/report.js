@@ -175,7 +175,6 @@ function UpdateReportFields (data) {
 	event_set_details = data.details;
 	
 	$("#event_fields").empty();
-	var eventFields;
 	
 	alert( data.details.length);
 	
