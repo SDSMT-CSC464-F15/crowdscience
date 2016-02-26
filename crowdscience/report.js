@@ -27,8 +27,10 @@ $(document).ready(function(){
 
 
 //Gathers appropriate info and makes a new event
-function POST_SubmitEventReport() {
+function POST_SubmitEventReport(argument) {
 	//json for request
+	alert ( "In the function at least");
+	
 	var request = { 
 		action: submiteventreport,
 		eventsetselection:$("#select_event_set option:selected").val(),
@@ -42,7 +44,6 @@ function POST_SubmitEventReport() {
 	
 	for (var i = event_set_details.length - 1; i >= 0; i--) {
 	request.newreport.details[event_set_details[i].id] = $("#" + event_set_details[i].id).val();
-	alert(request.newreport.details[event_set_details[i].id]);
 		}
 		
 	//add image id to json only if one was uploaded
