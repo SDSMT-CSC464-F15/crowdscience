@@ -47,26 +47,23 @@ function POST_SubmitEventReport(argument) {
 	for (var i = event_set_fields.length - 1; i >= 0; i--) {
 		alert( "i = " + i + ";  event_set_fields[i].attr(\"id\") = " + event_set_fields[i].attr("id") + ";  event_set_fields[i].val() = " + event_set_fields[i].val() + ";");
 
-		//this is where it breaks
 	request.newreport.details[event_set_fields[i].attr("id").toString()] = event_set_fields[i].val().toString();
 		}
 		
 	//add image id to json only if one was uploaded
 	if ( picture_id[0] != "") 
 	{
-		request.newreport[images] = picture_id;
+		request.newreport.images = picture_id;
 	}
-	
+	alert( "Before posting to the PHP")
 	//post data to server
-	var register_posting = $.post( "report.php", JSON.stringify(request), null, "json" )
+	$.post( "report.php", JSON.stringify(request), null, "json" )
 	.done(function(data) {
 		//go back to main page after event creation
 		window.location.href = 'index.html';
 	})
 	.fail(function(data) {
 		alert( "error:" + data.responseText);
-	})
-	.always(function() {
 	}) ;
 }
 
