@@ -31,6 +31,7 @@ function POST_SubmitEventReport() {
 	//json for request
 	var request = { 
 		"action": "submiteventreport",
+		"eventsetselection":$("#select_event_set option:selected").val(),
 		"newreport": {
 			"location": {
 				"lat": lat,
