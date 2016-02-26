@@ -30,7 +30,7 @@ $(document).ready(function(){
 function POST_SubmitEventReport(argument) {
 	//json for request
 	alert ( "In the function at least");
-	
+	alert( event_set_details.length);
 	var request = { 
 		action: submiteventreport,
 		eventsetselection:$("#select_event_set option:selected").val(),
