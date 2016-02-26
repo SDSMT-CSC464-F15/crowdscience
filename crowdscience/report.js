@@ -175,31 +175,33 @@ function UpdateReportFields (data) {
 	event_set_details = data.details;
 	
 	$("#event_fields").empty();
-	var eventFields = " ";
+	var eventFields;
+	
 	alert( data.details.length);
+	
 	for (var i = data.details.length - 1; i >= 0; i--) {
 		//type: selection
 		if( data.details[i].type === "selection"){
-			eventFields += "<select id=\"" + data.details[i].id + "\" class=\"form-control\"> <option selected disabled value=\"\">" + data.details[i].name + "</option>";
+			eventFields = "<select id=\"" + data.details[i].id + "\" class=\"form-control\"> <option selected disabled value=\"\">" + data.details[i].name + "</option>";
 			for ( var j = data.details[i].options.length -1; j >=0; j-- )
 			eventFields += "<option value=\"" + data.details[i].options[j].id + "\">" + data.details[i].options[j].name + "</option>";
 			eventFields+= "</select>";
 		}
 		//type: short text
 		if( data.details[i].type === "shorttext"){
-			eventFields += "<input class=\"form-control\" name=\"" + data.details[i].id + "\" id=\"" + data.details[i].id + "\" placeholder=\"" +data.details[i].name + "\" value=\"\" type=\"text\" />";
+			eventFields = "<input class=\"form-control\" name=\"" + data.details[i].id + "\" id=\"" + data.details[i].id + "\" placeholder=\"" +data.details[i].name + "\" value=\"\" type=\"text\" />";
 		}
 		//type: long text
 		if( data.details[i].type === "longtext"){
-			eventFields += "<textarea id=\"" + data.details[i].id + "\" class=\"form-control\" placeholder=\"" + data.details[i].name + "\" rows=\"4\"></textarea>";
+			eventFields = "<textarea id=\"" + data.details[i].id + "\" class=\"form-control\" placeholder=\"" + data.details[i].name + "\" rows=\"4\"></textarea>";
 		}
 		//type: date
 		if( data.details[i].type === "date"){
-			eventFields += "<input class=\"form-control\" name=\"" + data.details[i].id + "\" id=\"" + data.details[i].id + "\" onfocus=\"this.type='date'\" placeholder=\"" + data.details[i].name + "\" value=\"\" type=\"text\" />";
+			eventFields = "<input class=\"form-control\" name=\"" + data.details[i].id + "\" id=\"" + data.details[i].id + "\" onfocus=\"this.type='date'\" placeholder=\"" + data.details[i].name + "\" value=\"\" type=\"text\" />";
 		}
 		//type: number
 		if( data.details[i].type === "number"){
-			eventFields += "<input class=\"form-control\" name=\"" + data.details[i].id + "\" id=\"" + data.details[i].id + "\" placeholder=\"" +data.details[i].name + "\" value=\"\" type=\"number\"";
+			eventFields = "<input class=\"form-control\" name=\"" + data.details[i].id + "\" id=\"" + data.details[i].id + "\" placeholder=\"" +data.details[i].name + "\" value=\"\" type=\"number\"";
 			if ( !(data.details[i].max === "none")){
 				eventFields += "max=\"" + data.details[i].max + "\" ";
 				}
@@ -208,9 +210,9 @@ function UpdateReportFields (data) {
 			}
 			eventFields += "step=\"" + data.details[i].step + "\"/>";
 		}
-		
+		$("#event_fields").append(eventFields);
 	}
 	
-	$("#event_fields").append(eventFields);
+	
 	
 }
