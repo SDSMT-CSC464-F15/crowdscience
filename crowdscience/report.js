@@ -29,9 +29,7 @@ $(document).ready(function(){
 //Gathers appropriate info and makes a new event
 function POST_SubmitEventReport(argument) {
 	//json for request
-	alert ( "In the function at least");
-	alert( event_set_fields.length);
-	
+
 	var request = { 
 		action: "submiteventreport",
 		eventsetselection: $("#select_event_set option:selected").val(),
@@ -43,15 +41,13 @@ function POST_SubmitEventReport(argument) {
 		}
 	};
 	
-	alert( event_set_fields.length);
+	alert( "event_set_feilds.length = " + event_set_fields.length);
 	
 	for (var i = event_set_fields.length - 1; i >= 0; i--) {
-		
-		alert( event_set_fields[i].attr("id"));
-		alert( event_set_fields[i].val());
-		
+		alert( "i = " + i + ";  event_set_fields[i].attr(\"id\") = " + event_set_fields[i].attr("id") + ";  event_set_fields[i].val() = " + event_set_fields[i].val() + ";");
+
 		//this is where it breaks
-	request.newreport.details[event_set_fields[i].attr("id").toString()] = event_set_fields[i].val().toString();
+	//request.newreport.details[event_set_fields[i].attr("id").toString()] = event_set_fields[i].val().toString();
 		}
 		
 	//add image id to json only if one was uploaded
@@ -186,7 +182,6 @@ function UpdateReportFields (data) {
 	event_set_details = new Array();
 
 	$("#event_fields").empty();
-	alert(data.details.length);
 	
 	for (var i = data.details.length - 1; i >= 0; i--) {
 		//type: selection
