@@ -176,6 +176,7 @@ function UpdateReportFields (data) {
 	
 	$("#event_fields").empty();
 	eventFields = "";
+	alert( data.details.length);
 	for (var i = data.details.length - 1; i >= 0; i--) {
 		//type: selection
 		if( data.details[i].type === "selection"){
