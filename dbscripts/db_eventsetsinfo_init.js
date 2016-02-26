@@ -3,7 +3,7 @@ db.eventsetsinfo.drop();
 db.eventsetsinfo.insert({ 
 id : "wildflower", name : "Wildflower Sightings",
 details : [ { id : "species", name : "Species", type : "shorttext"},
-			{ id : "count", name : "Number of Flowers", type : "number", restriction : ">0"},
+			{ id : "count", name : "Number of Flowers", type : "number", min : "0", max : "none", step : "1"},
 			{ id : "description", name : "Description", type : "longtext"},
 			{ id : "date", name : "Date", type : "date" } ]
 			});
@@ -11,7 +11,7 @@ details : [ { id : "species", name : "Species", type : "shorttext"},
 db.eventsetsinfo.insert({ 
 id : "bird", name : "Bird Sightings",
 details : [ { id : "species", name : "Species", type : "shorttext"},
-			{ id : "count", name : "Number of Birds", type : "number", restriction : ">0"},
+			{ id : "count", name : "Number of Birds", type : "number", min : "0", max : "none", step : "1"},
 			{ id : "description", name : "Description", type : "longtext"},
 			{ id : "date", name : "Date", type : "date"} ]
 			});

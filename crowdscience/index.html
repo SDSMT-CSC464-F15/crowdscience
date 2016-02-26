@@ -5,26 +5,28 @@
 		<meta charset="utf-8">
 		<title>Crowd Science Mapper</title>
 		
+		<!-- Map Leaflet CSS -->
 		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
-		<!-- Bootstrap core CSS -->
+		<!-- Landscape Mapper bootstrap CSS -->
 		<link href="bootstrapbill/bootstrap.min.css" rel="stylesheet">
 		
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-		
-		<!-- jQuery -->
+		<!-- jQuery JS -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!-- Map Leaflet JS -->	
+		<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js" ></script>
 		
-		<!-- scripts -->
+		<!-- Landscape Mapper bootstrap JS -->
 		<script type="text/javascript" src="bootstrapbill/bootstrap.js"></script>
+		<!-- Landscape Mapper CheckLogin JS -->
 		<script type="text/javascript" src="checkLogin.js"></script>
-
+		<!-- Crowd Science Mapper index JS -->
 		<script type="text/javascript" src="index.js"></script>
+		
 		<link rel="shortcut icon" href="images/simplecloud.ico" />
 		
 	</head>
 	
-
+	
 	<body style="padding-left: 15px; padding-bottom: 50px; overflow-x: hidden; background-color: #eee;">
 		
 		<!-- Navigation Bar -->		
@@ -41,7 +43,7 @@
 					<!-- Event Selection Box -->
 					<div class="nav navbar-nav navbar-form form-control">
 						<ul class="nav navbar-nav navbar-form form-control">
-							<li>Event Set: <select id="selecteventset"></select></li>
+							<li>Event Set: <select id="select_event_set"></select></li>
 						</ul>
 					</div>
 					
@@ -49,7 +51,7 @@
 						<ul class="nav navbar-nav navbar-right">
 							
 							<!-- Report Event -->
-							<li><a id="report" href="login.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>
+							<li><a id="report" href="report.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>
 							
 							<!-- Login -->
 							<li><a id="user-area" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -59,8 +61,8 @@
 							
 							<!-- Logout -->
 							<li><p class="navbar-text pull-right">
-									<a href="#" id="logout" style="display: none;" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
-								</p></li>
+								<a href="#" id="logout" style="display: none;" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
+							</p></li>
 						</ul>
 					</div>
 					
@@ -82,11 +84,11 @@
 		
 		<div class="row">
 			<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-				<div class="well well-lg" id="eventtable">
+				<div class="well well-lg" id="event_table">
 					<div class="table-responsive">
 						<table class="table table-hover">
-							<thead id="eventtableheader"></thead>
-							<tbody id="eventtablebody"></tbody>
+							<thead id="event_table_header"></thead>
+							<tbody id="event_table_body"></tbody>
 						</table>
 					</div>
 				</div>

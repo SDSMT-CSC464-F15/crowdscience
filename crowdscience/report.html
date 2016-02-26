@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Report Event</title>
+		
+		<!-- Map Leaflet CSS -->
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+		<!-- Landscape Mapper bootstrap CSS -->
+		<link href="bootstrapbill/bootstrap.min.css" rel="stylesheet">
+		<!-- Landscape Mapper report CSS -->
+		<link href="bootstrapbill/report.css" rel="stylesheet">
+		
+		
+		<!-- jQuery JS -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<!-- Map Leaflet JS -->	
+		<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js" ></script>
+		
+		<!-- Landscape Mapper reportMapLeaflet JS note: must be loaded before report.js-->
+		<script type="text/javascript" src="reportMapLeaflet.js"></script>
+		<!-- Crowd Science Mapper report JS -->
+		<script type="text/javascript" src="report.js"></script>
+		<!-- Landscape Mapper CheckLogin JS -->
+		<script type="text/javascript" src="checkLogin.js"></script>		
+		
+	</head>
+	
+	<body style="padding-bottom: 50px;">
+		
+		<!-- Navigation Bar -->		
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					
+					<!-- Home -->
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
+						</li>
+					</ul>
+					
+					<!-- Event Selection Box -->
+					<div class="nav navbar-nav navbar-form form-control">
+						<ul class="nav navbar-nav navbar-form form-control">
+							<li>Event Set: <select id="select_event_set"></select></li>
+						</ul>
+					</div>
+					
+					<div class="nav navbar-nav navbar-right">
+						<ul class="nav navbar-nav navbar-right">
+							
+							<!-- Report Event -->
+							<li><a id="report" href="report.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>
+							
+							<!-- Login -->
+							<li><a id="user-area" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+							
+							<!-- Register -->
+							<li><a id="register" href="register.html"><span class="glyphicon glyphicon-edit"></span> Register</a></li>
+							
+							<!-- Logout -->
+							<li><p class="navbar-text pull-right">
+								<a href="#" id="logout" style="display: none;" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
+							</p></li>
+						</ul>
+					</div>
+					
+				</div> <!-- /.navbar-collapse -->
+			</div> <!-- /.container-fluid -->
+		</nav>
+		
+		<div align="center" class="page-header">
+			<h1>Report Event</h1>
+		</div>
+		
+		<div align="center">		
+			
+			<!-- Map and Latitude/Longitude -->
+			<h4 style="width: 600px;" align="left">Event Location:</h4>
+			<div id="map" style="width: 600px; height: 400px">
+			</div>
+			<table class="table-event">
+				<tr>
+					<td>
+						<input class="form-control" name="lat_name" id="lat_name" placeholder="Latitude" value="" type="number" min="-90" max="90" step="any" style="width: 288px;" />
+					</td>
+					<td>
+						<input class="form-control" name="lon_name" id="lon_name" placeholder="Longitude" value="" type="number" min="-180" max="180" step="any" style="width: 288px;" />
+					</td>
+				</tr>
+			</table>
+			<br>
+			
+			<!-- Photo Upload -->
+			<div align = "center" class="alert alert-success" role="alert" style="display:none" id="image_upload_message">Image Successfully Uploaded</div>	
+			<form id="image_upload_form" enctype="multipart/form-data" method="post" align="left" style="width: 600px;">
+				<h4 style="display:inline-block; width: 125px;" >Event Photo:</h4>
+				<input style="display:inline-block; width: 400px;" name = "choose_photos" type="file" id="choose_photos" accept="image/*" multiple />
+				<input  style="display:inline-block;" type="submit" value="Upload" />
+			</form>
+			
+			<!-- Event Details -->
+			<h4 style="width: 600px;" align="left">Event Details:</h4>
+			<form class="form-event" role="form" id="event_report_form" align="left" style="width: 600px;">
+				
+				<!-- Event Report Fields -->
+				<div id="event_fields">
+					<!-- will be filled by report.js based on DB info -->
+					<select required id="event_cause" class="form-control">
+						<option selected disabled value="">Cause of Event</option>
+						<option value="fire">Fire</option>
+						<option value="wind">Wind Damage</option>
+						<option value="avalanche">Avalanche Damage</option>
+						<option value="timber">Thinning/Timber Harvest</option>
+						<option value="insect">Insect Infestation</option>
+						<option value="landslide">Landslide</option>
+						<option value="earthquake">Earthquake</option>
+						<option value="flooding">Flooding</option>
+						<option value="mining">Surface Mining</option>
+						<option value="construction">Road/House Construction</option>
+					</select>
+					<input class="form-control" name="event_name" id="event_name" placeholder="Name of Event*" value="" type="text" /> 
+					<select required id="event_size" class="form-control">
+						<option selected disabled value="">Size of Event</option>
+						<option value="small">Smaller than Baseball Diamond</option>
+						<option value="large">Larger than Baseball Diamond</option>
+					</select>
+					<input class="form-control" name="event_date" id="event_date" onfocus="this.type='date'" placeholder="Date of Event*"  value="" type="text" />
+					<select required id="event_status" class="form-control">
+						<option selected disabled value="">Event Status</option>
+						<option value="ongoing">Ongoing</option>
+						<option value="finished">Finished</option>
+					</select>
+					<textarea required id= "description" class="form-control" placeholder="Description of Event" rows="4" ></textarea>
+				</div>
+				
+				<br>
+				
+				<input class="btn btn-lg btn-primary btn-block" type="submit" id="report_submit_btn" value="Submit"  formtarget="_blank"/>
+				<input class="btn btn-lg btn-default btn-block" onClick="parent.location='index.html'" type="button" id="report_cancel_btn" value="Cancel" />
+				
+			</form>
+			
+		</div>
+	</body>
+</html> 	

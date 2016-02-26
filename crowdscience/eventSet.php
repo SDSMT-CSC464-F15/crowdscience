@@ -105,22 +105,30 @@
 		global $db,$response,$request;	
 		$response["status"] = "0";
 		
+		//collection to use
+		$eventsetsinfo = $db->eventsetsinfo;
+		
 		//get the previously selected event set
 		if(isset($_SESSION['eventsetselection'])) {
 			$response["eventsetselection"] = $_SESSION['eventsetselection'];
 		}
+		//if there isn't one, default to something
+		else {
+			$firstevent= $eventsetsinfo->findOne();
+			$_SESSION['eventsetselection'] = $firstevent['id'];
+			$response["eventsetselection"] = $_SESSION['eventsetselection'];
+		}
 		
-		//collection to use
-		$eventsetsinfo = $db->eventsetsinfo;
+		
 		//Get all event sets info
 		$cursor = $eventsetsinfo->find();
 		
 		//get a list of collections and add to response
 		foreach ($cursor as $eventsetinfo) {
-			$response["eventsetsinfo"][] = $eventsetinfo;
-		}
-		
-		return $response;
+		$response["eventsetsinfo"][] = $eventsetinfo;
 	}
 	
+	return $response;
+}
+
 ?>
