@@ -19,6 +19,8 @@ $(document).ready(function(){
 	//update event set selection options - defined in eventSet.js
 	POST_UpdateEventSetOptions();
 	
+	POST_UpdateReportFields();
+	
 	//set what to do when the event set selection is changed	
 	$("#select_event_set").on('change', function() { POST_ChangeEventSetSelection(); });
 });
