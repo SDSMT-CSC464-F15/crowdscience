@@ -42,6 +42,7 @@ function POST_SubmitEventReport() {
 	
 	for (var i = event_set_details.length - 1; i >= 0; i--) {
 	request.newreport.details[event_set_details[i].id] = $("#" + event_set_details[i].id).val();
+	alert(request.newreport.details[event_set_details[i].id]);
 		}
 		
 	//add image id to json only if one was uploaded
