@@ -47,7 +47,7 @@ function POST_SubmitEventReport(argument) {
 	
 	for (var i = event_set_details.length - 1; i >= 0; i--) {
 		//are we correctly accessing the html form here?
-		alert
+		alert( $(event_set_details[i].id).val());
 	request.newreport.details[event_set_details[i].id] = $(event_set_details[i].id).val();
 		}
 		
