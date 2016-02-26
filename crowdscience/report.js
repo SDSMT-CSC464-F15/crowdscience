@@ -31,9 +31,10 @@ function POST_SubmitEventReport(argument) {
 	//json for request
 	alert ( "In the function at least");
 	alert( event_set_details.length);
+	
 	var request = { 
-		action: submiteventreport,
-		eventsetselection:$("#select_event_set option:selected").val(),
+		action: "submiteventreport",
+		eventsetselection: $("#select_event_set option:selected").val(),
 		newreport: {
 			location: {
 				lat: lat,
@@ -45,7 +46,9 @@ function POST_SubmitEventReport(argument) {
 	alert( event_set_details.length);
 	
 	for (var i = event_set_details.length - 1; i >= 0; i--) {
-	request.newreport.details[event_set_details[i].id] = $("#" + event_set_details[i].id).val();
+		//are we correctly accessing the html form here?
+		alert
+	request.newreport.details[event_set_details[i].id] = $(event_set_details[i].id).val();
 		}
 		
 	//add image id to json only if one was uploaded
