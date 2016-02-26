@@ -86,7 +86,7 @@ function POST_UploadPhotos(event) {
 		data: data,
 		cache: false,
 		processData: false, // Don't process the files
-		contentType: false, // Set content type to false as jQuery will tell the server its a query string request
+		contentType: false // Set content type to false as jQuery will tell the server its a query string request
 	})
 	.done(function(data){
 		if(typeof data.error === 'undefined')
@@ -174,6 +174,7 @@ function UpdateReportFields (data) {
 	
 	event_set_details = new Array();
 
+alert( "Length:" data.details.length);
 	$("#event_fields").empty();
 	
 	
