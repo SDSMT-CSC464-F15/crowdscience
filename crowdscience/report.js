@@ -172,8 +172,6 @@ function POST_UpdateReportFields (argument) {
 
 function UpdateReportFields (data) {
 	
-	alert( data.details.length);
-	
 	event_set_details = data.details;
 	
 	$("#event_fields").empty();
