@@ -1,7 +1,7 @@
 var picture_id = [];
 var lat = 0;
 var lon = 0;
-var event_set_details = [];
+var event_set_details = new Array();
 
 $(document).ready(function(){
 	initmap(); //load map
@@ -172,12 +172,15 @@ function POST_UpdateReportFields (argument) {
 
 function UpdateReportFields (data) {
 	
-	event_set_details = data.details;
-	
+	event_set_details = new Array();
+
 	$("#event_fields").empty();
 	
 	
 	for (var i = data.details.length - 1; i >= 0; i--) {
+		
+		event_set_details.push(data.details[i]);
+		
 		//type: selection
 		if( data.details[i].type === "selection"){
 			eventFields = "<select id=\"" + data.details[i].id + "\" class=\"form-control\"> <option selected disabled value=\"\">" + data.details[i].name + "</option>";
