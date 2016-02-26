@@ -37,7 +37,8 @@ function POST_SubmitEventReport(argument) {
 			location: {
 				lat: lat,
 				long: lon
-			}
+			},
+			details: {}
 		}
 	};
 	
@@ -47,7 +48,7 @@ function POST_SubmitEventReport(argument) {
 		alert( "i = " + i + ";  event_set_fields[i].attr(\"id\") = " + event_set_fields[i].attr("id") + ";  event_set_fields[i].val() = " + event_set_fields[i].val() + ";");
 
 		//this is where it breaks
-	//request.newreport.details[event_set_fields[i].attr("id").toString()] = event_set_fields[i].val().toString();
+	request.newreport.details[event_set_fields[i].attr("id").toString()] = event_set_fields[i].val().toString();
 		}
 		
 	//add image id to json only if one was uploaded
