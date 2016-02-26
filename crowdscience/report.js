@@ -49,7 +49,7 @@ function POST_SubmitEventReport(argument) {
 		//are we correctly accessing the html form here?
 		alert( event_set_fields[i].attr("id"));
 		alert( event_set_fields[i].val());
-	request.newreport[details][event_set_fields[i].attr("id")] = event_set_fields[i].val();
+	//request.newreport[details][event_set_fields[i].attr("id")] = event_set_fields[i].val();
 		}
 		
 	//add image id to json only if one was uploaded
