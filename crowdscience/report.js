@@ -46,10 +46,12 @@ function POST_SubmitEventReport(argument) {
 	alert( event_set_fields.length);
 	
 	for (var i = event_set_fields.length - 1; i >= 0; i--) {
-		//are we correctly accessing the html form here?
+		
 		alert( event_set_fields[i].attr("id"));
 		alert( event_set_fields[i].val());
-	//request.newreport[details][event_set_fields[i].attr("id")] = event_set_fields[i].val();
+		
+		//this is where it breaks
+	request.newreport[details][event_set_fields[i].attr("id")] = event_set_fields[i].val().toString();
 		}
 		
 	//add image id to json only if one was uploaded
