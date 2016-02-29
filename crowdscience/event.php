@@ -63,6 +63,12 @@
 		$usertable = $db->user;
 		
 		$eventsetinfo = $eventsetsinfo->findOne( array('id' => $eventset), array('details', '_id' => 0) );
+		if(is_null($eventsetinfo))
+		{
+			$response["status"] = "1"; 
+			$response["messages"][] = "Event Set Info not found";
+			return;
+			}
 		foreach ($eventsetinfo['details'] as $detail) {
 			$response["details"][] = $detail;
 		}
