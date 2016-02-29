@@ -40,10 +40,6 @@
 		case "geteventsetinfoanddata":
 		$response = getEventSetInfoAndData();
 		break;
-		//get an Event via ID
-		case "geteventbyid":
-		$response = getEventByID();
-		break;
 		//get a Event Set Info and an Event via ID
 		case "geteventsetinfoandeventbyid":
 		$response = getEventSetInfoAndEventByID();
@@ -75,9 +71,9 @@
 		
 		$id = $request["id"];
 		
-		$eventdata = $collection->findOne(array('_id' => $id));
+		$event = $eventdata->findOne(array('_id' => $id));
 		
-		if(is_null($eventdata))
+		if(is_null($event))
 		{
 			$response["status"] = "1"; 
 			$response["messages"][] = "Event not found";
@@ -86,7 +82,7 @@
 		
 		try
 		{
-			$userinfo = $usertable->findOne(array('_id' => $eventdata['user']));
+			$userinfo = $usertable->findOne(array('_id' => $event['user']));
 		}
 		catch (MongoException $e)
 		{
@@ -94,55 +90,17 @@
 			$response["messages"][] = "$e->getMessage()";
 			return;
 		}
-		$eventdata['user'] = $userinfo['username'];
-		$date = $eventdata['details']['date'];
+		$event['user'] = $userinfo['username'];
+		$date = $event['details']['date'];
 		$date = $date->sec;
 		$date = date("Y-m-d", $date);
-		$eventdata['details']['date'] = $date;
+		$event['details']['date'] = $date;
 		
-		$response['eventdata'][] = $eventdata;
+		$response['eventdata'][] = $event;
 		return $response;
 		
 	}
 	
-	function getEventByID()
-	{
-		global $db,$response,$request;
-		$response["status"] = "0";
-		
-		$eventset = $_SESSION['eventsetselection'];
-		$id = $request["display"]["id"];
-		
-		
-		$collection = $db->$eventset;
-		$usertable = $db->user;
-		$result = $collection->findOne(array('_id' => new MongoId("$id")));
-		
-		if(is_null($result))
-		{
-			$response["status"] = "1"; 
-			$response["messages"][] = "Event not found";
-			return;
-		}
-		
-		try
-		{
-			$userinfo = $usertable->findOne(array('_id' => $result['user']));
-		}
-		catch (MongoException $e)
-		{
-			$response["status"] = 1; 
-			$response["messages"][] = "$e->getMessage()";
-			return;
-		}
-		$result['user'] = $userinfo['username'];
-		$date = $result['details']['date'];
-		$date = $date->sec;
-		$date = date("Y-m-d", $date);
-		$result['details']['date'] = $date;
-		
-		return $result;
-	}
 	
 	function getEventSetInfoAndData()
 	{
