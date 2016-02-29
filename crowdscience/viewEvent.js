@@ -16,7 +16,8 @@ function POST_GetEventSetInfoAndEventByID (argument) {
 	var request = { "action" : "geteventsetinfoandeventbyid", "id" : event_id };
 	
 	$.post( "event.php", JSON.stringify(request), null, "json")
-	.done(function(data) {
+	.done(function(result) {
+		var data = jQuery.parseJSON(result);
 		DisplayEvent(data);
 	})
 	.fail(function(data) {
