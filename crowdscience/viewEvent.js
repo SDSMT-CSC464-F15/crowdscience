@@ -26,7 +26,6 @@ function POST_GetEventSetInfoAndEventByID (argument) {
 
 function DisplayEvent (data)
 {	
-	alert( "In DisplayEvent Function" );
 	if (data.status == 0){ 
 		alert( "PHP finished sucessfully" );
 	}
@@ -40,15 +39,12 @@ function DisplayEvent (data)
 		alert ( "Failed to find user in Mongo DB" );
 	}
 
-	
 	$("#event_info").empty();
-	alert( "data.eventdata.user : " + data.eventdata.user );
-	alert( "data.eventdata.location.coordinates : " + data.eventdata.location.coordinates );
 	
 	eventInfo = "<b>User:</b><input class=\"event-control\" value=\"" + data.eventdata.user + "\" type=\"text\" disabled /> <b>Location:</b><input class=\"event-control\" value=\"" + data.eventdata.location.coordinates + "\" type=\"text\" disabled />" ;
-	alert( "EventInfo okay");
+
 	for (var i = data.details.length - 1; i >= 0; i--) {
-		alert( "Data.details loop i : " + i );
+
 		if( data.details[i].type === "selection"){
 			for ( var j = data.details[i].options.length -1; j >=0; j-- ){
 				if ( data.eventdata.details[data.details[i].id] === data.details[i].options[j].id ) {
@@ -62,8 +58,6 @@ function DisplayEvent (data)
 	}
 	
 	$("#event_info").append(eventInfo);
-	
-	alert( "eventInfo appended to event_info" );
 	
 	//check if images are attached to event
 	if(data.eventdata.images)
