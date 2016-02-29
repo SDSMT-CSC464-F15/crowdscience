@@ -16,8 +16,7 @@ function POST_GetEventSetInfoAndEventByID (argument) {
 	var request = { "action" : "geteventsetinfoandeventbyid", "id" : event_id };
 	
 	$.post( "event.php", JSON.stringify(request), null, "json")
-	.done(function(result) {
-		var data = jQuery.parseJSON(result);
+	.done(function(data) {
 		DisplayEvent(data);
 	})
 	.fail(function(data) {
@@ -27,6 +26,7 @@ function POST_GetEventSetInfoAndEventByID (argument) {
 
 function DisplayEvent (data)
 {	
+	alert( "In DisplayEvent Function" );
 	if (data.status == 0){ 
 		alert( "PHP finished sucessfully" );
 	}
@@ -40,7 +40,7 @@ function DisplayEvent (data)
 		alert ( "Failed to find user in Mongo DB" );
 	}
 
-	alert( "In DisplayEvent Function" );
+	
 	$("#event_info").empty();
 	alert( "data.eventdata.user : " + data.eventdata.user );
 	alert( "data.eventdata.location.coordinates : " + data.eventdata.location.coordinates );

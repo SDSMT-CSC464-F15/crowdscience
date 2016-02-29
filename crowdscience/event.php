@@ -52,7 +52,15 @@
 		global $db,$response,$request;
 		$response["status"] = "0";
 		
+		if(isset($_SESSION['eventsetselection'])) {
 		$eventset = $_SESSION['eventsetselection'];
+		}
+		else {
+			$firstevent= $eventsetsinfo->findOne();
+			$_SESSION['eventsetselection'] = $firstevent['id'];
+			$response["eventsetselection"] = $_SESSION['eventsetselection'];
+		}
+		
 		
 		$eventdata = $db->$eventset;
 		$eventsetsinfo = $db->eventsetsinfo;
