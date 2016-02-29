@@ -6,13 +6,10 @@ $(document).ready(function(){
 
 
 function POST_GetEventSetInfoAndEventByID (argument) {
-	alert( "In POST_GetEventSetInfoAndEventByID Function" );
 	var parser = document.createElement('a');
 	parser.href = document.URL;
 	var event_id = parser.hash;
 	event_id = event_id.slice( 1 );
-	alert( "event_id : " + event_id );
-	
 	var request = { "action" : "geteventsetinfoandeventbyid", "id" : event_id };
 	
 	$.post( "event.php", JSON.stringify(request), null, "json")
@@ -26,9 +23,6 @@ function POST_GetEventSetInfoAndEventByID (argument) {
 
 function DisplayEvent (data)
 {	
-	if (data.status == 0){ 
-		alert( "PHP finished sucessfully" );
-	}
 	if (data.status == 1){
 		alert ( "Failed to get EventSetInfo from Mongo DB" );
 	}
