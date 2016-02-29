@@ -29,7 +29,7 @@ function DisplayEvent (data)
 {	
 	alert( "In DisplayEvent Function" );
 	$("#event_info").empty();
-	
+	alert( "data.eventdata.location.coordinates : " data.eventdata.location.coordinates );
 	eventInfo = "<b>User:</b><input class=\"event-control\" value=\"" + data.eventdata.user + "\" type=\"text\" disabled /> <b>Location:</b><input class=\"event-control\" value=\"" + data.eventdata.location.coordinates + "\" type=\"text\" disabled />" ;
 	alert( "EventInfo okay");
 	for (var i = data.details.length - 1; i >= 0; i--) {
