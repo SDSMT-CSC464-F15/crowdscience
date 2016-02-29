@@ -23,10 +23,11 @@ function POST_GetEventSetInfoAndEventByID (event_id) {
 	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0) {
+			alert( "Status was 0");
 			DisplayEvent(data);
 		}
 		else {
-			alert( data.messages );
+			alert( data.status + ": Something went wrong in the PHP" );
 		}
 	})
 	.fail(function (data) {
