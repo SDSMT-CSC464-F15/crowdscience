@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 
-	POST_GetEventSetInfoAndEventByID(event_id);
+	POST_GetEventSetInfoAndEventByID();
 });
 
 
