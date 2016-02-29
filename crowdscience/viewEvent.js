@@ -30,20 +30,20 @@ function POST_GetEventSetInfoAndEventByID (event_id) {
 		}
 	})
 	.fail(function (data) {
-		alert(data.responsecode + " : PHP failed");
+		alert(data.status + ": Error getting Event by ID");
 	})
 }
 
 function DisplayEvent (data)
 {	
-	$("#event_info").empty();
+	document.getElementById('event_info').empty();
 	
-	eventInfo = "<b>User:</b><input class=\"event-control\" value=\"" + data.user + "\" type=\"text\" disabled />" + "<b>Location:</b><input class=\"event-control\" value=\"" + data.location.coordinates + "\" type=\"text\" disabled />" ;
+	eventInfo = "<b>User:</b><input class=\"event-control\" value=\"" + data.eventdata.user + "\" type=\"text\" disabled />" + "<b>Location:</b><input class=\"event-control\" value=\"" + data.eventdata.location.coordinates + "\" type=\"text\" disabled />" ;
 	for (var i = data.details.length - 1; i >= 0; i--) {
 		if( data.details[i].type === "selection"){
 			for ( var j = data.details[i].options.length -1; j >=0; j-- ){
 				if ( data.eventdata[data.details[i].id] === data.details[i].options[j].id ) {
-					eventInfo += "<b>" + data.details[i].user + ":</b><input class=\"event-control\" value=\"" + data.details[i].options[j].name + "\" type=\"text\" disabled />";
+					eventInfo += "<b>" + data.details[i].name + ":</b><input class=\"event-control\" value=\"" + data.details[i].options[j].name + "\" type=\"text\" disabled />";
 				}
 			}
 		}
@@ -52,7 +52,7 @@ function DisplayEvent (data)
 		}
 		}
 	
-	$("#event_info").append(eventInfo);
+	document.getElementById('event_info').append(eventInfo);
 	
 	
 	
