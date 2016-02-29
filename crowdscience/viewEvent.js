@@ -72,7 +72,7 @@ function DisplayEvent (data)
 		var imageid = data.eventdata.images[0].$id;
 		document.getElementById('first_image').src = "image.php?_id=" + imageid;
 		
-		var array_length = data.images.length;
+		var array_length = data.eventdata.images.length;
 		for( var i = 1; i < array_length; i++)
 		{
 			var imageid = data.eventdata.images[i].$id;
