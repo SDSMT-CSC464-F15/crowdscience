@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 function POST_GetEventSetInfoAndEventByID (event_id) {
 	
-var request = {action : "geteventsetinfoandeventbyid", id : event_id };
+	var request = {action : "geteventsetinfoandeventbyid", id : event_id };
 	
 	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
@@ -32,11 +32,10 @@ var request = {action : "geteventsetinfoandeventbyid", id : event_id };
 }
 
 function DisplayEvent (data)
-{	//fill html fileds with event data
+{	
 	$("#event_info").empty();
 	
-	eventInfo = "<b>User:</b><input class=\"event-control\" value=\"" + data.user + "\" type=\"text\" disabled />"
-	+ "<b>Location:</b><input class=\"event-control\" value=\"" + data.location.coordinates + "\" type=\"text\" disabled />" ;
+	eventInfo = "<b>User:</b><input class=\"event-control\" value=\"" + data.user + "\" type=\"text\" disabled />" + "<b>Location:</b><input class=\"event-control\" value=\"" + data.location.coordinates + "\" type=\"text\" disabled />" ;
 	for (var i = data.details.length - 1; i >= 0; i--) {
 		if( data.details[i].type === "selection"){
 			for ( var j = data.details[i].options.length -1; j >=0; j-- ){
@@ -47,9 +46,10 @@ function DisplayEvent (data)
 		}
 		else
 		eventInfo += "<b>" + data.details[i].name + ":</b><input class=\"event-control\" value=\"" + data.eventdata[data.details[i].id] + "\" type=\"text\" disabled />";
-		
-		$("#event_info").append(eventInfo);
-	}
+		}
+	
+	$("#event_info").append(eventInfo);
+	
 	
 	
 	//check if images are attached to event
@@ -75,4 +75,4 @@ function DisplayEvent (data)
 	{
 		$("#image_carousel").hide();
 	}
-	}	
+	}		
