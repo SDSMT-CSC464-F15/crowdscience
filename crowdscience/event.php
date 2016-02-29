@@ -38,7 +38,7 @@
 		break;
 		//get Event Set Info and Data
 		case "geteventsetinfoanddata":
-		$response = array_merge(getEventSetInfo(), getEventSetData());
+		$response = getEventSetInfoAndData();
 		break;
 		//get an Event via ID
 		case "geteventbyid":
@@ -46,10 +46,60 @@
 		break;
 				//get an Event via ID
 		case "geteventsetinfoandeventbyid":
-		$response = getEventSetInfo() + getEventByID();
+		$response = getEventSetInfoAndEventByID();
 		break;
 	}
 	echo json_encode($response);
+	
+	function getEventSetInfoAndEventByID()
+	{
+		global $db,$response,$request;
+		$response["status"] = "0";
+		
+		$eventset = $request["eventsetselection"];
+		$eventset = $request["eventsetselection"];
+		
+		$eventdata = $db->$eventset;
+		$eventsetsinfo = $db->eventsetsinfo;
+				$usertable = $db->user;
+		
+		$eventsetinfo = $eventsetsinfo->findOne( array('id' => $eventset), array('details', '_id' => 0) );
+		foreach ($eventsetinfo['details'] as $detail) {
+			$response["details"][] = $detail;
+		}
+		
+		$id = $request["display"]["id"];
+
+
+	$result = $collection->findOne(array('_id' => new MongoId("$id")));
+	
+	if(is_null($result))
+	{
+		$response["status"] = "1"; 
+		$response["messages"][] = "Event not found";
+		return;
+	}
+
+	try
+	{
+		$userinfo = $usertable->findOne(array('_id' => $result['user']));
+	}
+	catch (MongoException $e)
+	{
+		$response["status"] = 1; 
+		$response["messages"][] = "$e->getMessage()";
+		return;
+	}
+	$result['user'] = $userinfo['username'];
+	$date = $result['details']['date'];
+	$date = $date->sec;
+	$date = date("Y-m-d", $date);
+	$result['details']['date'] = $date;
+
+$response['eventdata'] = $result;
+return $response;
+	
+		}
 	
 	function getEventByID()
 {
@@ -59,8 +109,7 @@
 		$eventset = $_SESSION['eventsetselection'];
 		$id = $request["display"]["id"];
 
-	//Using the event collection, find the event that corresponds
-	//to the id.
+
 	$collection = $db->$eventset;
 	$usertable = $db->user;
 	$result = $collection->findOne(array('_id' => new MongoId("$id")));
@@ -90,6 +139,48 @@
 
 	return $result;
 }
+	
+	function getEventSetInfoAndData()
+	{
+		global $db,$response,$request;
+		$response["status"] = "0";
+		
+		$eventset = $request["eventsetselection"];
+		$eventset = $request["eventsetselection"];
+		
+		$eventdata = $db->$eventset;
+		$eventsetsinfo = $db->eventsetsinfo;
+				$usertable = $db->user;
+		
+		$eventsetinfo = $eventsetsinfo->findOne( array('id' => $eventset), array('details', '_id' => 0) );
+		foreach ($eventsetinfo['details'] as $detail) {
+			$response["details"][] = $detail;
+		}
+		
+		$cursor = $eventdata->find();
+		foreach ($cursor as $event) {
+			try
+			{
+				$userinfo = $usertable->findOne(array('_id' => $event['user']));
+			}
+			catch (MongoException $e)
+			{
+				$response["status"] = 1; 
+				$response["messages"][] = "$e->getMessage()";
+				return;
+			}
+			$event['user'] = $userinfo['username'];
+			$date = $event['details']['date'];
+			$date = $date->sec;
+			$date = date("Y-m-d", $date);
+			$event['details']['date'] = $date;
+			
+			$response['eventdata'][] = $event;
+		}
+		
+		return $response;
+		
+		}
 	
 	function getEventSetInfo()
 	{

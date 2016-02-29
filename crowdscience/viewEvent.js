@@ -33,13 +33,13 @@ $("#event_info").empty();
 	for (var i = data.details.length - 1; i >= 0; i--) {
 		if( data.details[i].type === "selection"){
 				for ( var j = data.details[i].options.length -1; j >=0; j-- ){
-					if ( data[data.details[i].id] === data.details[i].options[j].id ) {
+					if ( data.eventdata[data.details[i].id] === data.details[i].options[j].id ) {
 						eventInfo += "<b>" + data.details[i].user + ":</b><input class=\"event-control\" value=\"" + data.details[i].options[j].name + "\" type=\"text\" disabled />";
 					}
 				}
 			}
 			else
-			eventInfo += "<b>" + data.details[i].user + ":</b><input class=\"event-control\" value=\"" + data[data.details[i].id] + "\" type=\"text\" disabled />";
+			eventInfo += "<b>" + data.details[i].name + ":</b><input class=\"event-control\" value=\"" + data.eventdata[data.details[i].id] + "\" type=\"text\" disabled />";
 	
 		$("#event_info").append(eventInfo);
 	}
