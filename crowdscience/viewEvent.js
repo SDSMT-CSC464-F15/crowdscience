@@ -1,18 +1,18 @@
 $(document).ready(function(){
 	
-	// Retrieve event id from url
-	var parser = document.createElement('a');
+
+	POST_GetEventSetInfoAndEventByID(event_id);
+});
+
+
+function POST_GetEventSetInfoAndEventByID (argument) {
+	alert( "In POST_GetEventSetInfoAndEventByID Function" );
+		var parser = document.createElement('a');
 	parser.href = document.URL;
 	var event_id = parser.hash;
 	event_id = event_id.slice( 1 );
 	alert( "event_id : " + event_id );
 	
-	POST_GetEventSetInfoAndEventByID(event_id);
-});
-
-
-function POST_GetEventSetInfoAndEventByID (event_id) {
-	alert( "In POST_GetEventSetInfoAndEventByID Function" );
 	var request = { "action" : "geteventsetinfoandeventbyid", "id" : event_id }
 	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
