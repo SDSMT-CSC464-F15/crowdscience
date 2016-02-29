@@ -1,46 +1,53 @@
 $(document).ready(function(){
-
+	
 	// Retrieve event id from url
 	var parser = document.createElement('a');
 	parser.href = document.URL;
 	var event_id = parser.hash;
 	event_id = event_id.slice( 1 );
-
+	
 	
 	POST_GetEventSetInfoAndEventByID(event_id);
+	
+	$('.carousel').carousel({
+		interval: 5000,
+		cycle: true
+	});
 });
 
 
 function POST_GetEventSetInfoAndEventByID (event_id) {
-
+	
 	var request = {action : "geteventsetinfoandeventbyid", display : {id : event_id }};
-
+	
 	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
-		DisplayEvent(data);
+		if (data.status == 0) {
+			DisplayEvent(data);
+		}
 	})
 	.fail(function (data) {
-		alert(data.responsecode);
+		alert(data.responsecode + " : PHP failed");
 	})
 }
 
 function DisplayEvent (data)
 {	//fill html fileds with event data
-$("#event_info").empty();
-
+	$("#event_info").empty();
+	
 	eventInfo = "<b>User:</b><input class=\"event-control\" value=\"" + data.user + "\" type=\"text\" disabled />"
 	+ "<b>Location:</b><input class=\"event-control\" value=\"" + data.location.coordinates + "\" type=\"text\" disabled />" ;
 	for (var i = data.details.length - 1; i >= 0; i--) {
 		if( data.details[i].type === "selection"){
-				for ( var j = data.details[i].options.length -1; j >=0; j-- ){
-					if ( data.eventdata[data.details[i].id] === data.details[i].options[j].id ) {
-						eventInfo += "<b>" + data.details[i].user + ":</b><input class=\"event-control\" value=\"" + data.details[i].options[j].name + "\" type=\"text\" disabled />";
-					}
+			for ( var j = data.details[i].options.length -1; j >=0; j-- ){
+				if ( data.eventdata[data.details[i].id] === data.details[i].options[j].id ) {
+					eventInfo += "<b>" + data.details[i].user + ":</b><input class=\"event-control\" value=\"" + data.details[i].options[j].name + "\" type=\"text\" disabled />";
 				}
 			}
-			else
-			eventInfo += "<b>" + data.details[i].name + ":</b><input class=\"event-control\" value=\"" + data.eventdata[data.details[i].id] + "\" type=\"text\" disabled />";
-	
+		}
+		else
+		eventInfo += "<b>" + data.details[i].name + ":</b><input class=\"event-control\" value=\"" + data.eventdata[data.details[i].id] + "\" type=\"text\" disabled />";
+		
 		$("#event_info").append(eventInfo);
 	}
 	
@@ -58,7 +65,7 @@ $("#event_info").empty();
 			var imageid = data.images[i].$id;
 			var newElement = '<li data-target="#image_carousel" data-slide-to="' +i+ '"></li>';
 			$("#image_targets").append(newElement);
-
+			
 			var newElement = '<div class="item"><img src="image.php?_id=' + imageid + '"></div>';
 			$("#image_inner").append(newElement);
 		}
@@ -68,4 +75,4 @@ $("#event_info").empty();
 	{
 		$("#image_carousel").hide();
 	}
-}
+	}	

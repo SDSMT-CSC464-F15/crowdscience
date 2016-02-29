@@ -44,7 +44,7 @@
 		case "geteventbyid":
 		$response = getEventByID();
 		break;
-				//get an Event via ID
+		//get an Event via ID
 		case "geteventsetinfoandeventbyid":
 		$response = getEventSetInfoAndEventByID();
 		break;
@@ -61,7 +61,7 @@
 		
 		$eventdata = $db->$eventset;
 		$eventsetsinfo = $db->eventsetsinfo;
-				$usertable = $db->user;
+		$usertable = $db->user;
 		
 		$eventsetinfo = $eventsetsinfo->findOne( array('id' => $eventset), array('details', '_id' => 0) );
 		foreach ($eventsetinfo['details'] as $detail) {
@@ -69,76 +69,76 @@
 		}
 		
 		$id = $request["display"]["id"];
-
-
-	$result = $collection->findOne(array('_id' => new MongoId("$id")));
-	
-	if(is_null($result))
-	{
-		$response["status"] = "1"; 
-		$response["messages"][] = "Event not found";
-		return;
-	}
-
-	try
-	{
-		$userinfo = $usertable->findOne(array('_id' => $result['user']));
-	}
-	catch (MongoException $e)
-	{
-		$response["status"] = 1; 
-		$response["messages"][] = "$e->getMessage()";
-		return;
-	}
-	$result['user'] = $userinfo['username'];
-	$date = $result['details']['date'];
-	$date = $date->sec;
-	$date = date("Y-m-d", $date);
-	$result['details']['date'] = $date;
-
-$response['eventdata'] = $result;
-return $response;
-	
+		
+		
+		$result = $collection->findOne(array('_id' => new MongoId("$id")));
+		
+		if(is_null($result))
+		{
+			$response["status"] = "1"; 
+			$response["messages"][] = "Event not found";
+			return $response;
 		}
+		
+		try
+		{
+			$userinfo = $usertable->findOne(array('_id' => $result['user']));
+		}
+		catch (MongoException $e)
+		{
+			$response["status"] = 1; 
+			$response["messages"][] = "$e->getMessage()";
+			return $response;
+		}
+		$result['user'] = $userinfo['username'];
+		$date = $result['details']['date'];
+		$date = $date->sec;
+		$date = date("Y-m-d", $date);
+		$result['details']['date'] = $date;
+		
+		$response['eventdata'] = $result;
+		return $response;
+		
+	}
 	
 	function getEventByID()
-{
-	global $db,$response,$request;
+	{
+		global $db,$response,$request;
 		$response["status"] = "0";
 		
 		$eventset = $_SESSION['eventsetselection'];
 		$id = $request["display"]["id"];
-
-
-	$collection = $db->$eventset;
-	$usertable = $db->user;
-	$result = $collection->findOne(array('_id' => new MongoId("$id")));
-	
-	if(is_null($result))
-	{
-		$response["status"] = "1"; 
-		$response["messages"][] = "Event not found";
-		return;
+		
+		
+		$collection = $db->$eventset;
+		$usertable = $db->user;
+		$result = $collection->findOne(array('_id' => new MongoId("$id")));
+		
+		if(is_null($result))
+		{
+			$response["status"] = "1"; 
+			$response["messages"][] = "Event not found";
+			return;
+		}
+		
+		try
+		{
+			$userinfo = $usertable->findOne(array('_id' => $result['user']));
+		}
+		catch (MongoException $e)
+		{
+			$response["status"] = 1; 
+			$response["messages"][] = "$e->getMessage()";
+			return;
+		}
+		$result['user'] = $userinfo['username'];
+		$date = $result['details']['date'];
+		$date = $date->sec;
+		$date = date("Y-m-d", $date);
+		$result['details']['date'] = $date;
+		
+		return $result;
 	}
-
-	try
-	{
-		$userinfo = $usertable->findOne(array('_id' => $result['user']));
-	}
-	catch (MongoException $e)
-	{
-		$response["status"] = 1; 
-		$response["messages"][] = "$e->getMessage()";
-		return;
-	}
-	$result['user'] = $userinfo['username'];
-	$date = $result['details']['date'];
-	$date = $date->sec;
-	$date = date("Y-m-d", $date);
-	$result['details']['date'] = $date;
-
-	return $result;
-}
 	
 	function getEventSetInfoAndData()
 	{
@@ -150,7 +150,7 @@ return $response;
 		
 		$eventdata = $db->$eventset;
 		$eventsetsinfo = $db->eventsetsinfo;
-				$usertable = $db->user;
+		$usertable = $db->user;
 		
 		$eventsetinfo = $eventsetsinfo->findOne( array('id' => $eventset), array('details', '_id' => 0) );
 		foreach ($eventsetinfo['details'] as $detail) {
@@ -180,7 +180,7 @@ return $response;
 		
 		return $response;
 		
-		}
+	}
 	
 	function getEventSetInfo()
 	{
@@ -197,7 +197,7 @@ return $response;
 		}
 		
 		return $response;
-		}
+	}
 	
 	function getEventSetData()
 	{
@@ -279,10 +279,10 @@ return $response;
 		
 		//get a list of collections and add to response
 		foreach ($cursor as $eventsetinfo) {
-		$response["eventsetsinfo"][] = $eventsetinfo;
+			$response["eventsetsinfo"][] = $eventsetinfo;
+		}
+		
+		return $response;
 	}
 	
-	return $response;
-}
-
 ?>

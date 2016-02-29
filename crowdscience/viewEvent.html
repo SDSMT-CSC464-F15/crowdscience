@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-  <meta charset="utf-8">
-  <title>Location Change Mapper</title>
-
-  <!-- jQuery -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	
-  <!-- Bootstrap core CSS -->
-  <link href="bootstrapbill/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-	 <link href="bootstrapbill/viewEvent.css" rel="stylesheet">
-	
-	<!-- lcmapper scripts -->
-	<script type="text/javascript" src="viewEvent.js"></script>
-  <script type="text/javascript" src="checkLogin.js"></script>
-  <script type="text/javascript" src="bootstrapbill/bootstrap.js"></script>
-  
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('.carousel').carousel({
-				interval: 5000,
-				cycle: true
-			});
-		});
-	</script>
-
-</head>
-<body style="padding-left: 15px; padding-bottom: 50px; overflow-x: hidden; background-color: #eee;">
-
-<nav class="navbar navbar-default" role="navigation">
+	<head>
+		
+		<meta charset="utf-8">
+		<title>Location Change Mapper</title>
+		
+		<!-- jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		
+		<!-- Bootstrap core CSS -->
+		<link href="bootstrapbill/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="bootstrapbill/viewEvent.css" rel="stylesheet">
+		
+		<!-- lcmapper scripts -->
+		<script type="text/javascript" src="viewEvent.js"></script>
+		<script type="text/javascript" src="checkLogin.js"></script>
+		<script type="text/javascript" src="bootstrapbill/bootstrap.js"></script>
+		
+	</head>
+	<body style="padding-left: 15px; padding-bottom: 50px; overflow-x: hidden; background-color: #eee;">
+		
+		<nav class="navbar navbar-default" role="navigation">
 			<div class="container-fluid">
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					
@@ -43,40 +34,40 @@
 			</div> <!-- /.container-fluid -->
 		</nav>
 		
-
-
-<div id="event_info" class="col-md-6" style="float:right">
-<b>Location:</b> <input class="event-control" name="location" id="location"  value="" type="text" disabled  />
-<b>Date:</b> <input class="event-control" name="date" id="date"  value="" type="text" disabled  />
-<b>Observer:</b> <input class="event-control" name="observer" id="observer"  value="" type="text" disabled  />
-<b>Change Type:</b> <input class="event-control" name="type" id="type"  value="" type="text" disabled  />
-<b>Status:</b> <input class="event-control" name="status" id="status"  value="" type="text" disabled  />
-</div>
-
-<div id="carousel_div" class="carousel_div" >
-	<!-- Image Carousel -->
-	<div id="image_carousel" class="carousel slide" data-ride="carousel" style = "width:400px; height:400px">
-	  <!-- Indicators -->
-	  <ol class="carousel-indicators" id="image_targets">
-		<li data-target="#image_carousel" data-slide-to="0" class="active"></li>
-	  </ol>
-
-	  <!-- Wrapper for slides -->
-	  <div class="carousel-inner" id="image_inner" style = "width:400px ; height:400px">
-		<div class="item active">
-		  <img id="first_image" src="">
+		
+		
+		<div id="event_info" class="col-md-6" style="float:right">
+			<b>Location:</b> <input class="event-control" name="location" id="location"  value="" type="text" disabled  />
+			<b>Date:</b> <input class="event-control" name="date" id="date"  value="" type="text" disabled  />
+			<b>Observer:</b> <input class="event-control" name="observer" id="observer"  value="" type="text" disabled  />
+			<b>Change Type:</b> <input class="event-control" name="type" id="type"  value="" type="text" disabled  />
+			<b>Status:</b> <input class="event-control" name="status" id="status"  value="" type="text" disabled  />
 		</div>
-	  </div>
-
-	  <!-- Controls -->
-	  <a class="left carousel-control" href="#image_carousel" role="button" data-slide="prev">
-		<span class="glyphicon glyphicon-chevron-left"></span>
-	  </a>
-	  <a class="right carousel-control" href="#image_carousel" role="button" data-slide="next">
-		<span class="glyphicon glyphicon-chevron-right"></span>
-	  </a>
-	</div>
-</div>
-
-</body>
+		
+		<div id="carousel_div" class="carousel_div" >
+			<!-- Image Carousel -->
+			<div id="image_carousel" class="carousel slide" data-ride="carousel" style = "width:400px; height:400px">
+				<!-- Indicators -->
+				<ol class="carousel-indicators" id="image_targets">
+					<li data-target="#image_carousel" data-slide-to="0" class="active"></li>
+				</ol>
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" id="image_inner" style = "width:400px ; height:400px">
+					<div class="item active">
+						<img id="first_image" src="">
+					</div>
+				</div>
+				
+				<!-- Controls -->
+				<a class="left carousel-control" href="#image_carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#image_carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+		
+	</body>
 </html> 

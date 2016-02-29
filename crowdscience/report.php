@@ -20,7 +20,7 @@
 		$response["status"] = 1; 
 		$response["messages"][] = "No action"; 
 		break;
-
+		
 		//Submit a new event
 		case "submiteventreport" :
 		$response = submitEventReport();

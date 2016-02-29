@@ -29,7 +29,7 @@ $(document).ready(function(){
 //Gathers appropriate info and makes a new event
 function POST_SubmitEventReport(argument) {
 	//json for request
-
+	
 	var request = { 
 		action: "submiteventreport",
 		eventsetselection: $("#select_event_set option:selected").val(),
@@ -46,10 +46,10 @@ function POST_SubmitEventReport(argument) {
 	
 	for (var i = event_set_fields.length - 1; i >= 0; i--) {
 		alert( "i = " + i + ";  event_set_fields[i].attr(\"id\") = " + event_set_fields[i].attr("id") + ";  event_set_fields[i].val() = " + event_set_fields[i].val() + ";");
-
-	request.newreport.details[event_set_fields[i].attr("id").toString()] = event_set_fields[i].val().toString();
-		}
 		
+		request.newreport.details[event_set_fields[i].attr("id").toString()] = event_set_fields[i].val().toString();
+	}
+	
 	//add image id to json only if one was uploaded
 	if ( picture_id[0] != "") 
 	{
@@ -178,7 +178,7 @@ function POST_UpdateReportFields (argument) {
 function UpdateReportFields (data) {
 	
 	event_set_details = new Array();
-
+	
 	$("#event_fields").empty();
 	
 	for (var i = data.details.length - 1; i >= 0; i--) {
@@ -206,7 +206,7 @@ function UpdateReportFields (data) {
 			eventField = "<input class=\"form-control\" name=\"" + data.details[i].id + "\" id=\"" + data.details[i].id + "\" placeholder=\"" +data.details[i].name + "\" value=\"\" type=\"number\"";
 			if ( !(data.details[i].max === "none")){
 				eventField += "max=\"" + data.details[i].max + "\" ";
-				}
+			}
 			if ( !(data.details[i].min === "none")){
 				eventField += "min=\"" + data.details[i].min + "\" ";
 			}
