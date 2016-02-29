@@ -38,8 +38,7 @@
 		break;
 		//get Event Set Info and Data
 		case "geteventsetinfoanddata":
-		$response = getEventSetInfo();
-		$response = getEventSetData();
+		$response = getEventSetInfo() + getEventSetData();
 		break;
 		//get an Event via ID
 		case "geteventbyid":
