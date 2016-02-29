@@ -8,12 +8,11 @@ $(document).ready(function(){
 	alert( "event_id : " + event_id );
 	
 	POST_GetEventSetInfoAndEventByID(event_id);
-	
-
 });
 
 
 function POST_GetEventSetInfoAndEventByID (event_id) {
+	alert( "In POST_GetEventSetInfoAndEventByID Function" );
 	var request = { "action" : "geteventsetinfoandeventbyid", "id" : event_id };
 	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
