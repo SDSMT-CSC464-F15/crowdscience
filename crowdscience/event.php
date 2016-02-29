@@ -71,9 +71,9 @@
 			$response["details"][] = $detail;
 		}
 		
-		$id = $request["id"];
+		$id = $request['id'];
 		
-		$event = $eventdata->findOne(array('_id' => $id));
+		$event = $eventdata->findOne(array('_id' => new MongoId("$id")));
 		
 		if(is_null($event))
 		{
