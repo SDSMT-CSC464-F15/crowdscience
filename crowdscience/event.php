@@ -47,8 +47,7 @@
 		break;
 				//get an Event via ID
 		case "geteventsetinfoandeventbyid":
-		$response = getEventSetInfo();
-		$response = getEventByID();
+		$response = getEventSetInfo() + getEventByID();
 		break;
 	}
 	echo json_encode($response);
