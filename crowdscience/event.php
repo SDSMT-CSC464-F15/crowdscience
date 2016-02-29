@@ -69,7 +69,7 @@
 		
 		$id = $request["id"];
 		
-		$eventdata = $collection->findOne(array('_id' => new MongoId("$id")));
+		$eventdata = $collection->findOne(array('_id' => $id));
 		
 		if(is_null($eventdata))
 		{
