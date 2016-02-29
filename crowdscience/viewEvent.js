@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 function POST_GetEventSetInfoAndEventByID (event_id) {
 	
-	var request = {action : "geteventsetinfoandeventbyid", id : event_id };
+	var request = { "action" : "geteventsetinfoandeventbyid", "id" : event_id };
 	
 	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
