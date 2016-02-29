@@ -19,7 +19,7 @@ function POST_GetEventSetInfoAndEventByID (argument) {
 	.done(function(data) {
 		DisplayEvent(data);
 	})
-	.fail(function (data) {
+	.fail(function(data) {
 		alert(data.status + ": Error getting Event by ID");
 	})
 }
