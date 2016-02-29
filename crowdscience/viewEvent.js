@@ -25,6 +25,9 @@ function POST_GetEventSetInfoAndEventByID (event_id) {
 		if (data.status == 0) {
 			DisplayEvent(data);
 		}
+		else {
+			alert( data.messages );
+		}
 	})
 	.fail(function (data) {
 		alert(data.responsecode + " : PHP failed");
