@@ -92,7 +92,7 @@ function UpdateEventSetTable (data){
 		}
 	}
 	
-		tableBody += "<td> <button type=\"button\" onclick=\"location.href='viewEvent.html#" + data[i]._id.$id + "'\"  class=\"btn btn-sm btn-default\"><span class=\"glyphicon glyphicon-link\"></span></button></td></tr>";
+		tableBody += "<td> <button type=\"button\" onclick=\"location.href='viewEvent.html#" + data.eventdata[i]._id.$id + "'\"  class=\"btn btn-sm btn-default\"><span class=\"glyphicon glyphicon-link\"></span></button></td></tr>";
 		$("#event_table_body").append(tableBody);
 	}
 	
