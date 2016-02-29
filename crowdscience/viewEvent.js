@@ -14,7 +14,6 @@ function POST_GetEventSetInfoAndEventByID (argument) {
 	alert( "event_id : " + event_id );
 	
 	var request = { "action" : "geteventsetinfoandeventbyid", "id" : event_id };
-	alert( "Past var request" );
 	
 	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
@@ -31,8 +30,10 @@ function DisplayEvent (data)
 	alert( "In DisplayEvent Function" );
 	$("#event_info").empty();
 	
-	eventInfo = "<b>User:</b><input class=\"event-control\" value=\"" + data.eventdata.user + "\" type=\"text\" disabled />" + "<b>Location:</b><input class=\"event-control\" value=\"" + data.eventdata.location.coordinates + "\" type=\"text\" disabled />" ;
+	eventInfo = "<b>User:</b><input class=\"event-control\" value=\"" + data.eventdata.user + "\" type=\"text\" disabled /> <b>Location:</b><input class=\"event-control\" value=\"" + data.eventdata.location.coordinates + "\" type=\"text\" disabled />" ;
+	alert( "EventInfo okay");
 	for (var i = data.details.length - 1; i >= 0; i--) {
+		alert( "Data.details loop i : " + i );
 		if( data.details[i].type === "selection"){
 			for ( var j = data.details[i].options.length -1; j >=0; j-- ){
 				if ( data.eventdata[data.details[i].id] === data.details[i].options[j].id ) {
@@ -47,7 +48,7 @@ function DisplayEvent (data)
 	
 	$("#event_info").append(eventInfo);
 	
-	
+	alert( "eventInfo appended to event_info" );
 	
 	//check if images are attached to event
 	if(data.eventdata.images)
