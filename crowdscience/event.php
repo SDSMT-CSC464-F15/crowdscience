@@ -44,7 +44,7 @@
 		case "geteventbyid":
 		$response = getEventByID();
 		break;
-		//get an Event via ID
+		//get a Event Set Info and an Event via ID
 		case "geteventsetinfoandeventbyid":
 		$response = getEventSetInfoAndEventByID();
 		break;
@@ -57,7 +57,6 @@
 		$response["status"] = "0";
 		
 		$eventset = $request["eventsetselection"];
-		$eventset = $request["eventsetselection"];
 		
 		$eventdata = $db->$eventset;
 		$eventsetsinfo = $db->eventsetsinfo;
@@ -68,12 +67,11 @@
 			$response["details"][] = $detail;
 		}
 		
-		$id = $request["display"]["id"];
+		$id = $request["id"];
 		
+		$eventdata = $collection->findOne(array('_id' => new MongoId("$id")));
 		
-		$result = $collection->findOne(array('_id' => new MongoId("$id")));
-		
-		if(is_null($result))
+		if(is_null($eventdata))
 		{
 			$response["status"] = "1"; 
 			$response["messages"][] = "Event not found";
@@ -82,7 +80,7 @@
 		
 		try
 		{
-			$userinfo = $usertable->findOne(array('_id' => $result['user']));
+			$userinfo = $usertable->findOne(array('_id' => $eventdata['user']));
 		}
 		catch (MongoException $e)
 		{
@@ -90,13 +88,13 @@
 			$response["messages"][] = "$e->getMessage()";
 			return $response;
 		}
-		$result['user'] = $userinfo['username'];
-		$date = $result['details']['date'];
+		$eventdata['user'] = $userinfo['username'];
+		$date = $eventdata['details']['date'];
 		$date = $date->sec;
 		$date = date("Y-m-d", $date);
-		$result['details']['date'] = $date;
+		$eventdata['details']['date'] = $date;
 		
-		$response['eventdata'] = $result;
+		$response['eventdata'][] = $eventdata;
 		return $response;
 		
 	}
