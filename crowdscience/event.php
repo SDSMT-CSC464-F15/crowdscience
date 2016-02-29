@@ -75,7 +75,7 @@
 		
 		if(is_null($event))
 		{
-			$response["status"] = "1"; 
+			$response["status"] = "2"; 
 			$response["messages"][] = "Event not found";
 			return;
 		}
@@ -88,7 +88,7 @@
 		}
 		catch (MongoException $e)
 		{
-			$response["status"] = 1; 
+			$response["status"] = "3"; 
 			$response["messages"][] = "$e->getMessage()";
 			return;
 		}

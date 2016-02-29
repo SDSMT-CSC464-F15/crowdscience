@@ -17,8 +17,24 @@ function POST_GetEventSetInfoAndEventByID (argument) {
 	
 	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
+		if (data.status == 0){ 
 		alert( "PHP finished sucessfully" );
 			DisplayEvent(data);
+		}
+		else if (data.status == 1){
+			alert ( "Failed to get EventSetInfo from Mongo DB" );
+		}
+		else if (data.status == 2){
+			alert ( "Failed to find event in Mongo DB" );
+		}
+		else if (data.status == 3){
+			alert ( "Failed to find user in Mongo DB" );
+		}
+		else{
+		alert ( "Unknown error");
+		}
+		
+		 
 	})
 	.fail(function (data) {
 		alert(data.status + ": Error getting Event by ID");
