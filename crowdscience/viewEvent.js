@@ -9,17 +9,12 @@ $(document).ready(function(){
 	
 	POST_GetEventSetInfoAndEventByID(event_id);
 	
-	$('.carousel').carousel({
-		interval: 5000,
-		cycle: true
-	});
+
 });
 
 
 function POST_GetEventSetInfoAndEventByID (event_id) {
-	
 	var request = { "action" : "geteventsetinfoandeventbyid", "id" : event_id };
-	
 	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0) {
