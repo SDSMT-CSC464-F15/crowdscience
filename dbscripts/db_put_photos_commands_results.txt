@@ -1,0 +1,130 @@
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Atlas_Storm.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3aeb98bae0af2b7aaa662'), filename: "dbscripts\At
+las_Storm.jpg", chunkSize: 262144, uploadDate: new Date(1456713401385), md5: "5f
+fad120c88e6e723e6e143124ddd8ab", length: 197689 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Bluebells.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3aef994e7869be798253d'), filename: "dbscripts\Bl
+uebells.jpg", chunkSize: 262144, uploadDate: new Date(1456713465111), md5: "a7e5
+596bc079bebf860d31e9a70a3fa6", length: 109370 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Canada_Goose.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af0687630134ff8ce163'), filename: "dbscripts\Ca
+nada_Goose.jpg", chunkSize: 262144, uploadDate: new Date(1456713478075), md5: "4
+fad4ae8d2ad2ae7c5eaa134c3d30203", length: 8029 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Columbine.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af1283a2df04ae7b170d'), filename: "dbscripts\Co
+lumbine.jpg", chunkSize: 262144, uploadDate: new Date(1456713490290), md5: "00f6
+2c6ea1e04edb6f48cd0d351f7bbe", length: 79664 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Forest_Fire.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af1eeb4dddf4c736eacb'), filename: "dbscripts\Fo
+rest_Fire.jpg", chunkSize: 262144, uploadDate: new Date(1456713502083), md5: "ed
+de5620eaa0f6c5daef899d2df6bdbc", length: 2632938 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Iris.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af27472db036b47c1c32'), filename: "dbscripts\Ir
+is.jpg", chunkSize: 262144, uploadDate: new Date(1456713511880), md5: "c37390be7
+6cfecd25073e7579f99526d", length: 93578 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Ladys_Slipper.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af49fa26c2f0a8a89579'), filename: "dbscripts\La
+dys_Slipper.jpg", chunkSize: 262144, uploadDate: new Date(1456713545124), md5: "
+c277bdd2200f4ba63e9485327ad265f5", length: 9082 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Landslide.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af58f0c54740a1af3734'), filename: "dbscripts\La
+ndslide.jpg", chunkSize: 262144, uploadDate: new Date(1456713560848), md5: "cda5
+ed7e1ed14f6e2fb44fb7ce1a3d0b", length: 4711290 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Mudslide.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af637dc57c5ff071006e'), filename: "dbscripts\Mu
+dslide.jpg", chunkSize: 262144, uploadDate: new Date(1456713571207), md5: "90fdd
+0ace1a2e1df3832b0b40513e852", length: 341230 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Northern_Flicker.j
+pg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af7040bf0a47e5ced54e'), filename: "dbscripts\No
+rthern_Flicker.jpg", chunkSize: 262144, uploadDate: new Date(1456713584264), md5
+: "d9140e9318eeae45340e8fb2d86b2f9f", length: 11273 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Pasque1.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af7e68b32cd77194a193'), filename: "dbscripts\Pa
+sque1.jpg", chunkSize: 262144, uploadDate: new Date(1456713598460), md5: "c04035
+a5d84940a6f75b17e5eece7433", length: 19061 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Pasque2.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af8322f00a38e3989dd7'), filename: "dbscripts\Pa
+sque2.jpg", chunkSize: 262144, uploadDate: new Date(1456713603078), md5: "436817
+a4c6eaf70ba8a0f23f71297549", length: 168395 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Readhead.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af945fe1feaae4b7ad84'), filename: "dbscripts\Re
+adhead.jpg", chunkSize: 262144, uploadDate: new Date(1456713620565), md5: "57948
+4619b3ef4bd422bef4eb3490ad1", length: 38094 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Ross_Goose.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af9eb4cc334161c9fa20'), filename: "dbscripts\Ro
+ss_Goose.jpg", chunkSize: 262144, uploadDate: new Date(1456713630097), md5: "0cd
+546041d0a60e0d3af516f821fd1c5", length: 7207 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Volcano_Eruption.j
+pg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3afbee7c44972b0e72d3f'), filename: "dbscripts\Vo
+lcano_Eruption.jpg", chunkSize: 262144, uploadDate: new Date(1456713662202), md5
+: "baeca490c7e6294a5d898ef38dec5610", length: 3924401 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Wild_Rose.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3afd22014d2c95ad05b11'), filename: "dbscripts\Wi
+ld_Rose.jpg", chunkSize: 262144, uploadDate: new Date(1456713682388), md5: "6172
+0e0fa7ed7def1d9e9b6b32294d61", length: 2204323 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Wind_Damage.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3afdb8db2315b74355f6e'), filename: "dbscripts\Wi
+nd_Damage.jpg", chunkSize: 262144, uploadDate: new Date(1456713691374), md5: "53
+327169cec140cec196104055423cef", length: 243180 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Woodlily.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3afe4001e6ffd6783386b'), filename: "dbscripts\Wo
+odlily.jpg", chunkSize: 262144, uploadDate: new Date(1456713700734), md5: "1d8da
+b25e193364387b06464a0e3b0d0", length: 136279 }
+done!
+
+C:\mongodb\bin>

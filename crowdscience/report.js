@@ -163,8 +163,8 @@ function UpdateEventSetOptions (data) {
 }
 
 function POST_UpdateReportFields (argument) {
-	var request = {"action" : "geteventsetdetails", "eventsetselection":$("#select_event_set option:selected").val()}
-	$.post( "report.php", JSON.stringify(request), null, "json")
+	var request = {"action" : "geteventsetinfo", "eventsetselection":$("#select_event_set option:selected").val()}
+	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0){ 
 			UpdateReportFields(data);

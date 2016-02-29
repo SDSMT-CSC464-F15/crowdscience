@@ -1,0 +1,300 @@
+MongoDB shell version: 2.4.9
+connecting to: test
+> show dbs
+comedy  0.203125GB
+crowdsciencemapper      0.203125GB
+cwsusers        (empty)
+lcmapper        0.453125GB
+local   0.078125GB
+test    (empty)
+> use lcmapper
+switched to db lcmapper
+> db.getCollectionNames();
+[
+        "event",
+        "fs.chunks",
+        "fs.files",
+        "googleAuth",
+        "happen",
+        "system.indexes",
+        "user",
+        "users"
+]
+> db.event.find();
+{ "_id" : ObjectId("554160e92f32a0d403000035"), "user" : ObjectId("546e81372f32a
+09417000048"), "location" : { "type" : "Point", "coordinates" : [  -101.99707031
+25,  46.837649560937464 ] }, "images" : [  ObjectId("554160e72f32a0d403000030")
+], "details" : { "description" : "Huge forest fire in central ND", "nat_event_na
+me" : "", "category" : "fire", "status" : "finished", "date" : ISODate("2015-04-
+07T06:00:00Z"), "size" : "large" } }
+{ "_id" : ObjectId("554161172f32a0d40300003c"), "user" : ObjectId("546e81372f32a
+09417000048"), "location" : { "type" : "Point", "coordinates" : [  -103.12866210
+9375,  44.337600831495635 ] }, "images" : [  ObjectId("554160f92f32a0d40300003a"
+) ], "details" : { "description" : "Trees knocked down after the storm.", "nat_e
+vent_name" : "Storm Atlas", "category" : "wind", "status" : "finished", "date" :
+ ISODate("2015-02-18T07:00:00Z"), "size" : "small" } }
+{ "_id" : ObjectId("554162672f32a0cc2100008e"), "user" : ObjectId("546e81372f32a
+09417000048"), "location" : { "type" : "Point", "coordinates" : [  -70.636596679
+6875,  -33.38099943104024 ] }, "images" : [  ObjectId("554162452f32a0cc2100008c"
+) ], "details" : { "description" : "Volcano eruption in Chile", "nat_event_name"
+ : "Volcano", "category" : "avalanche", "status" : "ongoing", "date" : ISODate("
+2015-04-22T06:00:00Z"), "size" : "large" } }
+{ "_id" : ObjectId("554162b92f32a0780a000035"), "user" : ObjectId("546e81372f32a
+09417000048"), "location" : { "type" : "Point", "coordinates" : [  -104.04602050
+781249,  42.898100636939276 ] }, "images" : [  ObjectId("554162a62f32a0780a00003
+3") ], "details" : { "description" : "Mudslide after the recent rain", "nat_even
+t_name" : "", "category" : "landslide", "status" : "finished", "date" : ISODate(
+"2015-04-13T06:00:00Z"), "size" : "small" } }
+{ "_id" : ObjectId("55424b942f32a01821000081"), "user" : ObjectId("552fea292f32a
+0a426000047"), "location" : { "type" : "Point", "coordinates" : [  -104.53491210
+9375,  44.23732831822538 ] }, "images" : [  ObjectId("55424b382f32a0182100007f")
+ ], "details" : { "description" : "Lots of wind damage from a storm back in Febr
+uary. ", "nat_event_name" : "Winter Storm", "category" : "wind", "status" : "fin
+ished", "date" : ISODate("2015-02-04T07:00:00Z"), "size" : "large" } }
+{ "_id" : ObjectId("55424c062f32a0cc21000092"), "user" : ObjectId("552fea292f32a
+0a426000047"), "location" : { "type" : "Point", "coordinates" : [  -103.22753906
+249999,  43.636075155965784 ] }, "images" : [  ObjectId("55424bb92f32a0182100009
+1") ], "details" : { "description" : "Due to heavy rains, some of the land shift
+ed downhill.", "nat_event_name" : "Small Landslide", "category" : "landslide", "
+status" : "finished", "date" : ISODate("2015-04-22T06:00:00Z"), "size" : "small"
+ } }
+{ "_id" : ObjectId("55424c062f32a0682500002f"), "user" : ObjectId("552fea292f32a
+0a426000047"), "location" : { "type" : "Point", "coordinates" : [  -103.22753906
+249999,  43.636075155965784 ] }, "images" : [  ObjectId("55424bb92f32a0182100009
+1") ], "details" : { "description" : "Due to heavy rains, some of the land shift
+ed downhill.", "nat_event_name" : "Small Landslide", "category" : "landslide", "
+status" : "finished", "date" : ISODate("2015-04-22T06:00:00Z"), "size" : "small"
+ } }
+{ "_id" : ObjectId("56cf85672f32a0ac07000029"), "user" : ObjectId("542af2082f32a
+0f409000034"), "location" : { "type" : "Point", "coordinates" : [  -103.35362434
+387207,  44.19168212881222 ] }, "images" : null, "details" : { "description" : "
+Big forest fire in Piedmont, SD", "nat_event_name" : "Rico", "category" : "fire"
+, "status" : "finished", "date" : ISODate("2010-09-10T06:00:00Z"), "size" : "lar
+ge" } }
+{ "_id" : ObjectId("56cf8a342f32a09c0700002f"), "user" : ObjectId("542af2082f32a
+0f409000034"), "location" : { "type" : "Point", "coordinates" : [  -0.1318359375
+,  51.44202475087509 ] }, "images" : [  ObjectId("56cf89ef2f32a09c0700002a"),
+ObjectId("56cf89ef2f32a09c0700002d") ], "details" : { "description" : "Stoneheng
+e?", "nat_event_name" : "Stoneheng tipped over!", "category" : "wind", "status"
+: "finished", "date" : ISODate("2014-03-05T07:00:00Z"), "size" : "small" } }
+> db.getCollectionNames();
+[
+        "event",
+        "fs.chunks",
+        "fs.files",
+        "googleAuth",
+        "happen",
+        "system.indexes",
+        "user",
+        "users"
+]
+> db.fs.files.find();
+{ "_id" : ObjectId("55424ba62f32a01821000083"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php66A5.tmp", "uploadDate" : ISODate("2015-04
+-30T15:35:02Z"), "length" : 2996544, "chunkSize" : 262144, "md5" : "7a9cb937763a
+cbe2f1ec2bdfe95ef02a" }
+{ "_id" : ObjectId("55424bb92f32a01821000091"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\phpAE7E.tmp", "uploadDate" : ISODate("2015-04
+-30T15:35:21Z"), "length" : 2996544, "chunkSize" : 262144, "md5" : "7a9cb937763a
+cbe2f1ec2bdfe95ef02a" }
+{ "_id" : ObjectId("55424c0a2f32a0d40300003e"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\phpE45F.tmp", "uploadDate" : ISODate("2015-04
+-30T15:36:42Z"), "length" : 2996544, "chunkSize" : 262144, "md5" : "7a9cb937763a
+cbe2f1ec2bdfe95ef02a" }
+{ "_id" : ObjectId("55424c0b2f32a0182100009f"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\phpE44E.tmp", "uploadDate" : ISODate("2015-04
+-30T15:36:43Z"), "length" : 2996544, "chunkSize" : 262144, "md5" : "7a9cb937763a
+cbe2f1ec2bdfe95ef02a" }
+{ "_id" : ObjectId("56cf88b82f32a04c0700002a"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\phpADEB.tmp", "uploadDate" : ISODate("2016-02
+-25T23:05:28Z"), "length" : 85807, "chunkSize" : 262144, "md5" : "4164b2b731fe5a
+3bd7a8bbd2cd542e0d" }
+{ "_id" : ObjectId("56cf88e32f32a04c0700002d"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php562C.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:11Z"), "length" : 85807, "chunkSize" : 262144, "md5" : "4164b2b731fe5a
+3bd7a8bbd2cd542e0d" }
+{ "_id" : ObjectId("56cf88e32f32a0540700002a"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php563D.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:11Z"), "length" : 120667, "chunkSize" : 262144, "md5" : "82ed9f44dcd3d
+034b05e8cfe6dbcf152" }
+{ "_id" : ObjectId("56cf88e52f32a0540700002d"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php5FB0.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:13Z"), "length" : 85807, "chunkSize" : 262144, "md5" : "4164b2b731fe5a
+3bd7a8bbd2cd542e0d" }
+{ "_id" : ObjectId("56cf88e52f32a04c07000030"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php600E.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:13Z"), "length" : 120667, "chunkSize" : 262144, "md5" : "82ed9f44dcd3d
+034b05e8cfe6dbcf152" }
+{ "_id" : ObjectId("56cf88e82f32a04c07000033"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php6CDB.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:16Z"), "length" : 85807, "chunkSize" : 262144, "md5" : "4164b2b731fe5a
+3bd7a8bbd2cd542e0d" }
+{ "_id" : ObjectId("56cf88e92f32a05407000030"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php6D69.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:17Z"), "length" : 120667, "chunkSize" : 262144, "md5" : "82ed9f44dcd3d
+034b05e8cfe6dbcf152" }
+{ "_id" : ObjectId("56cf88e92f32a05407000033"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php6FE9.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:17Z"), "length" : 85807, "chunkSize" : 262144, "md5" : "4164b2b731fe5a
+3bd7a8bbd2cd542e0d" }
+{ "_id" : ObjectId("56cf88e92f32a04c07000036"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php7077.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:17Z"), "length" : 120667, "chunkSize" : 262144, "md5" : "82ed9f44dcd3d
+034b05e8cfe6dbcf152" }
+{ "_id" : ObjectId("56cf88e92f32a05407000036"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php7133.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:17Z"), "length" : 85807, "chunkSize" : 262144, "md5" : "4164b2b731fe5a
+3bd7a8bbd2cd542e0d" }
+{ "_id" : ObjectId("56cf88ea2f32a04c07000039"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php71B1.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:18Z"), "length" : 120667, "chunkSize" : 262144, "md5" : "82ed9f44dcd3d
+034b05e8cfe6dbcf152" }
+{ "_id" : ObjectId("56cf88ea2f32a05407000039"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php726D.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:18Z"), "length" : 85807, "chunkSize" : 262144, "md5" : "4164b2b731fe5a
+3bd7a8bbd2cd542e0d" }
+{ "_id" : ObjectId("56cf88ea2f32a04c0700003c"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php730A.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:18Z"), "length" : 85807, "chunkSize" : 262144, "md5" : "4164b2b731fe5a
+3bd7a8bbd2cd542e0d" }
+{ "_id" : ObjectId("56cf88ea2f32a0540700003c"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php73D7.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:18Z"), "length" : 85807, "chunkSize" : 262144, "md5" : "4164b2b731fe5a
+3bd7a8bbd2cd542e0d" }
+{ "_id" : ObjectId("56cf88ea2f32a04c0700003f"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php7464.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:18Z"), "length" : 120667, "chunkSize" : 262144, "md5" : "82ed9f44dcd3d
+034b05e8cfe6dbcf152" }
+{ "_id" : ObjectId("56cf88eb2f32a0ac0700002b"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php7388.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:19Z"), "length" : 120667, "chunkSize" : 262144, "md5" : "82ed9f44dcd3d
+034b05e8cfe6dbcf152" }
+Type "it" for more
+> it
+{ "_id" : ObjectId("56cf88eb2f32a0740700002a"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php7511.tmp", "uploadDate" : ISODate("2016-02
+-25T23:06:19Z"), "length" : 120667, "chunkSize" : 262144, "md5" : "82ed9f44dcd3d
+034b05e8cfe6dbcf152" }
+{ "_id" : ObjectId("56cf89ef2f32a09c0700002a"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php6C5B.tmp", "uploadDate" : ISODate("2016-02
+-25T23:10:39Z"), "length" : 120667, "chunkSize" : 262144, "md5" : "82ed9f44dcd3d
+034b05e8cfe6dbcf152" }
+{ "_id" : ObjectId("56cf89ef2f32a09c0700002d"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php6DC3.tmp", "uploadDate" : ISODate("2016-02
+-25T23:10:39Z"), "length" : 85807, "chunkSize" : 262144, "md5" : "4164b2b731fe5a
+3bd7a8bbd2cd542e0d" }
+{ "_id" : ObjectId("553003e32f32a01821000041"), "timeline_item" : "ce9e6153-c7c5
+-4936-8dfc-27965d1e0e7a", "attachment_id" : "ps:6138398247176305506", "uploadDat
+e" : ISODate("2015-04-16T18:48:03Z"), "length" : 738345, "chunkSize" : 262144, "
+md5" : "25ac85963bb569403976727f37210ebf" }
+{ "_id" : ObjectId("553003e62f32a01821000047"), "timeline_item" : "b1b2b9bb-209b
+-4f2f-9fdd-67f734bd2e7d", "attachment_id" : "ps:6138394026685033730", "uploadDat
+e" : ISODate("2015-04-16T18:48:06Z"), "length" : 567080, "chunkSize" : 262144, "
+md5" : "d99ef023f5a65dad07afa3c1563cb5cb" }
+{ "_id" : ObjectId("553003e82f32a0182100004d"), "timeline_item" : "9ed39cdc-c8f7
+-465e-9e10-5aff60e8191a", "attachment_id" : "ps:6138378591509912882", "uploadDat
+e" : ISODate("2015-04-16T18:48:08Z"), "length" : 577222, "chunkSize" : 262144, "
+md5" : "c095e43946b8fa7a60b34028397504aa" }
+{ "_id" : ObjectId("553003ea2f32a01821000053"), "timeline_item" : "dea03d4a-8ca2
+-42a7-b1b1-f811797e28b1", "attachment_id" : "ps:6138376429298847954", "uploadDat
+e" : ISODate("2015-04-16T18:48:10Z"), "length" : 462620, "chunkSize" : 262144, "
+md5" : "7123b37f35614a63f003a06e251d3813" }
+{ "_id" : ObjectId("553003ec2f32a01821000058"), "timeline_item" : "3202eee8-4e16
+-452a-ba58-f0559a3af4d7", "attachment_id" : "ps:6138375778956118530", "uploadDat
+e" : ISODate("2015-04-16T18:48:12Z"), "length" : 667409, "chunkSize" : 262144, "
+md5" : "e48cecfc186362e85ddd29527b713382" }
+{ "_id" : ObjectId("553003ee2f32a0182100005e"), "timeline_item" : "26b2fb07-d8d4
+-49d0-b3f9-2758bdea1801", "attachment_id" : "ps:6138374871144695762", "uploadDat
+e" : ISODate("2015-04-16T18:48:14Z"), "length" : 549721, "chunkSize" : 262144, "
+md5" : "1f16f118041acad1549e70cc11dd3146" }
+{ "_id" : ObjectId("553003f02f32a01821000064"), "timeline_item" : "decde885-3767
+-4211-83bc-51237b100780", "attachment_id" : "ps:6138370413053354114", "uploadDat
+e" : ISODate("2015-04-16T18:48:16Z"), "length" : 736497, "chunkSize" : 262144, "
+md5" : "9858a4ebe70c64e7172051ff913155d5" }
+{ "_id" : ObjectId("553003f22f32a0182100006a"), "timeline_item" : "91cd2229-dc12
+-4ced-ba5a-2ec09d3709ed", "attachment_id" : "ps:6138365254983282466", "uploadDat
+e" : ISODate("2015-04-16T18:48:18Z"), "length" : 625177, "chunkSize" : 262144, "
+md5" : "a52cc86f76fa22cc68e6a44aabb5cc18" }
+{ "_id" : ObjectId("553003f42f32a01821000070"), "timeline_item" : "34fc764f-9437
+-4c67-b0be-18d569967b1b", "attachment_id" : "ps:6138355076466569714", "uploadDat
+e" : ISODate("2015-04-16T18:48:20Z"), "length" : 573531, "chunkSize" : 262144, "
+md5" : "22bf23289ef1f4684c94c884df0b8c2d" }
+{ "_id" : ObjectId("553003f62f32a01821000076"), "timeline_item" : "5fabd228-43a3
+-4d80-8c3c-cee59f0a2db4", "attachment_id" : "ps:6138337038119467186", "uploadDat
+e" : ISODate("2015-04-16T18:48:22Z"), "length" : 587320, "chunkSize" : 262144, "
+md5" : "980357a552ac5b962156faf103c76a58" }
+{ "_id" : ObjectId("553004502f32a0901200004a"), "timeline_item" : "235e6dba-c9fb
+-4c3c-9daf-0f359a9cb13a", "attachment_id" : "ps:6138407753779637762", "uploadDat
+e" : ISODate("2015-04-16T18:49:52Z"), "length" : 791910, "chunkSize" : 262144, "
+md5" : "9d5775af7ea7e6959f353f9f3f9bc4a4" }
+{ "_id" : ObjectId("553009e62f32a0780a00002a"), "timeline_item" : "68b3a12f-95cf
+-47a7-93f5-8387ba367893", "attachment_id" : "ps:6138413826749662450", "uploadDat
+e" : ISODate("2015-04-16T19:13:42Z"), "length" : 655857, "chunkSize" : 262144, "
+md5" : "e1730c18efe2b3d08cc7d566c523e411" }
+{ "_id" : ObjectId("554160db2f32a0d40300002a"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\phpBC11.tmp", "uploadDate" : ISODate("2015-04
+-29T22:53:15Z"), "length" : 845941, "chunkSize" : 262144, "md5" : "ba45c8f60456a
+672e003a875e469d0eb" }
+{ "_id" : ObjectId("554160e72f32a0d403000030"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\phpEACF.tmp", "uploadDate" : ISODate("2015-04
+-29T22:53:27Z"), "length" : 845941, "chunkSize" : 262144, "md5" : "ba45c8f60456a
+672e003a875e469d0eb" }
+{ "_id" : ObjectId("554160f62f32a0d403000037"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php28BB.tmp", "uploadDate" : ISODate("2015-04
+-29T22:53:42Z"), "length" : 8210, "chunkSize" : 262144, "md5" : "da82268b8a547db
+8307278ba1f7a1c0a" }
+{ "_id" : ObjectId("554160f92f32a0d40300003a"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php352A.tmp", "uploadDate" : ISODate("2015-04
+-29T22:53:45Z"), "length" : 8210, "chunkSize" : 262144, "md5" : "da82268b8a547db
+8307278ba1f7a1c0a" }
+{ "_id" : ObjectId("554161172f32a0cc21000089"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\phpA9CE.tmp", "uploadDate" : ISODate("2015-04
+-29T22:54:15Z"), "length" : 8210, "chunkSize" : 262144, "md5" : "da82268b8a547db
+8307278ba1f7a1c0a" }
+Type "it" for more
+> it
+{ "_id" : ObjectId("554161532f32a0682500002a"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php9391.tmp", "uploadDate" : ISODate("2015-04
+-29T22:55:15Z"), "length" : 4568, "chunkSize" : 262144, "md5" : "480810ab9602538
+e6f22aac754f7dc47" }
+{ "_id" : ObjectId("5541620c2f32a0682500002d"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php6725.tmp", "uploadDate" : ISODate("2015-04
+-29T22:58:20Z"), "length" : 4568, "chunkSize" : 262144, "md5" : "480810ab9602538
+e6f22aac754f7dc47" }
+{ "_id" : ObjectId("554162452f32a0cc2100008c"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php43A0.tmp", "uploadDate" : ISODate("2015-04
+-29T22:59:17Z"), "length" : 4568, "chunkSize" : 262144, "md5" : "480810ab9602538
+e6f22aac754f7dc47" }
+{ "_id" : ObjectId("554162672f32a0a41600002a"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\phpC953.tmp", "uploadDate" : ISODate("2015-04
+-29T22:59:51Z"), "length" : 4568, "chunkSize" : 262144, "md5" : "480810ab9602538
+e6f22aac754f7dc47" }
+{ "_id" : ObjectId("554162a22f32a0780a000030"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\phpAF4F.tmp", "uploadDate" : ISODate("2015-04
+-29T23:00:50Z"), "length" : 8762, "chunkSize" : 262144, "md5" : "7a6215b2d08ede7
+289fd513bec707f98" }
+{ "_id" : ObjectId("554162a62f32a0780a000033"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\phpC0CD.tmp", "uploadDate" : ISODate("2015-04
+-29T23:00:54Z"), "length" : 8762, "chunkSize" : 262144, "md5" : "7a6215b2d08ede7
+289fd513bec707f98" }
+{ "_id" : ObjectId("554162b92f32a0cc21000090"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php9CF.tmp", "uploadDate" : ISODate("2015-04-
+29T23:01:13Z"), "length" : 8762, "chunkSize" : 262144, "md5" : "7a6215b2d08ede72
+89fd513bec707f98" }
+{ "_id" : ObjectId("55424b2d2f32a0182100007c"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\php9484.tmp", "uploadDate" : ISODate("2015-04
+-30T15:33:01Z"), "length" : 213324, "chunkSize" : 262144, "md5" : "14415801abb2a
+fbd295d4aab7f91eb54" }
+{ "_id" : ObjectId("55424b382f32a0182100007f"), "pos" : { "lon" : 0, "lat" : 0 }
+, "filename" : "C:\\Windows\\Temp\\phpBFD9.tmp", "uploadDate" : ISODate("2015-04
+-30T15:33:12Z"), "length" : 213324, "chunkSize" : 262144, "md5" : "14415801abb2a
+fbd295d4aab7f91eb54" }
+{ "_id" : ObjectId("554284f72f32a0941700004e"), "timeline_item" : "dba1a4db-b66e
+-442a-afff-20d26bfdc386", "attachment_id" : "ps:6143615583573028130", "uploadDat
+e" : ISODate("2015-04-30T19:39:35Z"), "length" : 658700, "chunkSize" : 262144, "
+md5" : "4f6e878d584a51936074ec20ff6822f8" }
+{ "_id" : ObjectId("554285ad2f32a03c1000002a"), "timeline_item" : "94d713dc-cfaf
+-4279-94e0-c5b8d2a4de83", "attachment_id" : "ps:6143616369429018786", "uploadDat
+e" : ISODate("2015-04-30T19:42:37Z"), "length" : 732020, "chunkSize" : 262144, "
+md5" : "e279573d599d403cdbeefe52124d94d6" }
+>

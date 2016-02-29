@@ -11,7 +11,7 @@ $( document ).ready(function() {
 function POST_ChangeEventSetSelection (argument) {
 	//POST request to the PHP, PHP will query DB, and echo data back
 	var request = {"action" : "changeselection", "eventsetselection":$("#select_event_set option:selected").val()}
-	$.post( "eventSet.php", JSON.stringify(request), null, "json")
+	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0) {
 			UpdateEventSetOptions(data);
@@ -25,7 +25,7 @@ function POST_ChangeEventSetSelection (argument) {
 function POST_UpdateEventSetOptions (argument) {
 	//POST request to the PHP, PHP will query DB, and echo data back
 	var request = {"action" : "updateoptions"}
-	$.post( "eventSet.php", JSON.stringify(request), null, "json")
+	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0){ 
 			UpdateEventSetOptions(data);
@@ -50,8 +50,8 @@ function UpdateEventSetOptions (data) {
 }
 
 function POST_UpdateEventSetTable (argument){
-	var request = {"action" : "updatetable", "eventsetselection":$("#select_event_set option:selected").val()}
-	$.post( "eventSet.php", JSON.stringify(request), null, "json")
+	var request = {"action" : "geteventsetinfoanddata", "eventsetselection":$("#select_event_set option:selected").val()}
+	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0) {
 			UpdateEventSetTable(data);
@@ -91,7 +91,8 @@ function UpdateEventSetTable (data){
 				tableBody += "<td>" + data.eventdata[i].details[data.details[j].id] + "</td>";
 		}
 	}
-		tableBody += "</tr>";
+	
+		tableBody += "<td> <button type=\"button\" onclick=\"location.href='viewEvent.html#" + data[i]._id.$id + "'\"  class=\"btn btn-sm btn-default\"><span class=\"glyphicon glyphicon-link\"></span></button></td></tr>";
 		$("#event_table_body").append(tableBody);
 	}
 	

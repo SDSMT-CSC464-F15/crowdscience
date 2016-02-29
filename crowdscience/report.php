@@ -25,32 +25,9 @@
 		case "submiteventreport" :
 		$response = submitEventReport();
 		break;
-		//update report fields
-				case "geteventsetdetails" :
-		$response = getEventSetDetails();
-		break;
 		
 	}
 	echo json_encode($response);
-	
-	function getEventSetDetails()
-	{
-				
-		global $db,$response,$request;
-		$response["status"] = "0";
-		
-		$eventset = $request["eventsetselection"];
-		
-		$eventsetsinfo = $db->eventsetsinfo;
-		
-		$eventsetinfo = $eventsetsinfo->findOne( array('id' => $eventset), array('details', '_id' => 0) );
-		foreach ($eventsetinfo['details'] as $detail) {
-			$response["details"][] = $detail;
-		}
-		
-		return $response;
-		
-		}
 	
 	function submitEventReport()
 	{
