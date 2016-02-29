@@ -13,16 +13,13 @@ function POST_GetEventSetInfoAndEventByID (argument) {
 	event_id = event_id.slice( 1 );
 	alert( "event_id : " + event_id );
 	
-	var request = { "action" : "geteventsetinfoandeventbyid", "id" : event_id }
+	var request = { "action" : "geteventsetinfoandeventbyid", "id" : event_id };
+	alert( "Past var request" );
+	
 	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
-		if (data.status == 0) {
-			alert( "Status was 0");
+		alert( "PHP finished sucessfully" );
 			DisplayEvent(data);
-		}
-		else {
-			alert( data.status + ": Something went wrong in the PHP" );
-		}
 	})
 	.fail(function (data) {
 		alert(data.status + ": Error getting Event by ID");
