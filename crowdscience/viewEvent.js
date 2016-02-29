@@ -1,13 +1,13 @@
 $(document).ready(function(){
 	
-
+	
 	POST_GetEventSetInfoAndEventByID();
 });
 
 
 function POST_GetEventSetInfoAndEventByID (argument) {
 	alert( "In POST_GetEventSetInfoAndEventByID Function" );
-		var parser = document.createElement('a');
+	var parser = document.createElement('a');
 	parser.href = document.URL;
 	var event_id = parser.hash;
 	event_id = event_id.slice( 1 );
@@ -17,7 +17,7 @@ function POST_GetEventSetInfoAndEventByID (argument) {
 	
 	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
-			DisplayEvent(data);
+		DisplayEvent(data);
 	})
 	.fail(function (data) {
 		alert(data.status + ": Error getting Event by ID");
@@ -28,20 +28,17 @@ function DisplayEvent (data)
 {	
 	if (data.status == 0){ 
 		alert( "PHP finished sucessfully" );
-		}
-		else if (data.status == 1){
-			alert ( "Failed to get EventSetInfo from Mongo DB" );
-		}
-		else if (data.status == 2){
-			alert ( "Failed to find event in Mongo DB" );
-		}
-		else if (data.status == 3){
-			alert ( "Failed to find user in Mongo DB" );
-		}
-		else{
-		alert ( "Unknown error");
-		}
-	
+	}
+	if (data.status == 1){
+		alert ( "Failed to get EventSetInfo from Mongo DB" );
+	}
+	if (data.status == 2){
+		alert ( "Failed to find event in Mongo DB" );
+	}
+	if (data.status == 3){
+		alert ( "Failed to find user in Mongo DB" );
+	}
+
 	alert( "In DisplayEvent Function" );
 	$("#event_info").empty();
 	alert( "data.eventdata.user : " + data.eventdata.user );
@@ -59,9 +56,9 @@ function DisplayEvent (data)
 			}
 		}
 		else {
-		eventInfo += "<b>" + data.details[i].name + ":</b><input class=\"event-control\" value=\"" + data.eventdata[data.details[i].id] + "\" type=\"text\" disabled />";
+			eventInfo += "<b>" + data.details[i].name + ":</b><input class=\"event-control\" value=\"" + data.eventdata[data.details[i].id] + "\" type=\"text\" disabled />";
 		}
-		}
+	}
 	
 	$("#event_info").append(eventInfo);
 	
@@ -90,4 +87,4 @@ function DisplayEvent (data)
 	{
 		$("#image_carousel").hide();
 	}
-	}		
+}		

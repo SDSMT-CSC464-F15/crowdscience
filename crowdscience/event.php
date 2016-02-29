@@ -129,7 +129,7 @@
 			}
 			catch (MongoException $e)
 			{
-				$response["status"] = 1; 
+				$response["status"] = "1"; 
 				$response["messages"][] = "$e->getMessage()";
 				return;
 			}
