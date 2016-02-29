@@ -44,8 +44,9 @@ function DisplayEvent (data)
 				}
 			}
 		}
-		else
+		else {
 		eventInfo += "<b>" + data.details[i].name + ":</b><input class=\"event-control\" value=\"" + data.eventdata[data.details[i].id] + "\" type=\"text\" disabled />";
+		}
 		}
 	
 	$("#event_info").append(eventInfo);
@@ -53,16 +54,16 @@ function DisplayEvent (data)
 	
 	
 	//check if images are attached to event
-	if(data.images)
+	if(data.eventdata.images)
 	{
 		//set up html for first image in carousel
-		var imageid = data.images[0].$id;
+		var imageid = data.eventdata.images[0].$id;
 		document.getElementById('first_image').src = "image.php?_id=" + imageid;
 		
 		var array_length = data.images.length;
 		for( var i = 1; i < array_length; i++)
 		{
-			var imageid = data.images[i].$id;
+			var imageid = data.eventdata.images[i].$id;
 			var newElement = '<li data-target="#image_carousel" data-slide-to="' +i+ '"></li>';
 			$("#image_targets").append(newElement);
 			
