@@ -56,7 +56,7 @@
 		global $db,$response,$request;
 		$response["status"] = "0";
 		
-		$eventset = $request["eventsetselection"];
+		$eventset = $_SESSION['eventsetselection'];
 		
 		$eventdata = $db->$eventset;
 		$eventsetsinfo = $db->eventsetsinfo;
@@ -75,7 +75,7 @@
 		{
 			$response["status"] = "1"; 
 			$response["messages"][] = "Event not found";
-			return $response;
+			return;
 		}
 		
 		try
@@ -86,7 +86,7 @@
 		{
 			$response["status"] = 1; 
 			$response["messages"][] = "$e->getMessage()";
-			return $response;
+			return;
 		}
 		$eventdata['user'] = $userinfo['username'];
 		$date = $eventdata['details']['date'];
