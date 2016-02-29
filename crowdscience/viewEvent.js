@@ -5,7 +5,7 @@ $(document).ready(function(){
 	parser.href = document.URL;
 	var event_id = parser.hash;
 	event_id = event_id.slice( 1 );
-	
+	alert( "event_id : " + event_id );
 	
 	POST_GetEventSetInfoAndEventByID(event_id);
 	
