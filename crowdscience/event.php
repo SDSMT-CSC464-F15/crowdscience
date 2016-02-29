@@ -80,6 +80,8 @@
 			return;
 		}
 		
+		
+		
 		try
 		{
 			$userinfo = $usertable->findOne(array('_id' => $event['user']));
@@ -96,7 +98,7 @@
 		$date = date("Y-m-d", $date);
 		$event['details']['date'] = $date;
 		
-		$response['eventdata'][] = $event;
+		$response['eventdata'] = $event;
 		return $response;
 		
 	}
