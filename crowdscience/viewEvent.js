@@ -36,7 +36,8 @@ function POST_GetEventSetInfoAndEventByID (event_id) {
 
 function DisplayEvent (data)
 {	
-	document.getElementById('event_info').empty();
+	alert( "In DisplayEvent Function" );
+	$("#event_info").empty();
 	
 	eventInfo = "<b>User:</b><input class=\"event-control\" value=\"" + data.eventdata.user + "\" type=\"text\" disabled />" + "<b>Location:</b><input class=\"event-control\" value=\"" + data.eventdata.location.coordinates + "\" type=\"text\" disabled />" ;
 	for (var i = data.details.length - 1; i >= 0; i--) {
@@ -52,7 +53,7 @@ function DisplayEvent (data)
 		}
 		}
 	
-	document.getElementById('event_info').append(eventInfo);
+	$("#event_info").append(eventInfo);
 	
 	
 	
