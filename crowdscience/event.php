@@ -51,15 +51,9 @@
 	{
 		global $db,$response,$request;
 		$response["status"] = "0";
-		
-		if(isset($_SESSION['eventsetselection'])) {
+	
 		$eventset = $_SESSION['eventsetselection'];
-		}
-		else {
-			$firstevent= $eventsetsinfo->findOne();
-			$_SESSION['eventsetselection'] = $firstevent['id'];
-			$response["eventsetselection"] = $_SESSION['eventsetselection'];
-		}
+
 		
 		
 		$eventdata = $db->$eventset;
@@ -71,7 +65,7 @@
 		{
 			$response["status"] = "1"; 
 			$response["messages"][] = "Event Set Info not found";
-			return;
+			return $response;
 			}
 		foreach ($eventsetinfo['details'] as $detail) {
 			$response["details"][] = $detail;
@@ -85,7 +79,7 @@
 		{
 			$response["status"] = "2"; 
 			$response["messages"][] = "Event not found";
-			return;
+			return $response;
 		}
 		
 		
@@ -98,7 +92,7 @@
 		{
 			$response["status"] = "3"; 
 			$response["messages"][] = "$e->getMessage()";
-			return;
+			return $response;
 		}
 		$event['user'] = $userinfo['username'];
 		$date = $event['details']['date'];
