@@ -38,7 +38,7 @@
 		break;
 		//get Event Set Info and Data
 		case "geteventsetinfoanddata":
-		$response = getEventSetInfo() + getEventSetData();
+		$response = array_merge(getEventSetInfo(), getEventSetData());
 		break;
 		//get an Event via ID
 		case "geteventbyid":
