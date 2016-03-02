@@ -78,14 +78,14 @@ function POST_UpdateEventSetTableAndMap (argument){
 
 function UpdateEventSetMap (data){
 	
-	markers.clearLayers();
-	markers = new L.markerClusterGroup();
+	this.markers.clearLayers();
+	this.markers = L.markerClusterGroup();
 	
 	for (var i = data.eventdata.length - 1; i >= 0; i--) {
 		
 		var lon = data.eventdata[i].location.coordinates[0];
 		var lat = data.eventdata[i].location.coordinates[1];
-		var marker = markers.addLayer(L.marker([lat, lon]));
+		var marker = this.markers.addLayer(L.marker([lat, lon]));
 		
 		var domelem = document.createElement('a');
 		domelem.href = "viewEvent.html#";
@@ -115,7 +115,7 @@ function UpdateEventSetMap (data){
 		
 		marker.bindPopup(domelem);
 	}
-	markers.addTo(map);
+	this.markers.addTo(map);
 }
 
 function UpdateEventSetTable (data){
