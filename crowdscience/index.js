@@ -6,7 +6,7 @@ $( document ).ready(function() {
 	//update event set selection options - defined in eventSet.js
 	POST_UpdateEventSetOptions();
 	
-	map = new L.map('map' , {
+	map = L.map('map' , {
 		center : [44.08, -103.23],
 		zoom : 5,
 		minZoom : 3,
@@ -80,6 +80,7 @@ function UpdateEventSetMap (data){
 	
 	markers.clearLayers();
 	markers = new L.markerClusterGroup();
+	
 	for (var i = data.eventdata.length - 1; i >= 0; i--) {
 		
 		var lon = data.eventdata[i].location.coordinates[0];
@@ -114,7 +115,7 @@ function UpdateEventSetMap (data){
 		
 		marker.bindPopup(domelem);
 	}
-	map.addLayer(markers);
+	markers.addTo(map);
 }
 
 function UpdateEventSetTable (data){
