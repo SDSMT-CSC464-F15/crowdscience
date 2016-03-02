@@ -1,11 +1,10 @@
-var map ;
+var map;
+var markers;
 
 $( document ).ready(function() {
 	
 	//update event set selection options - defined in eventSet.js
 	POST_UpdateEventSetOptions();
-	
-	map.clearLayers();
 	
 	map = new L.map('map' , {
 		center : [44.08, -103.23],
@@ -78,12 +77,12 @@ function POST_UpdateEventSetTableAndMap (argument){
 }
 
 function UpdateEventSetMap (data){
-	
+	markers.clearLayers();
 	for (var i = data.eventdata.length - 1; i >= 0; i--) {
 		
 		var lon = data.eventdata[i].location.coordinates[0];
 		var lat = data.eventdata[i].location.coordinates[1];
-		var marker = L.marker([lat, lon]).addTo(map);
+		var marker = L.marker([lat, lon]).addTo(markers);
 		
 		var domelem = document.createElement('a');
 		domelem.href = "viewEvent.html#";
@@ -113,6 +112,7 @@ function UpdateEventSetMap (data){
 		
 		marker.bindPopup(domelem);
 	}
+	map.addLayer(markers);
 }
 
 function UpdateEventSetTable (data){
