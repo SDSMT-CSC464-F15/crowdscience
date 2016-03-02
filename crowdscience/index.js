@@ -83,7 +83,7 @@ function UpdateEventSetMap (data){
 		var marker = L.marker([lat, lon]).addTo(map);
 		
 		var domelem = document.createElement('a');
-		domelem.href = "view_event.html#";
+		domelem.href = "viewEvent.html#";
 		domelem.href += data.eventdata[i]._id.$id;
 		var eventInfo;
 		if(data.eventdata[i].images)
