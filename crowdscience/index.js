@@ -5,7 +5,9 @@ $( document ).ready(function() {
 	//update event set selection options - defined in eventSet.js
 	POST_UpdateEventSetOptions();
 	
-	map =  new L.map('map' , {
+	map.clearLayers();
+	
+	map =  L.map('map' , {
 		center : [44.08, -103.23],
 		zoom : 5,
 		minZoom : 3,
