@@ -82,7 +82,7 @@ function UpdateEventSetMap (data){
 		
 		var lon = data.eventdata[i].location.coordinates[0];
 		var lat = data.eventdata[i].location.coordinates[1];
-		var marker = L.marker([lat, lon]).addTo(markers);
+		var marker = markers.addLayer(L.marker([lat, lon]));
 		
 		var domelem = document.createElement('a');
 		domelem.href = "viewEvent.html#";
