@@ -88,7 +88,7 @@ function UpdateEventSetMap (data){
 		if(data.eventdata[i].images)
 		{
 			var imageid = data.eventdata[i].images[0].$id;
-			eventInfo = "<img style=\"width:100px;height:100px\" src=image.php?_id=" + imageid;
+			eventInfo = "<img style=\"width:100px;height:100px\" src=image.php?_id=" + imageid + "/><br>";
 			
 		}
 		for (var j = data.details.length - 1; j >= 0; j--) {
@@ -96,12 +96,12 @@ function UpdateEventSetMap (data){
 			if( data.details[j].type === "selection"){
 				for ( var k = data.details[j].options.length -1; k >=0; k-- ){
 					if ( data.eventdata[i].details[data.details[j].id] === data.details[j].options[k].id ) {
-						eventInfo += "<b>" + data.details[j].name + ":</b>" + data.details[j].options[k].name + "\"<br>";
+						eventInfo += "<b>" + data.details[j].name + ":</b> " + data.details[j].options[k].name + "<br>";
 					}
 				}
 			}
 			else {
-				eventInfo += "<b>" + data.details[j].name + ":</b>" + data.eventdata[i].details[data.details[j].id] + "\"<br>";
+				eventInfo += "<b>" + data.details[j].name + ":</b> " + data.eventdata[i].details[data.details[j].id] + "<br>";
 			}
 		}
 		domelem.innerHTML = eventInfo;
