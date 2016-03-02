@@ -1,3 +1,4 @@
+var map ;
 
 $( document ).ready(function() {
 	
@@ -65,7 +66,9 @@ function POST_UpdateEventSetTableAndMap (argument){
 
 function UpdateEventSetMap (data){
 	
-		var map = new L.map('map' , {
+	map.clearLayers();
+	
+		map = new L.map('map' , {
 			center : [44.08, -103.23],
 		zoom : 5,
 		minZoom : 3,
