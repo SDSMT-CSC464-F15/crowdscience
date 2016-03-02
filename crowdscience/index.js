@@ -1,8 +1,20 @@
+var map ;
+
 $( document ).ready(function() {
 	
 	//update event set selection options - defined in eventSet.js
 	POST_UpdateEventSetOptions();
 	
+	map = L.map('map' , {
+		center : [44.08, -103.23],
+		zoom : 5,
+		minZoom : 3,
+		maxBounds : [[-90 , -540] , [90 , 540]]
+	});
+	L.tileLayer('http://{s}.tiles.mapbox.com/v3/rwfeather.j8g96pnj/{z}/{x}/{y}.png', {
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		maxZoom: 18
+	}).addTo(map);
 	
 	//set what to do when the event set selection is changed	
 	$("#select_event_set").on('change', function() { POST_ChangeEventSetSelection(); });
@@ -46,10 +58,10 @@ function UpdateEventSetOptions (data) {
 	//set the selected value to the session's value
 	$("#select_event_set").val(data.eventsetselection);
 	
-	POST_UpdateEventSetTable();
+	POST_UpdateEventSetTableAndMap();
 }
 
-function POST_UpdateEventSetTable (argument){
+function POST_UpdateEventSetTableAndMap (argument){
 	var request = {"action" : "geteventsetinfoanddata", "eventsetselection":$("#select_event_set option:selected").val()}
 	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
@@ -60,6 +72,42 @@ function POST_UpdateEventSetTable (argument){
 	.fail(function(data) {
 		alert(data.status  + ": Error loading Event Set Table")
 	})
+}
+
+function UpdateEventSetMap (data){
+	for (var i = data.eventdata.length - 1; i >= 0; i--) {
+		
+		var lon = data.eventdata[i].location.coordinates[0];
+		var lat = data.eventdata[i].location.coordinates[1];
+		var marker = L.marker([lat, lon]).addTo(map);
+		
+		var domelem = document.createElement('a');
+		domelem.href = "view_event.html#" + data.eventdata[i]._id.$id;
+		var eventInfo;
+		if(data.eventdata[i].images)
+		{
+			var imageid = data.eventdata[i].images[0].$id;
+			eventInfo = "<img style=\"width:100px;height:100px\" src=image.php?_id=" + imageid;
+			
+		}
+		for (var j = data.details.length - 1; j >= 0; j--) {
+			
+			if( data.details[j].type === "selection"){
+				for ( var k = data.details[j].options.length -1; k >=0; k-- ){
+					if ( data.eventdata[i].details[data.details[j].id] === data.details[j].options[k].id ) {
+						eventInfo += "<b>" + data.details[j].name + ":</b>" + data.details[j].options[k].name + "\"<br>";
+					}
+				}
+			}
+			else {
+				eventInfo += "<b>" + data.details[j].name + ":</b>" + data.eventdata[i].details[data.details[j].id] + "\"<br>";
+			}
+		}
+		domelem.innerHTML = eventInfo;
+		domelem.onclick = function(){};
+		
+		marker.bindPopup(domelem);
+	}
 }
 
 function UpdateEventSetTable (data){
