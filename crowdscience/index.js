@@ -67,6 +67,7 @@ function POST_UpdateEventSetTableAndMap (argument){
 	.done(function(data) {
 		if (data.status == 0) {
 			UpdateEventSetTable(data);
+			UpdateEventSetMap(data);
 		}
 	})
 	.fail(function(data) {
