@@ -2,7 +2,7 @@ var map ;
 
 $( document ).ready(function() {
 	
-	//update event set selection options - defined in eventSet.js
+	//update event set selection options 
 	POST_UpdateEventSetOptions();
 	
 	//set what to do when the event set selection is changed	
@@ -65,7 +65,9 @@ function POST_UpdateEventSetTableAndMap (argument){
 }
 
 function UpdateEventSetMap (data){
-	$("#map").empty();
+  $("#outer_map").empty();
+	$("#outer_map").append("<div id=\"map\" style=\"width: 100%; height: 500px\"></div>");
+	
 		map = L.map('map' , {
 			center : [44.08, -103.23],
 		zoom : 5,
