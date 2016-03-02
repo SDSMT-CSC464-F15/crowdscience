@@ -86,19 +86,18 @@ function UpdateEventSetImageCarousel (data){
 				var imageid = data.eventdata[i].images[0].$id;
 				var newElement = '<li data-target="#image_carousel" data-slide-to="' +k+ '"></li>';
 				$("#image_targets").append(newElement);
-
+				
 				var newElement = '<div class="item"><img src="image.php?_id=' + imageid + '"></div>';
 				$("#image_inner").append(newElement);
 				k++
 			}
 		}
-	};
-
+	}
+	
 	//if no images, hide image field
 	if(k == 0)
 	{
 		$("#image_carousel").hide();
-	}
 	}
 }
 
@@ -184,9 +183,9 @@ function UpdateEventSetTable (data){
 		}
 		
 		tableBody += "<td> <button type=\"button\" onclick=\"location.href='viewEvent.html#" + data.eventdata[i]._id.$id + "'\"  class=\"btn btn-sm btn-default\"><span class=\"glyphicon glyphicon-link\"></span></button></td></tr><span class=\"glyphicon glyphicon-link\"></span></button></td> </tr>";
-
-$("#event_table_body").append(tableBody);
-
+		
+		$("#event_table_body").append(tableBody);
+		
 		var but_name = "but_" + i;
 		var lon = data.eventdata[i].location.coordinates[0];
 		var lat = data.eventdata[i].location.coordinates[1];
