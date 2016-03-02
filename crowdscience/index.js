@@ -57,6 +57,7 @@ function POST_UpdateEventSetTableAndMap (argument){
 		if (data.status == 0) {
 			UpdateEventSetTable(data);
 			UpdateEventSetMap(data);
+			UpdateEventSetImageCarousel(data);
 		}
 	})
 	.fail(function(data) {
@@ -64,12 +65,49 @@ function POST_UpdateEventSetTableAndMap (argument){
 	})
 }
 
+function UpdateEventSetImageCarousel (data){
+	var k = 0;
+	for (var i = data.eventdata.length - 1; i >= 0; i--) {
+		//if current recent event has images
+		if(data.eventdata[i].images)
+		{
+			//check if on first image
+			if( k == 0)
+			{
+				//set up html for first image in carousel
+				var imageid = data.eventdata[i].images[0].$id;
+				document.getElementById('first_image').src = "image.php?_id=" + imageid;
+				k++;
+			}
+			//first image already on carousel
+			else
+			{
+				//append first image of each recent event onto the carousel
+				var imageid = data.eventdata[i].images[0].$id;
+				var newElement = '<li data-target="#image_carousel" data-slide-to="' +k+ '"></li>';
+				$("#image_targets").append(newElement);
+
+				var newElement = '<div class="item"><img src="image.php?_id=' + imageid + '"></div>';
+				$("#image_inner").append(newElement);
+				k++
+			}
+		}
+	};
+
+	//if no images, hide image field
+	if(k == 0)
+	{
+		$("#image_carousel").hide();
+	}
+	}
+}
+
 function UpdateEventSetMap (data){
   $("#outer_map").empty();
 	$("#outer_map").append("<div id=\"map\" style=\"width: 100%; height: 500px\"></div>");
 	
-		map = L.map('map' , {
-			center : [44.08, -103.23],
+	map = L.map('map' , {
+		center : [44.08, -103.23],
 		zoom : 5,
 		minZoom : 3,
 		maxBounds : [[-90 , -540] , [90 , 540]]
@@ -145,8 +183,17 @@ function UpdateEventSetTable (data){
 			}
 		}
 		
-		tableBody += "<td> <button type=\"button\" onclick=\"location.href='viewEvent.html#" + data.eventdata[i]._id.$id + "'\"  class=\"btn btn-sm btn-default\"><span class=\"glyphicon glyphicon-link\"></span></button></td></tr>";
-		$("#event_table_body").append(tableBody);
+		tableBody += "<td> <button type=\"button\" onclick=\"location.href='viewEvent.html#" + data.eventdata[i]._id.$id + "'\"  class=\"btn btn-sm btn-default\"><span class=\"glyphicon glyphicon-link\"></span></button></td></tr><span class=\"glyphicon glyphicon-link\"></span></button></td> </tr>";
+
+$("#event_table_body").append(tableBody);
+
+		var but_name = "but_" + i;
+		var lon = data.eventdata[i].location.coordinates[0];
+		var lat = data.eventdata[i].location.coordinates[1];
+		$('#'+but_name).click([lat, lon], function (e) {
+			map.setView(e.data, 6, {pan : {animate : true, duration : 1}, zoom : {animate : true}})
+		});
+		
 	}
 	
 }
