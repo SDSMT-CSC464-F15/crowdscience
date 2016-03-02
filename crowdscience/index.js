@@ -7,7 +7,7 @@ $( document ).ready(function() {
 	
 	map.clearLayers();
 	
-	map =  L.map('map' , {
+	map = new L.map('map' , {
 		center : [44.08, -103.23],
 		zoom : 5,
 		minZoom : 3,
