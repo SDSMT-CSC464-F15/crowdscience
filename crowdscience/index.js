@@ -77,7 +77,9 @@ function POST_UpdateEventSetTableAndMap (argument){
 }
 
 function UpdateEventSetMap (data){
+	
 	markers.clearLayers();
+	markers = new L.markerClusterGroup();
 	for (var i = data.eventdata.length - 1; i >= 0; i--) {
 		
 		var lon = data.eventdata[i].location.coordinates[0];
