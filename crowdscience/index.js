@@ -1,21 +1,9 @@
-var map;
-var markers;
+var map ;
 
 $( document ).ready(function() {
 	
 	//update event set selection options - defined in eventSet.js
 	POST_UpdateEventSetOptions();
-	
-	map = L.map('map' , {
-		center : [44.08, -103.23],
-		zoom : 5,
-		minZoom : 3,
-		maxBounds : [[-90 , -540] , [90 , 540]]
-	});
-	L.tileLayer('http://{s}.tiles.mapbox.com/v3/rwfeather.j8g96pnj/{z}/{x}/{y}.png', {
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-		maxZoom: 18
-	}).addTo(map);
 	
 	//set what to do when the event set selection is changed	
 	$("#select_event_set").on('change', function() { POST_ChangeEventSetSelection(); });
@@ -78,14 +66,22 @@ function POST_UpdateEventSetTableAndMap (argument){
 
 function UpdateEventSetMap (data){
 	
-	//this.markers.clearLayers();
-	this.markers = L.markerClusterGroup();
+		map = L.map('map' , {
+			center : [44.08, -103.23],
+		zoom : 5,
+		minZoom : 3,
+		maxBounds : [[-90 , -540] , [90 , 540]]
+	});
+	L.tileLayer('http://{s}.tiles.mapbox.com/v3/rwfeather.j8g96pnj/{z}/{x}/{y}.png', {
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		maxZoom: 18
+	}).addTo(map);
 	
 	for (var i = data.eventdata.length - 1; i >= 0; i--) {
 		
 		var lon = data.eventdata[i].location.coordinates[0];
 		var lat = data.eventdata[i].location.coordinates[1];
-		var marker = this.markers.addLayer(L.marker([lat, lon]));
+		var marker = L.marker([lat, lon]).addTo(map);
 		
 		var domelem = document.createElement('a');
 		domelem.href = "viewEvent.html#";
@@ -115,7 +111,6 @@ function UpdateEventSetMap (data){
 		
 		marker.bindPopup(domelem);
 	}
-	this.markers.addTo(map);
 }
 
 function UpdateEventSetTable (data){
