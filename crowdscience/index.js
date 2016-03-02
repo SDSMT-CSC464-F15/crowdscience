@@ -5,7 +5,7 @@ $( document ).ready(function() {
 	//update event set selection options - defined in eventSet.js
 	POST_UpdateEventSetOptions();
 	
-	map = L.map('map' , {
+	map =  new L.map('map' , {
 		center : [44.08, -103.23],
 		zoom : 5,
 		minZoom : 3,
@@ -76,6 +76,7 @@ function POST_UpdateEventSetTableAndMap (argument){
 }
 
 function UpdateEventSetMap (data){
+	
 	for (var i = data.eventdata.length - 1; i >= 0; i--) {
 		
 		var lon = data.eventdata[i].location.coordinates[0];
