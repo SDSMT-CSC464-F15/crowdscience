@@ -87,7 +87,7 @@ function UpdateEventSetImageCarousel (data){
 				var newElement = '<li data-target="#image_carousel" data-slide-to="' +k+ '"></li>';
 				$("#image_targets").append(newElement);
 				
-				var newElement = '<div class="item"><img style = "max-width:100%;max-height: 100%" src="image.php?_id=' + imageid + '"></div>';
+				var newElement = '<div class="item"><img style = "width:100%;height: 100%" src="image.php?_id=' + imageid + '"></div>';
 				$("#image_inner").append(newElement);
 				k++
 			}
