@@ -83,12 +83,13 @@ function UpdateEventSetMap (data){
 		var marker = L.marker([lat, lon]).addTo(map);
 		
 		var domelem = document.createElement('a');
-		domelem.href = "view_event.html#" + data.eventdata[i]._id.$id;
+		domelem.href = "view_event.html#";
+		domelem.href += data.eventdata[i]._id.$id;
 		var eventInfo;
 		if(data.eventdata[i].images)
 		{
 			var imageid = data.eventdata[i].images[0].$id;
-			eventInfo = "<img style=\"width:100px;height:100px\" src=image.php?_id=" + imageid + "/><br>";
+			eventInfo = "<img style=\"width:100px;height:100px\" src=image.php?_id=" + imageid + "><br>";
 			
 		}
 		for (var j = data.details.length - 1; j >= 0; j--) {
