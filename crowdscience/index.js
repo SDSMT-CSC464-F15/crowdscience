@@ -67,6 +67,8 @@ function POST_UpdateEventSetTableAndMap (argument){
 
 function UpdateEventSetImageCarousel (data){
 	var k = 0;
+	$("#image_targets").empty();
+	$("#image_inner").empty();
 	for (var i = data.eventdata.length - 1; i >= 0; i--) {
 		//if current recent event has images
 		if(data.eventdata[i].images)
@@ -76,7 +78,11 @@ function UpdateEventSetImageCarousel (data){
 			{
 				//set up html for first image in carousel
 				var imageid = data.eventdata[i].images[0].$id;
-				document.getElementById('first_image').src = "image.php?_id=" + imageid;
+				var newElement = '<li data-target="#image_carousel" data-slide-to="' +k+ '" class="active"></li>';
+				$("#image_targets").append(newElement);
+				
+				var newElement = '<div class="item active"><img style = "max-width:100%;max-height:350px;vertical-align:middle" src="image.php?_id=' + imageid + '"></div>';
+				$("#image_inner").append(newElement);
 				k++;
 			}
 			//first image already on carousel
