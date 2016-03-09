@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  11 FEB 2016 21:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  9 MAR 2016 10:42
 entering extended mode
 **DesignDocument.tex
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\De
-signDocument.tex
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\DesignD
+ocument.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -33,9 +33,8 @@ File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\se
-niordesignstyle.tex
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\seniord
+esignstyle.tex ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
@@ -576,8 +575,8 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count140
 \calc@Cskip=\skip65
 )
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\do
-xygen.sty
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\doxygen
+.sty
 Package: doxygen 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
 Package: alltt 1997/06/16 v2.0g defines alltt environment
@@ -1476,8 +1475,8 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen275
 \titlewidthfirst=\dimen276
 ))
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\De
-signDocument.aux)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\DesignD
+ocument.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
@@ -1604,10 +1603,10 @@ LaTeX Info: Redefining \ref on input line 16.
 LaTeX Info: Redefining \pageref on input line 16.
 LaTeX Info: Redefining \nameref on input line 16.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\De
-signDocument.out)
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\De
-signDocument.out)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\DesignD
+ocument.out)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\DesignD
+ocument.out)
 \@outlinefile=\write5
 \c@lstlisting=\count204
  ABD: EveryShipout initializing macros
@@ -1624,36 +1623,36 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 {C:/Users/7121625/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\De
-signDocument.toc [3] [4] [5])
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\DesignD
+ocument.toc [3] [4] [5])
 \tf@toc=\write6
  [6]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\De
-signDocument.lof)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\DesignD
+ocument.lof)
 \tf@lof=\write7
  [7
 
 ] [8
 
 ]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\De
-signDocument.lot)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\DesignD
+ocument.lot)
 \tf@lot=\write8
  [9] [10
 
 ]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\De
-signDocument.loa)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\DesignD
+ocument.loa)
 \tf@loa=\write9
  [11] [12
 
 ]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\mi
-ssion.tex) [13] [14
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\mission
+.tex) [13] [14
 
 ]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\pr
-eparation.tex
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\prepara
+tion.tex
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 10.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
@@ -1691,12 +1690,12 @@ Overfull \hbox (7.03629pt too wide) in paragraph at lines 15--42
 ) [15] [16
 
 ]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\ov
-erview.tex
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\overvie
+w.tex
 Chapter 1.
 [1
 
-] <./figures/overviewdesign.png, id=960, 770.88pt x 877.2775pt>
+] <./figures/overviewdesign.png, id=1026, 770.88pt x 877.2775pt>
 File: ./figures/overviewdesign.png Graphic file (type png)
 
 <use ./figures/overviewdesign.png>
@@ -1707,17 +1706,17 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 58.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\re
-quirements.tex [2] [3pdfTeX warning (ext4): destination with the same identifie
-r (name{figure.1.1}) has been already used, duplicate ignored
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\require
+ments.tex [2] [3pdfTeX warning (ext4): destination with the same identifier (na
+me{figure.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.3 \chapter
             {User Stories,  Requirements, and Product Backlog} <C:/Users/712162
-5/Documents/Notes/CSC465/crowdscience/Documents/NewDesignDoc/figures/overviewde
-sign.png>] [4pdfTeX warning (ext4): destination with the same identifier (name{
-table.1.1}) has been already used, duplicate ignored
+5/Documents/Notes/CSC465/gitproj/Documents/NewDesignDoc/figures/overviewdesign.
+png>] [4pdfTeX warning (ext4): destination with the same identifier (name{table
+.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1732,12 +1731,12 @@ LaTeX Font Info:    Try loading font information for TS1+lmss on input line 33.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmss.fd"
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [6])
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\pr
-oject.tex [7] [8
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\project
+.tex [7] [8
 
 ]
 Chapter 3.
-[9] <./figures/projectgantt.png, id=1013, 916.42375pt x 475.7775pt>
+[9] <./figures/projectgantt.png, id=1079, 916.42375pt x 475.7775pt>
 File: ./figures/projectgantt.png Graphic file (type png)
 
 <use ./figures/projectgantt.png>
@@ -1749,21 +1748,21 @@ re.3.1}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.114 \end{itemize}
-                    <C:/Users/7121625/Documents/Notes/CSC465/crowdscience/Docum
-ents/NewDesignDoc/figures/projectgantt.png (PNG copy)>]
+                    <C:/Users/7121625/Documents/Notes/CSC465/gitproj/Documents/
+NewDesignDoc/figures/projectgantt.png (PNG copy)>]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 144.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 147.
 )
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\re
-visions.tex [12]
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\revisio
+ns.tex [12]
 Chapter 4.
 
 LaTeX Warning: Reference `overviewdesign_orginal' on page 13 undefined on input
  line 8.
 
-<./figures/overviewdesign_original.png, id=1036, 770.88pt x 877.2775pt>
+<./figures/overviewdesign_original.png, id=1102, 770.88pt x 877.2775pt>
 File: ./figures/overviewdesign_original.png Graphic file (type png)
 
 <use ./figures/overviewdesign_original.png>
@@ -1779,26 +1778,26 @@ ne 15.
                                                   \fi \fi 
 l.47 \item T
             he administrator will be able to edit display name, display meth...
- <C:/Users/7121625/Documents/Notes/CSC465/crowdscience/Documents/NewDesignDoc/f
-igures/overviewdesign_original.png>])
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\de
-sign.tex [15] [16
+ <C:/Users/7121625/Documents/Notes/CSC465/gitproj/Documents/NewDesignDoc/figure
+s/overviewdesign_original.png>])
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\design.
+tex [15] [16
 
 ]
 Chapter 5.
 [17])
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\te
-sting.tex [18]
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\testing
+.tex [18]
 Chapter 6.
 )
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\pr
-ototypes.tex [19
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\prototy
+pes.tex [19
 
 ] [20
 
 ]
 Chapter 7.
-<./figures/prototype_S1_main.png, id=1092, 411.03563pt x 402.75468pt>
+<./figures/prototype_S1_main.png, id=1158, 411.03563pt x 402.75468pt>
 File: ./figures/prototype_S1_main.png Graphic file (type png)
 
 <use ./figures/prototype_S1_main.png>
@@ -1806,7 +1805,7 @@ Package pdftex.def Info: ./figures/prototype_S1_main.png used on input line 14.
 
 (pdftex.def)             Requested size: 352.31624pt x 345.2192pt.
 
-<./figures/prototype_S2_main.png, id=1096, 940.26282pt x 475.02469pt>
+<./figures/prototype_S2_main.png, id=1162, 940.26282pt x 475.02469pt>
 File: ./figures/prototype_S2_main.png Graphic file (type png)
 
 <use ./figures/prototype_S2_main.png>
@@ -1814,7 +1813,7 @@ Package pdftex.def Info: ./figures/prototype_S2_main.png used on input line 30.
 
 (pdftex.def)             Requested size: 352.31624pt x 177.98885pt.
 
-<./figures/prototype_S2_login.png, id=1097, 398.23781pt x 307.90031pt>
+<./figures/prototype_S2_login.png, id=1163, 398.23781pt x 307.90031pt>
 File: ./figures/prototype_S2_login.png Graphic file (type png)
 
 <use ./figures/prototype_S2_login.png>
@@ -1822,7 +1821,7 @@ Package pdftex.def Info: ./figures/prototype_S2_login.png used on input line 37
 .
 (pdftex.def)             Requested size: 352.31624pt x 272.40483pt.
 
-<./figures/prototype_S2_register.png, id=1098, 572.89032pt x 360.59718pt>
+<./figures/prototype_S2_register.png, id=1164, 572.89032pt x 360.59718pt>
 File: ./figures/prototype_S2_register.png Graphic file (type png)
 
 <use ./figures/prototype_S2_register.png>
@@ -1830,7 +1829,7 @@ Package pdftex.def Info: ./figures/prototype_S2_register.png used on input line
  44.
 (pdftex.def)             Requested size: 352.31624pt x 221.7632pt.
  [21]
-<./figures/prototype_S4_main.png, id=1108, 583.42969pt x 437.38406pt>
+<./figures/prototype_S4_main.png, id=1173, 583.42969pt x 437.38406pt>
 File: ./figures/prototype_S4_main.png Graphic file (type png)
 
 <use ./figures/prototype_S4_main.png>
@@ -1838,7 +1837,7 @@ Package pdftex.def Info: ./figures/prototype_S4_main.png used on input line 69.
 
 (pdftex.def)             Requested size: 352.31624pt x 264.12762pt.
 
-<./figures/prototype_S4_register.png, id=1109, 560.0925pt x 418.56375pt>
+<./figures/prototype_S4_register.png, id=1174, 560.0925pt x 418.56375pt>
 File: ./figures/prototype_S4_register.png Graphic file (type png)
 
 <use ./figures/prototype_S4_register.png>
@@ -1846,7 +1845,7 @@ Package pdftex.def Info: ./figures/prototype_S4_register.png used on input line
  76.
 (pdftex.def)             Requested size: 352.31624pt x 263.30057pt.
 
-<./figures/prototype_S4_login.png, id=1110, 331.2375pt x 302.63063pt>
+<./figures/prototype_S4_login.png, id=1175, 331.2375pt x 302.63063pt>
 File: ./figures/prototype_S4_login.png Graphic file (type png)
 
 <use ./figures/prototype_S4_login.png>
@@ -1854,7 +1853,7 @@ Package pdftex.def Info: ./figures/prototype_S4_login.png used on input line 83
 .
 (pdftex.def)             Requested size: 352.31624pt x 321.90443pt.
 
-<./figures/prototype_S4_selectbox.png, id=1111, 310.15875pt x 150.5625pt>
+<./figures/prototype_S4_selectbox.png, id=1176, 310.15875pt x 150.5625pt>
 File: ./figures/prototype_S4_selectbox.png Graphic file (type png)
 
 <use ./figures/prototype_S4_selectbox.png>
@@ -1866,19 +1865,82 @@ e 90.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.95 \subsection{Backlog}
-                          <C:/Users/7121625/Documents/Notes/CSC465/crowdscience
-/Documents/NewDesignDoc/figures/prototype_S1_main.png>]) [23pdfTeX warning (ext
-4): destination with the same identifier (name{figure.7.2}) has been already us
-ed, duplicate ignored
+l.97 \subsection{Success/Fail}
+                               <C:/Users/7121625/Documents/Notes/CSC465/gitproj
+/Documents/NewDesignDoc/figures/prototype_S1_main.png>]
+<./figures/prototype_S5_main.png, id=1189, 542.77782pt x 485.56406pt>
+File: ./figures/prototype_S5_main.png Graphic file (type png)
+
+<use ./figures/prototype_S5_main.png>
+Package pdftex.def Info: ./figures/prototype_S5_main.png used on input line 106
+.
+(pdftex.def)             Requested size: 352.31624pt x 315.19057pt.
+
+<./figures/prototype_S5_table.png, id=1190, 636.12656pt x 472.01344pt>
+File: ./figures/prototype_S5_table.png Graphic file (type png)
+
+<use ./figures/prototype_S5_table.png>
+Package pdftex.def Info: ./figures/prototype_S5_table.png used on input line 11
+3.
+(pdftex.def)             Requested size: 352.31624pt x 261.41597pt.
+
+<./figures/prototype_S5_map.png, id=1191, 634.62094pt x 390.70969pt>
+File: ./figures/prototype_S5_map.png Graphic file (type png)
+
+<use ./figures/prototype_S5_map.png>
+Package pdftex.def Info: ./figures/prototype_S5_map.png used on input line 120.
+
+(pdftex.def)             Requested size: 352.31624pt x 216.91202pt.
+
+<./figures/prototype_S5_imagecarousel.png, id=1192, 302.63063pt x 269.50688pt>
+File: ./figures/prototype_S5_imagecarousel.png Graphic file (type png)
+
+<use ./figures/prototype_S5_imagecarousel.png>
+Package pdftex.def Info: ./figures/prototype_S5_imagecarousel.png used on input
+ line 127.
+(pdftex.def)             Requested size: 352.31624pt x 313.75908pt.
+
+<./figures/prototype_S5_report_1.png, id=1193, 613.54219pt x 482.55281pt>
+File: ./figures/prototype_S5_report_1.png Graphic file (type png)
+
+<use ./figures/prototype_S5_report_1.png>
+Package pdftex.def Info: ./figures/prototype_S5_report_1.png used on input line
+ 134.
+(pdftex.def)             Requested size: 352.31624pt x 277.09755pt.
+
+<./figures/prototype_S5_report_2.png, id=1194, 604.50844pt x 470.50781pt>
+File: ./figures/prototype_S5_report_2.png Graphic file (type png)
+
+<use ./figures/prototype_S5_report_2.png>
+Package pdftex.def Info: ./figures/prototype_S5_report_2.png used on input line
+ 141.
+(pdftex.def)             Requested size: 352.31624pt x 274.21571pt.
+
+<./figures/prototype_S5_report.png, id=1195, 322.95656pt x 488.57532pt>
+File: ./figures/prototype_S5_report.png Graphic file (type png)
+
+<use ./figures/prototype_S5_report.png>
+Package pdftex.def Info: ./figures/prototype_S5_report.png used on input line 1
+48.
+(pdftex.def)             Requested size: 352.31624pt x 533.02112pt.
+
+<./figures/prototype_S5_view.png, id=1196, 654.19406pt x 365.11406pt>
+File: ./figures/prototype_S5_view.png Graphic file (type png)
+
+<use ./figures/prototype_S5_view.png>
+Package pdftex.def Info: ./figures/prototype_S5_view.png used on input line 155
+.
+(pdftex.def)             Requested size: 352.31624pt x 196.62938pt.
+) [23pdfTeX warning (ext4): destination with the same identifier (name{figure.7
+.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.71 \chapter{Software Agreement}
-                                  <C:/Users/7121625/Documents/Notes/CSC465/crow
-dscience/Documents/NewDesignDoc/figures/prototype_S2_main.png>] [24pdfTeX warni
-ng (ext4): destination with the same identifier (name{figure.7.3}) has been alr
-eady used, duplicate ignored
+                                  <C:/Users/7121625/Documents/Notes/CSC465/gitp
+roj/Documents/NewDesignDoc/figures/prototype_S2_main.png>] [24pdfTeX warning (e
+xt4): destination with the same identifier (name{figure.7.3}) has been already 
+used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1889,11 +1951,11 @@ me identifier (name{figure.7.4}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.71 \chapter{Software Agreement}
-                                  <C:/Users/7121625/Documents/Notes/CSC465/crow
-dscience/Documents/NewDesignDoc/figures/prototype_S2_login.png> <C:/Users/71216
-25/Documents/Notes/CSC465/crowdscience/Documents/NewDesignDoc/figures/prototype
-_S2_register.png>] [25pdfTeX warning (ext4): destination with the same identifi
-er (name{figure.7.5}) has been already used, duplicate ignored
+                                  <C:/Users/7121625/Documents/Notes/CSC465/gitp
+roj/Documents/NewDesignDoc/figures/prototype_S2_login.png> <C:/Users/7121625/Do
+cuments/Notes/CSC465/gitproj/Documents/NewDesignDoc/figures/prototype_S2_regist
+er.png>] [25pdfTeX warning (ext4): destination with the same identifier (name{f
+igure.7.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1904,11 +1966,11 @@ me identifier (name{figure.7.6}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.71 \chapter{Software Agreement}
-                                  <C:/Users/7121625/Documents/Notes/CSC465/crow
-dscience/Documents/NewDesignDoc/figures/prototype_S4_main.png> <C:/Users/712162
-5/Documents/Notes/CSC465/crowdscience/Documents/NewDesignDoc/figures/prototype_
-S4_register.png>] [26pdfTeX warning (ext4): destination with the same identifie
-r (name{figure.7.7}) has been already used, duplicate ignored
+                                  <C:/Users/7121625/Documents/Notes/CSC465/gitp
+roj/Documents/NewDesignDoc/figures/prototype_S4_main.png> <C:/Users/7121625/Doc
+uments/Notes/CSC465/gitproj/Documents/NewDesignDoc/figures/prototype_S4_registe
+r.png>] [26pdfTeX warning (ext4): destination with the same identifier (name{fi
+gure.7.7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1919,15 +1981,77 @@ me identifier (name{figure.7.8}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.71 \chapter{Software Agreement}
-                                  <C:/Users/7121625/Documents/Notes/CSC465/crow
-dscience/Documents/NewDesignDoc/figures/prototype_S4_login.png> <C:/Users/71216
-25/Documents/Notes/CSC465/crowdscience/Documents/NewDesignDoc/figures/prototype
-_S4_selectbox.png>]
+                                  <C:/Users/7121625/Documents/Notes/CSC465/gitp
+roj/Documents/NewDesignDoc/figures/prototype_S4_login.png> <C:/Users/7121625/Do
+cuments/Notes/CSC465/gitproj/Documents/NewDesignDoc/figures/prototype_S4_select
+box.png>] [27pdfTeX warning (ext4): destination with the same identifier (name{
+figure.7.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.71 \chapter{Software Agreement}
+                                 pdfTeX warning (ext4): destination with the sa
+me identifier (name{figure.7.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.71 \chapter{Software Agreement}
+                                  <C:/Users/7121625/Documents/Notes/CSC465/gitp
+roj/Documents/NewDesignDoc/figures/prototype_S5_main.png> <C:/Users/7121625/Doc
+uments/Notes/CSC465/gitproj/Documents/NewDesignDoc/figures/prototype_S5_table.p
+ng>] [28pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.7.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.71 \chapter{Software Agreement}
+                                 pdfTeX warning (ext4): destination with the sa
+me identifier (name{figure.7.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.71 \chapter{Software Agreement}
+                                  <C:/Users/7121625/Documents/Notes/CSC465/gitp
+roj/Documents/NewDesignDoc/figures/prototype_S5_map.png> <C:/Users/7121625/Docu
+ments/Notes/CSC465/gitproj/Documents/NewDesignDoc/figures/prototype_S5_imagecar
+ousel.png>] [29pdfTeX warning (ext4): destination with the same identifier (nam
+e{figure.7.13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.71 \chapter{Software Agreement}
+                                 pdfTeX warning (ext4): destination with the sa
+me identifier (name{figure.7.14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.71 \chapter{Software Agreement}
+                                  <C:/Users/7121625/Documents/Notes/CSC465/gitp
+roj/Documents/NewDesignDoc/figures/prototype_S5_report_1.png> <C:/Users/7121625
+/Documents/Notes/CSC465/gitproj/Documents/NewDesignDoc/figures/prototype_S5_rep
+ort_2.png>] [30pdfTeX warning (ext4): destination with the same identifier (nam
+e{figure.7.15}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.71 \chapter{Software Agreement}
+                                  <C:/Users/7121625/Documents/Notes/CSC465/gitp
+roj/Documents/NewDesignDoc/figures/prototype_S5_report.png>] [31pdfTeX warning 
+(ext4): destination with the same identifier (name{figure.7.16}) has been alrea
+dy used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.71 \chapter{Software Agreement}
+                                  <C:/Users/7121625/Documents/Notes/CSC465/gitp
+roj/Documents/NewDesignDoc/figures/prototype_S5_view.png>] [32
+
+]
 
 pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC465
-/crowdscience/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: foun
-d PDF version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1132, 614.24483pt x 794.89973pt>
+/gitproj/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: found PDF
+ version <1.6>, but at most version <1.5> allowed
+<SoftwareContract.pdf, id=1238, 614.24483pt x 794.89973pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf>
@@ -1936,8 +2060,8 @@ Package pdftex.def Info: SoftwareContract.pdf used on input line 72.
 
 
 pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC465
-/crowdscience/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: foun
-d PDF version <1.6>, but at most version <1.5> allowed
+/gitproj/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: found PDF
+ version <1.6>, but at most version <1.5> allowed
 File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf>
 Package pdftex.def Info: SoftwareContract.pdf used on input line 72.
@@ -1945,14 +2069,14 @@ Package pdftex.def Info: SoftwareContract.pdf used on input line 72.
 
 
 pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC465
-/crowdscience/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: foun
-d PDF version <1.6>, but at most version <1.5> allowed
+/gitproj/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: found PDF
+ version <1.6>, but at most version <1.5> allowed
 
 
 pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC465
-/crowdscience/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: foun
-d PDF version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1135, page=1, 614.24483pt x 794.89973pt>
+/gitproj/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: found PDF
+ version <1.6>, but at most version <1.5> allowed
+<SoftwareContract.pdf, id=1241, page=1, 614.24483pt x 794.89973pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 1>
@@ -1976,15 +2100,13 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 1>
 Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 72.
 (pdftex.def)             Requested size: 614.53387pt x 795.27379pt.
- [1
-
- <C:/Users/7121625/Documents/Notes/CSC465/crowdscience/Documents/NewDesignDoc/S
-oftwareContract.pdf>]
+ [1 <C:/Users/7121625/Documents/Notes/CSC465/gitproj/Documents/NewDesignDoc/Sof
+twareContract.pdf>]
 
 pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC465
-/crowdscience/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: foun
-d PDF version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1146, page=2, 614.24483pt x 794.89973pt>
+/gitproj/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: found PDF
+ version <1.6>, but at most version <1.5> allowed
+<SoftwareContract.pdf, id=1252, page=2, 614.24483pt x 794.89973pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 2>
@@ -1999,13 +2121,13 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 2>
 Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 72.
 (pdftex.def)             Requested size: 614.53387pt x 795.27379pt.
- [2 <C:/Users/7121625/Documents/Notes/CSC465/crowdscience/Documents/NewDesignDo
-c/SoftwareContract.pdf>]
+ [2 <C:/Users/7121625/Documents/Notes/CSC465/gitproj/Documents/NewDesignDoc/Sof
+twareContract.pdf>]
 
 pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC465
-/crowdscience/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: foun
-d PDF version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1153, page=3, 614.24483pt x 794.89973pt>
+/gitproj/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: found PDF
+ version <1.6>, but at most version <1.5> allowed
+<SoftwareContract.pdf, id=1259, page=3, 614.24483pt x 794.89973pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 3>
@@ -2020,13 +2142,13 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 3>
 Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 72.
 (pdftex.def)             Requested size: 614.53387pt x 795.27379pt.
- [3 <C:/Users/7121625/Documents/Notes/CSC465/crowdscience/Documents/NewDesignDo
-c/SoftwareContract.pdf>]
+ [3 <C:/Users/7121625/Documents/Notes/CSC465/gitproj/Documents/NewDesignDoc/Sof
+twareContract.pdf>]
 
 pdfTeX warning: miktex-pdftex.exe (file C:/Users/7121625/Documents/Notes/CSC465
-/crowdscience/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: foun
-d PDF version <1.6>, but at most version <1.5> allowed
-<SoftwareContract.pdf, id=1160, page=4, 614.24483pt x 794.89973pt>
+/gitproj/Documents/NewDesignDoc/SoftwareContract.pdf): PDF inclusion: found PDF
+ version <1.6>, but at most version <1.5> allowed
+<SoftwareContract.pdf, id=1266, page=4, 614.24483pt x 794.89973pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 4>
@@ -2041,34 +2163,34 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 4>
 Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 72.
 (pdftex.def)             Requested size: 614.53387pt x 795.27379pt.
- [4 <C:/Users/7121625/Documents/Notes/CSC465/crowdscience/Documents/NewDesignDo
-c/SoftwareContract.pdf>]
+ [4 <C:/Users/7121625/Documents/Notes/CSC465/gitproj/Documents/NewDesignDoc/Sof
+twareContract.pdf>]
 Appendix A.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\pr
-oductdescription.tex [1
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\product
+description.tex [1
 
 ]) [2]
 Appendix B.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\sp
-rints.tex
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\sp
-rint1.tex [1
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\sprints
+.tex
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\sprint1
+.tex [1
 
 ])
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\sp
-rint2.tex [2])
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\sp
-rint3.tex [3])
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\sp
-rint4.tex [4])) [5] [6
-
-]
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\sprint2
+.tex [2])
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\sprint3
+.tex [3])
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\sprint4
+.tex [4])
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\sprint5
+.tex [5])) [6]
 Appendix C.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\in
-dustrial.tex <Resume_Aker_9-8-2015.pdf, id=1207, 614.295pt x 794.97pt>
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\industr
+ial.tex <Resume_Aker_9-8-2015.pdf, id=1340, 614.295pt x 794.97pt>
 File: Resume_Aker_9-8-2015.pdf Graphic file (type pdf)
 
 <use Resume_Aker_9-8-2015.pdf>
@@ -2079,7 +2201,7 @@ File: Resume_Aker_9-8-2015.pdf Graphic file (type pdf)
 Package pdftex.def Info: Resume_Aker_9-8-2015.pdf used on input line 19.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<Resume_Aker_9-8-2015.pdf, id=1210, page=1, 614.295pt x 794.97pt>
+<Resume_Aker_9-8-2015.pdf, id=1343, page=1, 614.295pt x 794.97pt>
 File: Resume_Aker_9-8-2015.pdf Graphic file (type pdf)
 
 <use Resume_Aker_9-8-2015.pdf, page 1>
@@ -2092,7 +2214,9 @@ Package pdftex.def Info: Resume_Aker_9-8-2015.pdf, page1 used on input line 19.
 
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
-[1]
+[1
+
+]
 File: Resume_Aker_9-8-2015.pdf Graphic file (type pdf)
  <use Resume_Aker_9-8-2015.pdf, page 1>
 Package pdftex.def Info: Resume_Aker_9-8-2015.pdf, page1 used on input line 19.
@@ -2110,9 +2234,9 @@ Package pdftex.def Info: Resume_Aker_9-8-2015.pdf, page1 used on input line 19.
 
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 
-[2 <C:/Users/7121625/Documents/Notes/CSC465/crowdscience/Documents/NewDesignDoc
-/Resume_Aker_9-8-2015.pdf>]
-<Resume_Aker_9-8-2015.pdf, id=1246, page=2, 614.295pt x 794.97pt>
+[2 <C:/Users/7121625/Documents/Notes/CSC465/gitproj/Documents/NewDesignDoc/Resu
+me_Aker_9-8-2015.pdf>]
+<Resume_Aker_9-8-2015.pdf, id=1379, page=2, 614.295pt x 794.97pt>
 File: Resume_Aker_9-8-2015.pdf Graphic file (type pdf)
 
 <use Resume_Aker_9-8-2015.pdf, page 2>
@@ -2130,8 +2254,8 @@ File: Resume_Aker_9-8-2015.pdf Graphic file (type pdf)
 Package pdftex.def Info: Resume_Aker_9-8-2015.pdf, page2 used on input line 19.
 
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [3 <C:/Users/7121625/Documents/Notes/CSC465/crowdscience/Documents/NewDesignDo
-c/Resume_Aker_9-8-2015.pdf>]) [4
+ [3 <C:/Users/7121625/Documents/Notes/CSC465/gitproj/Documents/NewDesignDoc/Res
+ume_Aker_9-8-2015.pdf>]) [4
 
 ]
 Appendix D.
@@ -2141,43 +2265,145 @@ Appendix D.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignDoc\De
-signDocument.aux)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignDoc\DesignD
+ocument.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
-Package rerunfilecheck Info: File `DesignDocument.out' has not changed.
-(rerunfilecheck)             Checksum: 66DB95A7DC505F1152C0B8F2028CD2DF;11762.
 
+
+Package rerunfilecheck Warning: File `DesignDocument.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `DesignDocument.out':
+(rerunfilecheck)             Before: 56EE6055A1A5770A63F8137E5A9EC2A4;12482
+(rerunfilecheck)             After:  7F59A38C1AAD2E19A170FD93EAFF0A58;12131.
 
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
  ) 
 Here is how much of TeX's memory you used:
- 26441 strings out of 493921
- 472763 string characters out of 3147276
+ 26553 strings out of 493921
+ 475100 string characters out of 3147276
  606969 words of memory out of 3000000
- 28817 multiletter control sequences out of 15000+200000
+ 28867 multiletter control sequences out of 15000+200000
  64832 words of font info for 71 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  64i,18n,72p,3300b,1295s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
-mssbo10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lm
-tti10.pfb>
-Output written on DesignDocument.pdf (60 pages, 2539063 bytes).
+pdfTeX warning (dest): name{subsection.B.13.4} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.13.3} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.13.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.13.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.13} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.12.7} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.12.6} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.12.5} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.12.4} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.12.3} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.12.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.12.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.12} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.11.6} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.11.5} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.11.4} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.11.3} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.11.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.11.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.11} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.10.5} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.10.4} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.10.3} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.10.2} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.10.1} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.10} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.9} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.8} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.6.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.B.6.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.B.6} has been referenced but does not exist
+, replaced by a fixed one
+
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiK
+TeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lms
+sbo10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso10.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt
+i10.pfb>
+Output written on DesignDocument.pdf (66 pages, 5112533 bytes).
 PDF statistics:
- 1361 PDF objects out of 1440 (max. 8388607)
- 275 named destinations out of 1000 (max. 500000)
- 1488 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1505 PDF objects out of 1728 (max. 8388607)
+ 326 named destinations out of 1000 (max. 500000)
+ 1608 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -170,6 +170,11 @@
 \contentsline {subsection}{\numberline {4.5}Sprint 5 Backlog}{B-5}{subsection.B.4.5}
 \contentsline {subsection}{\numberline {4.6}Sprint 6 Backlog}{B-5}{subsection.B.4.6}
 \contentsline {subsection}{\numberline {4.7}Sprint 4 Successes/Issues}{B-5}{subsection.B.4.7}
+\contentsline {section}{\numberline {5}Sprint Report \#5}{B-5}{section.B.5}
+\contentsline {subsection}{\numberline {5.1}Backlog Completed}{B-5}{subsection.B.5.1}
+\contentsline {subsection}{\numberline {5.2}Prototype Features}{B-6}{subsection.B.5.2}
+\contentsline {subsection}{\numberline {5.3}Sprint 6 Backlog}{B-6}{subsection.B.5.3}
+\contentsline {subsection}{\numberline {5.4}Sprint 5 Successes/Issues}{B-6}{subsection.B.5.4}
 \contentsline {chapter}{\numberline {C}Industrial Experience and Resumes}{C-1}{appendix.C}
 \contentsline {section}{\numberline {1}ABET: Industrial Experience Reports}{C-1}{section.C.1}
 \contentsline {subsection}{\numberline {1.1}Hannah Aker}{C-1}{subsection.C.1.1}
