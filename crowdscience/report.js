@@ -39,6 +39,7 @@ function POST_SubmitEventReport(argument) {
 				long: lon
 			},
 			details: {}
+			images: []
 		}
 	};
 	
