@@ -46,10 +46,11 @@ function POST_SubmitEventReport(argument) {
 		request.newreport.details[event_set_fields[i].attr("id").toString()] = event_set_fields[i].val().toString();
 	}
 	
+	alert( "picture_id.length = " +  picture_id.length );
 	//add image id to json only if one was uploaded
 	if ( picture_id[0] != "") 
 	{
-		for(var j = picture_id.length - 1; j >= 0; j--)
+		for(var j = 0; j < picture_id.length; j++)
 		{
 		request.newreport.images[j] = picture_id[j];
 		}
