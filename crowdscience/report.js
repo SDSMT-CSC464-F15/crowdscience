@@ -38,7 +38,8 @@ function POST_SubmitEventReport(argument) {
 				lat: lat,
 				long: lon
 			},
-			details: {}
+			details: {},
+			images: []
 		}
 	};
 	
@@ -50,9 +51,9 @@ function POST_SubmitEventReport(argument) {
 	//add image id to json only if one was uploaded
 	if ( picture_id[0] != "") 
 	{
-		for(var j = 0; j < picture_id.length; j++)
+		for(var j = picture_id.length - 1; j >= 0; j--)
 		{
-		request.newreport.images.push(picture_id[j]);
+		request.newreport.images[j] = picture_id[j];
 		}
 	}
 	//post data to server
