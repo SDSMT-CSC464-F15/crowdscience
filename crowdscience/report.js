@@ -49,7 +49,10 @@ function POST_SubmitEventReport(argument) {
 	//add image id to json only if one was uploaded
 	if ( picture_id[0] != "") 
 	{
-		request.newreport.images = picture_id;
+		for(var j = picture_id.length - 1; j >= 0; j--)
+		{
+		request.newreport.images[j] = picture_id[j];
+		}
 	}
 	//post data to server
 	$.post( "report.php", JSON.stringify(request), null, "json" )
