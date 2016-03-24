@@ -52,7 +52,7 @@ function POST_SubmitEventReport(argument) {
 	{
 		for(var j = 0; j < picture_id.length; j++)
 		{
-		request.newreport.images[j] = picture_id[j];
+		request.newreport.images.push(picture_id[j]);
 		}
 	}
 	//post data to server
