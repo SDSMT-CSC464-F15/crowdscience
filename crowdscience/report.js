@@ -42,11 +42,7 @@ function POST_SubmitEventReport(argument) {
 		}
 	};
 	
-	alert( "event_set_feilds.length = " + event_set_fields.length);
-	
 	for (var i = event_set_fields.length - 1; i >= 0; i--) {
-		alert( "i = " + i + ";  event_set_fields[i].attr(\"id\") = " + event_set_fields[i].attr("id") + ";  event_set_fields[i].val() = " + event_set_fields[i].val() + ";");
-		
 		request.newreport.details[event_set_fields[i].attr("id").toString()] = event_set_fields[i].val().toString();
 	}
 	
@@ -55,7 +51,6 @@ function POST_SubmitEventReport(argument) {
 	{
 		request.newreport.images = picture_id;
 	}
-	alert( "Before posting to the PHP")
 	//post data to server
 	$.post( "report.php", JSON.stringify(request), null, "json" )
 	.done(function(data) {

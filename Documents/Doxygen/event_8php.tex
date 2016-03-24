@@ -1,0 +1,50 @@
+\hypertarget{event_8php}{\section{event.\-php \-File \-Reference}
+\label{event_8php}\index{event.\-php@{event.\-php}}
+}
+
+
+\-Handles event data to and from the database.  
+
+
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{event_8php_a64e52607180419f5ac4ce6969f9a3725}{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D} ()
+\begin{DoxyCompactList}\small\item\em \-Retrieves the data for a single event, referenced by the \-I\-D supplied in the request. \end{DoxyCompactList}\item 
+\hypertarget{event_8php_af3071b0c5bbd23339216eff1dd218349}{\hyperlink{event_8php_af3071b0c5bbd23339216eff1dd218349}{get\-Event\-Set\-Info\-And\-Data} ()}\label{event_8php_af3071b0c5bbd23339216eff1dd218349}
+
+\begin{DoxyCompactList}\small\item\em \-Performs the actions of both \hyperlink{event_8php_a7e9028ad62a69bbcf78178653228b348}{get\-Event\-Set\-Data()} and \hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info()}. \end{DoxyCompactList}\item 
+\hypertarget{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{\hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info} ()}\label{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}
+
+\begin{DoxyCompactList}\small\item\em retrieves all the event set information necessary to display the selected event set data. \end{DoxyCompactList}\item 
+\hypertarget{event_8php_a7e9028ad62a69bbcf78178653228b348}{\hyperlink{event_8php_a7e9028ad62a69bbcf78178653228b348}{get\-Event\-Set\-Data} ()}\label{event_8php_a7e9028ad62a69bbcf78178653228b348}
+
+\begin{DoxyCompactList}\small\item\em \-Retrieves all event set data for the selected event set. \end{DoxyCompactList}\item 
+\hypertarget{event_8php_a13aad0d75556ac9ae9f50ee754bd36f5}{\hyperlink{event_8php_a13aad0d75556ac9ae9f50ee754bd36f5}{change\-Event\-Set\-Selection} ()}\label{event_8php_a13aad0d75556ac9ae9f50ee754bd36f5}
+
+\begin{DoxyCompactList}\small\item\em \-Stores the new event set selection to session data. \end{DoxyCompactList}\item 
+\hypertarget{event_8php_a93eabb06ba8025e80af7dde1341c758d}{\hyperlink{event_8php_a93eabb06ba8025e80af7dde1341c758d}{update\-Event\-Set\-Options} ()}\label{event_8php_a93eabb06ba8025e80af7dde1341c758d}
+
+\begin{DoxyCompactList}\small\item\em \-Retrieves the information necessary to repopulate the event set selection box. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Handles event data to and from the database. \-This file establishes the connection to the database, and then verifies that the connection was successful. \-The data in the post message is retrieved and decrypted. \-If a session has not been started, a new session is started. \-The action from the post message is then used call a function to interact with the database. \-Each function will save the status code to the response, in addition to the results of the database query.
+
+\-The default action returns a status of 1, indicating that and invalid action was supplied, and a message that no action was taken. \-When the action is updateoptions, \hyperlink{event_8php_a93eabb06ba8025e80af7dde1341c758d}{update\-Event\-Set\-Options()} is called, which retrieves the information necessary to repopulate the event set selection box. \-The action changeselection calls \hyperlink{event_8php_a13aad0d75556ac9ae9f50ee754bd36f5}{change\-Event\-Set\-Selection()}, which stores the new event set selection to session data. \-The action geteventsetinfo calls \hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info()}, which retrieves all the event set information necessary to display the selected event set data. \-The action geteventsetdata calls \hyperlink{event_8php_a7e9028ad62a69bbcf78178653228b348}{get\-Event\-Set\-Data()}, which retrieves all event set data for the selected event set. \-The action geteventsetinfoanddata calls get\-Event\-Set\-Info\-And\-Data, which performs the actions of both \hyperlink{event_8php_a7e9028ad62a69bbcf78178653228b348}{get\-Event\-Set\-Data()} and \hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info()}, this function is implemented because the response data is not correctly assembled separately in the two functions and database queries are streamlined when combined. \-The action geteventsetinfoandeventbyid calls the \hyperlink{event_8php_a64e52607180419f5ac4ce6969f9a3725}{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D()}, which retrieves the data for a single event, referenced by the \-I\-D supplied in the request.
+
+\-The response is then encoded and returned to the \-Java\-Script that posted to this file. 
+
+\subsection{\-Function \-Documentation}
+\hypertarget{event_8php_a64e52607180419f5ac4ce6969f9a3725}{\index{event.\-php@{event.\-php}!get\-Event\-Set\-Info\-And\-Event\-By\-I\-D@{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D}}
+\index{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D@{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D}!event.php@{event.\-php}}
+\subsubsection[{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf get\-Event\-Set\-Info\-And\-Event\-By\-I\-D} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{event_8php_a64e52607180419f5ac4ce6969f9a3725}
+
+
+\-Retrieves the data for a single event, referenced by the \-I\-D supplied in the request. 
+
+\-This function does stuff 

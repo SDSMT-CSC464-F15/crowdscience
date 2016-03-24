@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  31 JAN 2016 00:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.1.21)  16 MAR 2016 00:05
 entering extended mode
 **DesignDocument.tex
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\DesignDocument.tex
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\De
+signDocument.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -33,8 +33,8 @@ File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\seniordesignstyle.tex
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\se
+niordesignstyle.tex
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -576,8 +576,8 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count140
 \calc@Cskip=\skip65
 )
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\doxygen.sty
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\do
+xygen.sty
 Package: doxygen 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
 Package: alltt 1997/06/16 v2.0g defines alltt environment
@@ -1476,8 +1476,8 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidthlast=\dimen275
 \titlewidthfirst=\dimen276
 ))
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\DesignDocument.aux)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\De
+signDocument.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
@@ -1499,6 +1499,7 @@ LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 16.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1603,10 +1604,10 @@ LaTeX Info: Redefining \ref on input line 16.
 LaTeX Info: Redefining \pageref on input line 16.
 LaTeX Info: Redefining \nameref on input line 16.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\DesignDocument.out)
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\DesignDocument.out)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\De
+signDocument.out)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\De
+signDocument.out)
 \@outlinefile=\write5
 \c@lstlisting=\count204
  ABD: EveryShipout initializing macros
@@ -1623,8 +1624,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 {C:/Users/7121625/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
 
 ]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\DesignDocument.toc [3] [4] [5]
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\De
+signDocument.toc [3] [4] [5]
 Overfull \hbox (8.25029pt too wide) detected at line 177
  []\T1/lmss/m/n/10 BM-1
  []
@@ -1647,32 +1648,32 @@ Overfull \hbox (8.25029pt too wide) detected at line 180
 )
 \tf@toc=\write6
  [6]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\DesignDocument.lof)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\De
+signDocument.lof)
 \tf@lof=\write7
  [7
 
 ] [8
 
 ]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\DesignDocument.lot)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\De
+signDocument.lot)
 \tf@lot=\write8
  [9] [10
 
 ]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\DesignDocument.loa)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\De
+signDocument.loa)
 \tf@loa=\write9
  [11] [12
 
 ]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\mission.tex) [13] [14
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\mi
+ssion.tex) [13] [14
 
 ]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\preparation.tex
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\pr
+eparation.tex
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 10.
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10> not available
@@ -1685,15 +1686,15 @@ Overfull \hbox (7.03629pt too wide) in paragraph at lines 17--38
 ) [15] [16
 
 ]
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\overview.tex
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\ov
+erview.tex
 Chapter 1.
 [1
 
 ])
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\requirements.tex [2pdfTeX warning (ext4): destination with the same identifi
-er (name{table.1.1}) has been already used, duplicate ignored
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\re
+quirements.tex [2pdfTeX warning (ext4): destination with the same identifier (n
+ame{table.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1708,14 +1709,14 @@ LaTeX Font Info:    Try loading font information for TS1+lmss on input line 91.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ts1lmss.fd"
 File: ts1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\project.tex [4]
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\pr
+oject.tex [4]
 Chapter 3.
 [5
 
 ] [6])
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\design.tex [7] [8
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\de
+sign.tex [7] [8
 
 ]
 Chapter 4.
@@ -1735,72 +1736,72 @@ b
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 91.
  [10] [11])
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\testing.tex [12]
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\te
+sting.tex [12]
 Chapter 5.
 )
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\prototypes.tex [13
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\pr
+ototypes.tex [13
 
 ] [14
 
 ]
 Chapter 6.
 )
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\deploy.tex [15] [16]
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\de
+ploy.tex [15] [16]
 Chapter 7.
 )
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\userdocs.tex [17
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\us
+erdocs.tex [17
 
 ] [18
 
 ]
 Chapter 8.
 )
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\refman.tex [19] [20
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\re
+fman.tex [19] [20
 
 ]
 Chapter 9.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\annotated.tex) [21] [22
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\an
+notated.tex) [21] [22
 
 ]
 Chapter 10.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\class_poly.tex
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\cl
+ass_poly.tex
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 39.
 ))
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\businessplan.tex [23] [24
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\bu
+sinessplan.tex [23] [24
 
 ]
 Chapter 11.
 )
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\log.tex [25] [26
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\lo
+g.tex [25] [26
 
 ]
 Chapter 12.
 )
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\results.tex [27] [28
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\re
+sults.tex [27] [28
 
 ]
 Chapter 13.
 )
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\DesignDocument.bbl [29] [30
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\De
+signDocument.bbl [29] [30
 
 ]) [31] [32
 
 ]
-<SoftwareContract.pdf, id=1163, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1161, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf>
@@ -1811,7 +1812,7 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 Package pdftex.def Info: SoftwareContract.pdf used on input line 71.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
-<SoftwareContract.pdf, id=1166, page=1, 614.295pt x 794.97pt>
+<SoftwareContract.pdf, id=1164, page=1, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 1>
@@ -1835,9 +1836,9 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 1>
 Package pdftex.def Info: SoftwareContract.pdf, page1 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [1 <C:/Users/7121625/Documents/Notes/CSC465/crowdscience/Documents/NewDesignTe
-mplate/SoftwareContract.pdf>]
-<SoftwareContract.pdf, id=1188, page=2, 614.295pt x 794.97pt>
+ [1 <C:/Users/7121625/Documents/Notes/CSC465/gitproj/Documents/NewDesignTemplat
+e/SoftwareContract.pdf>]
+<SoftwareContract.pdf, id=1186, page=2, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 2>
@@ -1852,9 +1853,9 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 2>
 Package pdftex.def Info: SoftwareContract.pdf, page2 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [2 <C:/Users/7121625/Documents/Notes/CSC465/crowdscience/Documents/NewDesignTe
-mplate/SoftwareContract.pdf>]
-<SoftwareContract.pdf, id=1193, page=3, 614.295pt x 794.97pt>
+ [2 <C:/Users/7121625/Documents/Notes/CSC465/gitproj/Documents/NewDesignTemplat
+e/SoftwareContract.pdf>]
+<SoftwareContract.pdf, id=1191, page=3, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 3>
@@ -1869,9 +1870,9 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 3>
 Package pdftex.def Info: SoftwareContract.pdf, page3 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [3 <C:/Users/7121625/Documents/Notes/CSC465/crowdscience/Documents/NewDesignTe
-mplate/SoftwareContract.pdf>]
-<SoftwareContract.pdf, id=1198, page=4, 614.295pt x 794.97pt>
+ [3 <C:/Users/7121625/Documents/Notes/CSC465/gitproj/Documents/NewDesignTemplat
+e/SoftwareContract.pdf>]
+<SoftwareContract.pdf, id=1196, page=4, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 4>
@@ -1886,9 +1887,9 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 4>
 Package pdftex.def Info: SoftwareContract.pdf, page4 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [4 <C:/Users/7121625/Documents/Notes/CSC465/crowdscience/Documents/NewDesignTe
-mplate/SoftwareContract.pdf>]
-<SoftwareContract.pdf, id=1203, page=5, 614.295pt x 794.97pt>
+ [4 <C:/Users/7121625/Documents/Notes/CSC465/gitproj/Documents/NewDesignTemplat
+e/SoftwareContract.pdf>]
+<SoftwareContract.pdf, id=1201, page=5, 614.295pt x 794.97pt>
 File: SoftwareContract.pdf Graphic file (type pdf)
 
 <use SoftwareContract.pdf, page 5>
@@ -1903,14 +1904,14 @@ File: SoftwareContract.pdf Graphic file (type pdf)
 <use SoftwareContract.pdf, page 5>
 Package pdftex.def Info: SoftwareContract.pdf, page5 used on input line 71.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [5 <C:/Users/7121625/Documents/Notes/CSC465/crowdscience/Documents/NewDesignTe
-mplate/SoftwareContract.pdf>] [6
+ [5 <C:/Users/7121625/Documents/Notes/CSC465/gitproj/Documents/NewDesignTemplat
+e/SoftwareContract.pdf>] [6
 
 ]
 Appendix A.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\productdescription.tex
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\pr
+oductdescription.tex
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 7.
 ) [1] [2
@@ -1918,20 +1919,20 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.4> not available
 ]
 Appendix B.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\pubs.tex) [1] [2
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\pu
+bs.tex) [1] [2
 
 ]
 Appendix C.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\sprints.tex) [1] [2
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\sp
+rints.tex) [1] [2
 
 ]
 Appendix D.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\industrial.tex) [1] [2
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\in
+dustrial.tex) [1] [2
 
 ]
 Appendix E.
@@ -1940,72 +1941,60 @@ Appendix E.
 ]
 Appendix F.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\supporting.tex) [1] [2
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\su
+pporting.tex) [1] [2
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <17.28> on input line 105.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\latexexample.tex [1
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\la
+texexample.tex [1
 
 
 ]) [2]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
 
-(C:\Users\7121625\Documents\Notes\CSC465\crowdscience\Documents\NewDesignTempla
-te\DesignDocument.aux)
+(C:\Users\7121625\Documents\Notes\CSC465\gitproj\Documents\NewDesignTemplate\De
+signDocument.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
-
-
-Package rerunfilecheck Warning: File `DesignDocument.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `DesignDocument.out':
-(rerunfilecheck)             Before: E2381729A900E357B1E05DAD021F3E5B;11538
-(rerunfilecheck)             After:  3090FC14CC29673E2C323BBA6D260003;11712.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `DesignDocument.out' has not changed.
+(rerunfilecheck)             Checksum: 3090FC14CC29673E2C323BBA6D260003;11712.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
- 26449 strings out of 493921
- 472659 string characters out of 3147276
- 604966 words of memory out of 3000000
- 28793 multiletter control sequences out of 15000+200000
+ 26447 strings out of 493921
+ 472289 string characters out of 3147276
+ 604967 words of memory out of 3000000
+ 28792 multiletter control sequences out of 15000+200000
  85242 words of font info for 81 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  64i,18n,72p,3300b,1878s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.1.1} has been referenced but does not exis
-t, replaced by a fixed one
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files
-/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Program Files
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lms
-s12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso12.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on DesignDocument.pdf (68 pages, 546473 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.en
+c}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/lm/lmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
+mss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/lm/lmss8.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/lm/lmssbo10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss
+o10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsso12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pf
+b>
+Output written on DesignDocument.pdf (68 pages, 546043 bytes).
 PDF statistics:
- 1404 PDF objects out of 1440 (max. 8388607)
- 301 named destinations out of 1000 (max. 500000)
+ 1401 PDF objects out of 1440 (max. 8388607)
+ 300 named destinations out of 1000 (max. 500000)
  1445 words of extra memory for PDF output out of 10000 (max. 10000000)
 

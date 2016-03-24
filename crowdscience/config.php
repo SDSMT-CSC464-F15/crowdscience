@@ -1,10 +1,10 @@
 <?php
-	/*********************
-		Add global configuration variables here, including session
-		specific data. Connecting to the database should happen here
-	*********************/
-	
-	//ini_set('display_errors', 1);
+	/*!
+		\file config.php
+	\brief Global PHP configuration variables here. 
+	\details 
+This file connects to the mongo database, and then starts a user session, if one has not already bene started. 
+*/
 	
 	try
 	{

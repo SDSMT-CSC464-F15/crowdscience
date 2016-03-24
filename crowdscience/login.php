@@ -11,7 +11,7 @@
 	
 	switch ($action) {
 		case 'logout':
-		session_unset();
+		unset($_SESSION['username']);
 		$response['status'] = 0;
 		$response['messages'][] = "Logged out";
 		break;

@@ -2,32 +2,26 @@
 % !TEX root = DesignDocument.tex
 
 \chapter{Design  and Implementation}
-This section is used to describe the design details for each of the major components 
-in the system.    Note that this chapter is critical for all tracks.  Research tracks would do experimental design here where other tracks would include the engineering design aspects.    This section is not brief and requires the necessary detail that 
-can be used by the reader to truly understand the architecture and implementation 
-details without having to dig into the code.   
+This section contains the architecture and implementation details for each of the major components in the system.
 
  \section{Architecture and System Design}
- This is where you will place the overall system design or the architecture.   This section should be image rich.  There is the old phrase {\it a picture is worth a thousand words}, in this class it could be worth a hundred points (well if you sum up over the entire team).   One needs to enter the design and why a particular design has been done.   
  
- \subsection{Design Selection}
- Failed designs, design ideas, rejected designs here.
- 
- \subsection{Data Structures and Algorithms}
- Describe the special data structures and any special algorithms.
- 
- \subsection{Data Flow}
- 
- \subsection{Communications}
- 
- \subsection{Classes}
- 
- \subsection{UML}
- 
- \subsection{GUI}
- 
- \subsection{MVVM, etc}
+ \subsection{Data Flow} 
+ In general data flows from the HTML form to the associated JavaScript, which posts requests to PHP files to access data in the Database. See Figure~\ref{design_dataflow}.
 
+\begin{figure}[tbh]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{./figures/design_dataflow.png}
+\end{center}
+\caption{System Architecture and Design Overview\label{design_dataflow}}
+\end{figure}
+ 
+ \subsection{Communications} Data is communicated to and from the user via HTML. Data is communicated to and from the database via PHP and JavaScript to the HTML that the user sees. See Figure~\ref{design_dataflow}.
+ 
+ \subsection{MVC} The project has a Model View Controller architecture. The model primarily consists of PHP files, which access the underlying data in the database. The view is the HTML files, which contain only page layout information. The controller is in the JavaScript, which controls dataflow to and from the view (HTML) and model (PHP) layer. See Figure~\ref{design_dataflow}.
+ 
+ \subsection{GUI} See Figure.
+ 
 \section{Major Component \#1 }
 
 \subsection{Technologies  Used}
