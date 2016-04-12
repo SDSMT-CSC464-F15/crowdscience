@@ -42,7 +42,7 @@ function POST_CheckLogin (argument) {
 		}
 		else 
 		{
-			alert(data.status + ": " + data.message)
+			alert( "Error Checking Login: " + data.status + ": " + data.message)
 		}
 	})
 	.fail(function(data) {

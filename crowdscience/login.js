@@ -59,7 +59,7 @@ function POST_LoginUser()
 		OnLoginSuccess(data) ;
 	})
 	.fail(function(data) {
-		alert( "error:" + data.responseText);
+		alert( "Error logging in user:" + data.responseText);
 	})
 	.always(function() {
 		

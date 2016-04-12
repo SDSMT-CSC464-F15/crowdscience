@@ -65,7 +65,7 @@ function POST_RegisterUser()
 		OnRegisterSuccess(data) ;
 	})
 	.fail(function(data) {
-		alert( "error:" + data.responseText);
+		alert( "Error Registering User:" + data.responseText);
 	})
 	.always(function() {
 		
