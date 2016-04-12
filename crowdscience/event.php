@@ -132,7 +132,6 @@
 		$response["status"] = "0";
 		
 		$eventset = $request["eventsetselection"];
-		$eventset = $request["eventsetselection"];
 		
 		$eventdata = $db->$eventset;
 		$eventsetsinfo = $db->eventsetsinfo;
@@ -178,7 +177,7 @@
 	{
 		global $db,$response,$request;
 		
-		$eventset = $request["eventsetselection"];
+		$eventset = $_SESSION['eventsetselection'];
 		
 		$eventsetsinfo = $db->eventsetsinfo;
 		
@@ -186,7 +185,7 @@
 		if(is_null($eventsetinfo))
 		{
 			$response["status"] = "2"; 
-			$response["messages"] = "Event Set Info not found";
+			$response["message"] = "Event Set Info not found";
 			return $response;
 		}
 		foreach ($eventsetinfo['details'] as $detail) {
