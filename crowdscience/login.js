@@ -30,8 +30,8 @@ $(document).ready(function(){
 function POST_CheckLoginStatus()
 {
 	$.post("checkLogin.php")
-	.done(function (status) {
-		if(status != 1)
+	.done(function (data) {
+		if(data.status != 1)
 		{
 			window.location.replace("index.html");
 		}
