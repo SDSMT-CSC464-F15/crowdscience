@@ -40,13 +40,9 @@ function POST_CheckLogin (argument) {
 		{
 			UpdateUserStatus(data.username);
 		}
-		else 
-		{
-			alert( "Error Checking Login: " + data.status + ": " + data.message)
-		}
 	})
 	.fail(function(data) {
-		alert(data.status)
+		alert("Error Checking Login: " + data.status)
 	})
 }
 
