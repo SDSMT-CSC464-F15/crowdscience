@@ -1,21 +1,25 @@
 <?php
 	
-	require 'config.php';
-
-	//$postdata = file_get_contents('php://input');
-	//$request = json_decode($postdata , true);
+	/*!
+		\file image.php
+		\brief Handles image retrieval from Momgo database.
+		\details
+		This file establishes the connection to the database, and then verifies that the connection was successful. If the connection was not established, an error will occur when using the GridFS. The id of the picture to find is in the GET part of the post to this PHP file, this id is then used to query the files in the database using the GridFS interface. The bytes of the file in the database with the type of the content, an image, are then echoed back to the page that posted the request. 
+	*/
 	
-	$request = $_GET["_id"];
-
-	//var_dump($request);
-
-	$grid = $db->getGridFS();
-	$file = $grid->get(new MongoId($request));
-	//$filestream = $file->getResource();
-	header("Content-Type: image/jpeg");
-	echo $file->getBytes();
-	
-	// while (!feof($filestream)) {
- //    echo fread($filestream, $file->getSize());
-	// }
+	try {
+		require 'config.php';
+		
+		$request = $_GET["_id"];
+		
+		$grid = $db->getGridFS();
+		$file = $grid->get(new MongoId($request));
+		
+		header("Content-Type: image/jpeg");
+		echo $file->getBytes();
+	}
+	catch (RuntimeException $e)
+	{ 
+    echo $e->getMessage();
+	}
 ?>
