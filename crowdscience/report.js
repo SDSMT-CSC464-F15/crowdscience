@@ -219,7 +219,7 @@ function POST_UpdateReportFields (argument) {
 		}
 		else 
 		{
-			alert(data.status + ": Error updating Report Fields: " + data.message)
+			alert(data.status + ": Error Updating Report Fields: " + data.message)
 			}
 	})
 	.fail(function(data) {

@@ -186,7 +186,7 @@
 		if(is_null($eventsetinfo))
 		{
 			$response["status"] = "2"; 
-			$response["messages"][] = "Event Set Info not found";
+			$response["messages"] = "Event Set Info not found";
 			return $response;
 		}
 		foreach ($eventsetinfo['details'] as $detail) {
