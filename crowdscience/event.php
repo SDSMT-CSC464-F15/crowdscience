@@ -106,7 +106,7 @@
 			$response["messages"][] = "$e->getMessage()";
 			return $response;
 		}
-		if(!( $event['user'] === "Anonymous"))
+		if(!( is_null($userinfo['username'])))
 		$event['user'] = $userinfo['username'];
 		$date = $event['details']['date'];
 		$date = $date->sec;
@@ -154,7 +154,7 @@
 				$response["messages"][] = "$e->getMessage()";
 				return;
 			}
-			if(!( $event['user'] === "Anonymous"))
+			if(!( is_null($userinfo['username'])))
 			$event['user'] = $userinfo['username'];
 			$date = $event['details']['date'];
 			$date = $date->sec;
@@ -221,6 +221,7 @@
 				$response["messages"][] = "$e->getMessage()";
 				return;
 			}
+			if(!( is_null($userinfo['username'])))
 			$event['user'] = $userinfo['username'];
 			$date = $event['details']['date'];
 			$date = $date->sec;

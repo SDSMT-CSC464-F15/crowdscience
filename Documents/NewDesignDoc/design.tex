@@ -18,54 +18,150 @@ This section contains the architecture and implementation details for each of th
  
  \subsection{Communications} Data is communicated to and from the user via HTML. Data is communicated to and from the database via PHP and JavaScript to the HTML that the user sees. See Figure~\ref{design_dataflow}.
  
+ \subsection{Databse Design} The database has a very flexible design, being a non-relational database. The database loosely resembles a relational database design, and differ in that a non-relational database can have a variable number of fields, and all fields are accessed via field name. There will also be a variable number of tables in the database. Four tables will remain constant: the User table, for storing user information; the Event Set Info, which stores information necessary for accessing tables containing the data for an event set; and the file storage tables, fs.files and fs.chunks, which are used to save uploaded files. Within the event set info table, the details section is an array containing information about how to access and display an event report. The remainder of the tables are variable, and store event reports for a given set. See Figure~\ref{design_database}.
+ 
+  \begin{figure}[tbh]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{./figures/design_database.png}
+\end{center}
+\caption{Database Design \label{design_database}}
+\end{figure}
+ 
  \subsection{MVC} The project has a Model View Controller architecture. The model primarily consists of PHP files, which access the underlying data in the database. The view is the HTML files, which contain only page layout information. The controller is in the JavaScript, which controls dataflow to and from the view (HTML) and model (PHP) layer. See Figure~\ref{design_dataflow}.
  
- \subsection{GUI} See Figure.
+ \subsection{GUI} See Figure~\ref{design_gui_index}, Figure~\ref{design_gui_login}, Figure~\ref{design_gui_register}, Figure~\ref{design_gui_report}, and Figure~\ref{design_gui_viewEvent}.
  
-\section{Major Component \#1 }
+ \begin{figure}[!htbp]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{./figures/design_gui_index.png}
+\end{center}
+\caption{GUI Design of Index Page \label{design_gui_index}}
+\end{figure}
 
-\subsection{Technologies  Used}
-This section provides a list of technologies used for this component.  The details 
-for the technologies have already been provided in the Overview section. 
+ \begin{figure}[!htbp]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{./figures/design_gui_login.png}
+\end{center}
+\caption{GUI Design of Login Page \label{design_gui_login}}
+\end{figure}
+
+ \begin{figure}[!htbp]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{./figures/design_gui_register.png}
+\end{center}
+\caption{GUI Design of Register Page \label{design_gui_register}}
+\end{figure}
+
+\begin{figure}[!htbp]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{./figures/design_gui_viewEvent.png}
+\end{center}
+\caption{GUI Design of View Event Page \label{design_gui_viewEvent}}
+\end{figure}
+
+\begin{figure}[!htb]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{./figures/design_gui_report.png}
+\end{center}
+\caption{GUI Design of Report Page \label{design_gui_report}}
+\end{figure}
+ 
+ \subsection{Technologies  Used}
+Each major component uses the the major technologies: Apache server to access HTML documents, which use CSS and JavaScript, which posts to PHP to access the Mongo Database. See Table~\ref{technologies}.  
+
+\section{Navigation Bar and User Selection of Event Set to Use}
 
 \subsection{Component  Overview}
-This section can take the form of a list of features. 
+This component allows the user to navigate to other pages within the website. The navigation bar will contain links to register, login, logout, report an event, and return to the homepage. The login and register links will be replaced by the logout button when a user is logged in. The logout link will be hidden when no user is logged in. The link to the homepage will always be present. The report event link will be hidden on the login, register, and view individual event pages. The register link will be hidden on the register and view individual event pages. The login link will be hidden on the login and view individual event pages. The navigation bar will contain a dropdown selection box for selecting an event set to view and use. The selection box will be hidden on the register, login, and and view individual event pages. When the event set selection is changed, the fields on the report event page will change to reflect the current event set and the data on the main page will change to reflect the selected event page.
 
 \subsection{Phase Overview}
-This is an extension of the Phase Overview above, but specific to this component. 
- It is meant to be basically a brief list with space for marking the phase status. 
+This component was parially adapted from existing Landscape Change Mapper code. New features were added to the existing navigation bar in the LCM code: the event set selection box and the report link. This component was partially implemented in phase one, adapting LCM code, and in phase two, adding Crowd Science Mapper features.
 
-\subsection{ Architecture  Diagram}
-It is important to build and maintain an architecture diagram.  However, it may 
-be that a component is best described visually with a data flow diagram. 
-
-
-\subsection{Data Flow Diagram}
-It is important to build and maintain a data flow diagram.  However, it may be 
-that a component is best described visually with an architecture diagram. 
-
+\subsection{ Architecture and Dataflow Diagram}
+See Figure~\ref{design_navbar}.
+\begin{figure}[tbh]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{./figures/design_navbar.png}
+\end{center}
+\caption{Dataflow and Architecture of Navigation Bar and Event Set Selection Component \label{design_navbar}}
+\end{figure} 
 
 \subsection{Design Details}
-This is where the details are presented and may contain subsections.   Here is an example code listing:
-\begin{lstlisting}
-#include <stdio.h>
-#define N 10
-/* Block
- * comment */
- 
-int main()
-{
-    int i;
- 
-    // Line comment.
-    puts("Hello world!");
- 
-    for (i = 0; i < N; i++)
-    {
-        puts("LaTeX is also great for programmers!");
-    }
- 
-    return 0;
-}
-\end{lstlisting}
-This code listing is not floating or automatically numbered.  If you want auto-numbering, but it in the algorithm environment (not algorithmic however) shown above.
+To maintain state as the user moves from page to page, the currently selected event set is stored in the PHP's session data. When the selection is changed, the JavaScript sends the new selection in a POST to event.php, where the current selection is saved to the session data and current event set options are retrieved from the database.  The data in the PHP file is then echoed back to the JavaScript that made the POST, and the JavaScript executes code to update the selection box in the HTML. See Figure~\ref{design_navbar} for the specific functions called to accompish this. 
+
+\section{User Registration, Login, and Logout}
+
+\subsection{Component  Overview}
+This component allows the user to register, login, and logout. When the user clicks the register link inthe navigation bar, the user will be taken to the register page. The register page will contain at least feilds for username, password, and password verification, which will be required fields. When a user clicks submit, their input is checked. If the user has not filled out all required fields or their passwords do not match, the user will be notified. After the user has registered, they will be automatically logged in. When the user clicks the login link in the navigaton bar, they will be taken to the login page. The login page will contain username and password fields. When the login button is clicked, the user's input is checked. If the username or password is incorrect, the user is notified. When the user sucessfully logs in, they are redirected to the main page. When a user clicks the logout link on the navigation bar, the user will be logged out, and redirected to the main page.
+
+\subsection{Phase Overview}
+This component was almost entirely adapted from existing Landscape Change Mapper code, and thus, implemented primarily in phase one of the project, adapting LCM code. 
+
+\subsection{ Architecture and Dataflow Diagram}
+See Figure~\ref{design_login_register_logout}.
+\begin{figure}[tbh]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{./figures/design_login_register_logout.png}
+\end{center}
+\caption{Dataflow and Architecture of Login, Register, and Logout Component \label{design_login_register_logout}}
+\end{figure}
+
+\subsection{Design Details}
+To keep the user logged in as the user moves from page to page, the user's username is stored in the PHP's session data. When a user logs out, the username field is cleared from session data. 
+
+The login form contains a text field for the username, a password field for the user's password, a button to submit the form data, and a button to cancel and return to the home page. The login page also contains a link to the register page, in addition to the register link in the navigation bar.  To prevent multiple logins, the page checks to see if a user is already logged in, and if one is, redirects to the home page. When the user clicks the submit button, the data is sent to the PHP, which checks it against the database and returns errors if it doesn't match. Error messages will be shown to the user. If the data matches, then the username is updated in the session data, and the user is redirected to the index page. 
+
+The register form contains text fields for the user's email, username, first name, last name, and location; passwords fields for the user's password and password verification; and a selection box for the type of user. When the user clicls the submit button, the Javascript checks that the passwords on the form match, and then sends the data to the PHP. The PHP first checks to see if the username or email have already been used in the database, and returns an error message if they have been used. Otherwise, the user's information is added to the database, and the user is logged in and redirected to the index page.
+
+\section{Generic Event Reporting Interface}
+
+\subsection{Component  Overview}
+This component allows the user to report an event for the event set they have selected. The event reporting window will contain a map for selecting the location of the event, with the latitude and longitude displayed underneath. If the latitude and longitude text boses are changed, the map will reflect the change. The user will be able to fill out the fields specific to the event set they have selected. When the user changes the event set, the fields will also change. The user will have the option to upload multiple photos with their event report. When the user clicks submit, the event report will be added to the database.
+
+\subsection{Phase Overview}
+This component was primarily part of phase two, adding Crowd Science Mapper code. While this component used some existing Landscape Change Mapper code, the changing fields on the page required a lot of new code. The map for selecting the report location and the photo upload interface are adapted from LCM code.
+
+\subsection{ Architecture and Dataflow Diagram}
+See Figure~\ref{design_report}.
+\begin{figure}[tbh]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{./figures/design_report.png}
+\end{center}
+\caption{Dataflow and Architecture of Event Reporting Component \label{design_report}}
+\end{figure} 
+
+\subsection{Design Details}
+When the report page is loaded or refreshed, the page checks to see if a user is currently logged in. If a user is logged in, the links shown on the navigation bar change accordingly. 
+
+When the selected event is changed, the fields on the report page update accordingly. After the field information is retrieved from the database, the list of fields are looped through. For each field, a new object is generated within the Javascript, and stored so that the object may later be accessed to upload the user's report. A different type of object will be added, depending on the feild type. Field types include selection, number, date, short text, and long text. A list of selection options accompanies a selection field's info, and number range and step accompany a number field's info. The object ids directly match the field name for the object's storage in the database. The objects are stored because JQueries are made for accessing elements of an HTML file, and cannot access things added to the HTML file after it has been loaded. 
+
+The map on the report page is created from custom LCM code that simplifies the map API so that a user may only select one location, and the location is tracked with latitude and longitude fields on the report form. When the latitude and longitude fields on the report form are changed, the location indicated on the map also changes. 
+
+To upload photos, the user must select the photos from their device, and then click on the upload photos button. When the user clicks on this button, the photos are uploaded to the database, and checked to see if they contain location information. If the photos contain location information, the latitude and longitude on the report form are updated. The Mongo Ids of the uploaded files are then saved to be added to the report when it is submitted.
+
+When the report is submitted, the saved field objects are looped through to extract the stored information. The id of each object corresponds to the field name it is stored as in the database, so the object id is used as the index into the array that the fields are stored in for posting to the PHP file. The photo IDs saved when the photos were uploaded are added as an array to the photos field in the PHP request array. Latitude and longitude are also added to the array, and the array is sent to the reprt PHP file. In the report PHP file, the photo IDs are all changed to Mongo IDs, the date is changed to the Mongo date format, and the latitude and longitude are combined into an array. If there is a username stored in session data, the report author is set to that user's ID. Otherwise, the report author is listed as annonymous.The report is then added to the database, and the user is returned to the index page. 
+
+\section{Generic Event Set Viewing}
+
+\subsection{Component  Overview}
+This component allows the user to view event reports in a variatey of ways. The user can view the event set reports as pins on a map interface. When the user clicks on a pin, a brief summary of the report is shown to the user, and the user can click on the summary to go to the individual event's page. The user can view the event set in a table. Each row will contain information about an event report, including author, and event report details. The user can click on the links in each row to go to the individual event's page, or to zoom to the event on the map. The user can view the images in an event set via the image carousel. The image carousel will periodically display a different event report's image, and the user can mannually nagivate the images with the arrows on either side of the carousel. The user can also view an individual event's page. The individual event's page will have all of the images for the event report, the exact latitude and longitude of the report, the author, and the other details associated with the report.
+
+\subsection{Phase Overview}
+The majority of this component was implemented in phase two, adding Crowd Science Mapper code. The event map, table, and individual event page from the Landscape Change Mapper all had to be largely rewritten to accomidate a variable set of details. The image carousel was more easily adapted from LCM code.
+
+\subsection{ Architecture and Dataflow Diagram}
+See Figure~\ref{design_viewing}.
+\begin{figure}[tbh]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{./figures/design_viewing.png}
+\end{center}
+\caption{Dataflow and Architecture of Event Viewing Component \label{design_viewing}}
+\end{figure} 
+
+\subsection{Design Details}
+When the event set selection is changed, or the index page is refreshed, the event set table, map, and image carousel should be updated with new data from the database.
+
+When the new information from the database is retrieved, the event set table first replaces its headers with the event set information contained in the database.
+
+These sections should connect the backlog items listed to the refman sections - map how I got from the requirement to the actual code.
+

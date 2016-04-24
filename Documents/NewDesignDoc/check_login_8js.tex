@@ -9,49 +9,60 @@
 \subsection*{\-Functions}
 \begin{DoxyCompactItemize}
 \item 
-document \hyperlink{check_login_8js_ae7146c8db59ee50e76dc6f599c38aa0f}{ready} (function()\{\hyperlink{check_login_8js_ac22fcdf348027e84ed585c470389d0c8}{check\-Login}();\$(\char`\"{}\#logout\char`\"{}).click(function(event)\{event.\-prevent\-Default();\$.post(\char`\"{}login.\-php\char`\"{},\char`\"{}\{$\backslash$\char`\"{}action$\backslash$\char`\"{} \-: $\backslash$\char`\"{}logout$\backslash$\char`\"{}\}\char`\"{}, null,\char`\"{}json\char`\"{}).always(function(data)\{window.\-location.\-href= 'index.\-html';\})\});\})
-\begin{DoxyCompactList}\small\item\em \-Calls the check\-Login function and then generates necessary event handlers. \end{DoxyCompactList}\item 
-function \hyperlink{check_login_8js_ac22fcdf348027e84ed585c470389d0c8}{check\-Login} (argument)
-\begin{DoxyCompactList}\small\item\em \-Posts to {\ttfamily \hyperlink{check_login_8php}{check\-Login.\-php}} to see if a user is logged in. \end{DoxyCompactList}\item 
-function \hyperlink{check_login_8js_a003611eabf171d2fb9911aaf3732aa47}{update\-User\-Status} (username)
+\hyperlink{check_login_8js_a953490e432eb41af978a831955667212}{document ready ( )} 
+\begin{DoxyCompactList}\small\item\em \-Calls the \hyperlink{check_login_8js_a9abf8e0bcab0c710e45072a169a1dd79}{\-P\-O\-S\-T\-\_\-\-Check\-Login()} function and then generates necessary event handlers. \end{DoxyCompactList}\item 
+function \hyperlink{check_login_8js_a9abf8e0bcab0c710e45072a169a1dd79}{\-P\-O\-S\-T\-\_\-\-Check\-Login} (argument)
+\begin{DoxyCompactList}\small\item\em \-Posts to \hyperlink{check_login_8php}{check\-Login.\-php} to see if a user is logged in. \end{DoxyCompactList}\item 
+function \hyperlink{check_login_8js_a55a3cd1b5fa2b623a04bf011162003a1}{\-Update\-User\-Status} (username)
 \begin{DoxyCompactList}\small\item\em \-Updates the user area on the navigation bar. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{\-Detailed \-Description}
-\-Contains functions for checking if a user is logged in. \-This file contains {\ttfamily }.ready , which sets the function to be called when the document, the \-H\-T\-M\-L loading the \-Java\-Script, has been loaded and is ready to run; and two functions\-: {\ttfamily check\-Login} and {\ttfamily update\-User\-Status} . \-The {\ttfamily }.ready function calls the check\-Login function and then generates necessary event handlers. \-The {\ttfamily check\-Login} posts a request to {\ttfamily \hyperlink{check_login_8php}{check\-Login.\-php}} to see if a user is saved in the session information, when the post completes successfully, the {\ttfamily update\-User\-Status} function is called. \-The {\ttfamily update\-User\-Status} function updates the \-H\-T\-M\-L according to whether a user is logged in. 
+\-Contains functions for checking if a user is logged in. \-This file contains .\hyperlink{check_login_8js_a953490e432eb41af978a831955667212}{ready()}, which sets the function to be called when the document, the \-H\-T\-M\-L loading the \-Java\-Script, has been loaded and is ready to run; and two functions\-: \hyperlink{check_login_8js_a9abf8e0bcab0c710e45072a169a1dd79}{\-P\-O\-S\-T\-\_\-\-Check\-Login()} and update\-User\-Status(). \-The .\hyperlink{check_login_8js_a953490e432eb41af978a831955667212}{ready()} function calls the \hyperlink{check_login_8js_a9abf8e0bcab0c710e45072a169a1dd79}{\-P\-O\-S\-T\-\_\-\-Check\-Login()} function and then generates necessary event handlers. \-The \hyperlink{check_login_8js_a9abf8e0bcab0c710e45072a169a1dd79}{\-P\-O\-S\-T\-\_\-\-Check\-Login()} posts a request to \hyperlink{check_login_8php}{check\-Login.\-php} to see if a user is saved in the session information, when the post completes successfully, the update\-User\-Status() function is called. \-The update\-User\-Status() function updates the \-H\-T\-M\-L according to whether a user is logged in. 
+
+\-Definition in file \hyperlink{check_login_8js_source}{check\-Login.\-js}.
+
+
 
 \subsection{\-Function \-Documentation}
-\hypertarget{check_login_8js_ac22fcdf348027e84ed585c470389d0c8}{\index{check\-Login.\-js@{check\-Login.\-js}!check\-Login@{check\-Login}}
-\index{check\-Login@{check\-Login}!checkLogin.js@{check\-Login.\-js}}
-\subsubsection[{check\-Login}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf check\-Login} (
+\hypertarget{check_login_8js_a9abf8e0bcab0c710e45072a169a1dd79}{\index{check\-Login.\-js@{check\-Login.\-js}!\-P\-O\-S\-T\-\_\-\-Check\-Login@{\-P\-O\-S\-T\-\_\-\-Check\-Login}}
+\index{\-P\-O\-S\-T\-\_\-\-Check\-Login@{\-P\-O\-S\-T\-\_\-\-Check\-Login}!checkLogin.js@{check\-Login.\-js}}
+\subsubsection[{\-P\-O\-S\-T\-\_\-\-Check\-Login}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-P\-O\-S\-T\-\_\-\-Check\-Login} (
 \begin{DoxyParamCaption}
 \item[{}]{argument}
 \end{DoxyParamCaption}
-)}}\label{check_login_8js_ac22fcdf348027e84ed585c470389d0c8}
+)}}\label{check_login_8js_a9abf8e0bcab0c710e45072a169a1dd79}
 
 
-\-Posts to {\ttfamily \hyperlink{check_login_8php}{check\-Login.\-php}} to see if a user is logged in. 
+\-Posts to \hyperlink{check_login_8php}{check\-Login.\-php} to see if a user is logged in. 
 
-\-The function posts to {\ttfamily \hyperlink{check_login_8php}{check\-Login.\-php}} to see if a user is logged in. \-When the post to {\ttfamily \hyperlink{check_login_8php}{check\-Login.\-php}} is complete, the function calls {\ttfamily update\-User\-Status} with the username returned from the post to {\ttfamily \hyperlink{check_login_8php}{check\-Login.\-php}}. \-If the post to {\ttfamily \hyperlink{check_login_8php}{check\-Login.\-php}} fails, then an alert box will pop up with the status code of the failure. \hypertarget{check_login_8js_ae7146c8db59ee50e76dc6f599c38aa0f}{\index{check\-Login.\-js@{check\-Login.\-js}!ready@{ready}}
+\-The function posts to \hyperlink{check_login_8php}{check\-Login.\-php} to see if a user is logged in. \-When the post to \hyperlink{check_login_8php}{check\-Login.\-php} is complete, the function calls \hyperlink{check_login_8js_a55a3cd1b5fa2b623a04bf011162003a1}{\-Update\-User\-Status()} with the username returned from the post to \hyperlink{check_login_8php}{check\-Login.\-php}. \-If the post to \hyperlink{check_login_8php}{check\-Login.\-php} fails, then an alert box will pop up with the status code of the failure. 
+
+\-Definition at line 36 of file check\-Login.\-js.
+
+\hypertarget{check_login_8js_a953490e432eb41af978a831955667212}{\index{check\-Login.\-js@{check\-Login.\-js}!ready@{ready}}
 \index{ready@{ready}!checkLogin.js@{check\-Login.\-js}}
 \subsubsection[{ready}]{\setlength{\rightskip}{0pt plus 5cm}document {\bf ready} (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{check_login_8js_ae7146c8db59ee50e76dc6f599c38aa0f}
+)}}\label{check_login_8js_a953490e432eb41af978a831955667212}
 
 
-\-Calls the check\-Login function and then generates necessary event handlers. 
+\-Calls the \hyperlink{check_login_8js_a9abf8e0bcab0c710e45072a169a1dd79}{\-P\-O\-S\-T\-\_\-\-Check\-Login()} function and then generates necessary event handlers. 
 
-\-This function calls the {\ttfamily \-Check\-Login} function to see if a user is currently logged in, and then sets the event handler for the logout button click event. \hypertarget{check_login_8js_a003611eabf171d2fb9911aaf3732aa47}{\index{check\-Login.\-js@{check\-Login.\-js}!update\-User\-Status@{update\-User\-Status}}
-\index{update\-User\-Status@{update\-User\-Status}!checkLogin.js@{check\-Login.\-js}}
-\subsubsection[{update\-User\-Status}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf update\-User\-Status} (
+\-This function calls the \hyperlink{check_login_8js_a9abf8e0bcab0c710e45072a169a1dd79}{\-P\-O\-S\-T\-\_\-\-Check\-Login()} function to see if a user is currently logged in, and then sets the event handler for the logout button click event. \-The event handler will clear old error messages, and then post to the \hyperlink{login_8php}{login.\-php} to clear the user's session data. \-After posting to the \hyperlink{login_8php}{login.\-php}, the user is redirected back to the index. \hypertarget{check_login_8js_a55a3cd1b5fa2b623a04bf011162003a1}{\index{check\-Login.\-js@{check\-Login.\-js}!\-Update\-User\-Status@{\-Update\-User\-Status}}
+\index{\-Update\-User\-Status@{\-Update\-User\-Status}!checkLogin.js@{check\-Login.\-js}}
+\subsubsection[{\-Update\-User\-Status}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-Update\-User\-Status} (
 \begin{DoxyParamCaption}
 \item[{}]{username}
 \end{DoxyParamCaption}
-)}}\label{check_login_8js_a003611eabf171d2fb9911aaf3732aa47}
+)}}\label{check_login_8js_a55a3cd1b5fa2b623a04bf011162003a1}
 
 
 \-Updates the user area on the navigation bar. 
 
 \-The function updates the user information stored in the \-H\-T\-M\-L, and then updates the navigation bar. \-When a user is logged in, the login and register buttons are replaced with a user icon, the username of the user that is logged in, and a logout button. 
+
+\-Definition at line 54 of file check\-Login.\-js.
+

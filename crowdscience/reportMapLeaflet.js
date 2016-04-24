@@ -18,11 +18,11 @@ var marker;
 */
 function initmap() {
 	// set up the map
-	map = new L.Map('map', {minZoom: 3,  maxZoom: 18});
-	var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-	var osmAttrib='Map data © OpenStreetMap contributors';
-	var osm = new L.TileLayer('http://{s}.tiles.mapbox.com/v3/rwfeather.j8g96pnj/{z}/{x}/{y}.png', {
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+	map = new L.Map("map", {minZoom: 3,  maxZoom: 18});
+	var osmUrl="http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+	var osmAttrib="Map data © OpenStreetMap contributors";
+	var osm = new L.TileLayer("http://{s}.tiles.mapbox.com/v3/rwfeather.j8g96pnj/{z}/{x}/{y}.png", {
+		attribution: "Map data &copy; <a href=\"http://openstreetmap.org\">OpenStreetMap</a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"http://mapbox.com\">Mapbox</a>",
 		
 		
 	});		
@@ -41,7 +41,7 @@ function initmap() {
 */
 function addMarker(lat, lon, title, id)
 {
-	var domelem = document.createElement('a');
+	var domelem = document.createElement("a");
 	domelem.href = "search_results.html#";
 	domelem.href += id;
 	domelem.innerHTML = title;
@@ -63,10 +63,10 @@ function onMapClick(e) {
 	lat = e.latlng.lat;
 	lon = e.latlng.lng;
 	
-	document.getElementById('lat_name').value = lat;
-	document.getElementById('lon_name').value = lon;
+	document.getElementById("lat_name").value = lat;
+	document.getElementById("lon_name").value = lon;
 	
-	if(typeof(marker)==='undefined')
+	if(typeof(marker)==="undefined")
 	{
 		marker = new L.marker([lat, lon]).addTo(map);
 	}

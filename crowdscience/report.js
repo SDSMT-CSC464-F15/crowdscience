@@ -14,11 +14,11 @@ var event_set_fields = new Array();
 /*!
  \brief Initializes the map, updates the event set options and report fields, and then sets event handlers.
 	\details 
-	This function initizlizes the reporting interface's map, and then sets its on click event handler. Then, this function calls the POST_UpdateEventSetOptions() function to update the event set options and ensure an event is selected, and the POST_UpdateReportFields() to create the report fields specific to the event set. Then, the event handler for the report form submission event is set to clear old messages and call POST_SubmitEventReport().  The event handler for changing the selected event is set to the POST_ChangeEventSetSelection() function, and the event handler for clicking the choose fuile button is set to the PreparePhotoUpload() function.
+	This function initizlizes the reporting interface"s map, and then sets its on click event handler. Then, this function calls the POST_UpdateEventSetOptions() function to update the event set options and ensure an event is selected, and the POST_UpdateReportFields() to create the report fields specific to the event set. Then, the event handler for the report form submission event is set to clear old messages and call POST_SubmitEventReport().  The event handler for changing the selected event is set to the POST_ChangeEventSetSelection() function, and the event handler for clicking the choose fuile button is set to the PreparePhotoUpload() function.
 */
 $(document).ready(function(){
 	initmap(); //load map
-	map.on('click', onMapClick); //set click handler
+	map.on("click", onMapClick); //set click handler
 	
 	//update event set selection options
 	POST_UpdateEventSetOptions();
@@ -32,12 +32,12 @@ $(document).ready(function(){
 	});
 	
 	//Register a handler for the "Choose file" button
-	$("#choose_photos").on('change', function() {
-	$('form').on('submit', {files : event.target.files}, POST_UploadPhotos);
+	$("#choose_photos").on("change", function() {
+	$("form").on("submit", {files : event.target.files}, POST_UploadPhotos);
 	});
 
 	//set what to do when the event set selection is changed	
-	$("#select_event_set").on('change', function() { POST_ChangeEventSetSelection(); });
+	$("#select_event_set").on("change", function() { POST_ChangeEventSetSelection(); });
 });
 
 
@@ -81,7 +81,7 @@ function POST_SubmitEventReport(argument) {
 	.done(function(data) {
 		if (data.status == 0) {
 		//go back to main page after event creation
-		window.location.href = 'index.html';
+		window.location.href = "index.html";
 		}
 		else 
 		{
@@ -114,15 +114,15 @@ function POST_UploadPhotos(event) {
 	});
 	
 	$.ajax({
-		url: 'fileUpload.php',
-		type: 'POST',
+		url: "fileUpload.php",
+		type: "POST",
 		data: data,
 		cache: false,
 		processData: false, // Don't process the files
 		contentType: false // Set content type to false as jQuery will tell the server its a query string request
 	})
 	.done(function(data){
-		if(typeof data.error === 'undefined')
+		if(typeof data.error === "undefined")
 		{
 			
 			for (var i = 0; i < data.images.length; i++) {
@@ -139,12 +139,12 @@ function POST_UploadPhotos(event) {
 		else
 		{
 			// Handle errors here
-			console.log('ERRORS: ' + data.error);
+			console.log("ERRORS: " + data.error);
 		}
 	})
 	.fail(function(jqXHR, textStatus, errorThrown){
 		// Handle errors here
-		console.log('ERRORS: ' + textStatus);
+		console.log("ERRORS: " + textStatus);
 	});
 	
 }
@@ -197,7 +197,7 @@ function UpdateEventSetOptions (data) {
 	$("#select_event_set").empty();
 	//refill the options
 	for (var i = data.eventsetsinfo.length - 1; i >= 0; i--) {
-		$("#select_event_set").append('<option value=\"'+ data.eventsetsinfo[i].id +'\">'+data.eventsetsinfo[i].name+'</option>');
+		$("#select_event_set").append("<option value=\""+ data.eventsetsinfo[i].id +"\">"+data.eventsetsinfo[i].name+"</option>");
 	}
 	//set the selected value to the session's value
 	$("#select_event_set").val(data.eventsetselection);

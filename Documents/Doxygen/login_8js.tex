@@ -1,0 +1,86 @@
+\hypertarget{login_8js}{\section{login.\-js \-File \-Reference}
+\label{login_8js}\index{login.\-js@{login.\-js}}
+}
+
+
+\-Contains functions for logging in a user.  
+
+
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+document \hyperlink{login_8js_a197afd7104917350c7abad60f437600c}{ready} (function()\{\hyperlink{login_8js_a8193fef43a2b5ff6a96cf611d6b031aa}{\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status}();document.\-get\-Element\-By\-Id(\char`\"{}wrong\-Login\char`\"{}).style.\-display=\char`\"{}none\char`\"{};\$(\char`\"{}\#login\-\_\-form\-\_\-id\char`\"{}).submit(function(event)\{event.\-prevent\-Default();\hyperlink{login_8js_ab8b0f64ae1d785379a04d3370121df2e}{\-P\-O\-S\-T\-\_\-\-Login\-User}();\});\})
+\begin{DoxyCompactList}\small\item\em \-Calls the \hyperlink{login_8js_a8193fef43a2b5ff6a96cf611d6b031aa}{\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status()} function and then generates necessary event handlers. \end{DoxyCompactList}\item 
+function \hyperlink{login_8js_a8193fef43a2b5ff6a96cf611d6b031aa}{\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status} ()
+\begin{DoxyCompactList}\small\item\em \-Checks to see if a user is already logged in. \end{DoxyCompactList}\item 
+function \hyperlink{login_8js_ab8b0f64ae1d785379a04d3370121df2e}{\-P\-O\-S\-T\-\_\-\-Login\-User} ()
+\begin{DoxyCompactList}\small\item\em \-Attempts to login the user. \end{DoxyCompactList}\item 
+function \hyperlink{login_8js_a386c48397185ac4c387d4af94d8fdb71}{\-On\-Login\-Success} (response)
+\begin{DoxyCompactList}\small\item\em \-Handles response from user's login attempt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Contains functions for logging in a user. \-This file contains .\hyperlink{check_login_8js_a953490e432eb41af978a831955667212}{ready()}, which sets the function to be called when the document, the \-H\-T\-M\-L loading the \-Java\-Script, has been loaded and is ready to run; and three functions\-: \hyperlink{login_8js_a8193fef43a2b5ff6a96cf611d6b031aa}{\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status()}, \hyperlink{login_8js_ab8b0f64ae1d785379a04d3370121df2e}{\-P\-O\-S\-T\-\_\-\-Login\-User()}, and \hyperlink{login_8js_a386c48397185ac4c387d4af94d8fdb71}{\-On\-Login\-Success()}. \-The .\hyperlink{check_login_8js_a953490e432eb41af978a831955667212}{ready()} function calls the \hyperlink{login_8js_a8193fef43a2b5ff6a96cf611d6b031aa}{\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status()} function and then generates necessary event handlers. \-The \hyperlink{login_8js_a8193fef43a2b5ff6a96cf611d6b031aa}{\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status()} function posts a request to \hyperlink{check_login_8php}{check\-Login.\-php} to see if a user is saved in the session information, if one is, then the user is redirected to the index page. \-The \hyperlink{login_8js_ab8b0f64ae1d785379a04d3370121df2e}{\-P\-O\-S\-T\-\_\-\-Login\-User()} functions posts a request to \hyperlink{login_8php}{login.\-php} to attempt to login in a user. \-If the post completes successfully, the \hyperlink{login_8js_a386c48397185ac4c387d4af94d8fdb71}{\-On\-Login\-Success()} function is called. \-The \hyperlink{login_8js_a386c48397185ac4c387d4af94d8fdb71}{\-On\-Login\-Success()} function updates the \-H\-T\-M\-L according to whether a user is logged in or the login failed. 
+
+\-Definition in file \hyperlink{login_8js_source}{login.\-js}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{login_8js_a386c48397185ac4c387d4af94d8fdb71}{\index{login.\-js@{login.\-js}!\-On\-Login\-Success@{\-On\-Login\-Success}}
+\index{\-On\-Login\-Success@{\-On\-Login\-Success}!login.js@{login.\-js}}
+\subsubsection[{\-On\-Login\-Success}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-On\-Login\-Success} (
+\begin{DoxyParamCaption}
+\item[{}]{response}
+\end{DoxyParamCaption}
+)}}\label{login_8js_a386c48397185ac4c387d4af94d8fdb71}
+
+
+\-Handles response from user's login attempt. 
+
+\-If the post to \hyperlink{login_8php}{login.\-php} returned a status of 1 or 2, the login attempt was unsuccessful, and an error message is displayed. \-Otherwise, the attempt was successful, and \hyperlink{login_8js_a8193fef43a2b5ff6a96cf611d6b031aa}{\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status()} is called to update the session data, and the user is redirected to the index page. 
+
+\-Definition at line 75 of file login.\-js.
+
+\hypertarget{login_8js_a8193fef43a2b5ff6a96cf611d6b031aa}{\index{login.\-js@{login.\-js}!\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status@{\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status}}
+\index{\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status@{\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status}!login.js@{login.\-js}}
+\subsubsection[{\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-P\-O\-S\-T\-\_\-\-Check\-Login\-Status} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{login_8js_a8193fef43a2b5ff6a96cf611d6b031aa}
+
+
+\-Checks to see if a user is already logged in. 
+
+\-This function posts a request to the \hyperlink{check_login_8php}{check\-Login.\-php} to see if a user is already logged in. \-If the post doesn't return a 1, indicating a user isn't logged in, then the user is redirected to the index page. 
+
+\-Definition at line 30 of file login.\-js.
+
+\hypertarget{login_8js_ab8b0f64ae1d785379a04d3370121df2e}{\index{login.\-js@{login.\-js}!\-P\-O\-S\-T\-\_\-\-Login\-User@{\-P\-O\-S\-T\-\_\-\-Login\-User}}
+\index{\-P\-O\-S\-T\-\_\-\-Login\-User@{\-P\-O\-S\-T\-\_\-\-Login\-User}!login.js@{login.\-js}}
+\subsubsection[{\-P\-O\-S\-T\-\_\-\-Login\-User}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-P\-O\-S\-T\-\_\-\-Login\-User} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{login_8js_ab8b0f64ae1d785379a04d3370121df2e}
+
+
+\-Attempts to login the user. 
+
+\-This function posts a request to \hyperlink{login_8php}{login.\-php} with the password and username entered on the login form. \-If the post is successful, the \hyperlink{login_8js_a386c48397185ac4c387d4af94d8fdb71}{\-On\-Login\-Success()} function is called. \-If the post fails, then the error is alerted to the user. 
+
+\-Definition at line 47 of file login.\-js.
+
+\hypertarget{login_8js_a197afd7104917350c7abad60f437600c}{\index{login.\-js@{login.\-js}!ready@{ready}}
+\index{ready@{ready}!login.js@{login.\-js}}
+\subsubsection[{ready}]{\setlength{\rightskip}{0pt plus 5cm}document {\bf ready} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{login_8js_a197afd7104917350c7abad60f437600c}
+
+
+\-Calls the \hyperlink{login_8js_a8193fef43a2b5ff6a96cf611d6b031aa}{\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status()} function and then generates necessary event handlers. 
+
+\-This function calls the \hyperlink{login_8js_a8193fef43a2b5ff6a96cf611d6b031aa}{\-P\-O\-S\-T\-\_\-\-Check\-Login\-Status()} function to see if a user is currently logged in, hides the wrong\-Login error message, and then sets the event handler for the login form submission event. \-The event handler will clear old error messages, and then post to the \hyperlink{login_8php}{login.\-php} to login the user. 

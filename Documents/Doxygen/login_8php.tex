@@ -1,0 +1,42 @@
+\hypertarget{login_8php}{\section{login.\-php \-File \-Reference}
+\label{login_8php}\index{login.\-php@{login.\-php}}
+}
+
+
+\-Removes user info from session data if user logs out, and logs in user.  
+
+
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{login_8php_a0d3d3fe80a9fe8faa3320b29dbb2c29a}{validate\-User} ()
+\begin{DoxyCompactList}\small\item\em \-Checks the user's username and password against the username and password stored in the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Removes user info from session data if user logs out, and logs in user. \-This file establishes the connection to the database, and then verifies that the connection was successful. \-The data in the post message is retrieved and decrypted. \-The action from the post message is then used to perform an action to interact with the database or session data.
+
+\-The default action returns a status of 1, indicating that an invalid action was supplied, and a message that no action was taken. \-When the action is logout, the username is removed from the session data, and the response status is set to 0. \-When the action is login, the function \hyperlink{login_8php_a0d3d3fe80a9fe8faa3320b29dbb2c29a}{validate\-User()} is called to check the user's submitted username and password against the records stored in the database.
+
+\-The response is then encoded and returned to the \-Java\-Script that posted to this file. 
+
+\-Definition in file \hyperlink{login_8php_source}{login.\-php}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{login_8php_a0d3d3fe80a9fe8faa3320b29dbb2c29a}{\index{login.\-php@{login.\-php}!validate\-User@{validate\-User}}
+\index{validate\-User@{validate\-User}!login.php@{login.\-php}}
+\subsubsection[{validate\-User}]{\setlength{\rightskip}{0pt plus 5cm}{\bf validate\-User} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{login_8php_a0d3d3fe80a9fe8faa3320b29dbb2c29a}
+
+
+\-Checks the user's username and password against the username and password stored in the database. 
+
+\-This function retrieves the username and password from the request data, and then attempts to find and entry in the user table matching the username. \-If no entry is found, the response code is set to 1, and \char`\"{}\-Invalid User\char`\"{} is added to the response message. \-If the password does not match the password in the database, then the response code is set to 2, and the \char`\"{}\-Incorrect Password\char`\"{} message is added to the response. \-Other wise, the login is considered successful, and the status code is set to 0 for a successful login, and the function returns. 
+
+\-Definition at line 53 of file login.\-php.
+

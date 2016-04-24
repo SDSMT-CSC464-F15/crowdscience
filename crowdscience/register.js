@@ -25,8 +25,8 @@ $(document).ready(function(){
 		{
 			// display error message and clear password fields.
 			document.getElementById("passwordmsg").style.display="";
-			document.getElementById('new_password1').value = "";
-			document.getElementById('new_password2').value = "";
+			document.getElementById("new_password1").value = "";
+			document.getElementById("new_password2").value = "";
 		}
 	});
 });
@@ -92,6 +92,6 @@ function OnRegisterSuccess(response)
 	else
 	{
 		//go back to main page after registering
-		window.location.href = 'index.html';
+		window.location.href = "index.html";
 	}
 }

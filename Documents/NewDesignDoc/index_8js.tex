@@ -1,0 +1,174 @@
+\hypertarget{index_8js}{\section{index.\-js \-File \-Reference}
+\label{index_8js}\index{index.\-js@{index.\-js}}
+}
+
+
+\-Contains functions for event set interaction on the index page.  
+
+
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{index_8js_ad8f1742f55245b14795dc3633e0b0b1a}{document ready ( )} 
+\begin{DoxyCompactList}\small\item\em \-Updates the event set options and then sets event handlers. \end{DoxyCompactList}\item 
+function \hyperlink{index_8js_a6e968350162f4c5c6a23b37b41ecc4b9}{\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection} (argument)
+\begin{DoxyCompactList}\small\item\em \-Posts to \hyperlink{event_8php}{event.\-php} to change the currently selected event set and update the event set options. \end{DoxyCompactList}\item 
+function \hyperlink{index_8js_aef2016dba7aef881ddcc348b9c1c8084}{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options} (argument)
+\begin{DoxyCompactList}\small\item\em \-Posts to \hyperlink{event_8php}{event.\-php} to update the event set options. \end{DoxyCompactList}\item 
+function \hyperlink{index_8js_a80fed17dd33d3fb653b239fd59fad4d4}{\-Update\-Event\-Set\-Options} (data)
+\begin{DoxyCompactList}\small\item\em \-Updates the event set options with provided data. \end{DoxyCompactList}\item 
+function \hyperlink{index_8js_aebaaf1789f475514f15a2f734dd629e5}{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Table\-And\-Map} (argument)
+\begin{DoxyCompactList}\small\item\em \-Posts to \hyperlink{event_8php}{event.\-php} to retrieve the event set data and update the event set image carousel, table, and map. \end{DoxyCompactList}\item 
+function \hyperlink{index_8js_a50863ce58819d49e68fb714e6972ed3b}{\-Update\-Event\-Set\-Image\-Carousel} (data)
+\begin{DoxyCompactList}\small\item\em \-Updates the event set image carousel. \end{DoxyCompactList}\item 
+function \hyperlink{index_8js_a69cf33e2491906de171f19325eac8c0c}{\-Update\-Event\-Set\-Map} (data)
+\begin{DoxyCompactList}\small\item\em \-Updates the event set map. \end{DoxyCompactList}\item 
+function \hyperlink{index_8js_a286c11106c38e9a6712202975dfa7efc}{\-Update\-Event\-Set\-Table} (data)
+\begin{DoxyCompactList}\small\item\em \-Updates the event set table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \hyperlink{index_8js_a48e18769649a3ca5bab0fafdec44cb15}{map}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Contains functions for event set interaction on the index page. \-This file contains .\hyperlink{check_login_8js_a953490e432eb41af978a831955667212}{ready()}, which sets the function to be called when the document, the \-H\-T\-M\-L loading the \-Java\-Script, has been loaded and is ready to run; and several functions for interaction with the event set selection and data. \-The .\hyperlink{check_login_8js_a953490e432eb41af978a831955667212}{ready()} function calls the \hyperlink{index_8js_aef2016dba7aef881ddcc348b9c1c8084}{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options()} function and then generates necessary event handlers.
+
+\-The \hyperlink{index_8js_aef2016dba7aef881ddcc348b9c1c8084}{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options()} function posts a request to \hyperlink{event_8php}{event.\-php} to change the event set selection saved in session data and update current event set options, when the post completes successfully, the \hyperlink{index_8js_a80fed17dd33d3fb653b239fd59fad4d4}{\-Update\-Event\-Set\-Options()} function is called. \-The \hyperlink{index_8js_aef2016dba7aef881ddcc348b9c1c8084}{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options()} function posts a request to \hyperlink{event_8php}{event.\-php} to update current event set options, when the post completes successfully, the \hyperlink{index_8js_a80fed17dd33d3fb653b239fd59fad4d4}{\-Update\-Event\-Set\-Options()} function is called. \-The \hyperlink{index_8js_a80fed17dd33d3fb653b239fd59fad4d4}{\-Update\-Event\-Set\-Options()} function updates the event set selection box with the selected event set stored in session data and the current list of event set options in the database.
+
+\-The \-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Table\-And\-Map function posts a request to \hyperlink{event_8php}{event.\-php} to retrieve all event set data, when the post completes successfully, the \hyperlink{index_8js_a286c11106c38e9a6712202975dfa7efc}{\-Update\-Event\-Set\-Table()}, \hyperlink{index_8js_a69cf33e2491906de171f19325eac8c0c}{\-Update\-Event\-Set\-Map()}, and \hyperlink{index_8js_a50863ce58819d49e68fb714e6972ed3b}{\-Update\-Event\-Set\-Image\-Carousel()} functions are called. \-The \hyperlink{index_8js_a286c11106c38e9a6712202975dfa7efc}{\-Update\-Event\-Set\-Table()} function clears the previous table body and header and then inserts the corresponding information retrieved from the database. \-The \hyperlink{index_8js_a69cf33e2491906de171f19325eac8c0c}{\-Update\-Event\-Set\-Map()} function removes all prior markers on the map and then creates markers for the corresponding information retrieved from the database. \-The \hyperlink{index_8js_a50863ce58819d49e68fb714e6972ed3b}{\-Update\-Event\-Set\-Image\-Carousel()} function clears the images already in the image carousel and then inserts the corresponding images retrieved from the database.
+
+\-The map global variable stores a reference to the map and all its markers being displayed. 
+
+\-Definition in file \hyperlink{index_8js_source}{index.\-js}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{index_8js_a6e968350162f4c5c6a23b37b41ecc4b9}{\index{index.\-js@{index.\-js}!\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection@{\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection}}
+\index{\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection@{\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection}!index.js@{index.\-js}}
+\subsubsection[{\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection} (
+\begin{DoxyParamCaption}
+\item[{}]{argument}
+\end{DoxyParamCaption}
+)}}\label{index_8js_a6e968350162f4c5c6a23b37b41ecc4b9}
+
+
+\-Posts to \hyperlink{event_8php}{event.\-php} to change the currently selected event set and update the event set options. 
+
+\-This function posts to \hyperlink{event_8php}{event.\-php} to change the currently selected event set and update the event set options. \-The php request includes the new selected event. \-When the post to \hyperlink{event_8php}{event.\-php} is complete, the function checks the status code. \-If the status code is 0, the post completed successfully, and calls \hyperlink{index_8js_a80fed17dd33d3fb653b239fd59fad4d4}{\-Update\-Event\-Set\-Options()} with the data returned from the post to \hyperlink{event_8php}{event.\-php}. \-If the status code returned from the post is not 0, then the status code and error message are alerted to the user. \-If the post to \hyperlink{event_8php}{event.\-php} fails, then an alert box will pop up with the status code of the failure and a brief error message. 
+
+\-Definition at line 35 of file index.\-js.
+
+\hypertarget{index_8js_aef2016dba7aef881ddcc348b9c1c8084}{\index{index.\-js@{index.\-js}!\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options@{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options}}
+\index{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options@{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options}!index.js@{index.\-js}}
+\subsubsection[{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options} (
+\begin{DoxyParamCaption}
+\item[{}]{argument}
+\end{DoxyParamCaption}
+)}}\label{index_8js_aef2016dba7aef881ddcc348b9c1c8084}
+
+
+\-Posts to \hyperlink{event_8php}{event.\-php} to update the event set options. 
+
+\-This function posts to \hyperlink{event_8php}{event.\-php} to update the event set options. \-When the post to \hyperlink{event_8php}{event.\-php} is complete, the function checks the status code. \-If the status code is 0, the post completed successfully, and calls \hyperlink{index_8js_a80fed17dd33d3fb653b239fd59fad4d4}{\-Update\-Event\-Set\-Options()} with the data returned from the post to \hyperlink{event_8php}{event.\-php}. \-If the status code returned from the post is not 0, then the status code and error message are alerted to the user. \-If the post to \hyperlink{event_8php}{event.\-php} fails, then an alert box will pop up with the status code of the failure and a brief error message. 
+
+\-Definition at line 58 of file index.\-js.
+
+\hypertarget{index_8js_aebaaf1789f475514f15a2f734dd629e5}{\index{index.\-js@{index.\-js}!\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Table\-And\-Map@{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Table\-And\-Map}}
+\index{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Table\-And\-Map@{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Table\-And\-Map}!index.js@{index.\-js}}
+\subsubsection[{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Table\-And\-Map}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Table\-And\-Map} (
+\begin{DoxyParamCaption}
+\item[{}]{argument}
+\end{DoxyParamCaption}
+)}}\label{index_8js_aebaaf1789f475514f15a2f734dd629e5}
+
+
+\-Posts to \hyperlink{event_8php}{event.\-php} to retrieve the event set data and update the event set image carousel, table, and map. 
+
+\-This function posts to \hyperlink{event_8php}{event.\-php} to retrieve the event set data. \-The php request includes the currently selected event. \-When the post to \hyperlink{event_8php}{event.\-php} is complete, the function checks the status code. \-If the status code is 0, the post completed successfully, and calls \hyperlink{index_8js_a286c11106c38e9a6712202975dfa7efc}{\-Update\-Event\-Set\-Table()}, \hyperlink{index_8js_a69cf33e2491906de171f19325eac8c0c}{\-Update\-Event\-Set\-Map()}, and \hyperlink{index_8js_a50863ce58819d49e68fb714e6972ed3b}{\-Update\-Event\-Set\-Image\-Carousel()} with the data returned from the post to \hyperlink{event_8php}{event.\-php} to update the event set image carousel, table, and map. \-If the status code returned from the post is not 0, then the status code and error message are alerted to the user. \-If the post to \hyperlink{event_8php}{event.\-php} fails, then an alert box will pop up with the status code of the failure and a brief error message. 
+
+\-Definition at line 101 of file index.\-js.
+
+\hypertarget{index_8js_ad8f1742f55245b14795dc3633e0b0b1a}{\index{index.\-js@{index.\-js}!ready@{ready}}
+\index{ready@{ready}!index.js@{index.\-js}}
+\subsubsection[{ready}]{\setlength{\rightskip}{0pt plus 5cm}document {\bf ready} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{index_8js_ad8f1742f55245b14795dc3633e0b0b1a}
+
+
+\-Updates the event set options and then sets event handlers. 
+
+\-This function calls the \hyperlink{index_8js_aef2016dba7aef881ddcc348b9c1c8084}{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options()} function to update the event set options and ensure an event is selected. \-Then, the event handler for chancing the selected event is set to the \hyperlink{index_8js_a6e968350162f4c5c6a23b37b41ecc4b9}{\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection()} function. \hypertarget{index_8js_a50863ce58819d49e68fb714e6972ed3b}{\index{index.\-js@{index.\-js}!\-Update\-Event\-Set\-Image\-Carousel@{\-Update\-Event\-Set\-Image\-Carousel}}
+\index{\-Update\-Event\-Set\-Image\-Carousel@{\-Update\-Event\-Set\-Image\-Carousel}!index.js@{index.\-js}}
+\subsubsection[{\-Update\-Event\-Set\-Image\-Carousel}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-Update\-Event\-Set\-Image\-Carousel} (
+\begin{DoxyParamCaption}
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}}\label{index_8js_a50863ce58819d49e68fb714e6972ed3b}
+
+
+\-Updates the event set image carousel. 
+
+\-This function first empties the image carousel, and then loops through the set of events. \-For each event, the first photo associated with the event is added to the carousel. \-A new target is then added to the list of targets for the image carousel to display. \-If the image is the first image, it is also set as the active image. \-The image is then added to the carousel. \-Each image is retrieved using a post to \hyperlink{image_8php}{image.\-php} with the id of the image and then added to the inner list of images. \-If there are no images to display, the image carousel is hidden. 
+
+\-Definition at line 126 of file index.\-js.
+
+\hypertarget{index_8js_a69cf33e2491906de171f19325eac8c0c}{\index{index.\-js@{index.\-js}!\-Update\-Event\-Set\-Map@{\-Update\-Event\-Set\-Map}}
+\index{\-Update\-Event\-Set\-Map@{\-Update\-Event\-Set\-Map}!index.js@{index.\-js}}
+\subsubsection[{\-Update\-Event\-Set\-Map}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-Update\-Event\-Set\-Map} (
+\begin{DoxyParamCaption}
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}}\label{index_8js_a69cf33e2491906de171f19325eac8c0c}
+
+
+\-Updates the event set map. 
+
+\-This function first clears the current map and creates a new instance of the map layer to clear all the previous markers from the map. \-The map is then initialized, to be focused on \-Rapid \-City, \-S\-D, with information regarding the map's \-A\-P\-I origin. \-Then, all the events in the data argument passed to the function are looped through. \-For each event, a marker is placed on the map according to the event's latitude and longitude. \-A popup is then added to the marker, containing a link to view the individual event and basic information about the event. \-If the event has an image associated with it, the image is added to the popup. \-Then the details for the event set are looped through, and the details of the event added to the popup. \-If the detail type is a selection, then the appropriate text is inserted for the selection. \-For any other type, the database information is directly inserted. 
+
+\-Definition at line 174 of file index.\-js.
+
+\hypertarget{index_8js_a80fed17dd33d3fb653b239fd59fad4d4}{\index{index.\-js@{index.\-js}!\-Update\-Event\-Set\-Options@{\-Update\-Event\-Set\-Options}}
+\index{\-Update\-Event\-Set\-Options@{\-Update\-Event\-Set\-Options}!index.js@{index.\-js}}
+\subsubsection[{\-Update\-Event\-Set\-Options}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-Update\-Event\-Set\-Options} (
+\begin{DoxyParamCaption}
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}}\label{index_8js_a80fed17dd33d3fb653b239fd59fad4d4}
+
+
+\-Updates the event set options with provided data. 
+
+\-This function empties the options of the event set selection, and then loops though the data passed in. \-For each event set, the id is added to the event set selection as the value, and the name of the event set is the display text. \-The currently selected item is set to the selected event in the data passed to the function. \-Then, the \hyperlink{index_8js_aebaaf1789f475514f15a2f734dd629e5}{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Table\-And\-Map()} function is called to update the event set table and map. 
+
+\-Definition at line 82 of file index.\-js.
+
+\hypertarget{index_8js_a286c11106c38e9a6712202975dfa7efc}{\index{index.\-js@{index.\-js}!\-Update\-Event\-Set\-Table@{\-Update\-Event\-Set\-Table}}
+\index{\-Update\-Event\-Set\-Table@{\-Update\-Event\-Set\-Table}!index.js@{index.\-js}}
+\subsubsection[{\-Update\-Event\-Set\-Table}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-Update\-Event\-Set\-Table} (
+\begin{DoxyParamCaption}
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}}\label{index_8js_a286c11106c38e9a6712202975dfa7efc}
+
+
+\-Updates the event set table. 
+
+\-This function first empties the table headers, and then repopulates the table headers according to the selected data set. \-The table body is then emptied, and repopulated with the corresponding information from the database. \-Then the details for the event set are looped through, and the details of the event added to table body. \-If the detail type is a selection, then the appropriate text is inserted for the selection. \-For any other type, the database information is directly inserted. \-Links to zoom to that event on the map, and view the individual event are added to the end of each table row. 
+
+\-Definition at line 231 of file index.\-js.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{index_8js_a48e18769649a3ca5bab0fafdec44cb15}{\index{index.\-js@{index.\-js}!map@{map}}
+\index{map@{map}!index.js@{index.\-js}}
+\subsubsection[{map}]{\setlength{\rightskip}{0pt plus 5cm}var {\bf map}}}\label{index_8js_a48e18769649a3ca5bab0fafdec44cb15}
+
+
+\-Definition at line 14 of file index.\-js.
+

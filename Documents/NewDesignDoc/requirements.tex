@@ -7,14 +7,17 @@ This section contains basic requirements for the Crowd Science Mapper project, s
 
 \section{User Stories}
 
-\subsection{User Story \#1}
-As a user, I want to be able to view a visual map representation of event reports and a detailed list of event reports.
+\subsection{User Story \#1} 
+As a user, I want to be able to navigate the various aspects of the website with a navigation bar and select the event set I want to use to view or report an event
 
-\subsection{User Story \#2} 
-As a user, I want to be able to register and login and submit an event report.
+\subsection{User Story \#2}
+ As a user, I want to be able to register a new account, login, and logout; and have my reports contain my username as the reporter.
 
 \subsection{User Story \#3} 
-As a user, I want to be able to select which set of events I would like to view.
+As a user, I want to be able to report an event set. I want my event report to include the location, time, and details specific the to the event set I have selected.
+
+\subsection{User Story \#4} 
+As a user, I want to be able to view a visual map representation of event reports, an image carousel, and a detailed list of event reports. I want to be taken to a page with more information when I click on an event.
 
 \section{Requirements and Design Constraints}
 This project will be a HTML based webpage using JavaScript JQueries to connect to post to PHP files which will query a Mongo database, and hosted on an Apache server.
@@ -32,13 +35,16 @@ The product backlog is directly derived from the user stories, but much more ref
 \begin{itemize}
 \item Each page shall contain a navigation bar at the top of the page.
 \item The navigation bar will have buttons for logging in, new user registration, logout, and event reporting, where appropiate.
+\item When no user is logged in, there will be buttons in the navigation bar leading to a new user registration page and a user login page.
 \item The navigation bar shall contain a drop down box for selecting the event set.
 \item The selected event set shall maintain its state when navigating to a different page or refreshing the page.
+\item When the user is logged in, an icon indicating the logged in user and a log out button will replace the login button on the navigation bar.
+\item User will be able to select from a drop down menu on the index and report pages which event data set to view. 
+\item When the current event data set is changed, the map, event list, image carousel, and report features will change according to the feilds specified for that set.
 \end{itemize}
 
 \subsection{New User Registration}
 \begin{itemize}
-\item When no user is logged in, there will be a button on the main page leading to a new user registration page.
 \item The registration page will have a feild for username, password and password verification, and a ``submit'' button.
 \item If the passwords do not match, the user will be notified, and need to reenter one or both passwords.
 \item After registering, a user will automatically be logged in.
@@ -46,44 +52,51 @@ The product backlog is directly derived from the user stories, but much more ref
 
 \subsection{User Login}
 \begin{itemize}
-\item When no user is logged in, there will be a button on the main page leading to a login page
 \item The login page will have fields for entering username and passwords, a ``login'' button and a link to the user registration page.
 \item The user will be notified if the username or password was incorrect, and may need to reenter one or both feilds.
-\item When the user is logged in, an icon indicating the logged in user and a log out button will replace the login button on the navigation page.
-\item When an administrator logs in, they wil lbe able to see buttons in the navigation bar that lead to pages for editing events and customizing event sets.
 \end{itemize}
 
 \subsection{Event reporting interface}
 \begin{itemize}
 \item When a user is logged in, the user is listed as the author of the report.
-\item When no user is logged in, the author of the report is ``Annonymous''.
+\item When no user is logged in, the author of the report is saved as ``Annonymous''.
 \item Every event report shall include a longitude and latitude feild.
+\item The event reporting window shall contain a map for selecting the latitude and longitude of the event.
 \item The event reporting window shall contain the feilds specified for that event data set.
-\item Each required feild will be marked as required.
+\item The event reporting window shall contain an interface for uploading images with the event report.
 \item The event reporting window shall contain a submit button.
-\item The user will be notified if they have not entered all required feilds, and will be able to return to edit their unfinished report.
+\item When the user clicks submit, the report is added to the database.
 \end{itemize}
 
 \subsection{Detailed event list}
 \begin{itemize}
 \item The detailed event list will be a table of the current event set, and will include all feilds specified for that event data set.
-\item Each entry shall include longitude, latitude of event, and the author of the event.
-\item When a point on the map is hovered over, the associated entry in the list will be highlighted.
-\item When a point on the map is clicked, the associated entry in the list will be highlighted in a different shade.
+\item Each entry shall include the author of the event.
+\item Each entry shall include links to the individual event page and to center the map on that event.
 \end{itemize}
 
 \subsection{Map representation of events}
 \begin{itemize}
 \item The map shall be a visual representation of the event data set. 
 \item The map shall contain a marker for each event report, placed at the longitude and latitude specified in the report.
+\item When a marker on the map is clicked on, a popup will appear with the picture associated with the event report, and the event report details. 
+\item When an event report popup is clicked, the user will be navigated to the individual event page.
 \item The map will be able to be zoomed in, zoomed out, and panned.
 \item Entries in the event list will be highlighted when a marker is hovered over or clicked.
 \end{itemize}
 
-\subsection{User selection of data to view}
+\subsection{Event Set Image Carousel}
 \begin{itemize}
-\item User will beable to select from a drop down menu on any page which event data set to view. 
-\item When the current event data set is changed, the map, event list, administrator functions and report features will change according to the feilds specified for that set.
-\item If implemented, the general appearance of the pages will change according to the selected event data set.
+\item The image carousel will contain one image per event in the selected event set.
+\item The image carousel will periodically display a different event image.
+\item The user will be able to navigate through the pictures in the image carousel using arrows at the sides of the image carousel.
+\end{itemize}
+
+\subsection{Individual Event Viewing}
+\begin{itemize}
+\item The individual event page will contain only information regarding the event clicked on by the user on a previous page.
+\item The individual event page will contain all pictures associated with an event.
+\item The individual event page will contain the specific latitude and longitude associated with an event.
+\item The individual event page will contain all details pertaining to the event.
 \end{itemize}
 

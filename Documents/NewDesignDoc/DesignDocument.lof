@@ -1,34 +1,44 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Design of Crowd Science Main Page}}{3}{figure.1.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Crowd Science System Overview}}{3}{figure.1.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Gantt Chart of Project Completion Schedule}}{11}{figure.3.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Design of Crowd Science Main Page}}{14}{figure.4.1}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces System Architecture and Design Overview}}{17}{figure.5.1}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 1}}{26}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 2}}{27}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Crowd Science Login Page Prototype as of Sprint 2}}{28}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Crowd Science Register Page Prototype as of Sprint 2}}{28}{figure.7.4}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 4}}{29}{figure.7.5}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Crowd Science Register Page Prototype as of Sprint 4}}{29}{figure.7.6}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Crowd Science Login Page Prototype as of Sprint 4}}{30}{figure.7.7}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Crowd Science Event Set Selection Prototype as of Sprint 4}}{30}{figure.7.8}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 5}}{31}{figure.7.9}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Crowd Science Event Reports Table Prototype as of Sprint 5}}{31}{figure.7.10}
-\contentsline {figure}{\numberline {7.11}{\ignorespaces Crowd Science Event Reports Map Prototype as of Sprint 5}}{32}{figure.7.11}
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Crowd Science Event Reports Image Carousel Prototype as of Sprint 5}}{32}{figure.7.12}
-\contentsline {figure}{\numberline {7.13}{\ignorespaces Crowd Science Event Reporting Prototype as of Sprint 5}}{33}{figure.7.13}
-\contentsline {figure}{\numberline {7.14}{\ignorespaces Crowd Science Event Reporting Prototype as of Sprint 5}}{33}{figure.7.14}
-\contentsline {figure}{\numberline {7.15}{\ignorespaces Crowd Science Event Reporting Prototype as of Sprint 5}}{34}{figure.7.15}
-\contentsline {figure}{\numberline {7.16}{\ignorespaces Crowd Science Single Event Viewing Prototype as of Sprint 5}}{35}{figure.7.16}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces System Architecture and Design Overview}}{13}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Database Design }}{14}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces GUI Design of Index Page }}{15}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces GUI Design of Login Page }}{15}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces GUI Design of Register Page }}{16}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces GUI Design of View Event Page }}{16}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces GUI Design of Report Page }}{17}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Dataflow and Architecture of Navigation Bar and Event Set Selection Component }}{18}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Dataflow and Architecture of Login, Register, and Logout Component }}{19}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Dataflow and Architecture of Event Reporting Component }}{20}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Dataflow and Architecture of Event Viewing Component }}{22}{figure.4.11}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 1}}{26}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 2}}{27}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Crowd Science Login Page Prototype as of Sprint 2}}{28}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Crowd Science Register Page Prototype as of Sprint 2}}{28}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 4}}{29}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Crowd Science Register Page Prototype as of Sprint 4}}{29}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Crowd Science Login Page Prototype as of Sprint 4}}{30}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Crowd Science Event Set Selection Prototype as of Sprint 4}}{30}{figure.6.8}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 5}}{31}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Crowd Science Event Reports Table Prototype as of Sprint 5}}{31}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Crowd Science Event Reports Map Prototype as of Sprint 5}}{32}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Crowd Science Event Reports Image Carousel Prototype as of Sprint 5}}{32}{figure.6.12}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Crowd Science Event Reporting Prototype as of Sprint 5}}{33}{figure.6.13}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Crowd Science Event Reporting Prototype as of Sprint 5}}{33}{figure.6.14}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Crowd Science Event Reporting Prototype as of Sprint 5}}{34}{figure.6.15}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Crowd Science Single Event Viewing Prototype as of Sprint 5}}{35}{figure.6.16}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Design of Crowd Science Main Page}}{A-2}{figure.A.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

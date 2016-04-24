@@ -1,0 +1,201 @@
+\hypertarget{report_8js}{\section{report.\-js \-File \-Reference}
+\label{report_8js}\index{report.\-js@{report.\-js}}
+}
+
+
+\-Contains functions for submitting an event report and creating the custom report form for each event set.  
+
+
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+document \hyperlink{report_8js_a896224827c9331f5119327732765a2dd}{ready} (function()\{\hyperlink{report_map_leaflet_8js_abcf96615dae15880bbc5e29ee0395df8}{initmap}();map.\-on(\char`\"{}click\char`\"{}, on\-Map\-Click);\hyperlink{report_8js_aef2016dba7aef881ddcc348b9c1c8084}{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options}();\hyperlink{report_8js_ad0214c16781742095e035a0756e56f89}{\-P\-O\-S\-T\-\_\-\-Update\-Report\-Fields}();\$(\char`\"{}\#event\-\_\-report\-\_\-form\char`\"{}).submit(function(event)\{event.\-prevent\-Default();\hyperlink{report_8js_a03e41426ca4c44c1c9603605cf1e81c1}{\-P\-O\-S\-T\-\_\-\-Submit\-Event\-Report}();\});\$(\char`\"{}\#choose\-\_\-photos\char`\"{}).on(\char`\"{}change\char`\"{}, function()\{\$(\char`\"{}form\char`\"{}).on(\char`\"{}submit\char`\"{},\{files\-:event.\-target.\-files\}, \hyperlink{report_8js_ae3645856152094f5a658e6cd4039f6c4}{\-P\-O\-S\-T\-\_\-\-Upload\-Photos});\});\$(\char`\"{}\#select\-\_\-event\-\_\-set\char`\"{}).on(\char`\"{}change\char`\"{}, function()\{\hyperlink{report_8js_a6e968350162f4c5c6a23b37b41ecc4b9}{\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection}();\});\})
+\begin{DoxyCompactList}\small\item\em \-Initializes the map, updates the event set options and report fields, and then sets event handlers. \end{DoxyCompactList}\item 
+function \hyperlink{report_8js_a03e41426ca4c44c1c9603605cf1e81c1}{\-P\-O\-S\-T\-\_\-\-Submit\-Event\-Report} (argument)
+\begin{DoxyCompactList}\small\item\em \-Gathers appropriate info and makes a new event. \end{DoxyCompactList}\item 
+function \hyperlink{report_8js_ae3645856152094f5a658e6cd4039f6c4}{\-P\-O\-S\-T\-\_\-\-Upload\-Photos} (event)
+\begin{DoxyCompactList}\small\item\em \-Catch the form submit and upload the files. \end{DoxyCompactList}\item 
+function \hyperlink{report_8js_a6e968350162f4c5c6a23b37b41ecc4b9}{\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection} (argument)
+\begin{DoxyCompactList}\small\item\em \-Posts to \hyperlink{event_8php}{event.\-php} to change the currently selected event set and update the event set options. \end{DoxyCompactList}\item 
+function \hyperlink{report_8js_aef2016dba7aef881ddcc348b9c1c8084}{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options} (argument)
+\begin{DoxyCompactList}\small\item\em \-Posts to \hyperlink{event_8php}{event.\-php} to update the event set options. \end{DoxyCompactList}\item 
+function \hyperlink{report_8js_a80fed17dd33d3fb653b239fd59fad4d4}{\-Update\-Event\-Set\-Options} (data)
+\begin{DoxyCompactList}\small\item\em \-Updates the event set options with provided data. \end{DoxyCompactList}\item 
+function \hyperlink{report_8js_ad0214c16781742095e035a0756e56f89}{\-P\-O\-S\-T\-\_\-\-Update\-Report\-Fields} (argument)
+\begin{DoxyCompactList}\small\item\em \-Retrieves event set information from the database necessary for creating custom event report form. \end{DoxyCompactList}\item 
+function \hyperlink{report_8js_a7ad88b3fdb3a5cdfe3da456fe59697bb}{\-Update\-Report\-Fields} (data)
+\begin{DoxyCompactList}\small\item\em \-Builds custom event report form based on selected event set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \hyperlink{report_8js_a8d00815ecf772c94c55832005684a5fb}{picture\-\_\-id} = \mbox{[}$\,$\mbox{]}
+\item 
+var \hyperlink{report_8js_ac880e2c3a982ba45b92e622011ba7482}{lat} = 0
+\item 
+var \hyperlink{report_8js_a56ab14d836de4c1295c941ddd682e86b}{lon} = 0
+\item 
+var \hyperlink{report_8js_aee0ee232e987a2045490e33d78ea4de4}{event\-\_\-set\-\_\-fields} = new \-Array()
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Contains functions for submitting an event report and creating the custom report form for each event set. \-This file contains .\hyperlink{check_login_8js_a953490e432eb41af978a831955667212}{ready()}, which sets the function to be called when the document, the \-H\-T\-M\-L loading the \-Java\-Script, has been loaded and is ready to run; and several functions for interaction with the event set selection and data. \-The .\hyperlink{check_login_8js_a953490e432eb41af978a831955667212}{ready()} function loads the report map, calls the \hyperlink{index_8js_aef2016dba7aef881ddcc348b9c1c8084}{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options()} and \hyperlink{report_8js_ad0214c16781742095e035a0756e56f89}{\-P\-O\-S\-T\-\_\-\-Update\-Report\-Fields()} functions, and then generates necessary event handlers.
+
+\-The global variable picture\-\_\-id stores an array of uploaded picture \-Mongo \-I\-Ds to be added to the completed event report. \-The lat and lon global variables store the currently selected latitude and longitude on the report map. \-The event\-\_\-set\-\_\-fields global variable stores a reference to the custom event set form fields that are created and accessed within this file. 
+
+\-Definition in file \hyperlink{report_8js_source}{report.\-js}.
+
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{report_8js_a6e968350162f4c5c6a23b37b41ecc4b9}{\index{report.\-js@{report.\-js}!\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection@{\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection}}
+\index{\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection@{\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection}!report.js@{report.\-js}}
+\subsubsection[{\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection} (
+\begin{DoxyParamCaption}
+\item[{}]{argument}
+\end{DoxyParamCaption}
+)}}\label{report_8js_a6e968350162f4c5c6a23b37b41ecc4b9}
+
+
+\-Posts to \hyperlink{event_8php}{event.\-php} to change the currently selected event set and update the event set options. 
+
+\-This function posts to \hyperlink{event_8php}{event.\-php} to change the currently selected event set and update the event set options. \-The php request includes the new selected event. \-When the post to \hyperlink{event_8php}{event.\-php} is complete, the function checks the status code. \-If the status code is 0, the post completed successfully, and calls \hyperlink{index_8js_a80fed17dd33d3fb653b239fd59fad4d4}{\-Update\-Event\-Set\-Options()} with the data returned from the post to \hyperlink{event_8php}{event.\-php}. \-If the status code returned from the post is not 0, then the status code and error message are alerted to the user. \-If the post to \hyperlink{event_8php}{event.\-php} fails, then an alert box will pop up with the status code of the failure and a brief error message. 
+
+\-Definition at line 157 of file report.\-js.
+
+\hypertarget{report_8js_a03e41426ca4c44c1c9603605cf1e81c1}{\index{report.\-js@{report.\-js}!\-P\-O\-S\-T\-\_\-\-Submit\-Event\-Report@{\-P\-O\-S\-T\-\_\-\-Submit\-Event\-Report}}
+\index{\-P\-O\-S\-T\-\_\-\-Submit\-Event\-Report@{\-P\-O\-S\-T\-\_\-\-Submit\-Event\-Report}!report.js@{report.\-js}}
+\subsubsection[{\-P\-O\-S\-T\-\_\-\-Submit\-Event\-Report}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-P\-O\-S\-T\-\_\-\-Submit\-Event\-Report} (
+\begin{DoxyParamCaption}
+\item[{}]{argument}
+\end{DoxyParamCaption}
+)}}\label{report_8js_a03e41426ca4c44c1c9603605cf1e81c1}
+
+
+\-Gathers appropriate info and makes a new event. 
+
+\-This function first creates a shell of the event report to submit. \-Then it loops through the details fields of the event report, and adds each to the details array of the event report shell. \-The form data of each event report field is accessed in the details array by the id of the form field associated with it. \-If images were uploaded, the image \-Mongo \-I\-Ds are added to the event report. \-The event report is then posted to \hyperlink{report_8php}{report.\-php}.
+
+\-When the post to \hyperlink{event_8php}{event.\-php} is complete, the function checks the status code. \-If the status code is 0, the post completed successfully, and returns the user to the index page. \-If the status code returned from the post is not 0, then the status code and error message are alerted to the user. \-If the post to \hyperlink{event_8php}{event.\-php} fails, then an alert box will pop up with the status code of the failure and a brief error message. 
+
+\-Definition at line 51 of file report.\-js.
+
+\hypertarget{report_8js_aef2016dba7aef881ddcc348b9c1c8084}{\index{report.\-js@{report.\-js}!\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options@{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options}}
+\index{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options@{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options}!report.js@{report.\-js}}
+\subsubsection[{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options} (
+\begin{DoxyParamCaption}
+\item[{}]{argument}
+\end{DoxyParamCaption}
+)}}\label{report_8js_aef2016dba7aef881ddcc348b9c1c8084}
+
+
+\-Posts to \hyperlink{event_8php}{event.\-php} to update the event set options. 
+
+\-This function posts to \hyperlink{event_8php}{event.\-php} to update the event set options. \-When the post to \hyperlink{event_8php}{event.\-php} is complete, the function checks the status code. \-If the status code is 0, the post completed successfully, and calls \hyperlink{index_8js_a80fed17dd33d3fb653b239fd59fad4d4}{\-Update\-Event\-Set\-Options()} with the data returned from the post to \hyperlink{event_8php}{event.\-php}. \-If the status code returned from the post is not 0, then the status code and error message are alerted to the user. \-If the post to \hyperlink{event_8php}{event.\-php} fails, then an alert box will pop up with the status code of the failure and a brief error message. 
+
+\-Definition at line 176 of file report.\-js.
+
+\hypertarget{report_8js_ad0214c16781742095e035a0756e56f89}{\index{report.\-js@{report.\-js}!\-P\-O\-S\-T\-\_\-\-Update\-Report\-Fields@{\-P\-O\-S\-T\-\_\-\-Update\-Report\-Fields}}
+\index{\-P\-O\-S\-T\-\_\-\-Update\-Report\-Fields@{\-P\-O\-S\-T\-\_\-\-Update\-Report\-Fields}!report.js@{report.\-js}}
+\subsubsection[{\-P\-O\-S\-T\-\_\-\-Update\-Report\-Fields}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-P\-O\-S\-T\-\_\-\-Update\-Report\-Fields} (
+\begin{DoxyParamCaption}
+\item[{}]{argument}
+\end{DoxyParamCaption}
+)}}\label{report_8js_ad0214c16781742095e035a0756e56f89}
+
+
+\-Retrieves event set information from the database necessary for creating custom event report form. 
+
+\-This function posts to \hyperlink{event_8php}{event.\-php} to retrieve event set information from the database necessary for creating the custom event report form. \-When the post to \hyperlink{event_8php}{event.\-php} is complete, the function checks the status code. \-If the status code is 0, the post completed successfully, and calls \hyperlink{report_8js_a7ad88b3fdb3a5cdfe3da456fe59697bb}{\-Update\-Report\-Fields()} with the data returned from the post to \hyperlink{event_8php}{event.\-php}. \-If the status code returned from the post is not 0, then the status code and error message are alerted to the user. \-If the post to \hyperlink{event_8php}{event.\-php} fails, then an alert box will pop up with the status code of the failure and a brief error message. 
+
+\-Definition at line 213 of file report.\-js.
+
+\hypertarget{report_8js_ae3645856152094f5a658e6cd4039f6c4}{\index{report.\-js@{report.\-js}!\-P\-O\-S\-T\-\_\-\-Upload\-Photos@{\-P\-O\-S\-T\-\_\-\-Upload\-Photos}}
+\index{\-P\-O\-S\-T\-\_\-\-Upload\-Photos@{\-P\-O\-S\-T\-\_\-\-Upload\-Photos}!report.js@{report.\-js}}
+\subsubsection[{\-P\-O\-S\-T\-\_\-\-Upload\-Photos}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-P\-O\-S\-T\-\_\-\-Upload\-Photos} (
+\begin{DoxyParamCaption}
+\item[{}]{event}
+\end{DoxyParamCaption}
+)}}\label{report_8js_ae3645856152094f5a658e6cd4039f6c4}
+
+
+\-Catch the form submit and upload the files. 
+
+\-This function suppresses output, and then creates form data from the selected files, and prepares the files for upload. \-The files are posted to \hyperlink{file_upload_8php}{file\-Upload.\-php}, which handles uploading the files to the \-Mongo database.
+
+\-When the post to \hyperlink{file_upload_8php}{file\-Upload.\-php} is complete, if there is a latitude and longitude associated with the picture, it is placed in the latitude and longitude fields in the \-H\-T\-M\-L form, and the sucessful image upload message is shown to the user. \-If the post to \hyperlink{event_8php}{event.\-php} fails or there are errors with the data, the data error messages are added to the console log. 
+
+\-Definition at line 104 of file report.\-js.
+
+\hypertarget{report_8js_a896224827c9331f5119327732765a2dd}{\index{report.\-js@{report.\-js}!ready@{ready}}
+\index{ready@{ready}!report.js@{report.\-js}}
+\subsubsection[{ready}]{\setlength{\rightskip}{0pt plus 5cm}document {\bf ready} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{report_8js_a896224827c9331f5119327732765a2dd}
+
+
+\-Initializes the map, updates the event set options and report fields, and then sets event handlers. 
+
+\-This function initizlizes the reporting interface"s map, and then sets its on click event handler. \-Then, this function calls the \hyperlink{index_8js_aef2016dba7aef881ddcc348b9c1c8084}{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Options()} function to update the event set options and ensure an event is selected, and the \hyperlink{report_8js_ad0214c16781742095e035a0756e56f89}{\-P\-O\-S\-T\-\_\-\-Update\-Report\-Fields()} to create the report fields specific to the event set. \-Then, the event handler for the report form submission event is set to clear old messages and call \hyperlink{report_8js_a03e41426ca4c44c1c9603605cf1e81c1}{\-P\-O\-S\-T\-\_\-\-Submit\-Event\-Report()}. \-The event handler for changing the selected event is set to the \hyperlink{index_8js_a6e968350162f4c5c6a23b37b41ecc4b9}{\-P\-O\-S\-T\-\_\-\-Change\-Event\-Set\-Selection()} function, and the event handler for clicking the choose fuile button is set to the \-Prepare\-Photo\-Upload() function. \hypertarget{report_8js_a80fed17dd33d3fb653b239fd59fad4d4}{\index{report.\-js@{report.\-js}!\-Update\-Event\-Set\-Options@{\-Update\-Event\-Set\-Options}}
+\index{\-Update\-Event\-Set\-Options@{\-Update\-Event\-Set\-Options}!report.js@{report.\-js}}
+\subsubsection[{\-Update\-Event\-Set\-Options}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-Update\-Event\-Set\-Options} (
+\begin{DoxyParamCaption}
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}}\label{report_8js_a80fed17dd33d3fb653b239fd59fad4d4}
+
+
+\-Updates the event set options with provided data. 
+
+\-This function empties the options of the event set selection, and then loops though the data passed in. \-For each event set, the id is added to the event set selection as the value, and the name of the event set is the display text. \-The currently selected item is set to the selected event in the data passed to the function. \-Then, the \hyperlink{index_8js_aebaaf1789f475514f15a2f734dd629e5}{\-P\-O\-S\-T\-\_\-\-Update\-Event\-Set\-Table\-And\-Map()} function is called to update the event set table and map. 
+
+\-Definition at line 195 of file report.\-js.
+
+\hypertarget{report_8js_a7ad88b3fdb3a5cdfe3da456fe59697bb}{\index{report.\-js@{report.\-js}!\-Update\-Report\-Fields@{\-Update\-Report\-Fields}}
+\index{\-Update\-Report\-Fields@{\-Update\-Report\-Fields}!report.js@{report.\-js}}
+\subsubsection[{\-Update\-Report\-Fields}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-Update\-Report\-Fields} (
+\begin{DoxyParamCaption}
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}}\label{report_8js_a7ad88b3fdb3a5cdfe3da456fe59697bb}
+
+
+\-Builds custom event report form based on selected event set. 
+
+\-This function creates a new instance of the global variable event\-\_\-set\-\_\-details to add new event report fields to, to later be accessed to submit the event report. \-Then, it clears the current fields on the form, and loops through all the event set details to add to the form. \-Depending on the detail type, a different form control is added to the report form. \-Selection types are added as a selection box, with the options as specified with id and display text. \-Short text types are added as a simple, one line text entry. \-Long text types are added as a text area. \-Date types are added as a date type input field. \-Number types are added as a number type input field, and may have a minimum, maximum, and step value defined. \-The complete form is then added to the \-H\-T\-M\-L document. 
+
+\-Definition at line 235 of file report.\-js.
+
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{report_8js_aee0ee232e987a2045490e33d78ea4de4}{\index{report.\-js@{report.\-js}!event\-\_\-set\-\_\-fields@{event\-\_\-set\-\_\-fields}}
+\index{event\-\_\-set\-\_\-fields@{event\-\_\-set\-\_\-fields}!report.js@{report.\-js}}
+\subsubsection[{event\-\_\-set\-\_\-fields}]{\setlength{\rightskip}{0pt plus 5cm}var {\bf event\-\_\-set\-\_\-fields} = new \-Array()}}\label{report_8js_aee0ee232e987a2045490e33d78ea4de4}
+
+
+\-Definition at line 12 of file report.\-js.
+
+\hypertarget{report_8js_ac880e2c3a982ba45b92e622011ba7482}{\index{report.\-js@{report.\-js}!lat@{lat}}
+\index{lat@{lat}!report.js@{report.\-js}}
+\subsubsection[{lat}]{\setlength{\rightskip}{0pt plus 5cm}var {\bf lat} = 0}}\label{report_8js_ac880e2c3a982ba45b92e622011ba7482}
+
+
+\-Definition at line 10 of file report.\-js.
+
+\hypertarget{report_8js_a56ab14d836de4c1295c941ddd682e86b}{\index{report.\-js@{report.\-js}!lon@{lon}}
+\index{lon@{lon}!report.js@{report.\-js}}
+\subsubsection[{lon}]{\setlength{\rightskip}{0pt plus 5cm}var {\bf lon} = 0}}\label{report_8js_a56ab14d836de4c1295c941ddd682e86b}
+
+
+\-Definition at line 11 of file report.\-js.
+
+\hypertarget{report_8js_a8d00815ecf772c94c55832005684a5fb}{\index{report.\-js@{report.\-js}!picture\-\_\-id@{picture\-\_\-id}}
+\index{picture\-\_\-id@{picture\-\_\-id}!report.js@{report.\-js}}
+\subsubsection[{picture\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}var {\bf picture\-\_\-id} = \mbox{[}$\,$\mbox{]}}}\label{report_8js_a8d00815ecf772c94c55832005684a5fb}
+
+
+\-Definition at line 9 of file report.\-js.
+

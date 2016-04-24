@@ -11,83 +11,38 @@ Testing is done manually, via a tracibility matrix. Each requirement listed in t
 \section{Test Setup and Execution}
 Each major component has a list of requirements, and a test case that tests that the system meets the requirements. Some requirements only detail the presence of an element, and are tested by examination. The test case for these requirements will note that the test is by examination. 
 
+Note: Manual Unit Testing - list which functions are tested by test case... maybe list by test case
+
+Unit testing is an important process that tests individual functions or modules. Unit testing is often automated but it can also be done manually. I believe you have done some unit testing along development for verification, so you just need to document it.
+
 \section{System Testing}
 
-\subsection{Navigation Bar}
-\begin{table}[tbh]
-\caption{Navigation Bar Testing \label{test_navbar}}
-\begin{tabular}{|>{\raggedright}p{7cm}|>{\raggedright}p{7cm}|>{\raggedright}p{1cm}|}
-\hline
-\textit{\textbf{Requirement}} &  \textit{\textbf{Test Case}} & \textit{\textbf{Result}}  \tabularnewline
-\hline
- \textit{Each page shall contain a navigation bar at the top of the page.} & \textit{By Examnation } & \textit{Pass} \tabularnewline
- \hline
- \textit{The navigation bar will have buttons for logging in, new user registration, logout, and event reporting, where appropiate.} & \textit{By Examnation } & \textit{Pass} \tabularnewline
-\hline
- \textit{The navigation bar shall contain a drop down box for selecting the event set.} & \textit{By Examnation } & \textit{Pass} \tabularnewline
-\hline
- \textit{The selected event set shall maintain its state when navigating to a different page or refreshing the page.} & \textit{Select event set on index page, navigate to report page, verify that selection was maintained. Refresh page and verify that selection was maintained } & \textit{Pass} \tabularnewline
-\hline
-\end{tabular}
-\end{table}
-
-\subsection{New User Registration}
+\subsection{Test Case \#1}
+Select event set on index page, navigate to report page, verify that selection was maintained. Refresh page and verify that selection was maintained.
+\subsubsection{Result}
+Event set state was maintained.
+\subsubsection{Code Coverage}
 \begin{itemize}
-\item When no user is logged in, there will be a button on the main page leading to a new user registration page.
-\item The registration page will have a feild for username, password and password verification, and a ``submit'' button.
-\item If the passwords do not match, the user will be notified, and need to reenter one or both passwords.
-\item After registering, a user will automatically be logged in.
+\item file: function name
+\item file: function name
 \end{itemize}
-
-\subsection{User Login}
+\subsubsection{Requirements Fulfilled}
 \begin{itemize}
-\item When no user is logged in, there will be a button on the main page leading to a login page
-\item The login page will have fields for entering username and passwords, a ``login'' button and a link to the user registration page.
-\item The user will be notified if the username or password was incorrect, and may need to reenter one or both feilds.
-\item When the user is logged in, an icon indicating the logged in user and a log out button will replace the login button on the navigation page.
-\item When an administrator logs in, they wil lbe able to see buttons in the navigation bar that lead to pages for editing events and customizing event sets.
+\item Navigation Bar: The selected event set shall maintain its state when navigating to a different page or refreshing the page.
 \end{itemize}
-
-\subsection{Event reporting interface}
-\begin{itemize}
-\item When a user is logged in, the user is listed as the author of the report.
-\item When no user is logged in, the author of the report is ``Annonymous''.
-\item Every event report shall include a longitude and latitude feild.
-\item The event reporting window shall contain the feilds specified for that event data set.
-\item Each required feild will be marked as required.
-\item The event reporting window shall contain a submit button.
-\item The user will be notified if they have not entered all required feilds, and will be able to return to edit their unfinished report.
-\end{itemize}
-
-\subsection{Detailed event list}
-\begin{itemize}
-\item The detailed event list will be a table of the current event set, and will include all feilds specified for that event data set.
-\item Each entry shall include longitude, latitude of event, and the author of the event.
-\item When a point on the map is hovered over, the associated entry in the list will be highlighted.
-\item When a point on the map is clicked, the associated entry in the list will be highlighted in a different shade.
-\end{itemize}
-
-\subsection{Map representation of events}
-\begin{itemize}
-\item The map shall be a visual representation of the event data set. 
-\item The map shall contain a marker for each event report, placed at the longitude and latitude specified in the report.
-\item The map will be able to be zoomed in, zoomed out, and panned.
-\item Entries in the event list will be highlighted when a marker is hovered over or clicked.
-\end{itemize}
-
-\subsection{User selection of data to view}
-\begin{itemize}
-\item User will beable to select from a drop down menu on any page which event data set to view. 
-\item When the current event data set is changed, the map, event list, administrator functions and report features will change according to the feilds specified for that set.
-\item If implemented, the general appearance of the pages will change according to the selected event data set.
-\end{itemize}
-
-
 
 \section{System Integration Analysis}
 The system is a standalone system and will not need to be integrated into another system. Other mapping systems, such as the USGS Did you Feel it (DYFI) project and the USGS Butterfles and Moths of North America (BAMONA), may need to be integrated with this system later. Inegration with these other systems will need to be done by hand.
 
+How does this system get moved to the WWW?
+
 \section{Risk Analysis}
+If this project were up and running, what could go wrong? Server capabilities? Server crash? Database crash? Database hack? Accidentially drop tables?
+
+From Dr. Qiao:
+ Scalability is an common issue existing in mostly all systems and applications, because there’s always a limitation. I think the point here is not to tune your senior design project to handle a great amount of requests or traffic volume. Instead, you want to know the capacity of your current system, like memory, TCP connection, DB connection pool, etc., and have an outline on scale-up approaches. For this project, I think you may consider opcode cache for PHP code, on-the-fly cache for webpage, and memcache and load balancing for DB.  
+ 
+Security is a non-functional requirement, but it’s an critical factor in the system. Some basic front-end (Javascript) and back-end (php) input validation and password encryption (hashed and salted) will make the system more secure and reliable for users. 
 
 \subsection{Risk Mitigation}
 

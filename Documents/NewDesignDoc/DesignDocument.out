@@ -17,169 +17,221 @@
 \BOOKMARK [1][-]{section.1.4}{Academic Need}{chapter.1}% 17
 \BOOKMARK [1][-]{section.1.5}{Deliverables}{chapter.1}% 18
 \BOOKMARK [1][-]{section.1.6}{System Description}{chapter.1}% 19
-\BOOKMARK [2][-]{subsection.1.6.1}{Generic Event Reporting}{section.1.6}% 20
-\BOOKMARK [2][-]{subsection.1.6.2}{Generic Event Viewing}{section.1.6}% 21
-\BOOKMARK [1][-]{section.1.7}{Systems Goals}{chapter.1}% 22
-\BOOKMARK [1][-]{section.1.8}{System Overview and Diagram}{chapter.1}% 23
-\BOOKMARK [1][-]{section.1.9}{Technologies Overview}{chapter.1}% 24
-\BOOKMARK [0][-]{chapter.2}{User Stories, Requirements, and Product Backlog}{}% 25
-\BOOKMARK [1][-]{section.2.1}{Overview}{chapter.2}% 26
-\BOOKMARK [1][-]{section.2.2}{User Stories}{chapter.2}% 27
-\BOOKMARK [2][-]{subsection.2.2.1}{User Story \0431}{section.2.2}% 28
-\BOOKMARK [2][-]{subsection.2.2.2}{User Story \0432}{section.2.2}% 29
-\BOOKMARK [2][-]{subsection.2.2.3}{User Story \0433}{section.2.2}% 30
-\BOOKMARK [1][-]{section.2.3}{Requirements and Design Constraints}{chapter.2}% 31
-\BOOKMARK [2][-]{subsection.2.3.1}{System Requirements}{section.2.3}% 32
-\BOOKMARK [2][-]{subsection.2.3.2}{Network Requirements}{section.2.3}% 33
-\BOOKMARK [1][-]{section.2.4}{Product Backlog}{chapter.2}% 34
-\BOOKMARK [2][-]{subsection.2.4.1}{Navigation Bar}{section.2.4}% 35
-\BOOKMARK [2][-]{subsection.2.4.2}{New User Registration}{section.2.4}% 36
-\BOOKMARK [2][-]{subsection.2.4.3}{User Login}{section.2.4}% 37
-\BOOKMARK [2][-]{subsection.2.4.4}{Event reporting interface}{section.2.4}% 38
-\BOOKMARK [2][-]{subsection.2.4.5}{Detailed event list}{section.2.4}% 39
-\BOOKMARK [2][-]{subsection.2.4.6}{Map representation of events}{section.2.4}% 40
-\BOOKMARK [2][-]{subsection.2.4.7}{User selection of data to view}{section.2.4}% 41
-\BOOKMARK [0][-]{chapter.3}{Project Overview}{}% 42
-\BOOKMARK [1][-]{section.3.1}{Team Member's Roles}{chapter.3}% 43
-\BOOKMARK [1][-]{section.3.2}{Project Management Approach}{chapter.3}% 44
-\BOOKMARK [1][-]{section.3.3}{ Stakeholder Information}{chapter.3}% 45
-\BOOKMARK [2][-]{subsection.3.3.1}{Customer or End User \(Product Owner\)}{section.3.3}% 46
-\BOOKMARK [2][-]{subsection.3.3.2}{Management or Instructor \(Scrum Master\)}{section.3.3}% 47
-\BOOKMARK [2][-]{subsection.3.3.3}{Investors}{section.3.3}% 48
-\BOOKMARK [2][-]{subsection.3.3.4}{Developers \205Testers}{section.3.3}% 49
-\BOOKMARK [1][-]{section.3.4}{Budget}{chapter.3}% 50
-\BOOKMARK [1][-]{section.3.5}{Intellectual Property and Licensing}{chapter.3}% 51
-\BOOKMARK [1][-]{section.3.6}{Terminology and Acronyms}{chapter.3}% 52
-\BOOKMARK [1][-]{section.3.7}{Phase Overview}{chapter.3}% 53
-\BOOKMARK [1][-]{section.3.8}{Sprint Schedule}{chapter.3}% 54
-\BOOKMARK [1][-]{section.3.9}{Timeline}{chapter.3}% 55
-\BOOKMARK [1][-]{section.3.10}{Backlogs}{chapter.3}% 56
-\BOOKMARK [2][-]{subsection.3.10.1}{Sprint 1 Backlog}{section.3.10}% 57
-\BOOKMARK [2][-]{subsection.3.10.2}{Sprint 2 Backlog}{section.3.10}% 58
-\BOOKMARK [2][-]{subsection.3.10.3}{Sprint 3 Backlog}{section.3.10}% 59
-\BOOKMARK [2][-]{subsection.3.10.4}{Sprint 4 Backlog}{section.3.10}% 60
-\BOOKMARK [2][-]{subsection.3.10.5}{Sprint 5 Backlog}{section.3.10}% 61
-\BOOKMARK [2][-]{subsection.3.10.6}{Sprint 6 Backlog}{section.3.10}% 62
-\BOOKMARK [1][-]{section.3.11}{Development Environment}{chapter.3}% 63
-\BOOKMARK [2][-]{subsection.3.11.1}{Development IDE and Tools}{section.3.11}% 64
-\BOOKMARK [2][-]{subsection.3.11.2}{Source Control}{section.3.11}% 65
-\BOOKMARK [2][-]{subsection.3.11.3}{Dependencies}{section.3.11}% 66
-\BOOKMARK [2][-]{subsection.3.11.4}{Build Environment}{section.3.11}% 67
-\BOOKMARK [2][-]{subsection.3.11.5}{Development Machine Setup}{section.3.11}% 68
-\BOOKMARK [0][-]{chapter.4}{Project Revisions}{}% 69
-\BOOKMARK [1][-]{section.4.1}{Overview and Concept of Operations}{chapter.4}% 70
-\BOOKMARK [2][-]{subsection.4.1.1}{Event Set Editing}{section.4.1}% 71
-\BOOKMARK [1][-]{section.4.2}{User Stories, Requirements, and Product Backlog}{chapter.4}% 72
-\BOOKMARK [2][-]{subsection.4.2.1}{User Story \0434}{section.4.2}% 73
-\BOOKMARK [2][-]{subsection.4.2.2}{User Story \0435}{section.4.2}% 74
-\BOOKMARK [2][-]{subsection.4.2.3}{Administrator editing of existing events}{section.4.2}% 75
-\BOOKMARK [2][-]{subsection.4.2.4}{Administrator customization of event sets}{section.4.2}% 76
-\BOOKMARK [1][-]{section.4.3}{Project Overview}{chapter.4}% 77
-\BOOKMARK [0][-]{chapter.5}{Design and Implementation}{}% 78
-\BOOKMARK [1][-]{section.5.1}{Architecture and System Design}{chapter.5}% 79
-\BOOKMARK [2][-]{subsection.5.1.1}{Data Flow}{section.5.1}% 80
-\BOOKMARK [2][-]{subsection.5.1.2}{Communications}{section.5.1}% 81
-\BOOKMARK [2][-]{subsection.5.1.3}{MVC}{section.5.1}% 82
-\BOOKMARK [2][-]{subsection.5.1.4}{GUI}{section.5.1}% 83
-\BOOKMARK [1][-]{section.5.2}{Major Component \0431 }{chapter.5}% 84
-\BOOKMARK [2][-]{subsection.5.2.1}{Technologies Used}{section.5.2}% 85
-\BOOKMARK [2][-]{subsection.5.2.2}{Component Overview}{section.5.2}% 86
-\BOOKMARK [2][-]{subsection.5.2.3}{Phase Overview}{section.5.2}% 87
-\BOOKMARK [2][-]{subsection.5.2.4}{ Architecture Diagram}{section.5.2}% 88
-\BOOKMARK [2][-]{subsection.5.2.5}{Data Flow Diagram}{section.5.2}% 89
-\BOOKMARK [2][-]{subsection.5.2.6}{Design Details}{section.5.2}% 90
-\BOOKMARK [0][-]{chapter.6}{System and Unit Testing}{}% 91
-\BOOKMARK [1][-]{section.6.1}{Overview}{chapter.6}% 92
-\BOOKMARK [1][-]{section.6.2}{Test Setup and Execution}{chapter.6}% 93
-\BOOKMARK [1][-]{section.6.3}{System Testing}{chapter.6}% 94
-\BOOKMARK [2][-]{subsection.6.3.1}{Navigation Bar}{section.6.3}% 95
-\BOOKMARK [2][-]{subsection.6.3.2}{New User Registration}{section.6.3}% 96
-\BOOKMARK [2][-]{subsection.6.3.3}{User Login}{section.6.3}% 97
-\BOOKMARK [2][-]{subsection.6.3.4}{Event reporting interface}{section.6.3}% 98
-\BOOKMARK [2][-]{subsection.6.3.5}{Detailed event list}{section.6.3}% 99
-\BOOKMARK [2][-]{subsection.6.3.6}{Map representation of events}{section.6.3}% 100
-\BOOKMARK [2][-]{subsection.6.3.7}{User selection of data to view}{section.6.3}% 101
-\BOOKMARK [1][-]{section.6.4}{System Integration Analysis}{chapter.6}% 102
-\BOOKMARK [1][-]{section.6.5}{Risk Analysis}{chapter.6}% 103
-\BOOKMARK [2][-]{subsection.6.5.1}{Risk Mitigation}{section.6.5}% 104
-\BOOKMARK [0][-]{chapter.7}{Prototypes}{}% 105
-\BOOKMARK [1][-]{section.7.1}{Sprint 1 Prototype}{chapter.7}% 106
-\BOOKMARK [2][-]{subsection.7.1.1}{Deliverable}{section.7.1}% 107
-\BOOKMARK [2][-]{subsection.7.1.2}{Backlog}{section.7.1}% 108
-\BOOKMARK [2][-]{subsection.7.1.3}{Success/Fail}{section.7.1}% 109
-\BOOKMARK [1][-]{section.7.2}{Sprint 2 Prototype}{chapter.7}% 110
-\BOOKMARK [2][-]{subsection.7.2.1}{Deliverable}{section.7.2}% 111
-\BOOKMARK [2][-]{subsection.7.2.2}{Backlog}{section.7.2}% 112
-\BOOKMARK [2][-]{subsection.7.2.3}{Success/Fail}{section.7.2}% 113
-\BOOKMARK [1][-]{section.7.3}{Sprint 3 Prototype}{chapter.7}% 114
-\BOOKMARK [2][-]{subsection.7.3.1}{Deliverable}{section.7.3}% 115
-\BOOKMARK [2][-]{subsection.7.3.2}{Backlog}{section.7.3}% 116
-\BOOKMARK [2][-]{subsection.7.3.3}{Success/Fail}{section.7.3}% 117
-\BOOKMARK [1][-]{section.7.4}{Sprint 4 Prototype}{chapter.7}% 118
-\BOOKMARK [2][-]{subsection.7.4.1}{Deliverable}{section.7.4}% 119
-\BOOKMARK [2][-]{subsection.7.4.2}{Backlog}{section.7.4}% 120
-\BOOKMARK [2][-]{subsection.7.4.3}{Success/Fail}{section.7.4}% 121
-\BOOKMARK [1][-]{section.7.5}{Sprint 5 Prototype}{chapter.7}% 122
-\BOOKMARK [2][-]{subsection.7.5.1}{Deliverable}{section.7.5}% 123
-\BOOKMARK [2][-]{subsection.7.5.2}{Backlog}{section.7.5}% 124
-\BOOKMARK [2][-]{subsection.7.5.3}{Success/Fail}{section.7.5}% 125
-\BOOKMARK [0][-]{chapter.8}{File Index}{}% 126
-\BOOKMARK [1][-]{section.8.1}{File List}{chapter.8}% 127
-\BOOKMARK [0][-]{chapter.9}{File Documentation}{}% 128
-\BOOKMARK [1][-]{section.9.1}{checkLogin.js File Reference}{chapter.9}% 129
-\BOOKMARK [2][-]{subsection.9.1.1}{Detailed Description}{section.9.1}% 130
-\BOOKMARK [2][-]{subsection.9.1.2}{Function Documentation}{section.9.1}% 131
-\BOOKMARK [1][-]{section.9.2}{checkLogin.php File Reference}{chapter.9}% 132
-\BOOKMARK [2][-]{subsection.9.2.1}{Detailed Description}{section.9.2}% 133
-\BOOKMARK [1][-]{section.9.3}{config.php File Reference}{chapter.9}% 134
-\BOOKMARK [2][-]{subsection.9.3.1}{Detailed Description}{section.9.3}% 135
-\BOOKMARK [0][-]{chapter.10}{Software Agreement}{}% 136
-\BOOKMARK [0][-]{appendix.A}{Product Description}{}% 137
-\BOOKMARK [1][-]{section.A.1}{Project Title}{appendix.A}% 138
-\BOOKMARK [1][-]{section.A.2}{Proposed/Advised by}{appendix.A}% 139
-\BOOKMARK [1][-]{section.A.3}{Project Description}{appendix.A}% 140
-\BOOKMARK [1][-]{section.A.4}{Useful Links}{appendix.A}% 141
-\BOOKMARK [1][-]{section.A.5}{Project Duration}{appendix.A}% 142
-\BOOKMARK [1][-]{section.A.6}{Technical Areas Encompassed}{appendix.A}% 143
-\BOOKMARK [1][-]{section.A.7}{Number of Students/Disciplines required}{appendix.A}% 144
-\BOOKMARK [0][-]{appendix.B}{Sprint Reports}{}% 145
-\BOOKMARK [1][-]{section.B.1}{Sprint Report \0431}{appendix.B}% 146
-\BOOKMARK [2][-]{subsection.B.1.1}{Team Members}{section.B.1}% 147
-\BOOKMARK [2][-]{subsection.B.1.2}{Project Sponsors}{section.B.1}% 148
-\BOOKMARK [2][-]{subsection.B.1.3}{Sponsor/User Description}{section.B.1}% 149
-\BOOKMARK [2][-]{subsection.B.1.4}{Project Overview}{section.B.1}% 150
-\BOOKMARK [2][-]{subsection.B.1.5}{Project Environment}{section.B.1}% 151
-\BOOKMARK [2][-]{subsection.B.1.6}{Project Deliverables}{section.B.1}% 152
-\BOOKMARK [2][-]{subsection.B.1.7}{Backlog}{section.B.1}% 153
-\BOOKMARK [2][-]{subsection.B.1.8}{Potential Issues}{section.B.1}% 154
-\BOOKMARK [1][-]{section.B.2}{Sprint Report \0432}{appendix.B}% 155
-\BOOKMARK [2][-]{subsection.B.2.1}{Backlog Completed}{section.B.2}% 156
-\BOOKMARK [2][-]{subsection.B.2.2}{Prototype Features}{section.B.2}% 157
-\BOOKMARK [2][-]{subsection.B.2.3}{Meetings}{section.B.2}% 158
-\BOOKMARK [2][-]{subsection.B.2.4}{Client Communication}{section.B.2}% 159
-\BOOKMARK [2][-]{subsection.B.2.5}{Sprint 3 Backlog}{section.B.2}% 160
-\BOOKMARK [1][-]{section.B.3}{Sprint Report \0433}{appendix.B}% 161
-\BOOKMARK [2][-]{subsection.B.3.1}{Backlog Completed}{section.B.3}% 162
-\BOOKMARK [2][-]{subsection.B.3.2}{Prototype Features}{section.B.3}% 163
-\BOOKMARK [2][-]{subsection.B.3.3}{Meetings}{section.B.3}% 164
-\BOOKMARK [2][-]{subsection.B.3.4}{Client Communication}{section.B.3}% 165
-\BOOKMARK [2][-]{subsection.B.3.5}{Sprint 4 Backlog}{section.B.3}% 166
-\BOOKMARK [2][-]{subsection.B.3.6}{Sprint 3 Issues}{section.B.3}% 167
-\BOOKMARK [1][-]{section.B.4}{Sprint Report \0434}{appendix.B}% 168
-\BOOKMARK [2][-]{subsection.B.4.1}{Backlog Completed}{section.B.4}% 169
-\BOOKMARK [2][-]{subsection.B.4.2}{Prototype Features}{section.B.4}% 170
-\BOOKMARK [2][-]{subsection.B.4.3}{Client Communication}{section.B.4}% 171
-\BOOKMARK [2][-]{subsection.B.4.4}{Revised Deliverables}{section.B.4}% 172
-\BOOKMARK [2][-]{subsection.B.4.5}{Sprint 5 Backlog}{section.B.4}% 173
-\BOOKMARK [2][-]{subsection.B.4.6}{Sprint 6 Backlog}{section.B.4}% 174
-\BOOKMARK [2][-]{subsection.B.4.7}{Sprint 4 Successes/Issues}{section.B.4}% 175
-\BOOKMARK [1][-]{section.B.5}{Sprint Report \0435}{appendix.B}% 176
-\BOOKMARK [2][-]{subsection.B.5.1}{Backlog Completed}{section.B.5}% 177
-\BOOKMARK [2][-]{subsection.B.5.2}{Prototype Features}{section.B.5}% 178
-\BOOKMARK [2][-]{subsection.B.5.3}{Sprint 6 Backlog}{section.B.5}% 179
-\BOOKMARK [2][-]{subsection.B.5.4}{Sprint 5 Successes/Issues}{section.B.5}% 180
-\BOOKMARK [0][-]{appendix.C}{Industrial Experience and Resumes}{}% 181
-\BOOKMARK [1][-]{section.C.1}{ABET: Industrial Experience Reports}{appendix.C}% 182
-\BOOKMARK [2][-]{subsection.C.1.1}{Hannah Aker}{section.C.1}% 183
-\BOOKMARK [1][-]{section.C.2}{Resumes}{appendix.C}% 184
-\BOOKMARK [0][-]{appendix.D}{Acknowledgment}{}% 185
+\BOOKMARK [2][-]{subsection.1.6.1}{Navigation Bar and User Selection of Event Set to Use}{section.1.6}% 20
+\BOOKMARK [2][-]{subsection.1.6.2}{User Registration, Login, and Logout}{section.1.6}% 21
+\BOOKMARK [2][-]{subsection.1.6.3}{Generic Event Reporting Interface}{section.1.6}% 22
+\BOOKMARK [2][-]{subsection.1.6.4}{Generic Event Set Viewing}{section.1.6}% 23
+\BOOKMARK [1][-]{section.1.7}{Systems Goals}{chapter.1}% 24
+\BOOKMARK [1][-]{section.1.8}{System Overview and Diagram}{chapter.1}% 25
+\BOOKMARK [1][-]{section.1.9}{Technologies Overview}{chapter.1}% 26
+\BOOKMARK [0][-]{chapter.2}{User Stories, Requirements, and Product Backlog}{}% 27
+\BOOKMARK [1][-]{section.2.1}{Overview}{chapter.2}% 28
+\BOOKMARK [1][-]{section.2.2}{User Stories}{chapter.2}% 29
+\BOOKMARK [2][-]{subsection.2.2.1}{User Story \0431}{section.2.2}% 30
+\BOOKMARK [2][-]{subsection.2.2.2}{User Story \0432}{section.2.2}% 31
+\BOOKMARK [2][-]{subsection.2.2.3}{User Story \0433}{section.2.2}% 32
+\BOOKMARK [2][-]{subsection.2.2.4}{User Story \0434}{section.2.2}% 33
+\BOOKMARK [1][-]{section.2.3}{Requirements and Design Constraints}{chapter.2}% 34
+\BOOKMARK [2][-]{subsection.2.3.1}{System Requirements}{section.2.3}% 35
+\BOOKMARK [2][-]{subsection.2.3.2}{Network Requirements}{section.2.3}% 36
+\BOOKMARK [1][-]{section.2.4}{Product Backlog}{chapter.2}% 37
+\BOOKMARK [2][-]{subsection.2.4.1}{Navigation Bar}{section.2.4}% 38
+\BOOKMARK [2][-]{subsection.2.4.2}{New User Registration}{section.2.4}% 39
+\BOOKMARK [2][-]{subsection.2.4.3}{User Login}{section.2.4}% 40
+\BOOKMARK [2][-]{subsection.2.4.4}{Event reporting interface}{section.2.4}% 41
+\BOOKMARK [2][-]{subsection.2.4.5}{Detailed event list}{section.2.4}% 42
+\BOOKMARK [2][-]{subsection.2.4.6}{Map representation of events}{section.2.4}% 43
+\BOOKMARK [2][-]{subsection.2.4.7}{Event Set Image Carousel}{section.2.4}% 44
+\BOOKMARK [2][-]{subsection.2.4.8}{Individual Event Viewing}{section.2.4}% 45
+\BOOKMARK [0][-]{chapter.3}{Project Overview}{}% 46
+\BOOKMARK [1][-]{section.3.1}{Team Member's Roles}{chapter.3}% 47
+\BOOKMARK [1][-]{section.3.2}{Project Management Approach}{chapter.3}% 48
+\BOOKMARK [1][-]{section.3.3}{ Stakeholder Information}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.3.1}{Customer or End User \(Product Owner\)}{section.3.3}% 50
+\BOOKMARK [2][-]{subsection.3.3.2}{Investors}{section.3.3}% 51
+\BOOKMARK [1][-]{section.3.4}{Budget}{chapter.3}% 52
+\BOOKMARK [1][-]{section.3.5}{Intellectual Property and Licensing}{chapter.3}% 53
+\BOOKMARK [1][-]{section.3.6}{Terminology and Acronyms}{chapter.3}% 54
+\BOOKMARK [1][-]{section.3.7}{Phase Overview}{chapter.3}% 55
+\BOOKMARK [1][-]{section.3.8}{Sprint Schedule}{chapter.3}% 56
+\BOOKMARK [1][-]{section.3.9}{Timeline}{chapter.3}% 57
+\BOOKMARK [1][-]{section.3.10}{Backlogs}{chapter.3}% 58
+\BOOKMARK [2][-]{subsection.3.10.1}{Sprint 1 Backlog}{section.3.10}% 59
+\BOOKMARK [2][-]{subsection.3.10.2}{Sprint 2 Backlog}{section.3.10}% 60
+\BOOKMARK [2][-]{subsection.3.10.3}{Sprint 3 Backlog}{section.3.10}% 61
+\BOOKMARK [2][-]{subsection.3.10.4}{Sprint 4 Backlog}{section.3.10}% 62
+\BOOKMARK [2][-]{subsection.3.10.5}{Sprint 5 Backlog}{section.3.10}% 63
+\BOOKMARK [2][-]{subsection.3.10.6}{Sprint 6 Backlog}{section.3.10}% 64
+\BOOKMARK [1][-]{section.3.11}{Development Environment}{chapter.3}% 65
+\BOOKMARK [2][-]{subsection.3.11.1}{Development IDE and Tools}{section.3.11}% 66
+\BOOKMARK [2][-]{subsection.3.11.2}{Source Control}{section.3.11}% 67
+\BOOKMARK [2][-]{subsection.3.11.3}{Dependencies}{section.3.11}% 68
+\BOOKMARK [2][-]{subsection.3.11.4}{Build Environment}{section.3.11}% 69
+\BOOKMARK [2][-]{subsection.3.11.5}{Development Machine Setup}{section.3.11}% 70
+\BOOKMARK [0][-]{chapter.4}{Design and Implementation}{}% 71
+\BOOKMARK [1][-]{section.4.1}{Architecture and System Design}{chapter.4}% 72
+\BOOKMARK [2][-]{subsection.4.1.1}{Data Flow}{section.4.1}% 73
+\BOOKMARK [2][-]{subsection.4.1.2}{Communications}{section.4.1}% 74
+\BOOKMARK [2][-]{subsection.4.1.3}{Databse Design}{section.4.1}% 75
+\BOOKMARK [2][-]{subsection.4.1.4}{MVC}{section.4.1}% 76
+\BOOKMARK [2][-]{subsection.4.1.5}{GUI}{section.4.1}% 77
+\BOOKMARK [2][-]{subsection.4.1.6}{Technologies Used}{section.4.1}% 78
+\BOOKMARK [1][-]{section.4.2}{Navigation Bar and User Selection of Event Set to Use}{chapter.4}% 79
+\BOOKMARK [2][-]{subsection.4.2.1}{Component Overview}{section.4.2}% 80
+\BOOKMARK [2][-]{subsection.4.2.2}{Phase Overview}{section.4.2}% 81
+\BOOKMARK [2][-]{subsection.4.2.3}{ Architecture and Dataflow Diagram}{section.4.2}% 82
+\BOOKMARK [2][-]{subsection.4.2.4}{Design Details}{section.4.2}% 83
+\BOOKMARK [1][-]{section.4.3}{User Registration, Login, and Logout}{chapter.4}% 84
+\BOOKMARK [2][-]{subsection.4.3.1}{Component Overview}{section.4.3}% 85
+\BOOKMARK [2][-]{subsection.4.3.2}{Phase Overview}{section.4.3}% 86
+\BOOKMARK [2][-]{subsection.4.3.3}{ Architecture and Dataflow Diagram}{section.4.3}% 87
+\BOOKMARK [2][-]{subsection.4.3.4}{Design Details}{section.4.3}% 88
+\BOOKMARK [1][-]{section.4.4}{Generic Event Reporting Interface}{chapter.4}% 89
+\BOOKMARK [2][-]{subsection.4.4.1}{Component Overview}{section.4.4}% 90
+\BOOKMARK [2][-]{subsection.4.4.2}{Phase Overview}{section.4.4}% 91
+\BOOKMARK [2][-]{subsection.4.4.3}{ Architecture and Dataflow Diagram}{section.4.4}% 92
+\BOOKMARK [2][-]{subsection.4.4.4}{Design Details}{section.4.4}% 93
+\BOOKMARK [1][-]{section.4.5}{Generic Event Set Viewing}{chapter.4}% 94
+\BOOKMARK [2][-]{subsection.4.5.1}{Component Overview}{section.4.5}% 95
+\BOOKMARK [2][-]{subsection.4.5.2}{Phase Overview}{section.4.5}% 96
+\BOOKMARK [2][-]{subsection.4.5.3}{ Architecture and Dataflow Diagram}{section.4.5}% 97
+\BOOKMARK [2][-]{subsection.4.5.4}{Design Details}{section.4.5}% 98
+\BOOKMARK [0][-]{chapter.5}{System and Unit Testing}{}% 99
+\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 100
+\BOOKMARK [1][-]{section.5.2}{Test Setup and Execution}{chapter.5}% 101
+\BOOKMARK [1][-]{section.5.3}{System Testing}{chapter.5}% 102
+\BOOKMARK [2][-]{subsection.5.3.1}{Test Case \0431}{section.5.3}% 103
+\BOOKMARK [1][-]{section.5.4}{System Integration Analysis}{chapter.5}% 104
+\BOOKMARK [1][-]{section.5.5}{Risk Analysis}{chapter.5}% 105
+\BOOKMARK [2][-]{subsection.5.5.1}{Risk Mitigation}{section.5.5}% 106
+\BOOKMARK [0][-]{chapter.6}{Prototypes}{}% 107
+\BOOKMARK [1][-]{section.6.1}{Sprint 1 Prototype}{chapter.6}% 108
+\BOOKMARK [2][-]{subsection.6.1.1}{Deliverable}{section.6.1}% 109
+\BOOKMARK [2][-]{subsection.6.1.2}{Backlog}{section.6.1}% 110
+\BOOKMARK [2][-]{subsection.6.1.3}{Success/Fail}{section.6.1}% 111
+\BOOKMARK [1][-]{section.6.2}{Sprint 2 Prototype}{chapter.6}% 112
+\BOOKMARK [2][-]{subsection.6.2.1}{Deliverable}{section.6.2}% 113
+\BOOKMARK [2][-]{subsection.6.2.2}{Backlog}{section.6.2}% 114
+\BOOKMARK [2][-]{subsection.6.2.3}{Success/Fail}{section.6.2}% 115
+\BOOKMARK [1][-]{section.6.3}{Sprint 3 Prototype}{chapter.6}% 116
+\BOOKMARK [2][-]{subsection.6.3.1}{Deliverable}{section.6.3}% 117
+\BOOKMARK [2][-]{subsection.6.3.2}{Backlog}{section.6.3}% 118
+\BOOKMARK [2][-]{subsection.6.3.3}{Success/Fail}{section.6.3}% 119
+\BOOKMARK [1][-]{section.6.4}{Sprint 4 Prototype}{chapter.6}% 120
+\BOOKMARK [2][-]{subsection.6.4.1}{Deliverable}{section.6.4}% 121
+\BOOKMARK [2][-]{subsection.6.4.2}{Backlog}{section.6.4}% 122
+\BOOKMARK [2][-]{subsection.6.4.3}{Success/Fail}{section.6.4}% 123
+\BOOKMARK [1][-]{section.6.5}{Sprint 5 Prototype}{chapter.6}% 124
+\BOOKMARK [2][-]{subsection.6.5.1}{Deliverable}{section.6.5}% 125
+\BOOKMARK [2][-]{subsection.6.5.2}{Backlog}{section.6.5}% 126
+\BOOKMARK [2][-]{subsection.6.5.3}{Success/Fail}{section.6.5}% 127
+\BOOKMARK [0][-]{chapter.7}{File Index}{}% 128
+\BOOKMARK [1][-]{section.7.1}{File List}{chapter.7}% 129
+\BOOKMARK [0][-]{chapter.8}{File Documentation}{}% 130
+\BOOKMARK [1][-]{section.8.1}{checkLogin.js File Reference}{chapter.8}% 131
+\BOOKMARK [2][-]{subsection.8.1.1}{Detailed Description}{section.8.1}% 132
+\BOOKMARK [2][-]{subsection.8.1.2}{Function Documentation}{section.8.1}% 133
+\BOOKMARK [1][-]{section.8.2}{checkLogin.php File Reference}{chapter.8}% 134
+\BOOKMARK [2][-]{subsection.8.2.1}{Detailed Description}{section.8.2}% 135
+\BOOKMARK [1][-]{section.8.3}{config.php File Reference}{chapter.8}% 136
+\BOOKMARK [2][-]{subsection.8.3.1}{Detailed Description}{section.8.3}% 137
+\BOOKMARK [1][-]{section.8.4}{event.php File Reference}{chapter.8}% 138
+\BOOKMARK [2][-]{subsection.8.4.1}{Detailed Description}{section.8.4}% 139
+\BOOKMARK [2][-]{subsection.8.4.2}{Function Documentation}{section.8.4}% 140
+\BOOKMARK [1][-]{section.8.5}{fileUpload.php File Reference}{chapter.8}% 141
+\BOOKMARK [2][-]{subsection.8.5.1}{Detailed Description}{section.8.5}% 142
+\BOOKMARK [1][-]{section.8.6}{image.php File Reference}{chapter.8}% 143
+\BOOKMARK [2][-]{subsection.8.6.1}{Detailed Description}{section.8.6}% 144
+\BOOKMARK [1][-]{section.8.7}{index.js File Reference}{chapter.8}% 145
+\BOOKMARK [2][-]{subsection.8.7.1}{Detailed Description}{section.8.7}% 146
+\BOOKMARK [2][-]{subsection.8.7.2}{Function Documentation}{section.8.7}% 147
+\BOOKMARK [2][-]{subsection.8.7.3}{Variable Documentation}{section.8.7}% 148
+\BOOKMARK [1][-]{section.8.8}{login.js File Reference}{chapter.8}% 149
+\BOOKMARK [2][-]{subsection.8.8.1}{Detailed Description}{section.8.8}% 150
+\BOOKMARK [2][-]{subsection.8.8.2}{Function Documentation}{section.8.8}% 151
+\BOOKMARK [1][-]{section.8.9}{login.php File Reference}{chapter.8}% 152
+\BOOKMARK [2][-]{subsection.8.9.1}{Detailed Description}{section.8.9}% 153
+\BOOKMARK [2][-]{subsection.8.9.2}{Function Documentation}{section.8.9}% 154
+\BOOKMARK [1][-]{section.8.10}{register.js File Reference}{chapter.8}% 155
+\BOOKMARK [2][-]{subsection.8.10.1}{Detailed Description}{section.8.10}% 156
+\BOOKMARK [2][-]{subsection.8.10.2}{Function Documentation}{section.8.10}% 157
+\BOOKMARK [1][-]{section.8.11}{register.php File Reference}{chapter.8}% 158
+\BOOKMARK [2][-]{subsection.8.11.1}{Detailed Description}{section.8.11}% 159
+\BOOKMARK [2][-]{subsection.8.11.2}{Function Documentation}{section.8.11}% 160
+\BOOKMARK [1][-]{section.8.12}{report.js File Reference}{chapter.8}% 161
+\BOOKMARK [2][-]{subsection.8.12.1}{Detailed Description}{section.8.12}% 162
+\BOOKMARK [2][-]{subsection.8.12.2}{Function Documentation}{section.8.12}% 163
+\BOOKMARK [2][-]{subsection.8.12.3}{Variable Documentation}{section.8.12}% 164
+\BOOKMARK [1][-]{section.8.13}{report.php File Reference}{chapter.8}% 165
+\BOOKMARK [2][-]{subsection.8.13.1}{Detailed Description}{section.8.13}% 166
+\BOOKMARK [2][-]{subsection.8.13.2}{Function Documentation}{section.8.13}% 167
+\BOOKMARK [1][-]{section.8.14}{reportMapLeaflet.js File Reference}{chapter.8}% 168
+\BOOKMARK [2][-]{subsection.8.14.1}{Detailed Description}{section.8.14}% 169
+\BOOKMARK [2][-]{subsection.8.14.2}{Function Documentation}{section.8.14}% 170
+\BOOKMARK [2][-]{subsection.8.14.3}{Variable Documentation}{section.8.14}% 171
+\BOOKMARK [1][-]{section.8.15}{viewEvent.js File Reference}{chapter.8}% 172
+\BOOKMARK [2][-]{subsection.8.15.1}{Detailed Description}{section.8.15}% 173
+\BOOKMARK [2][-]{subsection.8.15.2}{Function Documentation}{section.8.15}% 174
+\BOOKMARK [0][-]{chapter.9}{Software Agreement}{}% 175
+\BOOKMARK [0][-]{appendix.A}{Project Revisions}{}% 176
+\BOOKMARK [1][-]{section.A.1}{Overview and Concept of Operations}{appendix.A}% 177
+\BOOKMARK [2][-]{subsection.A.1.1}{Team Members and Team Name}{section.A.1}% 178
+\BOOKMARK [2][-]{subsection.A.1.2}{Event Set Editing}{section.A.1}% 179
+\BOOKMARK [1][-]{section.A.2}{User Stories, Requirements, and Product Backlog}{appendix.A}% 180
+\BOOKMARK [2][-]{subsection.A.2.1}{User Story \0434}{section.A.2}% 181
+\BOOKMARK [2][-]{subsection.A.2.2}{User Story \0435}{section.A.2}% 182
+\BOOKMARK [2][-]{subsection.A.2.3}{Administrator editing of existing events}{section.A.2}% 183
+\BOOKMARK [2][-]{subsection.A.2.4}{Administrator customization of event sets}{section.A.2}% 184
+\BOOKMARK [1][-]{section.A.3}{Project Overview}{appendix.A}% 185
+\BOOKMARK [2][-]{subsection.A.3.1}{Team Member's Roles}{section.A.3}% 186
+\BOOKMARK [2][-]{subsection.A.3.2}{Management or Instructor \(Scrum Master\)}{section.A.3}% 187
+\BOOKMARK [2][-]{subsection.A.3.3}{Developers \205Testers}{section.A.3}% 188
+\BOOKMARK [0][-]{appendix.B}{Product Description}{}% 189
+\BOOKMARK [1][-]{section.B.1}{Project Title}{appendix.B}% 190
+\BOOKMARK [1][-]{section.B.2}{Proposed/Advised by}{appendix.B}% 191
+\BOOKMARK [1][-]{section.B.3}{Project Description}{appendix.B}% 192
+\BOOKMARK [1][-]{section.B.4}{Useful Links}{appendix.B}% 193
+\BOOKMARK [1][-]{section.B.5}{Project Duration}{appendix.B}% 194
+\BOOKMARK [1][-]{section.B.6}{Technical Areas Encompassed}{appendix.B}% 195
+\BOOKMARK [1][-]{section.B.7}{Number of Students/Disciplines required}{appendix.B}% 196
+\BOOKMARK [0][-]{appendix.C}{Sprint Reports}{}% 197
+\BOOKMARK [1][-]{section.C.1}{Sprint Report \0431}{appendix.C}% 198
+\BOOKMARK [2][-]{subsection.C.1.1}{Team Members}{section.C.1}% 199
+\BOOKMARK [2][-]{subsection.C.1.2}{Project Sponsors}{section.C.1}% 200
+\BOOKMARK [2][-]{subsection.C.1.3}{Sponsor/User Description}{section.C.1}% 201
+\BOOKMARK [2][-]{subsection.C.1.4}{Project Overview}{section.C.1}% 202
+\BOOKMARK [2][-]{subsection.C.1.5}{Project Environment}{section.C.1}% 203
+\BOOKMARK [2][-]{subsection.C.1.6}{Project Deliverables}{section.C.1}% 204
+\BOOKMARK [2][-]{subsection.C.1.7}{Backlog}{section.C.1}% 205
+\BOOKMARK [2][-]{subsection.C.1.8}{Potential Issues}{section.C.1}% 206
+\BOOKMARK [1][-]{section.C.2}{Sprint Report \0432}{appendix.C}% 207
+\BOOKMARK [2][-]{subsection.C.2.1}{Backlog Completed}{section.C.2}% 208
+\BOOKMARK [2][-]{subsection.C.2.2}{Prototype Features}{section.C.2}% 209
+\BOOKMARK [2][-]{subsection.C.2.3}{Meetings}{section.C.2}% 210
+\BOOKMARK [2][-]{subsection.C.2.4}{Client Communication}{section.C.2}% 211
+\BOOKMARK [2][-]{subsection.C.2.5}{Sprint 3 Backlog}{section.C.2}% 212
+\BOOKMARK [1][-]{section.C.3}{Sprint Report \0433}{appendix.C}% 213
+\BOOKMARK [2][-]{subsection.C.3.1}{Backlog Completed}{section.C.3}% 214
+\BOOKMARK [2][-]{subsection.C.3.2}{Prototype Features}{section.C.3}% 215
+\BOOKMARK [2][-]{subsection.C.3.3}{Meetings}{section.C.3}% 216
+\BOOKMARK [2][-]{subsection.C.3.4}{Client Communication}{section.C.3}% 217
+\BOOKMARK [2][-]{subsection.C.3.5}{Sprint 4 Backlog}{section.C.3}% 218
+\BOOKMARK [2][-]{subsection.C.3.6}{Sprint 3 Issues}{section.C.3}% 219
+\BOOKMARK [1][-]{section.C.4}{Sprint Report \0434}{appendix.C}% 220
+\BOOKMARK [2][-]{subsection.C.4.1}{Backlog Completed}{section.C.4}% 221
+\BOOKMARK [2][-]{subsection.C.4.2}{Prototype Features}{section.C.4}% 222
+\BOOKMARK [2][-]{subsection.C.4.3}{Client Communication}{section.C.4}% 223
+\BOOKMARK [2][-]{subsection.C.4.4}{Revised Deliverables}{section.C.4}% 224
+\BOOKMARK [2][-]{subsection.C.4.5}{Sprint 5 Backlog}{section.C.4}% 225
+\BOOKMARK [2][-]{subsection.C.4.6}{Sprint 6 Backlog}{section.C.4}% 226
+\BOOKMARK [2][-]{subsection.C.4.7}{Sprint 4 Successes/Issues}{section.C.4}% 227
+\BOOKMARK [1][-]{section.C.5}{Sprint Report \0435}{appendix.C}% 228
+\BOOKMARK [2][-]{subsection.C.5.1}{Backlog Completed}{section.C.5}% 229
+\BOOKMARK [2][-]{subsection.C.5.2}{Prototype Features}{section.C.5}% 230
+\BOOKMARK [2][-]{subsection.C.5.3}{Sprint 6 Backlog}{section.C.5}% 231
+\BOOKMARK [2][-]{subsection.C.5.4}{Sprint 5 Successes/Issues}{section.C.5}% 232
+\BOOKMARK [0][-]{appendix.D}{Industrial Experience and Resumes}{}% 233
+\BOOKMARK [1][-]{section.D.1}{ABET: Industrial Experience Reports}{appendix.D}% 234
+\BOOKMARK [2][-]{subsection.D.1.1}{Hannah Aker}{section.D.1}% 235
+\BOOKMARK [1][-]{section.D.2}{Resumes}{appendix.D}% 236
+\BOOKMARK [0][-]{appendix.E}{Acknowledgment}{}% 237

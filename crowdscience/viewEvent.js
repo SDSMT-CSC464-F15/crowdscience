@@ -21,7 +21,7 @@ $(document).ready(function(){
 	This function posts a request containing the ID of an individual event to view to event.php to retrieve the event being viewed. The Mongo ID of the event is parsed from the URL of the page. When the post to event.php is complete, the function checks the status code. If the status code is 0, the post completed successfully, and calls DisplayEvent() with the data returned from the post to event.php. If the status code returned from the post is not 0, then the status code and error message are alerted to the user. If the post to event.php fails, then an alert box will pop up with the status code of the failure and a brief error message.
 */
 function POST_GetEventSetInfoAndEventByID (argument) {
-	var parser = document.createElement('a');
+	var parser = document.createElement("a");
 	parser.href = document.URL;
 	var event_id = parser.hash;
 	event_id = event_id.slice( 1 );
@@ -74,16 +74,16 @@ function DisplayEvent (data)
 	{
 		//set up html for first image in carousel
 		var imageid = data.eventdata.images[0].$id;
-		document.getElementById('first_image').src = "image.php?_id=" + imageid;
+		document.getElementById("first_image").src = "image.php?_id=" + imageid;
 		
 		var array_length = data.eventdata.images.length;
 		for( var i = 1; i < array_length; i++)
 		{
 			var imageid = data.eventdata.images[i].$id;
-			var newElement = '<li data-target="#image_carousel" data-slide-to="' +i+ '"></li>';
+			var newElement = "<li data-target=\"#image_carousel\" data-slide-to=\"" +i+ "\"></li>";
 			$("#image_targets").append(newElement);
 			
-			var newElement = '<div class="item"><img src="image.php?_id=' + imageid + '"></div>';
+			var newElement = "<div class=\"item\"><img src=\"image.php?_id=" + imageid + "\"></div>";
 			$("#image_inner").append(newElement);
 		}
 	}

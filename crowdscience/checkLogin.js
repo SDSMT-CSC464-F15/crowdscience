@@ -20,7 +20,7 @@ $(document).ready( function( )
 		event.preventDefault();
 		$.post( "login.php", "{\"action\" : \"logout\"}" , null, "json")
 		.always(function(data) {
-			window.location.href = 'index.html';
+			window.location.href = "index.html";
 		})
 		
 	});
