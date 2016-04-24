@@ -34,44 +34,42 @@
 		<!-- Navigation Bar -->		
 		<nav class="navbar navbar-default" role="navigation">
 			<div class="container-fluid">
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					
-					<!-- Home -->
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
-						</li>
+				
+				
+				<!-- Home -->
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a>
+					</li>
+				</ul>
+				
+				<!-- Event Selection Box -->
+				<div class="nav navbar-nav navbar-form form-control">
+					<ul class="nav navbar-nav navbar-form form-control">
+						<li>Event Set: <select id="select_event_set"></select></li>
 					</ul>
-					
-					<!-- Event Selection Box -->
-					<div class="nav navbar-nav navbar-form form-control">
-						<ul class="nav navbar-nav navbar-form form-control">
-							<li>Event Set: <select id="select_event_set"></select></li>
-						</ul>
-					</div>
-					
-					<div class="nav navbar-nav navbar-right">
-						<ul class="nav navbar-nav navbar-right">
-							
-							<!-- Report Event -->
-							<li><a id="report" href="report.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>
-							
-							<!-- Login -->
-							<li><a id="user-area" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-							
-							<!-- Register -->
-							<li><a id="register" href="register.html"><span class="glyphicon glyphicon-edit"></span> Register</a></li>
-							
-							<!-- Logout -->
-							<li><p class="navbar-text pull-right">
-								<a href="#" id="logout" style="display: none;" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
-							</p></li>
-						</ul>
-					</div>
-					
-				</div> <!-- /.navbar-collapse -->
+				</div>
+				
+				<div class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav navbar-right">
+						
+						<!-- Report Event -->
+						<li><a id="report" href="report.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>
+						
+						<!-- Login -->
+						<li><a id="user-area" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						
+						<!-- Register -->
+						<li><a id="register" href="register.html"><span class="glyphicon glyphicon-edit"></span> Register</a></li>
+						
+						<!-- Logout -->
+						<li><p class="navbar-text pull-right">
+							<a href="#" id="logout" style="display: none;" class="navbar-link"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
+						</p></li>
+					</ul>
+				</div>
 			</div> <!-- /.container-fluid -->
 		</nav>
-
+		
 		<div class="row">
 			<div class="col-md-8" id="outer_map"></div>
 			<div class="col-md-4"><div id="carousel_div" class="carousel_div" align="center" >
@@ -79,43 +77,43 @@
 				<div id="image_carousel" class="carousel slide" data-ride="carousel" style = "height: 350px">
 					<!-- Indicators -->
 					<ol class="carousel-indicators" id="image_targets">
-						
-					</ol>
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner" id="image_inner" >
-						
-					</div>
 					
-					<!-- Controls -->
-					<a class="left carousel-control" href="#image_carousel" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left"></span>
-					</a>
-					<a class="right carousel-control" href="#image_carousel" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right"></span>
-					</a>
+				</ol>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" id="image_inner" >
+					
+				</div>
+				
+				<!-- Controls -->
+				<a class="left carousel-control" href="#image_carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#image_carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="well well-lg">
+				<h3>Report an Event</h3>
+				<a href="report.html">
+				<button type="button" class="btn btn-lg btn-primary">Report it!</button></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+			<div class="well well-lg" id="event_table">
+				<div class="table-responsive">
+					<table class="table table-hover">
+						<thead id="event_table_header"></thead>
+						<tbody id="event_table_body"></tbody>
+					</table>
 				</div>
 			</div>
-			</div>
-			<div class="col-md-4">
-				<div class="well well-lg">
-					<h3>Report an Event</h3>
-					<a href="report.html">
-						<button type="button" class="btn btn-lg btn-primary">Report it!</button></a>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-					<div class="well well-lg" id="event_table">
-						<div class="table-responsive">
-							<table class="table table-hover">
-								<thead id="event_table_header"></thead>
-								<tbody id="event_table_body"></tbody>
-							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-		</body>
-	</html>
+		</div>
+	</div>
+</body>
+</html>

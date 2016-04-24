@@ -12,7 +12,7 @@
 		<!-- Landscape Mapper register CSS -->
 		<link href="bootstrapbill/register.css" rel="stylesheet">
 		<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		
 		<!-- jQuery JS -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -29,61 +29,59 @@
 			<div class="container-fluid">
 				
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-					</ul>
-					<div class="nav navbar-nav navbar-right">
-						<ul class="nav navbar-nav navbar-right">
-							
-							<!-- Report Event -->
-							<li><a id="report" href="report.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>
-							
-							<!-- Login -->
-							<li><a id="user-area" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-							
-						</ul>
-					</div>
-					</div><!-- /.navbar-collapse -->
-					</div><!-- /.container-fluid -->
-			</nav>
-			
-			
-			<div align="center" class="page-header">
-				<h1>New Account</h1>
-			</div>
-			<!-- outside form -->
-			<form class="form-register" role="form" id="register_form_id" >
-				<table class="table-register">
-					<tr><td><input class="form-control" name="email" id="new_email" required placeholder="Email" value="" type="email" /> </td>
-						<td><input class="form-control" name="username" id="new_username" required placeholder="Username" value="" type="text" /> </td>
-					</tr>
-					<tr><td><input class="form-control" name="password" id="new_password1" required placeholder="Password" value="" type="password" /> </td>
-					<td> <input class="form-control" name="fname" id="fname" placeholder="First Name*" value="" type="text" /> </td></tr>
-					<tr><td> <input class="form-control" name="password" id="new_password2" required placeholder="Confirm Password"  value="" type="password" /></td>
-					<td> <input class="form-control" name="lname" id="lname" placeholder="Last Name*" value="" type="text" /> </td></tr>
-					<tr><td>
-						<select id="role" class="form-control">
-							<option value="">Please Select Your Role</option>
-							<option value="scientist">Scientist</option>
-							<option value="citizen">Citizen</option>
-						</select>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+				</ul>
+				<div class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav navbar-right">
 						
-					</td>
-					<td><input class="form-control" name="location" id="location" placeholder="City, State, Country*" value="" type="text" /></td>
-					</tr>
-					<tr>Fields with * are optional</tr>
-				</table>
-				<br>
-				<div class="alert alert-danger" role="alert" style="display:none" id="passwordmsg">Passwords Don't Match</div>
-				<div class="alert alert-danger" role="alert" style="display:none" id="emailmsg">Email Already Registered</div>
-				<div class="alert alert-danger" role="alert" style="display:none" id="usernamemsg">Username already taken</div>	
-				
-				<input class="btn btn-lg btn-primary btn-block" type="submit" id="register_submit_btn" value="Create Account"  formtarget="_blank"/>
-				<input class="btn btn-lg btn-default btn-block" onClick="parent.location='index.html'" type="button" id="register_cancel_btn" value="Cancel" />
-				
-			</form>
-		</body>
+						<!-- Report Event -->
+						<li><a id="report" href="report.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>
+						
+						<!-- Login -->
+						<li><a id="user-area" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+						
+					</ul>
+				</div>
+			</div><!-- /.container-fluid -->
+		</nav>
 		
 		
-	</html> 		
+		<div align="center" class="page-header">
+			<h1>New Account</h1>
+		</div>
+		<!-- outside form -->
+		<form class="form-register" role="form" id="register_form_id" >
+			<table class="table-register">
+				<tr><td><input class="form-control" name="email" id="new_email" required placeholder="Email" value="" type="email" /> </td>
+					<td><input class="form-control" name="username" id="new_username" required placeholder="Username" value="" type="text" /> </td>
+				</tr>
+				<tr><td><input class="form-control" name="password" id="new_password1" required placeholder="Password" value="" type="password" /> </td>
+				<td> <input class="form-control" name="fname" id="fname" placeholder="First Name*" value="" type="text" /> </td></tr>
+				<tr><td> <input class="form-control" name="password" id="new_password2" required placeholder="Confirm Password"  value="" type="password" /></td>
+				<td> <input class="form-control" name="lname" id="lname" placeholder="Last Name*" value="" type="text" /> </td></tr>
+				<tr><td>
+					<select id="role" class="form-control">
+						<option value="">Please Select Your Role</option>
+						<option value="scientist">Scientist</option>
+						<option value="citizen">Citizen</option>
+					</select>
+					
+				</td>
+				<td><input class="form-control" name="location" id="location" placeholder="City, State, Country*" value="" type="text" /></td>
+				</tr>
+				<tr>Fields with * are optional</tr>
+			</table>
+			<br>
+			<div class="alert alert-danger" role="alert" style="display:none" id="passwordmsg">Passwords Don't Match</div>
+			<div class="alert alert-danger" role="alert" style="display:none" id="emailmsg">Email Already Registered</div>
+			<div class="alert alert-danger" role="alert" style="display:none" id="usernamemsg">Username already taken</div>	
+			
+			<input class="btn btn-lg btn-primary btn-block" type="submit" id="register_submit_btn" value="Create Account"  formtarget="_blank"/>
+			<input class="btn btn-lg btn-default btn-block" onClick="parent.location='index.html'" type="button" id="register_cancel_btn" value="Cancel" />
+			
+		</form>
+	</body>
+	
+	
+</html> 		

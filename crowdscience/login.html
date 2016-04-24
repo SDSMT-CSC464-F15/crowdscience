@@ -11,7 +11,7 @@
 		<!-- Landscape Mapper login CSS -->
 		<link href="bootstrapbill/login.css" rel="stylesheet">
 		<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 		
 		<!-- jQuery JS -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -29,23 +29,22 @@
 			<div class="container-fluid">
 				
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+				
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+				</ul>
+				
+				<div class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav navbar-right">
+						
+						<!-- Report Event -->
+						<li><a id="report" href="report.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>
+						
+						<!-- Register -->
+						<li><a id="register" href="register.html"><span class="glyphicon glyphicon-edit"></span> Register</a></li>
+						
 					</ul>
-					
-					<div class="nav navbar-nav navbar-right">
-						<ul class="nav navbar-nav navbar-right">
-							
-							<!-- Report Event -->
-							<li><a id="report" href="report.html"><span class="glyphicon glyphicon-pencil"></span> Report Event</a></li>
-							
-							<!-- Register -->
-							<li><a id="register" href="register.html"><span class="glyphicon glyphicon-edit"></span> Register</a></li>
-							
-						</ul>
-					</div>
-				</div><!-- /.navbar-collapse -->
+				</div>
 			</div><!-- /.container-fluid -->
 		</nav>
 		
@@ -65,7 +64,7 @@
 						</div>
 						<div class="alert alert-danger" role="alert" id="wrongLogin">The username and password combination could not be found</div>
 						<input class="btn btn-primary" type="submit" value="Submit"/>
-<input class="btn btn-default" onClick="parent.location='index.html'" type="button" value="Cancel" />
+						<input class="btn btn-default" onClick="parent.location='index.html'" type="button" value="Cancel" />
 					</form>
 				</div>
 			</div>
