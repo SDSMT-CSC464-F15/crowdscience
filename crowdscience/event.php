@@ -108,6 +108,7 @@
 		}
 		if(!( is_null($userinfo['username'])))
 		$event['user'] = $userinfo['username'];
+		else $event['user'] = "Anonymous"; 
 		$date = $event['details']['date'];
 		$date = $date->sec;
 		$date = date("Y-m-d", $date);
@@ -156,6 +157,7 @@
 			}
 			if(!( is_null($userinfo['username'])))
 			$event['user'] = $userinfo['username'];
+			else $event['user'] = "Anonymous"; 
 			$date = $event['details']['date'];
 			$date = $date->sec;
 			$date = date("Y-m-d", $date);
@@ -223,6 +225,7 @@
 			}
 			if(!( is_null($userinfo['username'])))
 			$event['user'] = $userinfo['username'];
+			else $event['user'] = "Anonymous"; 
 			$date = $event['details']['date'];
 			$date = $date->sec;
 			$date = date("Y-m-d", $date);
