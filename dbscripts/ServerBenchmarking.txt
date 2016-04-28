@@ -1,0 +1,293 @@
+
+C:\Apache2.2\bin>ab.exe -n 1 -c 1 -k -H "Accept-Encoding: gzip, deflate" localho
+st/crowdscience/
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient).....done
+
+
+Server Software:        Apache/2.2.25
+Server Hostname:        localhost
+Server Port:            80
+
+Document Path:          /crowdscience/
+Document Length:        211 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.016 seconds
+Complete requests:      1
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      1
+Keep-Alive requests:    1
+Total transferred:      438 bytes
+HTML transferred:       211 bytes
+Requests per second:    64.10 [#/sec] (mean)
+Time per request:       15.600 [ms] (mean)
+Time per request:       15.600 [ms] (mean, across all concurrent requests)
+Transfer rate:          27.42 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:    16   16   0.0     16      16
+Waiting:        0    0   0.0      0       0
+Total:         16   16   0.0     16      16
+
+C:\Apache2.2\bin>ab.exe -n 100 -c 1 -k -H "Accept-Encoding: gzip, deflate" local
+host/crowdscience/
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient).....done
+
+
+Server Software:        Apache/2.2.25
+Server Hostname:        localhost
+Server Port:            80
+
+Document Path:          /crowdscience/
+Document Length:        211 bytes
+
+Concurrency Level:      1
+Time taken for tests:   0.016 seconds
+Complete requests:      100
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      100
+Keep-Alive requests:    100
+Total transferred:      43692 bytes
+HTML transferred:       21100 bytes
+Requests per second:    6410.26 [#/sec] (mean)
+Time per request:       0.156 [ms] (mean)
+Time per request:       0.156 [ms] (mean, across all concurrent requests)
+Transfer rate:          2735.13 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     0    0   1.6      0      16
+Waiting:        0    0   1.6      0      16
+Total:          0    0   1.6      0      16
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%     16
+ 100%     16 (longest request)
+
+C:\Apache2.2\bin>ab.exe -n 50 -c 5 -k -H "Accept-Encoding: gzip, deflate" localh
+ost/crowdscience/
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient).....done
+
+
+Server Software:        Apache/2.2.25
+Server Hostname:        localhost
+Server Port:            80
+
+Document Path:          /crowdscience/
+Document Length:        211 bytes
+
+Concurrency Level:      5
+Time taken for tests:   0.000 seconds
+Complete requests:      50
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      50
+Keep-Alive requests:    50
+Total transferred:      21854 bytes
+HTML transferred:       10550 bytes
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     0    0   0.0      0       0
+Waiting:        0    0   0.0      0       0
+Total:          0    0   0.0      0       0
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%      0
+ 100%      0 (longest request)
+
+C:\Apache2.2\bin>ab.exe -n 100 -c 10 -k -H "Accept-Encoding: gzip, deflate" loca
+lhost/crowdscience/
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient).....done
+
+
+Server Software:        Apache/2.2.25
+Server Hostname:        localhost
+Server Port:            80
+
+Document Path:          /crowdscience/
+Document Length:        211 bytes
+
+Concurrency Level:      10
+Time taken for tests:   0.016 seconds
+Complete requests:      100
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      100
+Keep-Alive requests:    100
+Total transferred:      43705 bytes
+HTML transferred:       21100 bytes
+Requests per second:    6410.67 [#/sec] (mean)
+Time per request:       1.560 [ms] (mean)
+Time per request:       0.156 [ms] (mean, across all concurrent requests)
+Transfer rate:          2736.12 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     0    0   1.6      0      16
+Waiting:        0    0   1.6      0      16
+Total:          0    0   1.6      0      16
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%      0
+  95%      0
+  98%      0
+  99%     16
+ 100%     16 (longest request)
+
+C:\Apache2.2\bin>ab.exe -n 600 -c 30 -k -H "Accept-Encoding: gzip, deflate" loca
+lhost/crowdscience/
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 100 requests
+Completed 200 requests
+Completed 300 requests
+Completed 400 requests
+Completed 500 requests
+Completed 600 requests
+Finished 600 requests
+
+
+Server Software:        Apache/2.2.25
+Server Hostname:        localhost
+Server Port:            80
+
+Document Path:          /crowdscience/
+Document Length:        211 bytes
+
+Concurrency Level:      30
+Time taken for tests:   0.094 seconds
+Complete requests:      600
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      600
+Keep-Alive requests:    600
+Total transferred:      262216 bytes
+HTML transferred:       126600 bytes
+Requests per second:    6410.39 [#/sec] (mean)
+Time per request:       4.680 [ms] (mean)
+Time per request:       0.156 [ms] (mean, across all concurrent requests)
+Transfer rate:          2735.85 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     0    2   7.6      0      78
+Waiting:        0    2   7.6      0      78
+Total:          0    2   7.6      0      78
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%      0
+  75%      0
+  80%      0
+  90%     16
+  95%     16
+  98%     16
+  99%     16
+ 100%     78 (longest request)
+
+C:\Apache2.2\bin>ab.exe -n 2700 -c 90 -k -H "Accept-Encoding: gzip, deflate" loc
+alhost/crowdscience/
+This is ApacheBench, Version 2.3 <$Revision: 655654 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient)
+Completed 270 requests
+Completed 540 requests
+Completed 810 requests
+Completed 1080 requests
+Completed 1350 requests
+Completed 1620 requests
+Completed 1890 requests
+Completed 2160 requests
+Completed 2430 requests
+Completed 2700 requests
+Finished 2700 requests
+
+
+Server Software:        Apache/2.2.25
+Server Hostname:        localhost
+Server Port:            80
+
+Document Path:          /crowdscience/
+Document Length:        211 bytes
+
+Concurrency Level:      90
+Time taken for tests:   0.515 seconds
+Complete requests:      2700
+Failed requests:        0
+Write errors:           0
+Non-2xx responses:      2727
+Keep-Alive requests:    2691
+Total transferred:      1191359 bytes
+HTML transferred:       575397 bytes
+Requests per second:    5244.86 [#/sec] (mean)
+Time per request:       17.160 [ms] (mean)
+Time per request:       0.191 [ms] (mean, across all concurrent requests)
+Transfer rate:          2260.02 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.0      0       0
+Processing:     0   13  49.8      0     484
+Waiting:        0   13  49.7      0     484
+Total:          0   13  49.8      0     484
+
+Percentage of the requests served within a certain time (ms)
+  50%      0
+  66%     16
+  75%     16
+  80%     16
+  90%     16
+  95%     16
+  98%    218
+  99%    343
+ 100%    484 (longest request)
+
+C:\Apache2.2\bin>

@@ -90,6 +90,13 @@ function UpdateEventSetOptions (data)
 	}
 	//set the selected value to the session's value
 	$("#select_event_set").val(data.eventsetselection);
+	
+		$("#image_targets").empty();
+	$("#image_inner").empty();
+	 $("#outer_map").empty();
+	$("#outer_map").append("<div id=\"map\" style=\"width: 100%; height: 500px\"></div>");
+	$("#event_table_header").empty();
+	
 	POST_UpdateEventSetTableAndMap();
 }
 
@@ -103,8 +110,8 @@ function POST_UpdateEventSetTableAndMap (argument){
 	$.post( "event.php", JSON.stringify(request), null, "json")
 	.done(function(data) {
 		if (data.status == 0) {
-			UpdateEventSetMap(data);
 			UpdateEventSetTable(data);
+			UpdateEventSetMap(data);
 			UpdateEventSetImageCarousel(data);
 		}
 		else 
@@ -195,7 +202,7 @@ function UpdateEventSetMap (data){
 		var domelem = document.createElement("a");
 		domelem.href = "viewEvent.html#";
 		domelem.href += data.eventdata[i]._id.$id;
-		var eventInfo;
+		var eventInfo = "";
 		if(data.eventdata[i].images)
 		{
 			var imageid = data.eventdata[i].images[0].$id;

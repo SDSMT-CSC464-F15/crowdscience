@@ -14,8 +14,12 @@ $(document).ready(function(){
 	// clear any error messages
 	document.getElementById("passwordmsg").style.display="none";
 	document.getElementById("usernamemsg").style.display="none";
+	document.getElementById("emailmsg").style.display="none";
 	$("#register_form_id").submit(function(event) {
 		event.preventDefault();
+		document.getElementById("passwordmsg").style.display="none";
+		document.getElementById("usernamemsg").style.display="none";
+		document.getElementById("emailmsg").style.display="none";
 		if(($("#new_password1").val()) == ($("#new_password2").val())) // check if passwords match
 		{
 			

@@ -12,11 +12,9 @@
 \hyperlink{event_8php_a64e52607180419f5ac4ce6969f9a3725}{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D} ()
 \begin{DoxyCompactList}\small\item\em \-Retrieves the data for a single event, referenced by the \-I\-D supplied in the request. \end{DoxyCompactList}\item 
 \hyperlink{event_8php_af3071b0c5bbd23339216eff1dd218349}{get\-Event\-Set\-Info\-And\-Data} ()
-\begin{DoxyCompactList}\small\item\em \-Performs the actions of both \hyperlink{event_8php_a7e9028ad62a69bbcf78178653228b348}{get\-Event\-Set\-Data()} and \hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info()}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em \-Performs the actions of both get\-Event\-Set\-Data() and \hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info()}. \end{DoxyCompactList}\item 
 \hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info} ()
 \begin{DoxyCompactList}\small\item\em \-Retrieves all the event set information necessary to display the selected event set data. \end{DoxyCompactList}\item 
-\hyperlink{event_8php_a7e9028ad62a69bbcf78178653228b348}{get\-Event\-Set\-Data} ()
-\begin{DoxyCompactList}\small\item\em \-Retrieves all event set data for the selected event set. \end{DoxyCompactList}\item 
 \hyperlink{event_8php_a13aad0d75556ac9ae9f50ee754bd36f5}{change\-Event\-Set\-Selection} ()
 \begin{DoxyCompactList}\small\item\em \-Stores the new event set selection to session data. \end{DoxyCompactList}\item 
 \hyperlink{event_8php_a93eabb06ba8025e80af7dde1341c758d}{update\-Event\-Set\-Options} ()
@@ -26,13 +24,9 @@
 \subsection{\-Detailed \-Description}
 \-Handles event data to and from the database. \-This file establishes the connection to the database, and then verifies that the connection was successful. \-The data in the post message is retrieved and decrypted. \-If a session has not been started, a new session is started. \-The action from the post message is then used call a function to interact with the database. \-Each function will save the status code to the response, in addition to the results of the database query.
 
-\-The default action returns a status of 1, indicating that an invalid action was supplied, and a message that no action was taken. \-When the action is updateoptions, \hyperlink{event_8php_a93eabb06ba8025e80af7dde1341c758d}{update\-Event\-Set\-Options()} is called, which retrieves the information necessary to repopulate the event set selection box. \-The action changeselection calls \hyperlink{event_8php_a13aad0d75556ac9ae9f50ee754bd36f5}{change\-Event\-Set\-Selection()}, which stores the new event set selection to session data. \-The action geteventsetinfo calls \hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info()}, which retrieves all the event set information necessary to display the selected event set data. \-The action geteventsetdata calls \hyperlink{event_8php_a7e9028ad62a69bbcf78178653228b348}{get\-Event\-Set\-Data()}, which retrieves all event set data for the selected event set. \-The action geteventsetinfoanddata calls get\-Event\-Set\-Info\-And\-Data, which performs the actions of both \hyperlink{event_8php_a7e9028ad62a69bbcf78178653228b348}{get\-Event\-Set\-Data()} and \hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info()}, this function is implemented because the response data is not correctly assembled separately in the two functions and database queries are streamlined when combined. \-The action geteventsetinfoandeventbyid calls the \hyperlink{event_8php_a64e52607180419f5ac4ce6969f9a3725}{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D()}, which retrieves the data for a single event, referenced by the \-I\-D supplied in the request.
+\-The default action returns a status of 1, indicating that an invalid action was supplied, and a message that no action was taken. \-When the action is updateoptions, \hyperlink{event_8php_a93eabb06ba8025e80af7dde1341c758d}{update\-Event\-Set\-Options()} is called, which retrieves the information necessary to repopulate the event set selection box. \-The action changeselection calls \hyperlink{event_8php_a13aad0d75556ac9ae9f50ee754bd36f5}{change\-Event\-Set\-Selection()}, which stores the new event set selection to session data. \-The action geteventsetinfo calls \hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info()}, which retrieves all the event set information necessary to display the selected event set data. \-The action geteventsetdata calls get\-Event\-Set\-Data(), which retrieves all event set data for the selected event set. \-The action geteventsetinfoanddata calls get\-Event\-Set\-Info\-And\-Data, which performs the actions of both get\-Event\-Set\-Data() and \hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info()}, this function is implemented because the response data is not correctly assembled separately in the two functions and database queries are streamlined when combined. \-The action geteventsetinfoandeventbyid calls the \hyperlink{event_8php_a64e52607180419f5ac4ce6969f9a3725}{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D()}, which retrieves the data for a single event, referenced by the \-I\-D supplied in the request.
 
 \-The response is then encoded and returned to the \-Java\-Script that posted to this file. 
-
-\-Definition in file \hyperlink{event_8php_source}{event.\-php}.
-
-
 
 \subsection{\-Function \-Documentation}
 \hypertarget{event_8php_a13aad0d75556ac9ae9f50ee754bd36f5}{\index{event.\-php@{event.\-php}!change\-Event\-Set\-Selection@{change\-Event\-Set\-Selection}}
@@ -46,26 +40,7 @@
 
 \-Stores the new event set selection to session data. 
 
-\-This function retrieves the new selected event from the request data, and saves it to the session and response data. \-Then, the list of event sets is updated. \-A reference to the table containing all the information about the event sets is created, and the database is queried with the find() function. \-The information for the event sets is then added to the response, event set by event set. \-The status is set to 0, and the function returns this response. 
-
-\-Definition at line 241 of file event.\-php.
-
-\hypertarget{event_8php_a7e9028ad62a69bbcf78178653228b348}{\index{event.\-php@{event.\-php}!get\-Event\-Set\-Data@{get\-Event\-Set\-Data}}
-\index{get\-Event\-Set\-Data@{get\-Event\-Set\-Data}!event.php@{event.\-php}}
-\subsubsection[{get\-Event\-Set\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf get\-Event\-Set\-Data} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{event_8php_a7e9028ad62a69bbcf78178653228b348}
-
-
-\-Retrieves all event set data for the selected event set. 
-
-\-This function retrieves the selected event set from the request data, creates a reference to the table containing all the event set data for the selected event set, and then creates a reference to the user table. \-The database is then queried with the find() function which returns the contents of the table of selected event set data table. \-The event data is then looped through. \-In this loop, the \-Mongo \-I\-D stored in the user field is replaced with the username of the associated user, the date is reformatted into a readable date, and the event report is added to the response data. \-If the query to retrieve the username associated with the current report fails, then the response status is set to 1, an error message is added to the response, and the function returns. \-The details of this event set are added to the response, the status is set to 0, and the function returns this response. 
-
-\-Definition at line 203 of file event.\-php.
-
-\hypertarget{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{\index{event.\-php@{event.\-php}!get\-Event\-Set\-Info@{get\-Event\-Set\-Info}}
+\-This function retrieves the new selected event from the request data, and saves it to the session and response data. \-Then, the list of event sets is updated. \-A reference to the table containing all the information about the event sets is created, and the database is queried with the find() function. \-The information for the event sets is then added to the response, event set by event set. \-The status is set to 0, and the function returns this response. \hypertarget{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{\index{event.\-php@{event.\-php}!get\-Event\-Set\-Info@{get\-Event\-Set\-Info}}
 \index{get\-Event\-Set\-Info@{get\-Event\-Set\-Info}!event.php@{event.\-php}}
 \subsubsection[{get\-Event\-Set\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf get\-Event\-Set\-Info} (
 \begin{DoxyParamCaption}
@@ -76,11 +51,7 @@
 
 \-Retrieves all the event set information necessary to display the selected event set data. 
 
-\-This function retrieves the selected event set from the request data, and a reference to the table containing event set information about all event sets is created. \-The database is queried with the find\-One() function to find the event set information specific to the selected event set. \-If the information retrieved from the database is null, the response status is set to 2, and an error message is added to the response, and the function returns. \-The details of this event set are added to the response, the status is set to 0, and the function returns this response. 
-
-\-Definition at line 176 of file event.\-php.
-
-\hypertarget{event_8php_af3071b0c5bbd23339216eff1dd218349}{\index{event.\-php@{event.\-php}!get\-Event\-Set\-Info\-And\-Data@{get\-Event\-Set\-Info\-And\-Data}}
+\-This function retrieves the selected event set from the request data, and a reference to the table containing event set information about all event sets is created. \-The database is queried with the find\-One() function to find the event set information specific to the selected event set. \-If the information retrieved from the database is null, the response status is set to 2, and an error message is added to the response, and the function returns. \-The details of this event set are added to the response, the status is set to 0, and the function returns this response. \hypertarget{event_8php_af3071b0c5bbd23339216eff1dd218349}{\index{event.\-php@{event.\-php}!get\-Event\-Set\-Info\-And\-Data@{get\-Event\-Set\-Info\-And\-Data}}
 \index{get\-Event\-Set\-Info\-And\-Data@{get\-Event\-Set\-Info\-And\-Data}!event.php@{event.\-php}}
 \subsubsection[{get\-Event\-Set\-Info\-And\-Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf get\-Event\-Set\-Info\-And\-Data} (
 \begin{DoxyParamCaption}
@@ -89,18 +60,15 @@
 )}}\label{event_8php_af3071b0c5bbd23339216eff1dd218349}
 
 
-\-Performs the actions of both \hyperlink{event_8php_a7e9028ad62a69bbcf78178653228b348}{get\-Event\-Set\-Data()} and \hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info()}. 
+\-Performs the actions of both get\-Event\-Set\-Data() and \hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info()}. 
 
-\-This function combines \hyperlink{event_8php_a7e9028ad62a69bbcf78178653228b348}{get\-Event\-Set\-Data()} and \hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info()}. \-This function was created to solve issues with gathering the full response returned from two separate functions and remove redundancies in the two functions when used together. \begin{DoxySeeAlso}{\-See also}
-\hyperlink{event_8php_a7e9028ad62a69bbcf78178653228b348}{get\-Event\-Set\-Data()} 
+\-This function retrieves the selected event set from the request data, and a reference to the table containing event set information about all event sets is created. \-Then this function creates a reference to the table containing all the event set data for the selected event set, and then creates a reference to the user table.
 
-\hyperlink{event_8php_ac111287cb3782ef6b2b3a5c5333a0164}{get\-Event\-Set\-Info()} 
-\end{DoxySeeAlso}
+\-The database is queried with the find\-One() function to find the event set information specific to the selected event set. \-If the information retrieved from the database is null, the response status is set to 2, and an error message is added to the response, and the function returns. \-The details of this event set are added to the response, the status is set to 0, and the function returns this response.
 
+\-The database is then queried with the find() function which returns the contents of the table of selected event set data table. \-The event data is then looped through. \-In this loop, the \-Mongo \-I\-D stored in the user field is replaced with the username of the associated user, the date is reformatted into a readable date, and the event report is added to the response data. \-If the query to retrieve the username associated with the current report fails, then the response status is set to 1, an error message is added to the response, and the function returns. \-The details of this event set are added to the response, the status is set to 0, and the function returns this response.
 
-\-Definition at line 129 of file event.\-php.
-
-\hypertarget{event_8php_a64e52607180419f5ac4ce6969f9a3725}{\index{event.\-php@{event.\-php}!get\-Event\-Set\-Info\-And\-Event\-By\-I\-D@{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D}}
+\-This function was created to solve issues with gathering the full response returned from two separate functions and remove redundancies in the two functions when used together. \hypertarget{event_8php_a64e52607180419f5ac4ce6969f9a3725}{\index{event.\-php@{event.\-php}!get\-Event\-Set\-Info\-And\-Event\-By\-I\-D@{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D}}
 \index{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D@{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D}!event.php@{event.\-php}}
 \subsubsection[{get\-Event\-Set\-Info\-And\-Event\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf get\-Event\-Set\-Info\-And\-Event\-By\-I\-D} (
 \begin{DoxyParamCaption}
@@ -111,11 +79,7 @@
 
 \-Retrieves the data for a single event, referenced by the \-I\-D supplied in the request. 
 
-\-This function retrieves the selected event set from the session data, and then creates a reference to the database table corresponding to that event set. \-Then, references to the table of information about the event sets and the table containing user information are also established. \-The database is then queried using the \-Mongo database find\-One() function, to retrieve the event set details information from the event set information table. \-If the information retrieved from the database is null, the response status is set to 2, and an error message is added to the response, and the function returns. \-The details of the event set information are then added to the response. \-Then the \-Mongo database is queried with the id of the event report being retrieved. \-If the query returns null, the response status is set to 3, and error message is added to the response, and the function returns. \-The user table in the database is then queried to retrieve the username of the author of the event report. \-If this query fails, the response status is set to 1, an error message is added to the response, and the function returns. \-The username then replaces the user field in the event report array retrieved from the database. \-The date of the event report is then parsed into a human readable date and saved in the event report. \-The event is added to the response, the status is then set to 0, indicating no errors, and the response is returned from the function. 
-
-\-Definition at line 68 of file event.\-php.
-
-\hypertarget{event_8php_a93eabb06ba8025e80af7dde1341c758d}{\index{event.\-php@{event.\-php}!update\-Event\-Set\-Options@{update\-Event\-Set\-Options}}
+\-This function retrieves the selected event set from the session data, and then creates a reference to the database table corresponding to that event set. \-Then, references to the table of information about the event sets and the table containing user information are also established. \-The database is then queried using the \-Mongo database find\-One() function, to retrieve the event set details information from the event set information table. \-If the information retrieved from the database is null, the response status is set to 2, and an error message is added to the response, and the function returns. \-The details of the event set information are then added to the response. \-Then the \-Mongo database is queried with the id of the event report being retrieved. \-If the query returns null, the response status is set to 3, and error message is added to the response, and the function returns. \-The user table in the database is then queried to retrieve the username of the author of the event report. \-If this query fails, the response status is set to 1, an error message is added to the response, and the function returns. \-The username then replaces the user field in the event report array retrieved from the database. \-The date of the event report is then parsed into a human readable date and saved in the event report. \-The event is added to the response, the status is then set to 0, indicating no errors, and the response is returned from the function. \hypertarget{event_8php_a93eabb06ba8025e80af7dde1341c758d}{\index{event.\-php@{event.\-php}!update\-Event\-Set\-Options@{update\-Event\-Set\-Options}}
 \index{update\-Event\-Set\-Options@{update\-Event\-Set\-Options}!event.php@{event.\-php}}
 \subsubsection[{update\-Event\-Set\-Options}]{\setlength{\rightskip}{0pt plus 5cm}{\bf update\-Event\-Set\-Options} (
 \begin{DoxyParamCaption}
@@ -127,6 +91,3 @@
 \-Retrieves the information necessary to repopulate the event set selection box. 
 
 \-This function creates a reference to the table containing event set information about all event sets, and then checks to see if an event set is saved in the session data. \-If an event set selection is saved, then it is added to the response; if not, the first entry in the event set information table is added to the response and saved in the session data. \-The event set information table in the database is then queried with the find() function. \-The information for the event sets is then added to the response, event set by event set. \-The status is set to 0, and the function returns this response. 
-
-\-Definition at line 267 of file event.\-php.
-

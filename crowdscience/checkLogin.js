@@ -55,7 +55,7 @@ function UpdateUserStatus (username) {
 	$("body").data("logged" , true);
 	$("body").data("user" , {"username" : username});
 	var userglyph = "<span class=\"glyphicon glyphicon-user\"></span>"
-	var user = "<a id=\"user-area\" href=\"profile.html\">" + userglyph + " " + $("body").data("user").username + "</a>";
+	var user = "<a id=\"user-area\">" + userglyph + " " + $("body").data("user").username + "</a>";
 	$("#user-area").replaceWith(user);
 	$("#register").hide();
 	$("#logout").show();

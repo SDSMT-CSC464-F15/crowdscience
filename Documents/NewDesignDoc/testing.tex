@@ -3,47 +3,368 @@
 
 \chapter{System  and Unit Testing}
 
-This section describes the approach taken with regard to system and unit testing. 
-
 \section{Overview}
-Testing is done manually, via a tracibility matrix. Each requirement listed in the backlog will have a test case, and the system will either pass the test, or fail the test. 
+This section describes the approach taken with regard to system and unit testing. Testing is done manually, via a traceability matrix. Each requirement listed in the backlog will have a test case and list the code that is covered by the test case.  
 
-\section{Test Setup and Execution}
-Each major component has a list of requirements, and a test case that tests that the system meets the requirements. Some requirements only detail the presence of an element, and are tested by examination. The test case for these requirements will note that the test is by examination. 
+\section{Test Set-up and Execution}
+Each major component has a list of requirements. Test cases are generated to ensure that each requirement has been thoroughly tested, to ensure that the requirement has been fulfilled. Each test case will also list the functions and files that the test case specifically tests. Requirements that are present in the test case but the test case isn't directly testing, will not be listed as a requirement fulfilled by that test case. The code coverage refers to the file documentation section of this document.
 
-Note: Manual Unit Testing - list which functions are tested by test case... maybe list by test case
-
-Unit testing is an important process that tests individual functions or modules. Unit testing is often automated but it can also be done manually. I believe you have done some unit testing along development for verification, so you just need to document it.
+Automated testing was not implemented in this project, but manual testing was performed along the course of the project to ensure product functionality. The test cases for this manual testing are listed below.
 
 \section{System Testing}
 
-\subsection{Test Case \#1}
-Select event set on index page, navigate to report page, verify that selection was maintained. Refresh page and verify that selection was maintained.
+\subsection{Navigation Bar Test Cases}
+\begin{itemize}
+\item Navigate to all website pages and confirm presence of navigation bar.
+\item Confirm home, report, and logout buttons, and user logged in icon, in the navigation bar on the index page when a user is logged in
+\item Confirm home, report, register, and login buttons in the navigation bar on the index page when a user is not logged in 
+\item Confirm home and logout buttons, and user logged in icon, in the navigation bar on the report page when a user is logged in
+\item Confirm home, register and login buttons in the navigation bar on the report page when a user is not logged in
+\item Confirm home, report, and register buttons in the navigation bar on the login page
+\item Confirm home, report, and login buttons in the navigation bar on the register page
+\item Confirm home and report buttons in the navigation bar on the view event page
+\item Confirm event set selection box on index and report pages
+ \end{itemize}
 \subsubsection{Result}
-Event set state was maintained.
+Passed test cases:
+\begin{itemize}
+\item When no user is logged in, there are a home button, an event set selection box, a report button, a login button, and a register button in the navigation bar on the home page.
+\item When no user is logged in, there are a home button, an event set selection box, a login button and a register button in the navigation bar on the report page.
+\item There are home, report, and login buttons in the navigation bar on the register page.
+\item There are home, login, and login buttons in the navigation bar on the login page.
+\item There are home and report buttons in the navigation bar on the view event page.
+\item When a user is logged in, there are a home button, an event set selection box, a report button, a user icon, and a logout button in the navigation bar on the home page.
+\item When a user is logged in, there are a home button, an event set selection box, a user icon, and a logout button in the navigation bar on the report page.
+ \end{itemize}
 \subsubsection{Code Coverage}
 \begin{itemize}
-\item file: function name
-\item file: function name
+\item checkLogin.js: document ready ( )
+\item checkLogin.js: POST\_CheckLogin ( )
+\item checkLogin.php
+\item checkLogin.js: UpdateUserStatus ( )
+\item login.php
+\item config.php
+\item index.html
+\item login.html
+\item register.html
+\item report.html
+\item viewEvent.html
 \end{itemize}
 \subsubsection{Requirements Fulfilled}
 \begin{itemize}
-\item Navigation Bar: The selected event set shall maintain its state when navigating to a different page or refreshing the page.
+\item Each page shall contain a navigation bar at the top of the page.
+\item The navigation bar will have buttons for logging in, new user registration, logout, and event reporting, where appropriate.
+\item When no user is logged in, there will be buttons in the navigation bar leading to a new user registration page and a user login page.
+\item When the user is logged in, an icon indicating the logged in user and a log out button will replace the login button on the navigation bar.
+\end{itemize}
+
+\subsection{Event Set Selection Test Cases }
+\begin{itemize}
+\item Change data stored in database, verify that selection boxes update with database data when page is refreshed. 
+\item Select event set on index page, navigate to report page, verify that selection was maintained. Refresh page and verify that selection was maintained. 
+\item Change event set selection, verify that data on index page and report fields update with appropriate data.
+\item Verify error message when event set options cannot be updated due to no database connection. 
+\end{itemize}
+\subsubsection{Result}
+Passed test cases:
+\begin{itemize}
+\item Added Pine Beetle Spread event set to database, refreshed page. Pine Beetle Spread appeared in selection box. Removed Pine Beetle Spread from data base, selected different set. Pine Beetle Spread no longer appeared in selection box. 
+\item Selected Bird Sightings on index page, navigated to report page. Event set selection maintained Bird Sightings as selected event set. Refreshed the page. Event set selection maintained Bird Sightings as selected event set. 
+\item Changed selection on report page from Bird Sightings to Pine Beetle Spread. Report fields updated: date, description, number of birds, and species updated to date, additional details, number of infected trees, and tree species targeted. 
+\item Changed selection on home page from Pine Beetle Spread to Wildflower Sightings. Page updated from empty page to show Wildflower Sightings event set data.
+\item Removed database connection in config.php, refreshed index. Page alerted ``500: Error loading Event Set Options''.
+\end{itemize}
+\subsubsection{Code Coverage}
+\begin{itemize}
+\item event.php: changeEventSetSelection ( )
+\item event.php: updateEventSetOptions ( )
+\item index.js: POST\_ChangeEventSetSelection ( )
+\item index.js: POST\_UpdateEventSetOptions ( )
+\item index.js: UpdateEventSetOptions ( )
+\item report.js: POST\_ChangeEventSetSelection ( )
+\item report.js: POST\_UpdateEventSetOptions ( )
+\item report.js: UpdateEventSetOptions ( )
+\end{itemize}
+\subsubsection{Requirements Fulfilled}
+\begin{itemize}
+\item The navigation bar shall contain a drop down box for selecting the event set.
+\item The selected event set shall maintain its state when navigating to a different page or refreshing the page.
+\item When the current event data set is changed, the map, event list, image carousel, and report features will change according to the feilds specified for that set.
+\end{itemize}
+
+\subsection{ New User Registration Test Cases}
+\begin{itemize}
+\item Confirm register page contains fields for user to enter username, password, and password verification, and a submit button.
+\item Confirm that cancel button takes user to index page.
+\item When user does not fill all required fields, verify error message.
+\item When user submits registration with mismatched passwords, verify error message.
+\item Verify error message for email or username already taken.
+\item When user successfully submits report, verify data in database.
+\item Verify user is logged in after registering.
+\item Login, and navigate to the register page via the address bar, register a new user, verify old user is logged out, and new user logged in.
+\end{itemize}
+
+\subsubsection{Result}
+Passed test cases:
+\begin{itemize}
+\item There are fields for email, username, password, password verification, first name, last name, user role, and location, and buttons to create account and cancel on register page.
+\item Clicking cancel button redirects user to index page.
+\item When the user clicks submit without filling out any fields, box appears with ``please fill out this field''.
+\item When the user enters mismatched passwords and clicks submit, box appears with ``Passwords Don't Match'' and password fields are cleared.
+\item When the user enters a username that has already been taken, box appears with ``Username already taken''.
+\item When the user enters an email that has already been taken, box appears with ``Email Already Registered''.
+\item When the user enters mismatched passwords, fixes it and enters an email that is already taken, verify that password error message disappears and email taken error message appears, and vice versa.
+\item When the user enters mismatched passwords, fixes it and enters a username that is already taken, verify that password error message disappears and username taken error message appears, and vice versa.
+\item When the user enters a username that has been taken, fixes it and enters an email that is already taken, verify that user taken error message disappears and email taken error message appears, and vice versa.
+\item When the user enters text in the email box that does not match the standard email form, box appears and informs user that email does not contain the @ sign.
+\item When the user correctly enters email address, username ``haker3'', and passwords and clicks submit, entry appears in database, user redirected to index page, and index navigation bar changes to show ``haker3'' logged in.
+\item Logged in as ``haker2'', navigated to register page via address bar, registered new user ``haker4'', logged in as ``haker4'' and redirected to index page.
+\end{itemize}
+\subsubsection{Code Coverage}
+\begin{itemize}
+\item register.html
+\item register.js: document ready ( )
+\item register.js: POST\_RegisterUser ( )
+\item register.js: OnRegisterSuccess ( )
+\item register.php 
+\item register.php: registerUser( )
+\end{itemize}
+\subsubsection{Requirements Fulfilled}
+\begin{itemize}
+\item The registration page will have a field for username, password and password verification, and a ``submit'' button.
+\item If the passwords do not match, the user will be notified, and need to re-enter one or both passwords.
+\item After registering, a user will automatically be logged in.
+\end{itemize}
+
+\subsection{User Login Test Cases}
+\begin{itemize}
+\item Confirm login page contains fields for user to enter username or email and password, a submit button, and a link to the user registration page.
+\item When user enters a user name or email not in the database and clicks submit, verify error message.
+\item When user enters password that does not match database and clicks submit, verify error message.
+\item When user enters correct email and password and clicks submit, verify user is logged in.
+\item When user enters correct username and password and clicks submit, verify user is logged in.
+\item Confirm that cancel button takes user to index page.
+\item Login, and navigate to the login page via the address bar, verify user is redirected to index.
+\end{itemize}
+\subsubsection{Result}
+Passed test cases:
+\begin{itemize}
+\item Login page contains username/email and password fields, submit button, cancel button, and link to register page.
+\item When user enters incorrect username, email, or password, the error message ``The username and password combination could not be found'' is displayed.
+\item When user enters correct email and password and clicks submit, the user is logged in and taken to index page.
+\item When user enters correct username and password and clicks submit, the user is logged in and taken to index page.
+\item Clicking cancel button redirects user to index page.
+\item Logged in as ``haker3'' and navigated to login page, redirected to index page.
+\end{itemize}
+\subsubsection{Code Coverage}
+\begin{itemize}
+\item login.js: POST\_CheckLoginStatus ( )
+\item login.js: POST\_LoginUser ( )
+\item login.js: OnLoginSuccess ( )
+\item login.js: document ready ( )
+\item login.php: validateUser ( )
+\item login.php
+\end{itemize}
+\subsubsection{Requirements Fulfilled}
+\begin{itemize}
+\item The login page will have fields for entering username and passwords, a ``login'' button and a link to the user registration page.
+\item The user will be notified if the username or password was incorrect, and may need to re-enter one or both fields.
+\end{itemize}
+
+\subsection{Event Reporting Interface Test Cases}
+\begin{itemize}
+\item Confirm report page contains map for selecting latitude and longitude, event set fields, image upload interface, and submit button.
+\item Click on map, verify latitude and longitude change.
+\item Change latitude and longitude, verify map marker changes.
+\item Verify map zoom in and out.
+\item Verify report fields match database fields. Verify selection box options match database. Verify step, max and min for number match database.
+\item Verify image upload of one image. Verify image upload of two images.
+\item Verify report submission for report with no image, one image, and two or more images. 
+\item Verify report's author is ``anonymous'' when a user isn't logged in and submits a report.
+\item Verify report's author matches logged in user when a logged in user submits an event report.
+\item Verify submitted event report contains latitude and longitude.
+\item Verify database report matches submitted report.
+\end{itemize}
+\subsubsection{Result}
+Passed test cases:
+\begin{itemize}
+\item There are a map for selecting latitude and longitude, event set fields, image uploading interface, and submit button on the report page, when the Wildflower Sightings event set is selected.
+\item Clicked on map, latitude and longitude updated to match location.
+\item Changed latitude, map updated to match new latitude. Changed longitude, map updated to match new longitude.
+\item Event report fields: date, description, number of flowers, and species; match fields and types in database. Number of flowers step value is 1 and does not decrement below zero, matching min and step value in database. Landscape Changes' category selection box options match selection options in database. 
+\item Submitted anonymous report with no pictures to ``Pine Beetle Spread''. Report in database matches information entered.
+\item Submitted anonymous report with one picture to ``Pine Beetle Spread''. Report and picture in database matches information entered and photo uploaded.
+\item Submitted anonymous report with two pictures to ``Pine Beetle Spread''. Report and pictures in database matches information entered and photos uploaded.
+\item Submitted report with two pictures to ``Pine Beetle Spread''. Report and pictures in database matches information entered and photos uploaded. Report author saved in database matched user submitting report.
+\end{itemize}
+Failed test cases:
+\begin{itemize}
+\item Changed latitude and longitude to the south pole (-90,180) for fun, and clicked back in South Dakota. The longitude for Rapid City was approximately 256, where it is supposed to be approximately -103. The western half the the hemisphere is unaffected by this glitch. However, when the longitude is changed to -180, the error repeats respectively with the western half of the hemisphere. Clicking over the line international date line, at longitude -180 or 180, in one direction or the other will cause this error. This is a known bug in the map API used, outside the scope of the project. 
+\end{itemize}
+\subsubsection{Code Coverage}
+\begin{itemize}
+\item event.php: getEventSetData ( )
+\item fileUpload.php
+\item report.js: POST\_SubmitEventReport ( )
+\item report.js: POST\_UpdateReportFields ( )
+\item report.js: POST\_UploadPhotos ( )
+\item report.js: document ready ( )
+\item report.js: UpdateReportFields ( )
+\item report.php: submitEventReport ( )
+\item report.php
+\item reportMapLeaflet.js: initmap ( )
+\item reportMapLeaflet.js: addMarker ( )
+\item reportMapLeaflet.js: onMapClick ( )
+\item reportMapLeaflet.js: onChangeLatLong ( )
+\end{itemize}
+\subsubsection{Requirements Fulfilled}
+\begin{itemize}
+\item The event reporting window shall contain a map for selecting the latitude and longitude of the event.
+\item The event reporting window shall contain the fields specified for that event data set.
+\item The event reporting window shall contain an interface for uploading images with the event report.
+\item The event reporting window shall contain a submit button.
+\item When the user clicks submit, the report is added to the database.
+\item When a user is logged in, the user is listed as the author of the report.
+\item When no user is logged in, the author of the report is saved as ``Anonymous''.
+\item Every event report shall include a longitude and latitude field.
+\end{itemize}
+
+\subsection{Detailed Event List Test Cases}
+\begin{itemize}
+\item Verify that event set table header contains User and all event set details fields. Verify that table body contains user and all  event set details fields.
+\item Verify that clicking on zoom icon zooms map to the event in the associated table row. 
+\item Verify that clicking the link icon in the event table takes user to individual event page.
+\end{itemize}
+\subsubsection{Result}
+Passed test cases:
+\begin{itemize}
+\item Selected Pine Beetle Spread. The event set table headers contain User, Date, Additional Details, Number of Infected Trees, and Tree Species Targeted. Table body contained information in the correct column of user and all event report details. 
+\item Clicked on zoom icon in first row of table, map zoomed to the event in that row, the map pop-up information matched the event.
+\item Clicked on link icon in the second row of the table, the information in the individual event page matched the row containing the link.
+\end{itemize}
+\subsubsection{Code Coverage}
+\begin{itemize}
+\item event.php: getEventSetInfoAndData ( )
+\item index.js: POST\_UpdateEventSetTableAndMap ( )
+\item index.js: document ready ( )
+\item index.js: UpdateEventSetTable ( )
+\end{itemize}
+\subsubsection{Requirements Fulfilled}
+\begin{itemize}
+\item The detailed event list will be a table of the current event set, and will include all fields specified for that event data set.
+\item Each entry shall include the author of the event.
+\item Each entry shall include links to the individual event page and to center the map on that event.
+\end{itemize}
+
+\subsection{Map Representation of Events Test Cases}
+\begin{itemize}
+\item Confirm that the map contains a marker for each event in the event set. Verify each event marker is at the correct latitude and longitude for the report.
+\item Confirm that a pop-up with event details appears when a marker on the map is clicked. 
+\item Confirm that when a pop-up on the map is clicked on, it takes the user to the individual event page for that event.
+\item Verify that map can be panned and zoomed in and out.
+\end{itemize}
+\subsubsection{Result}
+Passed test cases:
+\begin{itemize}
+\item All event markers were present on the map, and each was in the location reported by the user, including the event with an incorrect longitude of -214, per the map API bug found in the report testing.
+\item Clicked on a marker for an event with no photos, event details popped up and displayed all event details for the specific event. Clicked on a marker for an event with photos, event pop-up displayed photo and all details. 
+\item Clicked on event pop-up, automatically navigated to individual event page for that event report. All information matched.
+\item Click and dragged to pan map, map panned. Used arrow keys to pan map, map panned. Used scroll to zoom in and out, map zoomed in and out. Used map buttons to zoom in and out, map zoomed in and out.
+\end{itemize}
+\subsubsection{Code Coverage}
+\begin{itemize}
+\item event.php: getEventSetInfoAndData ( )
+\item image.php
+\item index.js: POST\_UpdateEventSetTableAndMap ( )
+\item index.js: document ready ( )
+\item index.js: UpdateEventSetMap ( )
+\end{itemize}
+\subsubsection{Requirements Fulfilled}
+\begin{itemize}
+\item The map shall contain a marker for each event report, placed at the longitude and latitude specified in the report.
+\item When a marker on the map is clicked on, a pop-up will appear with the picture associated with the event report, and the event report details. 
+\item When an event report pop-up is clicked, the user will be navigated to the individual event page.
+\item The map will be able to be zoomed in, zoomed out, and panned.
+\end{itemize}
+
+\subsection{Event Set Image Carousel Test Cases}
+\begin{itemize}
+\item Verify that the image carousel contains one image per event in the event set.
+\item Verify that the image carousel periodically displays a new image.
+\item Verify user can navigate pictures with image carousel arrows.
+\end{itemize}
+\subsubsection{Result}
+Passed test cases:
+\begin{itemize}
+\item For the Pine Beetle Spread event set, there are 3 images in the image carousel, and 3 events in the event set that contain images. 
+\item The image carousel moves to the next image in the set every few seconds.
+\item Clicked on the right arrow in the image carousel, was taken to the next photo in the event set. Clicked on the left arrow in the image carousel, was taken to the previous photo in the event set.
+\end{itemize}
+\subsubsection{Code Coverage}
+\begin{itemize}
+\item event.php: getEventSetInfoAndData ( )
+\item image.php
+\item index.js: POST\_UpdateEventSetTableAndMap ( )
+\item index.js: document ready ( )
+\item index.js: UpdateEventSetImageCarousel ( )
+\end{itemize}
+\subsubsection{Requirements Fulfilled}
+\begin{itemize}
+\item The image carousel will contain one image per event in the selected event set.
+\item The image carousel will periodically display a different event image.
+\item The user will be able to navigate through the pictures in the image carousel using arrows at the sides of the image carousel.
+\end{itemize}
+
+\subsection{Individual Event Viewing Test Cases}
+\begin{itemize}
+\item Verify that individual event page contains information matching the event that was clicked on in the previous page. 
+\item Verify that individual event page contains image carousel with all pictures associated with the event. 
+\item Verify the individual event page contains the reporting user, latitude and longitude of the event.
+\item Verify that the individual event page contains all details about the event.
+\end{itemize}
+\subsubsection{Result}
+Passed test cases:
+\begin{itemize}
+\item Clicked on a pop-up in the map, individual event page matched map pop-up. Clicked on table link, individual event page matched table row. 
+\item Individual event page contains all photos for event, clicked on event with two photos, both photos present in individual event image carousel.
+\item Individual event page contained user, latitude, longitude, and all details matching event in database.
+\end{itemize}
+\subsubsection{Code Coverage}
+\begin{itemize}
+\item event.php: getEventSetInfoAndEventByID ( )
+\item image.php
+\item viewEvent.js: DisplayEvent ( )
+\item viewEvent.js: POST\_GetEventSetInfoAndEventByID ( )
+\item viewEvent.js: document ready ( )
+\end{itemize}
+\subsubsection{Requirements Fulfilled}
+\begin{itemize}
+\item The individual event page will contain only information regarding the event clicked on by the user on a previous page.
+\item The individual event page will contain all pictures associated with an event.
+\item The individual event page will contain the specific latitude and longitude associated with an event.
+\item The individual event page will contain all details pertaining to the event.
 \end{itemize}
 
 \section{System Integration Analysis}
-The system is a standalone system and will not need to be integrated into another system. Other mapping systems, such as the USGS Did you Feel it (DYFI) project and the USGS Butterfles and Moths of North America (BAMONA), may need to be integrated with this system later. Inegration with these other systems will need to be done by hand.
-
-How does this system get moved to the WWW?
+The system is a designed as a website, and would need to be integrated in to the world wide web. This integration would involve registering a domain name for the system, and dedicating a server to running the system for public use. Other mapping systems, such as the USGS Did you Feel it (DYFI) project and the USGS Butterflies and Moths of North America (BAMONA), may need to be integrated with this system later. Integration with these other systems will need to be done by hand.
 
 \section{Risk Analysis}
-If this project were up and running, what could go wrong? Server capabilities? Server crash? Database crash? Database hack? Accidentially drop tables?
+Risks of this project include server capabilities, server crash, database crash, database hacking, and map API bugs.
 
-From Dr. Qiao:
- Scalability is an common issue existing in mostly all systems and applications, because there’s always a limitation. I think the point here is not to tune your senior design project to handle a great amount of requests or traffic volume. Instead, you want to know the capacity of your current system, like memory, TCP connection, DB connection pool, etc., and have an outline on scale-up approaches. For this project, I think you may consider opcode cache for PHP code, on-the-fly cache for webpage, and memcache and load balancing for DB.  
- 
-Security is a non-functional requirement, but it’s an critical factor in the system. Some basic front-end (Javascript) and back-end (php) input validation and password encryption (hashed and salted) will make the system more secure and reliable for users. 
+The server currently has good load handling capabilities, but lacks storage space for a large number of event reports. The Apache 2.2 server has good load capabilities. When testing 90 concurrent users each doing 30 page hits, the mean number of requests per second was 5244.86, and 95\% of requests were handled within 16 ms. The server itself has 6.92 GB of free space. The Crowd Science Mapper database currently uses 201326592 bytes, or about .2 GB. The database currently contains a total of 23 event reports. Thus, one event report requires roughly 0.009 GB of space. The system currently has enough space to store 650-750 event reports total. The database has a large pool of connections that can be used. There are currently 21 connections in use, and 19979 connections available. 
+
+The server and database are both very stable, with good up times. The chances of a server or database crash are small, with the good load handling capabilities of both. The server is regularly maintained, and in good condition. Currently, all project files are backed up on GitHub, and all the scripts and files used to create the project database are also backed up on GitHub. In the event of loosing all data, the current project could be recreated relatively easily.
+
+Database security is an issue. The users' passwords are stored as plain text in the database.  Though NoSQL database, such as the Mongo Database used in this project, are less vulnerable to injection attacks, user input is not fully sanitized before being sent as a database query. Currently, a malicious user would be unable to change any database information, all database interaction is performed through insert and find operations. An experienced malicious user could potentially view user data, including user passwords through an injection attack. 
+
+There is a bug with the map API used - the map's longitude does not properly wrap around the international date line. This may cause reports to have incorrect longitude, however, reports with incorrect longitude like this still behave correctly on the map.
 
 \subsection{Risk Mitigation}
+To scale up the project, the first thing that would need to happen is expansion of available database memory. Past that, to handle heavy traffic, caches should be utilized to increase user speed, such as PHP OpCode caching, client-side web-page caching of static web-pages, database caching of common queries, and database load balancing. 
 
+The server should be periodically backed up when the project is past the development and testing stages, and being used for real crowd science projects. Depending on how often event reports are submitted, the server should be backed up weekly, for very light usage, to daily, for heavy usage. 
+
+Before entering beta testing of any sort, passwords need to be encrypted when stored in the database. This is listed as a feature in the future work section of this document. User input also needs to be sanitized for database queries. 
+
+The map API doesn't cause any fatal errors, and can be left as is. However, future project work should include looking into other map APIs for use with the project.
 

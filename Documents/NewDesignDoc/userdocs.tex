@@ -1,0 +1,173 @@
+% !TEX root = DesignDocument.tex
+
+\chapter{User Documentation}
+End user documentation covers basic steps for using the crowd science mapper, and basic commands for editing and uploading information to the Mongo Database.
+
+\section{User Guide}
+\begin{itemize}
+\item To view an event set, go to the index page, and select an event set with the selection box in the navigation bar. 
+\item To view information about a marker on the map, simply click the marker. 
+\item To view more information about an event, click the pop-up on the map for the event, or the link icon in the table below. 
+\item To center the map on an event, click the zoom icon in the table below. 
+\item To navigate the image carousel, use the arrow at either side of the image carousel. 
+\item To report an event, click the report button, and fill out the form. When submitting images, select a file using the select file button, and then upload your images before submitting the report with the upload button. To select the location of the report, click anywhere on the map. 
+\item To login, click the login link, and fill in your email or username and password, and click login. 
+\item To register, click the register link, fill out the required fields in the form, and click register.
+\end{itemize}
+\section{Database Administration Guide}
+This is a quick reference guide to the commands used in this project to interact with the Mongo Database. On the server, the Mongo DB application is located at ``C:/mongodb/bin/mongo.exe''. Clicking on the executable will open the Mongo shell. The Mongo shell can also be accessed via command line. 
+
+To list the databases available, use the command ``show dbs'', see Figure ~\ref{show_dbs}.
+\begin{figure} [tbh]                     
+\caption{Mongo Database: List Databases}
+\label{show_dbs}    
+\begin{lstlisting}
+> show dbs
+comedy  0.203125GB
+crowdsciencemapper      0.203125GB
+lcmapper        0.453125GB
+local   0.078125GB
+\end{lstlisting}
+\end{figure}
+To select a different database, use the command ``use <database>'', see Figure~\ref{use_db}.
+\begin{figure} [tbh]                     
+\caption{Mongo Database: Select Database}
+\label{use_db}    
+\begin{lstlisting}
+> use crowdsciencemapper
+switched to db crowdsciencemapper
+\end{lstlisting}
+\end{figure}
+To load JavaScript code, use the command ``load(``<filename>'')'', see Figure~\ref{db_load_file}. For sample JavaScript code to add users to the database manually, see Figure~\ref{db_init_users}.   For sample JavaScript code to add new event sets to the database, see Figure~\ref{db_init_eventsetsinfo}.
+\begin{figure} [tbh]                     
+\caption{Mongo Database: Load File}
+\label{db_load_file}    
+\begin{lstlisting}
+> load("db\_user\_init.js")
+true
+\end{lstlisting}
+\end{figure}
+
+\begin{figure} [tbh]                     
+\caption{Mongo Database: db\_user\_init.js}
+\label{db_init_users}    
+\begin{lstlisting}
+db.user.drop();
+
+db.user.insert({ 
+_id : ObjectId("546e81372f32a09417000048"), username : "danhalloran", 
+email : "drhalloran@gmail.com" , password : "asdf", score : "0", 
+details : {  lname : "Halloran" , fname : "Dan", 
+location : "Rapid City, SD, USA" , role : "Citizen"} 
+});
+
+db.user.insert({ 
+_id : ObjectId("5629c3362f32a0940e000029"), username : "haker", 
+email : "hannah.aker@mines.sdsmt.edu" , password : "password",  score : "0", 
+details : { lname : "Aker",  fname : "Hannah", 
+location : "Okalhoma City, OK, USA" , role : "Citizen"} 
+});
+
+\end{lstlisting}
+\end{figure}
+
+\begin{figure} [tbh]                     
+\caption{Mongo Database: db\_eventsetsinfo\_init.js}
+\label{db_init_eventsetsinfo}    
+\begin{lstlisting}
+db.eventsetsinfo.drop();
+
+db.eventsetsinfo.insert({ 
+id : "wildflower", name : "Wildflower Sightings",
+details : [ 	{ id : "species", name : "Species", type : "shorttext"},
+		{ id : "count", name : "Number of Flowers", 
+			type : "number", min : "0", max : "none", step : "1"},
+		{ id : "description", name : "Description", type : "longtext"},
+		{ id : "date", name : "Date", type : "date" } ]
+			});
+			
+db.eventsetsinfo.insert({ 
+id : "landscapechange", name : "Landscape Changes",
+details : [ 	{ id : "nat_event_name", name : "Natural Event Name", 
+		type : "shorttext"},
+		{ id : "category", name : "Category", type : "selection", 
+			options : [	{id :"fire", name : "Fire"},
+					{id :"wind", name : "Wind Damage"},
+					{id :"avalanche", name : "Avalanche Damage"},
+					{id :"timber", name : "Thinning/Timber Harvest"},
+					{id :"insect", name : "Insect Infestation"},
+					{id :"landslide", name : "Landslide"},
+					{id :"earthquake", name : "Earthquake"},
+					{id :"flooding", name : "Flooding"},
+					{id :"mining", name : "Surface Mining"},
+					{id :"construction", name : "Road/House Construction"}]		   
+			},
+		{ id : "status", name : "Status", type : "selection", 
+			options : [	{id : "ongoing", name : "Ongoing"},
+					{id : "finished", name : "Finished"}]
+			},
+		{ id : "size", name : "Size", type : "selection", 
+			options : [	{id : "large", name : "Larger than Baseball Diamond"},
+					{id : "small", name : "Smaller than Baseball Diamond"}]
+			},
+		{ id : "description", name : "Description", type : "longtext"},
+		{ id : "date", name : "Date", type : "date"} ]
+			});
+\end{lstlisting}
+\end{figure}
+
+To load an image to the database, use the ``mongofiles'' command directly from the command line, see Figure~\ref{db_load_image}. To insert an event set with and image already uploaded use the Mongo ID of the image in loading a JavaScript insert operation, see Figure~\ref{db_init_wildflower}.
+
+\begin{figure} [tbh]                     
+\caption{Mongo Database: Load File}
+\label{db_load_image}    
+\begin{lstlisting}
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Pasque1.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af7e68b32cd77194a193'), filename: "dbscripts\Pa
+sque1.jpg", chunkSize: 262144, uploadDate: new Date(1456713598460), md5: "c04035
+a5d84940a6f75b17e5eece7433", length: 19061 }
+done!
+
+C:\mongodb\bin>mongofiles -d crowdsciencemapper put dbscripts\Pasque2.jpg
+connected to: 127.0.0.1
+added file: { _id: ObjectId('56d3af8322f00a38e3989dd7'), filename: "dbscripts\Pa
+sque2.jpg", chunkSize: 262144, uploadDate: new Date(1456713603078), md5: "436817
+a4c6eaf70ba8a0f23f71297549", length: 168395 }
+done!
+\end{lstlisting}
+\end{figure}
+
+\begin{figure} [tbh]                     
+\caption{Mongo Database: db\_wildflower\_init.js}
+\label{db_init_wildflower}    
+\begin{lstlisting}
+db.wildflower.insert({ 
+user : ObjectId("5629c3362f32a0940e000029"), 
+location : { type : "Point", coordinates : [  -104, 44 ] },
+images : [  ObjectId("56d3af7e68b32cd77194a193"),
+ObjectId("56d3af8322f00a38e3989dd7") ], 
+details : { species : "Pasque" , count : 3 ,
+description : "",
+date : ISODate("2015-05-07T15:00:00Z")  } 
+});
+\end{lstlisting}
+\end{figure}
+
+To see data in a database collection, see Figure~\ref{db_find}.
+\begin{figure} [tbh]                     
+\caption{Mongo Database: Find Operation}
+\label{db_find}    
+\begin{lstlisting}
+> db.user.find();
+{ "_id" : ObjectId("546e81372f32a09417000048"), "username" : "danhalloran", "ema
+il" : "drhalloran@gmail.com", "password" : "asdf", "score" : "0", "details" : {
+"lname" : "Halloran", "fname" : "Dan", "location" : "Rapid City, SD, USA", "role
+" : "Citizen" } }
+{ "_id" : ObjectId("5629c3362f32a0940e000029"), "username" : "haker", "email" :
+"hannah.aker@mines.sdsmt.edu", "password" : "password", "score" : "0", "details"
+ : { "lname" : "Aker", "fname" : "Hannah", "location" : "Okalhoma City, OK, USA"
+, "role" : "Citizen" } }
+\end{lstlisting}
+\end{figure}
+

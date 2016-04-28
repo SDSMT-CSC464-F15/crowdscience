@@ -75,3 +75,23 @@ function onMapClick(e) {
 		marker.setLatLng(e.latlng);
 	}
 }
+
+/*!
+	\brief Change in latitude and longitude event handler.
+	\details 
+	This function defines what is done when the user changes the latitude or longitude, and adds the latitude and longitude of the marker to the map.
+*/
+function onChangeLatLong(argument) {
+	
+	lat = document.getElementById("lat_name").value;
+	lon = document.getElementById("lon_name").value;
+
+	if(typeof(marker)==="undefined")
+	{
+		marker = new L.marker([lat, lon]).addTo(map);
+	}
+	else
+	{
+		marker.setLatLng(new L.LatLng(lat, lon));
+	}
+}

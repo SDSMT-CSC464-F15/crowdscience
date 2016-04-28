@@ -14,16 +14,11 @@
 	
 	require 'config.php';
 	
-	if($db === false)
-	{
-		return;
-	}
-	
 	if( $db === false )
 	{
-		$response["status"] = 1;
+		$response["status"] = "1";
 		$response["messages"][] = "Connection to database failed"; 
-		
+echo json_encode($response);
 	}
 	else 
 	{
@@ -37,7 +32,7 @@
 		switch($action)
 		{
 			default:
-			$response["status"] = 1; 
+			$response["status"] = "1"; 
 			$response["messages"][] = "No action"; 
 			break;
 			
@@ -47,8 +42,8 @@
 			break;
 			
 		}
+		echo json_encode($response);
 	}
-	echo json_encode($response);
 	
 	/*!
 		\brief Submits report to the database.
@@ -80,9 +75,9 @@ This function retrieves the selected event set from the session data, and then c
 		}
 		catch (MongoException $e)
 		{
-			$response["status"] = 1; 
+			$response["status"] = "1"; 
 			$response["messages"][] = "$e->getMessage()";
-			return;
+			return $response;
 		}
 		$user = new MongoId($userinfo['_id']);
 		
@@ -113,13 +108,14 @@ This function retrieves the selected event set from the session data, and then c
 		try
 		{
 			$collection->insert($document, array( 'w' => 1));
-			$response["status"] = 0; 
+			$response["status"] = "0"; 
+return $response;
 		}
 		catch (MongoException $e)
 		{
-			$response["status"] = 1; 
+			$response["status"] = "1"; 
 			$response["messages"][] = "$e->getMessage()";
-			return;
+			return $response;
 		}
 	}
 	

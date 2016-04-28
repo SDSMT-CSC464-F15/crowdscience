@@ -1,0 +1,163 @@
+> show dbs
+comedy  0.203125GB
+crowdscience    (empty)
+crowdsciencemapper      0.203125GB
+cwsusers        (empty)
+lcmapper        0.453125GB
+local   0.078125GB
+test    (empty)
+> use crowdsciencemapper
+switched to db crowdsciencemapper
+> db.runCommand( {serverStatus:1, locks:0, metrics:0})
+{
+        "host" : "WIN-LEML2DIGJAT",
+        "version" : "2.4.9",
+        "process" : "C:\\mongodb\\bin\\mongod.exe",
+        "pid" : 1280,
+        "uptime" : 14429952,
+        "uptimeMillis" : NumberLong("14429952751"),
+        "uptimeEstimate" : 9249590,
+        "localTime" : ISODate("2016-04-24T18:39:45.058Z"),
+        "asserts" : {
+                "regular" : 0,
+                "warning" : 0,
+                "msg" : 0,
+                "user" : 3,
+                "rollovers" : 0
+        },
+        "backgroundFlushing" : {
+                "flushes" : 240450,
+                "total_ms" : 11551,
+                "average_ms" : 0.04803909336660429,
+                "last_ms" : 0,
+                "last_finished" : ISODate("2016-04-24T18:39:18.616Z")
+        },
+        "connections" : {
+                "current" : 21,
+                "available" : 19979,
+                "totalCreated" : NumberLong(77)
+        },
+        "cursors" : {
+                "totalOpen" : 0,
+                "clientCursors_size" : 0,
+                "timedOut" : 1
+        },
+        "dur" : {
+                "commits" : 22,
+                "journaledMB" : 0,
+                "writeToDataFilesMB" : 0,
+                "compression" : 0,
+                "commitsInWriteLock" : 0,
+                "earlyCommits" : 0,
+                "timeMs" : {
+                        "dt" : 3088,
+                        "prepLogBuffer" : 0,
+                        "writeToJournal" : 0,
+                        "writeToDataFiles" : 0,
+                        "remapPrivateView" : 0
+                }
+        },
+        "extra_info" : {
+                "note" : "fields vary by platform",
+                "page_faults" : 338924,
+                "usagePageFileMB" : 116,
+                "totalPageFileMB" : 4605,
+                "availPageFileMB" : 3266,
+                "ramMB" : 4095
+        },
+        "globalLock" : {
+                "totalTime" : NumberLong("14429952642000"),
+                "lockTime" : NumberLong(588448685),
+                "currentQueue" : {
+                        "total" : 0,
+                        "readers" : 0,
+                        "writers" : 0
+                },
+                "activeClients" : {
+                        "total" : 0,
+                        "readers" : 0,
+                        "writers" : 0
+                }
+        },
+        "indexCounters" : {
+                "accesses" : 4551,
+                "hits" : 4551,
+                "misses" : 0,
+                "resets" : 0,
+                "missRatio" : 0
+        },
+        "network" : {
+                "bytesIn" : 18664718,
+                "bytesOut" : 849735913,
+                "numRequests" : 10043
+        },
+        "opcounters" : {
+                "insert" : 322,
+                "query" : 994536,
+                "update" : 2,
+                "delete" : 0,
+                "getmore" : 237,
+                "command" : 2189
+        },
+        "opcountersRepl" : {
+                "insert" : 0,
+                "query" : 0,
+                "update" : 0,
+                "delete" : 0,
+                "getmore" : 0,
+                "command" : 0
+        },
+        "recordStats" : {
+                "accessesNotInMemory" : 77,
+                "pageFaultExceptionsThrown" : 62,
+                "comedy" : {
+                        "accessesNotInMemory" : 0,
+                        "pageFaultExceptionsThrown" : 0
+                },
+                "crowdscience" : {
+                        "accessesNotInMemory" : 0,
+                        "pageFaultExceptionsThrown" : 0
+                },
+                "crowdsciencemapper" : {
+                        "accessesNotInMemory" : 13,
+                        "pageFaultExceptionsThrown" : 13
+                },
+                "cwsusers" : {
+                        "accessesNotInMemory" : 0,
+                        "pageFaultExceptionsThrown" : 0
+                },
+                "lcmapper" : {
+                        "accessesNotInMemory" : 64,
+                        "pageFaultExceptionsThrown" : 49
+                },
+                "local" : {
+                        "accessesNotInMemory" : 0,
+                        "pageFaultExceptionsThrown" : 0
+                },
+                "test" : {
+                        "accessesNotInMemory" : 0,
+                        "pageFaultExceptionsThrown" : 0
+                }
+        },
+        "ok" : 1
+}
+> db.runCommand( {dbStats:1})
+{
+        "db" : "crowdsciencemapper",
+        "collections" : 9,
+        "objects" : 180,
+        "avgObjSize" : 97945.37777777777,
+        "dataSize" : 17630168,
+        "storageSize" : 33050624,
+        "numExtents" : 12,
+        "indexes" : 9,
+        "indexSize" : 73584,
+        "fileSize" : 201326592,
+        "nsSizeMB" : 16,
+        "dataFileVersion" : {
+                "major" : 4,
+                "minor" : 5
+        },
+        "ok" : 1
+}
+>

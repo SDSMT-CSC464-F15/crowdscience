@@ -23,8 +23,6 @@ $(document).ready(function(){
 	//update event set selection options
 	POST_UpdateEventSetOptions();
 	
-	POST_UpdateReportFields();	
-	
 	//creating a new event
 	$("#event_report_form").submit(function(event) {
 		event.preventDefault();
@@ -38,6 +36,10 @@ $(document).ready(function(){
 
 	//set what to do when the event set selection is changed	
 	$("#select_event_set").on("change", function() { POST_ChangeEventSetSelection(); });
+	
+	$("#lat_name").on("input", function() { onChangeLatLong(); });
+	$("#lon_name").on("input", function() { onChangeLatLong(); });
+	
 });
 
 
@@ -65,7 +67,9 @@ function POST_SubmitEventReport(argument) {
 	};
 	
 	for (var i = event_set_fields.length - 1; i >= 0; i--) {
+		//alert( "i: " + i + ": " + event_set_fields[i].attr("id").toString() + ": " +event_set_fields[i].val().toString() );
 		request.newreport.details[event_set_fields[i].attr("id").toString()] = event_set_fields[i].val().toString();
+		
 	}
 	
 	//add image id to json only if one was uploaded
@@ -85,12 +89,12 @@ function POST_SubmitEventReport(argument) {
 		}
 		else 
 		{
-			alert(data.status + ": Error Uploading Event Report: " + data.message)
+			alert(data.status + ": Error Uploading Event Report: " + data.message);
 			}
 		
 	})
 	.fail(function(data) {
-		alert( "error:" + data.responseText);
+		alert( data.status + ": Error Uploading Event Report" );
 	}) ;
 }
 
@@ -240,6 +244,7 @@ function UpdateReportFields (data) {
 	
 	for (var i = data.details.length - 1; i >= 0; i--) {
 		//type: selection
+		
 		if( data.details[i].type === "selection"){
 			eventField = "<select id=\"" + data.details[i].id + "\" class=\"form-control\"> <option selected disabled value=\"\">" + data.details[i].name + "</option>";
 			for ( var j = data.details[i].options.length -1; j >=0; j-- )

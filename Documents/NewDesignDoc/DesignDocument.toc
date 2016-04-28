@@ -1,14 +1,12 @@
 \contentsline {chapter}{Title}{i}{Doc-Start}
-\contentsline {chapter}{Contents}{vii}{chapter*.1}
-\contentsline {chapter}{List of Figures}{ix}{chapter*.2}
-\contentsline {chapter}{List of Tables}{xi}{chapter*.3}
-\contentsline {chapter}{List of Algorithms}{xiii}{chapter*.4}
-\contentsline {chapter}{Overview Statements}{xv}{chapter*.5}
-\contentsline {section}{\numberline {0.1}Mission Statement}{xv}{section.0.1}
-\contentsline {subsection}{\numberline {0.1.1}Product Description}{xv}{subsection.0.1.1}
-\contentsline {subsection}{\numberline {0.1.2}Goals}{xv}{subsection.0.1.2}
-\contentsline {section}{\numberline {0.2}Elevator Pitch}{xv}{section.0.2}
-\contentsline {chapter}{Document Preparation and Updates}{xvii}{chapter*.6}
+\contentsline {chapter}{Contents}{viii}{chapter*.1}
+\contentsline {chapter}{List of Figures}{x}{chapter*.2}
+\contentsline {chapter}{Overview Statements}{xi}{chapter*.3}
+\contentsline {section}{\numberline {0.1}Mission Statement}{xi}{section.0.1}
+\contentsline {subsection}{\numberline {0.1.1}Product Description}{xi}{subsection.0.1.1}
+\contentsline {subsection}{\numberline {0.1.2}Goals}{xi}{subsection.0.1.2}
+\contentsline {section}{\numberline {0.2}Elevator Pitch}{xi}{section.0.2}
+\contentsline {chapter}{Document Preparation and Updates}{xiii}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Overview and concept of operations}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Team Members and Team Name}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Client}{1}{section.1.2}
@@ -36,13 +34,14 @@
 \contentsline {subsection}{\numberline {2.3.2}Network Requirements}{6}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Product Backlog}{6}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Navigation Bar}{6}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}New User Registration}{6}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}User Login}{6}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}Event reporting interface}{6}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Detailed event list}{7}{subsection.2.4.5}
-\contentsline {subsection}{\numberline {2.4.6}Map representation of events}{7}{subsection.2.4.6}
-\contentsline {subsection}{\numberline {2.4.7}Event Set Image Carousel}{7}{subsection.2.4.7}
-\contentsline {subsection}{\numberline {2.4.8}Individual Event Viewing}{7}{subsection.2.4.8}
+\contentsline {subsection}{\numberline {2.4.2}Event Set Selection}{6}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}New User Registration}{6}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}User Login}{6}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Event Reporting Interface}{6}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Detailed Event List}{7}{subsection.2.4.6}
+\contentsline {subsection}{\numberline {2.4.7}Map Representation of Events}{7}{subsection.2.4.7}
+\contentsline {subsection}{\numberline {2.4.8}Event Set Image Carousel}{7}{subsection.2.4.8}
+\contentsline {subsection}{\numberline {2.4.9}Individual Event Viewing}{7}{subsection.2.4.9}
 \contentsline {chapter}{\numberline {3}Project Overview}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Team Member's Roles}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}Project Management Approach}{9}{section.3.2}
@@ -67,164 +66,197 @@
 \contentsline {subsection}{\numberline {3.11.2}Source Control}{12}{subsection.3.11.2}
 \contentsline {subsection}{\numberline {3.11.3}Dependencies}{12}{subsection.3.11.3}
 \contentsline {subsection}{\numberline {3.11.4}Build Environment}{12}{subsection.3.11.4}
-\contentsline {subsection}{\numberline {3.11.5}Development Machine Setup}{12}{subsection.3.11.5}
+\contentsline {subsection}{\numberline {3.11.5}Development Machine Set-up}{12}{subsection.3.11.5}
 \contentsline {chapter}{\numberline {4}Design and Implementation}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}Architecture and System Design}{13}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Data Flow}{13}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Communications}{13}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Databse Design}{13}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.3}Database Design}{13}{subsection.4.1.3}
 \contentsline {subsection}{\numberline {4.1.4}MVC}{14}{subsection.4.1.4}
 \contentsline {subsection}{\numberline {4.1.5}GUI}{14}{subsection.4.1.5}
 \contentsline {subsection}{\numberline {4.1.6}Technologies Used}{14}{subsection.4.1.6}
 \contentsline {section}{\numberline {4.2}Navigation Bar and User Selection of Event Set to Use}{14}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Component Overview}{14}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Phase Overview}{17}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3} Architecture and Dataflow Diagram}{17}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.3} Architecture and Data-flow Diagram}{17}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Design Details}{17}{subsection.4.2.4}
 \contentsline {section}{\numberline {4.3}User Registration, Login, and Logout}{18}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Component Overview}{18}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Phase Overview}{18}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3} Architecture and Dataflow Diagram}{18}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.3} Architecture and Data-flow Diagram}{18}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Design Details}{18}{subsection.4.3.4}
 \contentsline {section}{\numberline {4.4}Generic Event Reporting Interface}{19}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Component Overview}{19}{subsection.4.4.1}
 \contentsline {subsection}{\numberline {4.4.2}Phase Overview}{20}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3} Architecture and Dataflow Diagram}{20}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.3} Architecture and Data-flow Diagram}{20}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}Design Details}{20}{subsection.4.4.4}
 \contentsline {section}{\numberline {4.5}Generic Event Set Viewing}{21}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Component Overview}{21}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Phase Overview}{21}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3} Architecture and Dataflow Diagram}{21}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.3} Architecture and Data-flow Diagram}{21}{subsection.4.5.3}
 \contentsline {subsection}{\numberline {4.5.4}Design Details}{21}{subsection.4.5.4}
 \contentsline {chapter}{\numberline {5}System and Unit Testing}{23}{chapter.5}
 \contentsline {section}{\numberline {5.1}Overview}{23}{section.5.1}
-\contentsline {section}{\numberline {5.2}Test Setup and Execution}{23}{section.5.2}
+\contentsline {section}{\numberline {5.2}Test Set-up and Execution}{23}{section.5.2}
 \contentsline {section}{\numberline {5.3}System Testing}{23}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Test Case \#1}{23}{subsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.1.a}Result}{23}{subsubsection.5.3.1.1}
-\contentsline {subsubsection}{\numberline {5.3.1.b}Code Coverage}{23}{subsubsection.5.3.1.2}
-\contentsline {subsubsection}{\numberline {5.3.1.c}Requirements Fulfilled}{23}{subsubsection.5.3.1.3}
-\contentsline {section}{\numberline {5.4}System Integration Analysis}{24}{section.5.4}
-\contentsline {section}{\numberline {5.5}Risk Analysis}{24}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Risk Mitigation}{24}{subsection.5.5.1}
-\contentsline {chapter}{\numberline {6}Prototypes}{25}{chapter.6}
-\contentsline {section}{\numberline {6.1}Sprint 1 Prototype}{25}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Deliverable}{25}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Backlog}{25}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Success/Fail}{25}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Sprint 2 Prototype}{25}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Deliverable}{25}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Backlog}{25}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Success/Fail}{25}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Sprint 3 Prototype}{26}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Deliverable}{26}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Backlog}{26}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Success/Fail}{26}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Sprint 4 Prototype}{26}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Deliverable}{26}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Backlog}{27}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Success/Fail}{27}{subsection.6.4.3}
-\contentsline {section}{\numberline {6.5}Sprint 5 Prototype}{27}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Deliverable}{27}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Backlog}{27}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}Success/Fail}{27}{subsection.6.5.3}
-\contentsline {chapter}{\numberline {7}File Index}{37}{chapter.7}
-\contentsline {section}{\numberline {7.1}File List}{37}{section.7.1}
-\contentsline {chapter}{\numberline {8}File Documentation}{39}{chapter.8}
-\contentsline {section}{\numberline {8.1}check\discretionary {-}{}{}Login.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{39}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{39}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{39}{subsection.8.1.2}
-\contentsline {subsubsection}{\numberline {8.1.2.a}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Check\discretionary {-}{}{}Login}{39}{subsubsection.8.1.2.1}
-\contentsline {subsubsection}{\numberline {8.1.2.b}ready}{39}{subsubsection.8.1.2.2}
-\contentsline {subsubsection}{\numberline {8.1.2.c}\discretionary {-}{}{}Update\discretionary {-}{}{}User\discretionary {-}{}{}Status}{40}{subsubsection.8.1.2.3}
-\contentsline {section}{\numberline {8.2}check\discretionary {-}{}{}Login.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{40}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{40}{subsection.8.2.1}
-\contentsline {section}{\numberline {8.3}config.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{40}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{40}{subsection.8.3.1}
-\contentsline {section}{\numberline {8.4}event.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{40}{section.8.4}
-\contentsline {subsection}{\numberline {8.4.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{41}{subsection.8.4.1}
-\contentsline {subsection}{\numberline {8.4.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{41}{subsection.8.4.2}
-\contentsline {subsubsection}{\numberline {8.4.2.a}change\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Selection}{41}{subsubsection.8.4.2.1}
-\contentsline {subsubsection}{\numberline {8.4.2.b}get\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Data}{41}{subsubsection.8.4.2.2}
-\contentsline {subsubsection}{\numberline {8.4.2.c}get\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Info}{41}{subsubsection.8.4.2.3}
-\contentsline {subsubsection}{\numberline {8.4.2.d}get\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Info\discretionary {-}{}{}And\discretionary {-}{}{}Data}{42}{subsubsection.8.4.2.4}
-\contentsline {subsubsection}{\numberline {8.4.2.e}get\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Info\discretionary {-}{}{}And\discretionary {-}{}{}Event\discretionary {-}{}{}By\discretionary {-}{}{}I\discretionary {-}{}{}D}{42}{subsubsection.8.4.2.5}
-\contentsline {subsubsection}{\numberline {8.4.2.f}update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Options}{42}{subsubsection.8.4.2.6}
-\contentsline {section}{\numberline {8.5}file\discretionary {-}{}{}Upload.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{42}{section.8.5}
-\contentsline {subsection}{\numberline {8.5.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{42}{subsection.8.5.1}
-\contentsline {section}{\numberline {8.6}image.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{43}{section.8.6}
-\contentsline {subsection}{\numberline {8.6.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{43}{subsection.8.6.1}
-\contentsline {section}{\numberline {8.7}index.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{43}{section.8.7}
-\contentsline {subsection}{\numberline {8.7.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{43}{subsection.8.7.1}
-\contentsline {subsection}{\numberline {8.7.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{44}{subsection.8.7.2}
-\contentsline {subsubsection}{\numberline {8.7.2.a}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Change\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Selection}{44}{subsubsection.8.7.2.1}
-\contentsline {subsubsection}{\numberline {8.7.2.b}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Options}{44}{subsubsection.8.7.2.2}
-\contentsline {subsubsection}{\numberline {8.7.2.c}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Table\discretionary {-}{}{}And\discretionary {-}{}{}Map}{44}{subsubsection.8.7.2.3}
-\contentsline {subsubsection}{\numberline {8.7.2.d}ready}{44}{subsubsection.8.7.2.4}
-\contentsline {subsubsection}{\numberline {8.7.2.e}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Image\discretionary {-}{}{}Carousel}{44}{subsubsection.8.7.2.5}
-\contentsline {subsubsection}{\numberline {8.7.2.f}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Map}{45}{subsubsection.8.7.2.6}
-\contentsline {subsubsection}{\numberline {8.7.2.g}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Options}{45}{subsubsection.8.7.2.7}
-\contentsline {subsubsection}{\numberline {8.7.2.h}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Table}{45}{subsubsection.8.7.2.8}
-\contentsline {subsection}{\numberline {8.7.3}\discretionary {-}{}{}Variable \discretionary {-}{}{}Documentation}{45}{subsection.8.7.3}
-\contentsline {subsubsection}{\numberline {8.7.3.a}map}{45}{subsubsection.8.7.3.1}
-\contentsline {section}{\numberline {8.8}login.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{45}{section.8.8}
-\contentsline {subsection}{\numberline {8.8.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{46}{subsection.8.8.1}
-\contentsline {subsection}{\numberline {8.8.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{46}{subsection.8.8.2}
-\contentsline {subsubsection}{\numberline {8.8.2.a}\discretionary {-}{}{}On\discretionary {-}{}{}Login\discretionary {-}{}{}Success}{46}{subsubsection.8.8.2.1}
-\contentsline {subsubsection}{\numberline {8.8.2.b}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Check\discretionary {-}{}{}Login\discretionary {-}{}{}Status}{46}{subsubsection.8.8.2.2}
-\contentsline {subsubsection}{\numberline {8.8.2.c}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Login\discretionary {-}{}{}User}{46}{subsubsection.8.8.2.3}
-\contentsline {subsubsection}{\numberline {8.8.2.d}ready}{46}{subsubsection.8.8.2.4}
-\contentsline {section}{\numberline {8.9}login.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{46}{section.8.9}
-\contentsline {subsection}{\numberline {8.9.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{47}{subsection.8.9.1}
-\contentsline {subsection}{\numberline {8.9.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{47}{subsection.8.9.2}
-\contentsline {subsubsection}{\numberline {8.9.2.a}validate\discretionary {-}{}{}User}{47}{subsubsection.8.9.2.1}
-\contentsline {section}{\numberline {8.10}register.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{47}{section.8.10}
-\contentsline {subsection}{\numberline {8.10.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{47}{subsection.8.10.1}
-\contentsline {subsection}{\numberline {8.10.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{48}{subsection.8.10.2}
-\contentsline {subsubsection}{\numberline {8.10.2.a}\discretionary {-}{}{}On\discretionary {-}{}{}Register\discretionary {-}{}{}Success}{48}{subsubsection.8.10.2.1}
-\contentsline {subsubsection}{\numberline {8.10.2.b}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Register\discretionary {-}{}{}User}{48}{subsubsection.8.10.2.2}
-\contentsline {subsubsection}{\numberline {8.10.2.c}ready}{48}{subsubsection.8.10.2.3}
-\contentsline {section}{\numberline {8.11}register.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{48}{section.8.11}
-\contentsline {subsection}{\numberline {8.11.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{48}{subsection.8.11.1}
-\contentsline {subsection}{\numberline {8.11.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{48}{subsection.8.11.2}
-\contentsline {subsubsection}{\numberline {8.11.2.a}register\discretionary {-}{}{}User}{48}{subsubsection.8.11.2.1}
-\contentsline {section}{\numberline {8.12}report.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{49}{section.8.12}
-\contentsline {subsection}{\numberline {8.12.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{49}{subsection.8.12.1}
-\contentsline {subsection}{\numberline {8.12.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{49}{subsection.8.12.2}
-\contentsline {subsubsection}{\numberline {8.12.2.a}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Change\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Selection}{49}{subsubsection.8.12.2.1}
-\contentsline {subsubsection}{\numberline {8.12.2.b}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Submit\discretionary {-}{}{}Event\discretionary {-}{}{}Report}{50}{subsubsection.8.12.2.2}
-\contentsline {subsubsection}{\numberline {8.12.2.c}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Options}{50}{subsubsection.8.12.2.3}
-\contentsline {subsubsection}{\numberline {8.12.2.d}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Update\discretionary {-}{}{}Report\discretionary {-}{}{}Fields}{50}{subsubsection.8.12.2.4}
-\contentsline {subsubsection}{\numberline {8.12.2.e}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Upload\discretionary {-}{}{}Photos}{50}{subsubsection.8.12.2.5}
-\contentsline {subsubsection}{\numberline {8.12.2.f}ready}{50}{subsubsection.8.12.2.6}
-\contentsline {subsubsection}{\numberline {8.12.2.g}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Options}{51}{subsubsection.8.12.2.7}
-\contentsline {subsubsection}{\numberline {8.12.2.h}\discretionary {-}{}{}Update\discretionary {-}{}{}Report\discretionary {-}{}{}Fields}{51}{subsubsection.8.12.2.8}
-\contentsline {subsection}{\numberline {8.12.3}\discretionary {-}{}{}Variable \discretionary {-}{}{}Documentation}{51}{subsection.8.12.3}
-\contentsline {subsubsection}{\numberline {8.12.3.a}event\discretionary {-}{}{}\_\discretionary {-}{}{}set\discretionary {-}{}{}\_\discretionary {-}{}{}fields}{51}{subsubsection.8.12.3.1}
-\contentsline {subsubsection}{\numberline {8.12.3.b}lat}{51}{subsubsection.8.12.3.2}
-\contentsline {subsubsection}{\numberline {8.12.3.c}lon}{51}{subsubsection.8.12.3.3}
-\contentsline {subsubsection}{\numberline {8.12.3.d}picture\discretionary {-}{}{}\_\discretionary {-}{}{}id}{51}{subsubsection.8.12.3.4}
-\contentsline {section}{\numberline {8.13}report.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{51}{section.8.13}
-\contentsline {subsection}{\numberline {8.13.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{51}{subsection.8.13.1}
-\contentsline {subsection}{\numberline {8.13.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{52}{subsection.8.13.2}
-\contentsline {subsubsection}{\numberline {8.13.2.a}submit\discretionary {-}{}{}Event\discretionary {-}{}{}Report}{52}{subsubsection.8.13.2.1}
-\contentsline {section}{\numberline {8.14}report\discretionary {-}{}{}Map\discretionary {-}{}{}Leaflet.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{52}{section.8.14}
-\contentsline {subsection}{\numberline {8.14.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{52}{subsection.8.14.1}
-\contentsline {subsection}{\numberline {8.14.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{53}{subsection.8.14.2}
-\contentsline {subsubsection}{\numberline {8.14.2.a}add\discretionary {-}{}{}Marker}{53}{subsubsection.8.14.2.1}
-\contentsline {subsubsection}{\numberline {8.14.2.b}initmap}{53}{subsubsection.8.14.2.2}
-\contentsline {subsubsection}{\numberline {8.14.2.c}on\discretionary {-}{}{}Map\discretionary {-}{}{}Click}{53}{subsubsection.8.14.2.3}
-\contentsline {subsection}{\numberline {8.14.3}\discretionary {-}{}{}Variable \discretionary {-}{}{}Documentation}{53}{subsection.8.14.3}
-\contentsline {subsubsection}{\numberline {8.14.3.a}map}{53}{subsubsection.8.14.3.1}
-\contentsline {subsubsection}{\numberline {8.14.3.b}marker}{53}{subsubsection.8.14.3.2}
-\contentsline {subsubsection}{\numberline {8.14.3.c}popup}{53}{subsubsection.8.14.3.3}
-\contentsline {section}{\numberline {8.15}view\discretionary {-}{}{}Event.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{53}{section.8.15}
-\contentsline {subsection}{\numberline {8.15.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{53}{subsection.8.15.1}
-\contentsline {subsection}{\numberline {8.15.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{54}{subsection.8.15.2}
-\contentsline {subsubsection}{\numberline {8.15.2.a}\discretionary {-}{}{}Display\discretionary {-}{}{}Event}{54}{subsubsection.8.15.2.1}
-\contentsline {subsubsection}{\numberline {8.15.2.b}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Get\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Info\discretionary {-}{}{}And\discretionary {-}{}{}Event\discretionary {-}{}{}By\discretionary {-}{}{}I\discretionary {-}{}{}D}{54}{subsubsection.8.15.2.2}
-\contentsline {subsubsection}{\numberline {8.15.2.c}ready}{54}{subsubsection.8.15.2.3}
-\contentsline {chapter}{Software Agreement}{SA-1}{chapter.9}
+\contentsline {subsection}{\numberline {5.3.1}Navigation Bar Test Cases}{23}{subsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.1.a}Result}{24}{subsubsection.5.3.1.1}
+\contentsline {subsubsection}{\numberline {5.3.1.b}Code Coverage}{24}{subsubsection.5.3.1.2}
+\contentsline {subsubsection}{\numberline {5.3.1.c}Requirements Fulfilled}{24}{subsubsection.5.3.1.3}
+\contentsline {subsection}{\numberline {5.3.2}Event Set Selection Test Cases }{25}{subsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.2.a}Result}{25}{subsubsection.5.3.2.1}
+\contentsline {subsubsection}{\numberline {5.3.2.b}Code Coverage}{25}{subsubsection.5.3.2.2}
+\contentsline {subsubsection}{\numberline {5.3.2.c}Requirements Fulfilled}{25}{subsubsection.5.3.2.3}
+\contentsline {subsection}{\numberline {5.3.3} New User Registration Test Cases}{26}{subsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.3.a}Result}{26}{subsubsection.5.3.3.1}
+\contentsline {subsubsection}{\numberline {5.3.3.b}Code Coverage}{27}{subsubsection.5.3.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3.c}Requirements Fulfilled}{27}{subsubsection.5.3.3.3}
+\contentsline {subsection}{\numberline {5.3.4}User Login Test Cases}{27}{subsection.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.4.a}Result}{27}{subsubsection.5.3.4.1}
+\contentsline {subsubsection}{\numberline {5.3.4.b}Code Coverage}{28}{subsubsection.5.3.4.2}
+\contentsline {subsubsection}{\numberline {5.3.4.c}Requirements Fulfilled}{28}{subsubsection.5.3.4.3}
+\contentsline {subsection}{\numberline {5.3.5}Event Reporting Interface Test Cases}{28}{subsection.5.3.5}
+\contentsline {subsubsection}{\numberline {5.3.5.a}Result}{28}{subsubsection.5.3.5.1}
+\contentsline {subsubsection}{\numberline {5.3.5.b}Code Coverage}{29}{subsubsection.5.3.5.2}
+\contentsline {subsubsection}{\numberline {5.3.5.c}Requirements Fulfilled}{29}{subsubsection.5.3.5.3}
+\contentsline {subsection}{\numberline {5.3.6}Detailed Event List Test Cases}{30}{subsection.5.3.6}
+\contentsline {subsubsection}{\numberline {5.3.6.a}Result}{30}{subsubsection.5.3.6.1}
+\contentsline {subsubsection}{\numberline {5.3.6.b}Code Coverage}{30}{subsubsection.5.3.6.2}
+\contentsline {subsubsection}{\numberline {5.3.6.c}Requirements Fulfilled}{30}{subsubsection.5.3.6.3}
+\contentsline {subsection}{\numberline {5.3.7}Map Representation of Events Test Cases}{30}{subsection.5.3.7}
+\contentsline {subsubsection}{\numberline {5.3.7.a}Result}{31}{subsubsection.5.3.7.1}
+\contentsline {subsubsection}{\numberline {5.3.7.b}Code Coverage}{31}{subsubsection.5.3.7.2}
+\contentsline {subsubsection}{\numberline {5.3.7.c}Requirements Fulfilled}{31}{subsubsection.5.3.7.3}
+\contentsline {subsection}{\numberline {5.3.8}Event Set Image Carousel Test Cases}{31}{subsection.5.3.8}
+\contentsline {subsubsection}{\numberline {5.3.8.a}Result}{31}{subsubsection.5.3.8.1}
+\contentsline {subsubsection}{\numberline {5.3.8.b}Code Coverage}{32}{subsubsection.5.3.8.2}
+\contentsline {subsubsection}{\numberline {5.3.8.c}Requirements Fulfilled}{32}{subsubsection.5.3.8.3}
+\contentsline {subsection}{\numberline {5.3.9}Individual Event Viewing Test Cases}{32}{subsection.5.3.9}
+\contentsline {subsubsection}{\numberline {5.3.9.a}Result}{32}{subsubsection.5.3.9.1}
+\contentsline {subsubsection}{\numberline {5.3.9.b}Code Coverage}{32}{subsubsection.5.3.9.2}
+\contentsline {subsubsection}{\numberline {5.3.9.c}Requirements Fulfilled}{32}{subsubsection.5.3.9.3}
+\contentsline {section}{\numberline {5.4}System Integration Analysis}{33}{section.5.4}
+\contentsline {section}{\numberline {5.5}Risk Analysis}{33}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Risk Mitigation}{33}{subsection.5.5.1}
+\contentsline {chapter}{\numberline {6}Prototypes}{35}{chapter.6}
+\contentsline {section}{\numberline {6.1}Sprint 1 Prototype}{35}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Deliverable}{35}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Backlog}{35}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Success/Fail}{35}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Sprint 2 Prototype}{35}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Deliverable}{35}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Backlog}{35}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Success/Fail}{35}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Sprint 3 Prototype}{36}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Deliverable}{36}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Backlog}{36}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Success/Fail}{36}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Sprint 4 Prototype}{36}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Deliverable}{36}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Backlog}{37}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Success/Fail}{37}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}Sprint 5 Prototype}{37}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Deliverable}{37}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Backlog}{37}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Success/Fail}{37}{subsection.6.5.3}
+\contentsline {chapter}{\numberline {7}User Documentation}{47}{chapter.7}
+\contentsline {section}{\numberline {7.1}User Guide}{47}{section.7.1}
+\contentsline {section}{\numberline {7.2}Database Administration Guide}{47}{section.7.2}
+\contentsline {chapter}{\numberline {8}File Index}{51}{chapter.8}
+\contentsline {section}{\numberline {8.1}File List}{51}{section.8.1}
+\contentsline {chapter}{\numberline {9}File Documentation}{53}{chapter.9}
+\contentsline {section}{\numberline {9.1}check\discretionary {-}{}{}Login.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{53}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{53}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{53}{subsection.9.1.2}
+\contentsline {subsubsection}{\numberline {9.1.2.a}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Check\discretionary {-}{}{}Login}{53}{subsubsection.9.1.2.1}
+\contentsline {subsubsection}{\numberline {9.1.2.b}ready}{53}{subsubsection.9.1.2.2}
+\contentsline {subsubsection}{\numberline {9.1.2.c}\discretionary {-}{}{}Update\discretionary {-}{}{}User\discretionary {-}{}{}Status}{54}{subsubsection.9.1.2.3}
+\contentsline {section}{\numberline {9.2}check\discretionary {-}{}{}Login.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{54}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{54}{subsection.9.2.1}
+\contentsline {section}{\numberline {9.3}config.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{54}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{54}{subsection.9.3.1}
+\contentsline {section}{\numberline {9.4}event.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{54}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{54}{subsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{55}{subsection.9.4.2}
+\contentsline {subsubsection}{\numberline {9.4.2.a}change\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Selection}{55}{subsubsection.9.4.2.1}
+\contentsline {subsubsection}{\numberline {9.4.2.b}get\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Info}{55}{subsubsection.9.4.2.2}
+\contentsline {subsubsection}{\numberline {9.4.2.c}get\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Info\discretionary {-}{}{}And\discretionary {-}{}{}Data}{55}{subsubsection.9.4.2.3}
+\contentsline {subsubsection}{\numberline {9.4.2.d}get\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Info\discretionary {-}{}{}And\discretionary {-}{}{}Event\discretionary {-}{}{}By\discretionary {-}{}{}I\discretionary {-}{}{}D}{55}{subsubsection.9.4.2.4}
+\contentsline {subsubsection}{\numberline {9.4.2.e}update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Options}{56}{subsubsection.9.4.2.5}
+\contentsline {section}{\numberline {9.5}file\discretionary {-}{}{}Upload.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{56}{section.9.5}
+\contentsline {subsection}{\numberline {9.5.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{56}{subsection.9.5.1}
+\contentsline {section}{\numberline {9.6}image.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{56}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{56}{subsection.9.6.1}
+\contentsline {section}{\numberline {9.7}index.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{56}{section.9.7}
+\contentsline {subsection}{\numberline {9.7.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{57}{subsection.9.7.1}
+\contentsline {subsection}{\numberline {9.7.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{57}{subsection.9.7.2}
+\contentsline {subsubsection}{\numberline {9.7.2.a}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Change\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Selection}{57}{subsubsection.9.7.2.1}
+\contentsline {subsubsection}{\numberline {9.7.2.b}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Options}{58}{subsubsection.9.7.2.2}
+\contentsline {subsubsection}{\numberline {9.7.2.c}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Table\discretionary {-}{}{}And\discretionary {-}{}{}Map}{58}{subsubsection.9.7.2.3}
+\contentsline {subsubsection}{\numberline {9.7.2.d}ready}{58}{subsubsection.9.7.2.4}
+\contentsline {subsubsection}{\numberline {9.7.2.e}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Image\discretionary {-}{}{}Carousel}{58}{subsubsection.9.7.2.5}
+\contentsline {subsubsection}{\numberline {9.7.2.f}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Map}{58}{subsubsection.9.7.2.6}
+\contentsline {subsubsection}{\numberline {9.7.2.g}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Options}{58}{subsubsection.9.7.2.7}
+\contentsline {subsubsection}{\numberline {9.7.2.h}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Table}{59}{subsubsection.9.7.2.8}
+\contentsline {subsection}{\numberline {9.7.3}\discretionary {-}{}{}Variable \discretionary {-}{}{}Documentation}{59}{subsection.9.7.3}
+\contentsline {subsubsection}{\numberline {9.7.3.a}map}{59}{subsubsection.9.7.3.1}
+\contentsline {section}{\numberline {9.8}login.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{59}{section.9.8}
+\contentsline {subsection}{\numberline {9.8.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{59}{subsection.9.8.1}
+\contentsline {subsection}{\numberline {9.8.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{59}{subsection.9.8.2}
+\contentsline {subsubsection}{\numberline {9.8.2.a}\discretionary {-}{}{}On\discretionary {-}{}{}Login\discretionary {-}{}{}Success}{59}{subsubsection.9.8.2.1}
+\contentsline {subsubsection}{\numberline {9.8.2.b}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Check\discretionary {-}{}{}Login\discretionary {-}{}{}Status}{59}{subsubsection.9.8.2.2}
+\contentsline {subsubsection}{\numberline {9.8.2.c}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Login\discretionary {-}{}{}User}{60}{subsubsection.9.8.2.3}
+\contentsline {subsubsection}{\numberline {9.8.2.d}ready}{60}{subsubsection.9.8.2.4}
+\contentsline {section}{\numberline {9.9}login.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{60}{section.9.9}
+\contentsline {subsection}{\numberline {9.9.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{60}{subsection.9.9.1}
+\contentsline {subsection}{\numberline {9.9.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{60}{subsection.9.9.2}
+\contentsline {subsubsection}{\numberline {9.9.2.a}validate\discretionary {-}{}{}User}{60}{subsubsection.9.9.2.1}
+\contentsline {section}{\numberline {9.10}register.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{60}{section.9.10}
+\contentsline {subsection}{\numberline {9.10.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{61}{subsection.9.10.1}
+\contentsline {subsection}{\numberline {9.10.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{61}{subsection.9.10.2}
+\contentsline {subsubsection}{\numberline {9.10.2.a}\discretionary {-}{}{}On\discretionary {-}{}{}Register\discretionary {-}{}{}Success}{61}{subsubsection.9.10.2.1}
+\contentsline {subsubsection}{\numberline {9.10.2.b}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Register\discretionary {-}{}{}User}{61}{subsubsection.9.10.2.2}
+\contentsline {subsubsection}{\numberline {9.10.2.c}ready}{61}{subsubsection.9.10.2.3}
+\contentsline {section}{\numberline {9.11}register.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{61}{section.9.11}
+\contentsline {subsection}{\numberline {9.11.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{61}{subsection.9.11.1}
+\contentsline {subsection}{\numberline {9.11.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{62}{subsection.9.11.2}
+\contentsline {subsubsection}{\numberline {9.11.2.a}register\discretionary {-}{}{}User}{62}{subsubsection.9.11.2.1}
+\contentsline {section}{\numberline {9.12}report.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{62}{section.9.12}
+\contentsline {subsection}{\numberline {9.12.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{62}{subsection.9.12.1}
+\contentsline {subsection}{\numberline {9.12.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{63}{subsection.9.12.2}
+\contentsline {subsubsection}{\numberline {9.12.2.a}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Change\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Selection}{63}{subsubsection.9.12.2.1}
+\contentsline {subsubsection}{\numberline {9.12.2.b}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Submit\discretionary {-}{}{}Event\discretionary {-}{}{}Report}{63}{subsubsection.9.12.2.2}
+\contentsline {subsubsection}{\numberline {9.12.2.c}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Options}{63}{subsubsection.9.12.2.3}
+\contentsline {subsubsection}{\numberline {9.12.2.d}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Update\discretionary {-}{}{}Report\discretionary {-}{}{}Fields}{63}{subsubsection.9.12.2.4}
+\contentsline {subsubsection}{\numberline {9.12.2.e}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Upload\discretionary {-}{}{}Photos}{63}{subsubsection.9.12.2.5}
+\contentsline {subsubsection}{\numberline {9.12.2.f}ready}{63}{subsubsection.9.12.2.6}
+\contentsline {subsubsection}{\numberline {9.12.2.g}\discretionary {-}{}{}Update\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Options}{64}{subsubsection.9.12.2.7}
+\contentsline {subsubsection}{\numberline {9.12.2.h}\discretionary {-}{}{}Update\discretionary {-}{}{}Report\discretionary {-}{}{}Fields}{64}{subsubsection.9.12.2.8}
+\contentsline {subsection}{\numberline {9.12.3}\discretionary {-}{}{}Variable \discretionary {-}{}{}Documentation}{64}{subsection.9.12.3}
+\contentsline {subsubsection}{\numberline {9.12.3.a}event\discretionary {-}{}{}\_\discretionary {-}{}{}set\discretionary {-}{}{}\_\discretionary {-}{}{}fields}{64}{subsubsection.9.12.3.1}
+\contentsline {subsubsection}{\numberline {9.12.3.b}lat}{64}{subsubsection.9.12.3.2}
+\contentsline {subsubsection}{\numberline {9.12.3.c}lon}{64}{subsubsection.9.12.3.3}
+\contentsline {subsubsection}{\numberline {9.12.3.d}picture\discretionary {-}{}{}\_\discretionary {-}{}{}id}{64}{subsubsection.9.12.3.4}
+\contentsline {section}{\numberline {9.13}report.\discretionary {-}{}{}php \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{64}{section.9.13}
+\contentsline {subsection}{\numberline {9.13.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{64}{subsection.9.13.1}
+\contentsline {section}{\numberline {9.14}report\discretionary {-}{}{}Map\discretionary {-}{}{}Leaflet.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{64}{section.9.14}
+\contentsline {subsection}{\numberline {9.14.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{65}{subsection.9.14.1}
+\contentsline {subsection}{\numberline {9.14.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{65}{subsection.9.14.2}
+\contentsline {subsubsection}{\numberline {9.14.2.a}add\discretionary {-}{}{}Marker}{65}{subsubsection.9.14.2.1}
+\contentsline {subsubsection}{\numberline {9.14.2.b}initmap}{65}{subsubsection.9.14.2.2}
+\contentsline {subsubsection}{\numberline {9.14.2.c}on\discretionary {-}{}{}Change\discretionary {-}{}{}Lat\discretionary {-}{}{}Long}{65}{subsubsection.9.14.2.3}
+\contentsline {subsubsection}{\numberline {9.14.2.d}on\discretionary {-}{}{}Map\discretionary {-}{}{}Click}{65}{subsubsection.9.14.2.4}
+\contentsline {subsection}{\numberline {9.14.3}\discretionary {-}{}{}Variable \discretionary {-}{}{}Documentation}{66}{subsection.9.14.3}
+\contentsline {subsubsection}{\numberline {9.14.3.a}map}{66}{subsubsection.9.14.3.1}
+\contentsline {subsubsection}{\numberline {9.14.3.b}marker}{66}{subsubsection.9.14.3.2}
+\contentsline {subsubsection}{\numberline {9.14.3.c}popup}{66}{subsubsection.9.14.3.3}
+\contentsline {section}{\numberline {9.15}view\discretionary {-}{}{}Event.\discretionary {-}{}{}js \discretionary {-}{}{}File \discretionary {-}{}{}Reference}{66}{section.9.15}
+\contentsline {subsection}{\numberline {9.15.1}\discretionary {-}{}{}Detailed \discretionary {-}{}{}Description}{66}{subsection.9.15.1}
+\contentsline {subsection}{\numberline {9.15.2}\discretionary {-}{}{}Function \discretionary {-}{}{}Documentation}{66}{subsection.9.15.2}
+\contentsline {subsubsection}{\numberline {9.15.2.a}\discretionary {-}{}{}Display\discretionary {-}{}{}Event}{66}{subsubsection.9.15.2.1}
+\contentsline {subsubsection}{\numberline {9.15.2.b}\discretionary {-}{}{}P\discretionary {-}{}{}O\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Get\discretionary {-}{}{}Event\discretionary {-}{}{}Set\discretionary {-}{}{}Info\discretionary {-}{}{}And\discretionary {-}{}{}Event\discretionary {-}{}{}By\discretionary {-}{}{}I\discretionary {-}{}{}D}{66}{subsubsection.9.15.2.2}
+\contentsline {subsubsection}{\numberline {9.15.2.c}ready}{66}{subsubsection.9.15.2.3}
+\contentsline {chapter}{Software Agreement}{SA-1}{chapter.10}
 \contentsline {chapter}{\numberline {A}Project Revisions}{A-1}{appendix.A}
 \contentsline {section}{\numberline {1}Overview and Concept of Operations}{A-1}{section.A.1}
 \contentsline {subsection}{\numberline {1.1}Team Members and Team Name}{A-1}{subsection.A.1.1}
@@ -238,59 +270,60 @@
 \contentsline {subsection}{\numberline {3.1}Team Member's Roles}{A-3}{subsection.A.3.1}
 \contentsline {subsection}{\numberline {3.2}Management or Instructor (Scrum Master)}{A-3}{subsection.A.3.2}
 \contentsline {subsection}{\numberline {3.3}Developers --Testers}{A-3}{subsection.A.3.3}
-\contentsline {chapter}{\numberline {B}Product Description}{B-1}{appendix.B}
-\contentsline {section}{\numberline {1}Project Title}{B-1}{section.B.1}
-\contentsline {section}{\numberline {2}Proposed/Advised by}{B-1}{section.B.2}
-\contentsline {section}{\numberline {3}Project Description}{B-1}{section.B.3}
-\contentsline {section}{\numberline {4}Useful Links}{B-1}{section.B.4}
-\contentsline {section}{\numberline {5}Project Duration}{B-2}{section.B.5}
-\contentsline {section}{\numberline {6}Technical Areas Encompassed}{B-2}{section.B.6}
-\contentsline {section}{\numberline {7}Number of Students/Disciplines required}{B-2}{section.B.7}
-\contentsline {chapter}{\numberline {C}Sprint Reports}{C-1}{appendix.C}
-\contentsline {section}{\numberline {1}Sprint Report \#1}{C-1}{section.C.1}
-\contentsline {subsection}{\numberline {1.1}Team Members}{C-1}{subsection.C.1.1}
-\contentsline {subsection}{\numberline {1.2}Project Sponsors}{C-1}{subsection.C.1.2}
-\contentsline {subsection}{\numberline {1.3}Sponsor/User Description}{C-1}{subsection.C.1.3}
-\contentsline {subsubsection}{\numberline {1.3.a}User Description}{C-1}{subsubsection.C.1.3.1}
-\contentsline {subsubsection}{\numberline {1.3.b}Project Goal}{C-1}{subsubsection.C.1.3.2}
-\contentsline {subsubsection}{\numberline {1.3.c}User Needs}{C-1}{subsubsection.C.1.3.3}
-\contentsline {subsection}{\numberline {1.4}Project Overview}{C-2}{subsection.C.1.4}
-\contentsline {subsection}{\numberline {1.5}Project Environment}{C-2}{subsection.C.1.5}
-\contentsline {subsubsection}{\numberline {1.5.a}Project Boundaries}{C-2}{subsubsection.C.1.5.1}
-\contentsline {subsubsection}{\numberline {1.5.b}Project Context}{C-2}{subsubsection.C.1.5.2}
-\contentsline {subsubsection}{\numberline {1.5.c}Technical Environment}{C-2}{subsubsection.C.1.5.3}
-\contentsline {subsubsection}{\numberline {1.5.d}Current systems overview}{C-2}{subsubsection.C.1.5.4}
-\contentsline {subsection}{\numberline {1.6}Project Deliverables}{C-2}{subsection.C.1.6}
-\contentsline {subsection}{\numberline {1.7}Backlog}{C-2}{subsection.C.1.7}
-\contentsline {subsection}{\numberline {1.8}Potential Issues}{C-2}{subsection.C.1.8}
-\contentsline {section}{\numberline {2}Sprint Report \#2}{C-3}{section.C.2}
-\contentsline {subsection}{\numberline {2.1}Backlog Completed}{C-3}{subsection.C.2.1}
-\contentsline {subsection}{\numberline {2.2}Prototype Features}{C-3}{subsection.C.2.2}
-\contentsline {subsection}{\numberline {2.3}Meetings}{C-3}{subsection.C.2.3}
-\contentsline {subsection}{\numberline {2.4}Client Communication}{C-3}{subsection.C.2.4}
-\contentsline {subsection}{\numberline {2.5}Sprint 3 Backlog}{C-3}{subsection.C.2.5}
-\contentsline {section}{\numberline {3}Sprint Report \#3}{C-3}{section.C.3}
-\contentsline {subsection}{\numberline {3.1}Backlog Completed}{C-3}{subsection.C.3.1}
-\contentsline {subsection}{\numberline {3.2}Prototype Features}{C-4}{subsection.C.3.2}
-\contentsline {subsection}{\numberline {3.3}Meetings}{C-4}{subsection.C.3.3}
-\contentsline {subsection}{\numberline {3.4}Client Communication}{C-4}{subsection.C.3.4}
-\contentsline {subsection}{\numberline {3.5}Sprint 4 Backlog}{C-4}{subsection.C.3.5}
-\contentsline {subsection}{\numberline {3.6}Sprint 3 Issues}{C-4}{subsection.C.3.6}
-\contentsline {section}{\numberline {4}Sprint Report \#4}{C-4}{section.C.4}
-\contentsline {subsection}{\numberline {4.1}Backlog Completed}{C-4}{subsection.C.4.1}
-\contentsline {subsection}{\numberline {4.2}Prototype Features}{C-4}{subsection.C.4.2}
-\contentsline {subsection}{\numberline {4.3}Client Communication}{C-4}{subsection.C.4.3}
-\contentsline {subsection}{\numberline {4.4}Revised Deliverables}{C-5}{subsection.C.4.4}
-\contentsline {subsection}{\numberline {4.5}Sprint 5 Backlog}{C-5}{subsection.C.4.5}
-\contentsline {subsection}{\numberline {4.6}Sprint 6 Backlog}{C-5}{subsection.C.4.6}
-\contentsline {subsection}{\numberline {4.7}Sprint 4 Successes/Issues}{C-5}{subsection.C.4.7}
-\contentsline {section}{\numberline {5}Sprint Report \#5}{C-5}{section.C.5}
-\contentsline {subsection}{\numberline {5.1}Backlog Completed}{C-5}{subsection.C.5.1}
-\contentsline {subsection}{\numberline {5.2}Prototype Features}{C-6}{subsection.C.5.2}
-\contentsline {subsection}{\numberline {5.3}Sprint 6 Backlog}{C-6}{subsection.C.5.3}
-\contentsline {subsection}{\numberline {5.4}Sprint 5 Successes/Issues}{C-6}{subsection.C.5.4}
-\contentsline {chapter}{\numberline {D}Industrial Experience and Resumes}{D-1}{appendix.D}
-\contentsline {section}{\numberline {1}ABET: Industrial Experience Reports}{D-1}{section.D.1}
-\contentsline {subsection}{\numberline {1.1}Hannah Aker}{D-1}{subsection.D.1.1}
-\contentsline {section}{\numberline {2}Resumes}{D-1}{section.D.2}
-\contentsline {chapter}{\numberline {E}Acknowledgment}{E-1}{appendix.E}
+\contentsline {chapter}{\numberline {B}Future Work}{B-1}{appendix.B}
+\contentsline {chapter}{\numberline {C}Product Description}{C-1}{appendix.C}
+\contentsline {section}{\numberline {1}Project Title}{C-1}{section.C.1}
+\contentsline {section}{\numberline {2}Proposed/Advised by}{C-1}{section.C.2}
+\contentsline {section}{\numberline {3}Project Description}{C-1}{section.C.3}
+\contentsline {section}{\numberline {4}Useful Links}{C-1}{section.C.4}
+\contentsline {section}{\numberline {5}Project Duration}{C-2}{section.C.5}
+\contentsline {section}{\numberline {6}Technical Areas Encompassed}{C-2}{section.C.6}
+\contentsline {section}{\numberline {7}Number of Students/Disciplines required}{C-2}{section.C.7}
+\contentsline {chapter}{\numberline {D}Sprint Reports}{D-1}{appendix.D}
+\contentsline {section}{\numberline {1}Sprint Report \#1}{D-1}{section.D.1}
+\contentsline {subsection}{\numberline {1.1}Team Members}{D-1}{subsection.D.1.1}
+\contentsline {subsection}{\numberline {1.2}Project Sponsors}{D-1}{subsection.D.1.2}
+\contentsline {subsection}{\numberline {1.3}Sponsor/User Description}{D-1}{subsection.D.1.3}
+\contentsline {subsubsection}{\numberline {1.3.a}User Description}{D-1}{subsubsection.D.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.b}Project Goal}{D-1}{subsubsection.D.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.c}User Needs}{D-1}{subsubsection.D.1.3.3}
+\contentsline {subsection}{\numberline {1.4}Project Overview}{D-2}{subsection.D.1.4}
+\contentsline {subsection}{\numberline {1.5}Project Environment}{D-2}{subsection.D.1.5}
+\contentsline {subsubsection}{\numberline {1.5.a}Project Boundaries}{D-2}{subsubsection.D.1.5.1}
+\contentsline {subsubsection}{\numberline {1.5.b}Project Context}{D-2}{subsubsection.D.1.5.2}
+\contentsline {subsubsection}{\numberline {1.5.c}Technical Environment}{D-2}{subsubsection.D.1.5.3}
+\contentsline {subsubsection}{\numberline {1.5.d}Current systems overview}{D-2}{subsubsection.D.1.5.4}
+\contentsline {subsection}{\numberline {1.6}Project Deliverables}{D-2}{subsection.D.1.6}
+\contentsline {subsection}{\numberline {1.7}Backlog}{D-2}{subsection.D.1.7}
+\contentsline {subsection}{\numberline {1.8}Potential Issues}{D-2}{subsection.D.1.8}
+\contentsline {section}{\numberline {2}Sprint Report \#2}{D-3}{section.D.2}
+\contentsline {subsection}{\numberline {2.1}Backlog Completed}{D-3}{subsection.D.2.1}
+\contentsline {subsection}{\numberline {2.2}Prototype Features}{D-3}{subsection.D.2.2}
+\contentsline {subsection}{\numberline {2.3}Meetings}{D-3}{subsection.D.2.3}
+\contentsline {subsection}{\numberline {2.4}Client Communication}{D-3}{subsection.D.2.4}
+\contentsline {subsection}{\numberline {2.5}Sprint 3 Backlog}{D-3}{subsection.D.2.5}
+\contentsline {section}{\numberline {3}Sprint Report \#3}{D-3}{section.D.3}
+\contentsline {subsection}{\numberline {3.1}Backlog Completed}{D-3}{subsection.D.3.1}
+\contentsline {subsection}{\numberline {3.2}Prototype Features}{D-4}{subsection.D.3.2}
+\contentsline {subsection}{\numberline {3.3}Meetings}{D-4}{subsection.D.3.3}
+\contentsline {subsection}{\numberline {3.4}Client Communication}{D-4}{subsection.D.3.4}
+\contentsline {subsection}{\numberline {3.5}Sprint 4 Backlog}{D-4}{subsection.D.3.5}
+\contentsline {subsection}{\numberline {3.6}Sprint 3 Issues}{D-4}{subsection.D.3.6}
+\contentsline {section}{\numberline {4}Sprint Report \#4}{D-4}{section.D.4}
+\contentsline {subsection}{\numberline {4.1}Backlog Completed}{D-4}{subsection.D.4.1}
+\contentsline {subsection}{\numberline {4.2}Prototype Features}{D-4}{subsection.D.4.2}
+\contentsline {subsection}{\numberline {4.3}Client Communication}{D-4}{subsection.D.4.3}
+\contentsline {subsection}{\numberline {4.4}Revised Deliverables}{D-5}{subsection.D.4.4}
+\contentsline {subsection}{\numberline {4.5}Sprint 5 Backlog}{D-5}{subsection.D.4.5}
+\contentsline {subsection}{\numberline {4.6}Sprint 6 Backlog}{D-5}{subsection.D.4.6}
+\contentsline {subsection}{\numberline {4.7}Sprint 4 Successes/Issues}{D-5}{subsection.D.4.7}
+\contentsline {section}{\numberline {5}Sprint Report \#5}{D-5}{section.D.5}
+\contentsline {subsection}{\numberline {5.1}Backlog Completed}{D-5}{subsection.D.5.1}
+\contentsline {subsection}{\numberline {5.2}Prototype Features}{D-6}{subsection.D.5.2}
+\contentsline {subsection}{\numberline {5.3}Sprint 6 Backlog}{D-6}{subsection.D.5.3}
+\contentsline {subsection}{\numberline {5.4}Sprint 5 Successes/Issues}{D-6}{subsection.D.5.4}
+\contentsline {chapter}{\numberline {E}Industrial Experience and Resumes}{E-1}{appendix.E}
+\contentsline {section}{\numberline {1}ABET: Industrial Experience Reports}{E-1}{section.E.1}
+\contentsline {subsection}{\numberline {1.1}Hannah Aker}{E-1}{subsection.E.1.1}
+\contentsline {section}{\numberline {2}Resumes}{E-1}{section.E.2}
+\contentsline {chapter}{\numberline {F}Acknowledgment}{F-1}{appendix.F}

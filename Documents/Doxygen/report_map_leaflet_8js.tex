@@ -14,7 +14,9 @@ function \hyperlink{report_map_leaflet_8js_abcf96615dae15880bbc5e29ee0395df8}{in
 function \hyperlink{report_map_leaflet_8js_a7f405e083733a4bf6448065159675dd2}{add\-Marker} (\hyperlink{report_8js_ac880e2c3a982ba45b92e622011ba7482}{lat}, \hyperlink{report_8js_a56ab14d836de4c1295c941ddd682e86b}{lon}, title, id)
 \begin{DoxyCompactList}\small\item\em \-Adds a marker to the map. \end{DoxyCompactList}\item 
 function \hyperlink{report_map_leaflet_8js_a2e51fc054b9efb976d592be0293e94ec}{on\-Map\-Click} (e)
-\begin{DoxyCompactList}\small\item\em \-Map click event handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \-Map click event handler. \end{DoxyCompactList}\item 
+function \hyperlink{report_map_leaflet_8js_a4f4f49374233a0ecfbae0c1db32ad110}{on\-Change\-Lat\-Long} (argument)
+\begin{DoxyCompactList}\small\item\em \-Change in latitude and longitude event handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{\-Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -31,10 +33,6 @@ var \hyperlink{report_map_leaflet_8js_a156398e72764a55c3a769880d1506616}{marker}
 
 \-The map, popup, and marker global variables store a reference to the map and all its markers being displayed. 
 
-\-Definition in file \hyperlink{report_map_leaflet_8js_source}{report\-Map\-Leaflet.\-js}.
-
-
-
 \subsection{\-Function \-Documentation}
 \hypertarget{report_map_leaflet_8js_a7f405e083733a4bf6448065159675dd2}{\index{report\-Map\-Leaflet.\-js@{report\-Map\-Leaflet.\-js}!add\-Marker@{add\-Marker}}
 \index{add\-Marker@{add\-Marker}!reportMapLeaflet.js@{report\-Map\-Leaflet.\-js}}
@@ -50,11 +48,7 @@ var \hyperlink{report_map_leaflet_8js_a156398e72764a55c3a769880d1506616}{marker}
 
 \-Adds a marker to the map. 
 
-\-This function adds a marker to the map, and initializes the marker's event handler functions. 
-
-\-Definition at line 42 of file report\-Map\-Leaflet.\-js.
-
-\hypertarget{report_map_leaflet_8js_abcf96615dae15880bbc5e29ee0395df8}{\index{report\-Map\-Leaflet.\-js@{report\-Map\-Leaflet.\-js}!initmap@{initmap}}
+\-This function adds a marker to the map, and initializes the marker's event handler functions. \hypertarget{report_map_leaflet_8js_abcf96615dae15880bbc5e29ee0395df8}{\index{report\-Map\-Leaflet.\-js@{report\-Map\-Leaflet.\-js}!initmap@{initmap}}
 \index{initmap@{initmap}!reportMapLeaflet.js@{report\-Map\-Leaflet.\-js}}
 \subsubsection[{initmap}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf initmap} (
 \begin{DoxyParamCaption}
@@ -65,11 +59,18 @@ var \hyperlink{report_map_leaflet_8js_a156398e72764a55c3a769880d1506616}{marker}
 
 \-Creates a new instance of the map leaflet, setting parameters for a simplified display. 
 
-\-The map is then initialized, to be focused on \-Rapid \-City, \-S\-D, with information regarding the map's \-A\-P\-I origin. 
+\-The map is then initialized, to be focused on \-Rapid \-City, \-S\-D, with information regarding the map's \-A\-P\-I origin. \hypertarget{report_map_leaflet_8js_a4f4f49374233a0ecfbae0c1db32ad110}{\index{report\-Map\-Leaflet.\-js@{report\-Map\-Leaflet.\-js}!on\-Change\-Lat\-Long@{on\-Change\-Lat\-Long}}
+\index{on\-Change\-Lat\-Long@{on\-Change\-Lat\-Long}!reportMapLeaflet.js@{report\-Map\-Leaflet.\-js}}
+\subsubsection[{on\-Change\-Lat\-Long}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf on\-Change\-Lat\-Long} (
+\begin{DoxyParamCaption}
+\item[{}]{argument}
+\end{DoxyParamCaption}
+)}}\label{report_map_leaflet_8js_a4f4f49374233a0ecfbae0c1db32ad110}
 
-\-Definition at line 19 of file report\-Map\-Leaflet.\-js.
 
-\hypertarget{report_map_leaflet_8js_a2e51fc054b9efb976d592be0293e94ec}{\index{report\-Map\-Leaflet.\-js@{report\-Map\-Leaflet.\-js}!on\-Map\-Click@{on\-Map\-Click}}
+\-Change in latitude and longitude event handler. 
+
+\-This function defines what is done when the user changes the latitude or longitude, and adds the latitude and longitude of the marker to the map. \hypertarget{report_map_leaflet_8js_a2e51fc054b9efb976d592be0293e94ec}{\index{report\-Map\-Leaflet.\-js@{report\-Map\-Leaflet.\-js}!on\-Map\-Click@{on\-Map\-Click}}
 \index{on\-Map\-Click@{on\-Map\-Click}!reportMapLeaflet.js@{report\-Map\-Leaflet.\-js}}
 \subsubsection[{on\-Map\-Click}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf on\-Map\-Click} (
 \begin{DoxyParamCaption}
@@ -82,29 +83,13 @@ var \hyperlink{report_map_leaflet_8js_a156398e72764a55c3a769880d1506616}{marker}
 
 \-This function defines what is done when the user clicks on the map, and adds the latitude and longitude of the marker to the text boxes associated with the map on the report screen. 
 
-\-Definition at line 61 of file report\-Map\-Leaflet.\-js.
-
-
-
 \subsection{\-Variable \-Documentation}
 \hypertarget{report_map_leaflet_8js_a48e18769649a3ca5bab0fafdec44cb15}{\index{report\-Map\-Leaflet.\-js@{report\-Map\-Leaflet.\-js}!map@{map}}
 \index{map@{map}!reportMapLeaflet.js@{report\-Map\-Leaflet.\-js}}
 \subsubsection[{map}]{\setlength{\rightskip}{0pt plus 5cm}var {\bf map}}}\label{report_map_leaflet_8js_a48e18769649a3ca5bab0fafdec44cb15}
-
-
-\-Definition at line 10 of file report\-Map\-Leaflet.\-js.
-
 \hypertarget{report_map_leaflet_8js_a156398e72764a55c3a769880d1506616}{\index{report\-Map\-Leaflet.\-js@{report\-Map\-Leaflet.\-js}!marker@{marker}}
 \index{marker@{marker}!reportMapLeaflet.js@{report\-Map\-Leaflet.\-js}}
 \subsubsection[{marker}]{\setlength{\rightskip}{0pt plus 5cm}var {\bf marker}}}\label{report_map_leaflet_8js_a156398e72764a55c3a769880d1506616}
-
-
-\-Definition at line 12 of file report\-Map\-Leaflet.\-js.
-
 \hypertarget{report_map_leaflet_8js_a4d897f123152cdba03a97a356e3ff6ef}{\index{report\-Map\-Leaflet.\-js@{report\-Map\-Leaflet.\-js}!popup@{popup}}
 \index{popup@{popup}!reportMapLeaflet.js@{report\-Map\-Leaflet.\-js}}
 \subsubsection[{popup}]{\setlength{\rightskip}{0pt plus 5cm}var {\bf popup} = {\bf \-L.\-popup}()}}\label{report_map_leaflet_8js_a4d897f123152cdba03a97a356e3ff6ef}
-
-
-\-Definition at line 11 of file report\-Map\-Leaflet.\-js.
-

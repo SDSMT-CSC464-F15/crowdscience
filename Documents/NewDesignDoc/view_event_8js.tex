@@ -20,10 +20,6 @@ function \hyperlink{view_event_8js_a7bc7c508fde45e7bb98d6a5f18d1929b}{\-Display\
 \subsection{\-Detailed \-Description}
 \-Contains functions for event set interaction on the index page. \-This file contains .\hyperlink{check_login_8js_a953490e432eb41af978a831955667212}{ready()}, which sets the function to be called when the document, the \-H\-T\-M\-L loading the \-Java\-Script, has been loaded and is ready to run; and several functions for interaction with the event set selection and data. \-The .\hyperlink{check_login_8js_a953490e432eb41af978a831955667212}{ready()} function calls the \hyperlink{view_event_8js_af53af8421c368d1008fc3c00e2a34158}{\-P\-O\-S\-T\-\_\-\-Get\-Event\-Set\-Info\-And\-Event\-By\-I\-D()} function. 
 
-\-Definition in file \hyperlink{view_event_8js_source}{view\-Event.\-js}.
-
-
-
 \subsection{\-Function \-Documentation}
 \hypertarget{view_event_8js_a7bc7c508fde45e7bb98d6a5f18d1929b}{\index{view\-Event.\-js@{view\-Event.\-js}!\-Display\-Event@{\-Display\-Event}}
 \index{\-Display\-Event@{\-Display\-Event}!viewEvent.js@{view\-Event.\-js}}
@@ -36,11 +32,7 @@ function \hyperlink{view_event_8js_a7bc7c508fde45e7bb98d6a5f18d1929b}{\-Display\
 
 \-Displays individual event data retrieved from database. 
 
-\-This function first clears the event data area of previous data, and then fills the area with the event data. \-The \-User and \-Location are added first to the event data, then the data details are looped through. \-For each event detail, if the detail type is selection, the database text is replaced with the selection's display name. \-Otherwise, the detail data is added as it appears in the database. \-The event details are then added to the \-H\-T\-M\-L. \-If there are images associated with the record, they are added to the image carousel on the page. 
-
-\-Definition at line 50 of file view\-Event.\-js.
-
-\hypertarget{view_event_8js_af53af8421c368d1008fc3c00e2a34158}{\index{view\-Event.\-js@{view\-Event.\-js}!\-P\-O\-S\-T\-\_\-\-Get\-Event\-Set\-Info\-And\-Event\-By\-I\-D@{\-P\-O\-S\-T\-\_\-\-Get\-Event\-Set\-Info\-And\-Event\-By\-I\-D}}
+\-This function first clears the event data area of previous data, and then fills the area with the event data. \-The \-User and \-Location are added first to the event data, then the data details are looped through. \-For each event detail, if the detail type is selection, the database text is replaced with the selection's display name. \-Otherwise, the detail data is added as it appears in the database. \-The event details are then added to the \-H\-T\-M\-L. \-If there are images associated with the record, they are added to the image carousel on the page. \hypertarget{view_event_8js_af53af8421c368d1008fc3c00e2a34158}{\index{view\-Event.\-js@{view\-Event.\-js}!\-P\-O\-S\-T\-\_\-\-Get\-Event\-Set\-Info\-And\-Event\-By\-I\-D@{\-P\-O\-S\-T\-\_\-\-Get\-Event\-Set\-Info\-And\-Event\-By\-I\-D}}
 \index{\-P\-O\-S\-T\-\_\-\-Get\-Event\-Set\-Info\-And\-Event\-By\-I\-D@{\-P\-O\-S\-T\-\_\-\-Get\-Event\-Set\-Info\-And\-Event\-By\-I\-D}!viewEvent.js@{view\-Event.\-js}}
 \subsubsection[{\-P\-O\-S\-T\-\_\-\-Get\-Event\-Set\-Info\-And\-Event\-By\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-P\-O\-S\-T\-\_\-\-Get\-Event\-Set\-Info\-And\-Event\-By\-I\-D} (
 \begin{DoxyParamCaption}
@@ -51,11 +43,7 @@ function \hyperlink{view_event_8js_a7bc7c508fde45e7bb98d6a5f18d1929b}{\-Display\
 
 \-Retrieves the individual event data from the database. 
 
-\-This function posts a request containing the \-I\-D of an individual event to view to \hyperlink{event_8php}{event.\-php} to retrieve the event being viewed. \-The \-Mongo \-I\-D of the event is parsed from the \-U\-R\-L of the page. \-When the post to \hyperlink{event_8php}{event.\-php} is complete, the function checks the status code. \-If the status code is 0, the post completed successfully, and calls \hyperlink{view_event_8js_a7bc7c508fde45e7bb98d6a5f18d1929b}{\-Display\-Event()} with the data returned from the post to \hyperlink{event_8php}{event.\-php}. \-If the status code returned from the post is not 0, then the status code and error message are alerted to the user. \-If the post to \hyperlink{event_8php}{event.\-php} fails, then an alert box will pop up with the status code of the failure and a brief error message. 
-
-\-Definition at line 23 of file view\-Event.\-js.
-
-\hypertarget{view_event_8js_ab06000de5715e37e594e5642fea0d419}{\index{view\-Event.\-js@{view\-Event.\-js}!ready@{ready}}
+\-This function posts a request containing the \-I\-D of an individual event to view to \hyperlink{event_8php}{event.\-php} to retrieve the event being viewed. \-The \-Mongo \-I\-D of the event is parsed from the \-U\-R\-L of the page. \-When the post to \hyperlink{event_8php}{event.\-php} is complete, the function checks the status code. \-If the status code is 0, the post completed successfully, and calls \hyperlink{view_event_8js_a7bc7c508fde45e7bb98d6a5f18d1929b}{\-Display\-Event()} with the data returned from the post to \hyperlink{event_8php}{event.\-php}. \-If the status code returned from the post is not 0, then the status code and error message are alerted to the user. \-If the post to \hyperlink{event_8php}{event.\-php} fails, then an alert box will pop up with the status code of the failure and a brief error message. \hypertarget{view_event_8js_ab06000de5715e37e594e5642fea0d419}{\index{view\-Event.\-js@{view\-Event.\-js}!ready@{ready}}
 \index{ready@{ready}!viewEvent.js@{view\-Event.\-js}}
 \subsubsection[{ready}]{\setlength{\rightskip}{0pt plus 5cm}document {\bf ready} (
 \begin{DoxyParamCaption}

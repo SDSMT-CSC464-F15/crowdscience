@@ -6,37 +6,11 @@
 \-Handles submitting a report to the database.  
 
 
-\subsection*{\-Functions}
-\begin{DoxyCompactItemize}
-\item 
-\hyperlink{report_8php_a323b955bff29c8cb6a26697f0a9f6cf0}{submit\-Event\-Report} ()
-\begin{DoxyCompactList}\small\item\em \-Submits report to the database. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{\-Detailed \-Description}
 \-Handles submitting a report to the database. \-This file establishes the connection to the database, and then verifies that the connection was successful. \-The data in the post message is retrieved and decrypted. \-The action from the post message is then used call a function to interact with the database. \-Each function will save the status code to the response, in addition to the results of the database query.
 
-\-The default action returns a status of 1, indicating that an invalid action was supplied, and a message that no action was taken. \-When the action is submiteventreport, \hyperlink{report_8php_a323b955bff29c8cb6a26697f0a9f6cf0}{submit\-Event\-Report()} is called, which retrieves the information necessary to repopulate the event set selection box.
+\-The default action returns a status of 1, indicating that an invalid action was supplied, and a message that no action was taken. \-When the action is submiteventreport, submit\-Event\-Report() is called, which retrieves the information necessary to repopulate the event set selection box.
 
 \-The response is then encoded and returned to the \-Java\-Script that posted to this file. 
-
-\-Definition in file \hyperlink{report_8php_source}{report.\-php}.
-
-
-
-\subsection{\-Function \-Documentation}
-\hypertarget{report_8php_a323b955bff29c8cb6a26697f0a9f6cf0}{\index{report.\-php@{report.\-php}!submit\-Event\-Report@{submit\-Event\-Report}}
-\index{submit\-Event\-Report@{submit\-Event\-Report}!report.php@{report.\-php}}
-\subsubsection[{submit\-Event\-Report}]{\setlength{\rightskip}{0pt plus 5cm}{\bf submit\-Event\-Report} (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{report_8php_a323b955bff29c8cb6a26697f0a9f6cf0}
-
-
-\-Submits report to the database. 
-
-\-This function retrieves the selected event set from the session data, and then creates a reference to the database table corresponding to that event set. \-Then, a reference to the table containing user information is also established. \-The report to submit is retrieved from the request data. \-The username in the session data is used to find the \-Mongo \-I\-D of the user who submitted the report. \-If the \-Mongo query to find the \-Mongo \-I\-D of the user fails, the response status is set to 1, and an error message added to the response, and the function returns. \-If there is no username stored in the session data, the user is set to anonymous. \-The coordinates of the event report are then extracted from the request data and made into an array for submitting to the database. \-The array of image id are then converted to \-Mongo \-I\-Ds. \-The date of the report is converted to a \-Mongo date. \-The various parts of the report are combined into an array and added to the database. \-If the insertion fails, the response status is set to 1, and an error message added to the response, and the function returns. 
-
-\-Definition at line 58 of file report.\-php.
-

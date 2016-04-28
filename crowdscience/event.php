@@ -44,10 +44,6 @@
 			case "geteventsetinfo":
 			$response = getEventSetInfo();
 			break;		
-			//get Event Set Data
-			case "geteventsetdata":
-			$response = getEventSetData();
-			break;
 			//get Event Set Info and Data
 			case "geteventsetinfoanddata":
 			$response = getEventSetInfoAndData();
@@ -123,9 +119,13 @@
 	/*!
 		\brief Performs the actions of both getEventSetData() and getEventSetInfo().
 		\details
-		This function combines getEventSetData() and getEventSetInfo(). This function was created to solve issues with gathering the full response returned from two separate functions and remove redundancies in the two functions when used together.
-		\sa getEventSetData()
-		\sa getEventSetInfo()
+		This function retrieves the selected event set from the request data, and a reference to the table containing event set information about all event sets is created. Then this function creates a reference to the table containing all the event set data for the selected event set, and then creates a reference to the user table. 
+		
+		The database is queried with the findOne() function to find the event set information specific to the selected event set. If the information retrieved from the database is null, the response status is set to 2, and an error message is added to the response, and the function returns. The details of this event set are added to the response, the status is set to 0, and the function returns this response. 
+		
+		The database is then queried with the find() function which returns the contents of the table of selected event set data table. The event data is then looped through. In this loop, the Mongo ID stored in the user field is replaced with the username of the associated user, the date is reformatted into a readable date, and the event report is added to the response data. If the query to retrieve the username associated with the current report fails, then the response status is set to 1, an error message is added to the response, and the function returns.  The details of this event set are added to the response, the status is set to 0, and the function returns this response. 
+		
+		This function was created to solve issues with gathering the full response returned from two separate functions and remove redundancies in the two functions when used together.
 	*/
 	function getEventSetInfoAndData()
 	{
@@ -197,45 +197,6 @@
 		return $response;
 	}
 	
-	/*!
-		\brief Retrieves all event set data for the selected event set.
-		\details
-		This function retrieves the selected event set from the request data, creates a reference to the table containing all the event set data for the selected event set, and then creates a reference to the user table. The database is then queried with the find() function which returns the contents of the table of selected event set data table. The event data is then looped through. In this loop, the Mongo ID stored in the user field is replaced with the username of the associated user, the date is reformatted into a readable date, and the event report is added to the response data. If the query to retrieve the username associated with the current report fails, then the response status is set to 1, an error message is added to the response, and the function returns.  The details of this event set are added to the response, the status is set to 0, and the function returns this response. 
-	*/
-	function getEventSetData()
-	{
-		global $db,$response,$request;
-		
-		$eventset = $request["eventsetselection"];
-		
-		$eventdata = $db->$eventset;
-		$usertable = $db->user;
-		
-		$cursor = $eventdata->find();
-		foreach ($cursor as $event) {
-			try
-			{
-				$userinfo = $usertable->findOne(array('_id' => $event['user']));
-			}
-			catch (MongoException $e)
-			{
-				$response["status"] = "1"; 
-				$response["messages"][] = "$e->getMessage()";
-				return;
-			}
-			if(!( is_null($userinfo['username'])))
-			$event['user'] = $userinfo['username'];
-			else $event['user'] = "Anonymous"; 
-			$date = $event['details']['date'];
-			$date = $date->sec;
-			$date = date("Y-m-d", $date);
-			$event['details']['date'] = $date;
-			
-			$response['eventdata'][] = $event;
-		}
-		$response["status"] = "0";
-		return $response;
-	}
 	
 	/*!
 		\brief Stores the new event set selection to session data.

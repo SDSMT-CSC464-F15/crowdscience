@@ -9,7 +9,7 @@
 \subsection*{\-Functions}
 \begin{DoxyCompactItemize}
 \item 
-document \hyperlink{register_8js_a98788110ddc2ce9407a6b9b57cb6d164}{ready} (function()\{document.\-get\-Element\-By\-Id(\char`\"{}passwordmsg\char`\"{}).style.\-display=\char`\"{}none\char`\"{};document.\-get\-Element\-By\-Id(\char`\"{}usernamemsg\char`\"{}).style.\-display=\char`\"{}none\char`\"{};\$(\char`\"{}\#register\-\_\-form\-\_\-id\char`\"{}).submit(function(event)\{event.\-prevent\-Default();if((\$(\char`\"{}\#new\-\_\-password1\char`\"{}).val())==(\$(\char`\"{}\#new\-\_\-password2\char`\"{}).val()))\{\hyperlink{register_8js_ac86cbba17a6824ce637636999566121e}{\-P\-O\-S\-T\-\_\-\-Register\-User}();\}else\{document.\-get\-Element\-By\-Id(\char`\"{}passwordmsg\char`\"{}).style.\-display=\char`\"{}\char`\"{};document.\-get\-Element\-By\-Id(\char`\"{}new\-\_\-password1\char`\"{}).value=\char`\"{}\char`\"{};document.\-get\-Element\-By\-Id(\char`\"{}new\-\_\-password2\char`\"{}).value=\char`\"{}\char`\"{};\}\});\})
+document \hyperlink{register_8js_af2e1871d4c848da85d53f6a926dae5df}{ready} (function()\{document.\-get\-Element\-By\-Id(\char`\"{}passwordmsg\char`\"{}).style.\-display=\char`\"{}none\char`\"{};document.\-get\-Element\-By\-Id(\char`\"{}usernamemsg\char`\"{}).style.\-display=\char`\"{}none\char`\"{};document.\-get\-Element\-By\-Id(\char`\"{}emailmsg\char`\"{}).style.\-display=\char`\"{}none\char`\"{};\$(\char`\"{}\#register\-\_\-form\-\_\-id\char`\"{}).submit(function(event)\{event.\-prevent\-Default();document.\-get\-Element\-By\-Id(\char`\"{}passwordmsg\char`\"{}).style.\-display=\char`\"{}none\char`\"{};document.\-get\-Element\-By\-Id(\char`\"{}usernamemsg\char`\"{}).style.\-display=\char`\"{}none\char`\"{};document.\-get\-Element\-By\-Id(\char`\"{}emailmsg\char`\"{}).style.\-display=\char`\"{}none\char`\"{};if((\$(\char`\"{}\#new\-\_\-password1\char`\"{}).val())==(\$(\char`\"{}\#new\-\_\-password2\char`\"{}).val()))\{\hyperlink{register_8js_ac86cbba17a6824ce637636999566121e}{\-P\-O\-S\-T\-\_\-\-Register\-User}();\}else\{document.\-get\-Element\-By\-Id(\char`\"{}passwordmsg\char`\"{}).style.\-display=\char`\"{}\char`\"{};document.\-get\-Element\-By\-Id(\char`\"{}new\-\_\-password1\char`\"{}).value=\char`\"{}\char`\"{};document.\-get\-Element\-By\-Id(\char`\"{}new\-\_\-password2\char`\"{}).value=\char`\"{}\char`\"{};\}\});\})
 \begin{DoxyCompactList}\small\item\em \-Clears error messages and then generates necessary event handlers. \end{DoxyCompactList}\item 
 function \hyperlink{register_8js_ac86cbba17a6824ce637636999566121e}{\-P\-O\-S\-T\-\_\-\-Register\-User} ()
 \begin{DoxyCompactList}\small\item\em \-Attempts to register the user. \end{DoxyCompactList}\item 
@@ -19,10 +19,6 @@ function \hyperlink{register_8js_ab8be8844087e3e46989aed21c09a157a}{\-On\-Regist
 
 \subsection{\-Detailed \-Description}
 \-Contains functions for registering a new user. \-This file contains .\hyperlink{check_login_8js_a953490e432eb41af978a831955667212}{ready()}, which sets the function to be called when the document, the \-H\-T\-M\-L loading the \-Java\-Script, has been loaded and is ready to run; and three functions\-: \hyperlink{register_8js_ac86cbba17a6824ce637636999566121e}{\-P\-O\-S\-T\-\_\-\-Register\-User()} and \hyperlink{register_8js_ab8be8844087e3e46989aed21c09a157a}{\-On\-Register\-Success()}. \-The .\hyperlink{check_login_8js_a953490e432eb41af978a831955667212}{ready()} function clears error messages and then generates necessary event handlers. \-The \hyperlink{register_8js_ac86cbba17a6824ce637636999566121e}{\-P\-O\-S\-T\-\_\-\-Register\-User()} function posts a request to register to attempt to register a user. \-If the post completes successfully, the \hyperlink{register_8js_ab8be8844087e3e46989aed21c09a157a}{\-On\-Register\-Success()} function is called. \-The \hyperlink{register_8js_ab8be8844087e3e46989aed21c09a157a}{\-On\-Register\-Success()} function updates the \-H\-T\-M\-L according to whether the registration was successful or not. 
-
-\-Definition in file \hyperlink{register_8js_source}{register.\-js}.
-
-
 
 \subsection{\-Function \-Documentation}
 \hypertarget{register_8js_ab8be8844087e3e46989aed21c09a157a}{\index{register.\-js@{register.\-js}!\-On\-Register\-Success@{\-On\-Register\-Success}}
@@ -36,11 +32,7 @@ function \hyperlink{register_8js_ab8be8844087e3e46989aed21c09a157a}{\-On\-Regist
 
 \-Handles response from user's register attempt. 
 
-\-If the post to \hyperlink{register_8php}{register.\-php} returned a status of 1, the register attempt was unsuccessful, and the error message corresponding to the problem with registering is displayed. \-Otherwise, the attempt was successful, and the user is redirected to the index page. 
-
-\-Definition at line 80 of file register.\-js.
-
-\hypertarget{register_8js_ac86cbba17a6824ce637636999566121e}{\index{register.\-js@{register.\-js}!\-P\-O\-S\-T\-\_\-\-Register\-User@{\-P\-O\-S\-T\-\_\-\-Register\-User}}
+\-If the post to \hyperlink{register_8php}{register.\-php} returned a status of 1, the register attempt was unsuccessful, and the error message corresponding to the problem with registering is displayed. \-Otherwise, the attempt was successful, and the user is redirected to the index page. \hypertarget{register_8js_ac86cbba17a6824ce637636999566121e}{\index{register.\-js@{register.\-js}!\-P\-O\-S\-T\-\_\-\-Register\-User@{\-P\-O\-S\-T\-\_\-\-Register\-User}}
 \index{\-P\-O\-S\-T\-\_\-\-Register\-User@{\-P\-O\-S\-T\-\_\-\-Register\-User}!register.js@{register.\-js}}
 \subsubsection[{\-P\-O\-S\-T\-\_\-\-Register\-User}]{\setlength{\rightskip}{0pt plus 5cm}function {\bf \-P\-O\-S\-T\-\_\-\-Register\-User} (
 \begin{DoxyParamCaption}
@@ -51,17 +43,13 @@ function \hyperlink{register_8js_ab8be8844087e3e46989aed21c09a157a}{\-On\-Regist
 
 \-Attempts to register the user. 
 
-\-This function resets error messages and then adds the form data to the php request, and then posts the request to \hyperlink{register_8php}{register.\-php}. \-If the post is successful, the \hyperlink{register_8js_ab8be8844087e3e46989aed21c09a157a}{\-On\-Register\-Success()} function is called. \-If the post fails, then the error is alerted to the user. 
-
-\-Definition at line 39 of file register.\-js.
-
-\hypertarget{register_8js_a98788110ddc2ce9407a6b9b57cb6d164}{\index{register.\-js@{register.\-js}!ready@{ready}}
+\-This function resets error messages and then adds the form data to the php request, and then posts the request to \hyperlink{register_8php}{register.\-php}. \-If the post is successful, the \hyperlink{register_8js_ab8be8844087e3e46989aed21c09a157a}{\-On\-Register\-Success()} function is called. \-If the post fails, then the error is alerted to the user. \hypertarget{register_8js_af2e1871d4c848da85d53f6a926dae5df}{\index{register.\-js@{register.\-js}!ready@{ready}}
 \index{ready@{ready}!register.js@{register.\-js}}
 \subsubsection[{ready}]{\setlength{\rightskip}{0pt plus 5cm}document {\bf ready} (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{register_8js_a98788110ddc2ce9407a6b9b57cb6d164}
+)}}\label{register_8js_af2e1871d4c848da85d53f6a926dae5df}
 
 
 \-Clears error messages and then generates necessary event handlers. 

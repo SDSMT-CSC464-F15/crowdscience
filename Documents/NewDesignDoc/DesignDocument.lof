@@ -2,9 +2,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Crowd Science System Overview}}{3}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Technologies Used }}{4}{figure.1.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Gantt Chart of Project Completion Schedule}}{11}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Remote Desktop Connection (.rdp) file}}{12}{figure.3.2}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces System Architecture and Design Overview}}{13}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Database Design }}{14}{figure.4.2}
@@ -14,31 +16,41 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces GUI Design of View Event Page }}{16}{figure.4.6}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces GUI Design of Report Page }}{17}{figure.4.7}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Dataflow and Architecture of Navigation Bar and Event Set Selection Component }}{18}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Dataflow and Architecture of Login, Register, and Logout Component }}{19}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Dataflow and Architecture of Event Reporting Component }}{20}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Dataflow and Architecture of Event Viewing Component }}{22}{figure.4.11}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Data-flow and Architecture of Login, Register, and Logout Component }}{19}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Data-flow and Architecture of Event Reporting Component }}{20}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Data-flow and Architecture of Event Viewing Component }}{22}{figure.4.11}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 1}}{26}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 2}}{27}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Crowd Science Login Page Prototype as of Sprint 2}}{28}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Crowd Science Register Page Prototype as of Sprint 2}}{28}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 4}}{29}{figure.6.5}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Crowd Science Register Page Prototype as of Sprint 4}}{29}{figure.6.6}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Crowd Science Login Page Prototype as of Sprint 4}}{30}{figure.6.7}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Crowd Science Event Set Selection Prototype as of Sprint 4}}{30}{figure.6.8}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 5}}{31}{figure.6.9}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Crowd Science Event Reports Table Prototype as of Sprint 5}}{31}{figure.6.10}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Crowd Science Event Reports Map Prototype as of Sprint 5}}{32}{figure.6.11}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Crowd Science Event Reports Image Carousel Prototype as of Sprint 5}}{32}{figure.6.12}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Crowd Science Event Reporting Prototype as of Sprint 5}}{33}{figure.6.13}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Crowd Science Event Reporting Prototype as of Sprint 5}}{33}{figure.6.14}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Crowd Science Event Reporting Prototype as of Sprint 5}}{34}{figure.6.15}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Crowd Science Single Event Viewing Prototype as of Sprint 5}}{35}{figure.6.16}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 1}}{36}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 2}}{37}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Crowd Science Login Page Prototype as of Sprint 2}}{38}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Crowd Science Register Page Prototype as of Sprint 2}}{38}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 4}}{39}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Crowd Science Register Page Prototype as of Sprint 4}}{39}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Crowd Science Login Page Prototype as of Sprint 4}}{40}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Crowd Science Event Set Selection Prototype as of Sprint 4}}{40}{figure.6.8}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Crowd Science Main Page Prototype as of Sprint 5}}{41}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Crowd Science Event Reports Table Prototype as of Sprint 5}}{41}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Crowd Science Event Reports Map Prototype as of Sprint 5}}{42}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Crowd Science Event Reports Image Carousel Prototype as of Sprint 5}}{42}{figure.6.12}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Crowd Science Event Reporting Prototype as of Sprint 5}}{43}{figure.6.13}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Crowd Science Event Reporting Prototype as of Sprint 5}}{43}{figure.6.14}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Crowd Science Event Reporting Prototype as of Sprint 5}}{44}{figure.6.15}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Crowd Science Single Event Viewing Prototype as of Sprint 5}}{45}{figure.6.16}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Mongo Database: List Databases}}{47}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Mongo Database: Select Database}}{48}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Mongo Database: Load File}}{48}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Mongo Database: db\_user\_init.js}}{48}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Mongo Database: db\_eventsetsinfo\_init.js}}{49}{figure.7.5}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Mongo Database: Load File}}{50}{figure.7.6}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Mongo Database: db\_wildflower\_init.js}}{50}{figure.7.7}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Mongo Database: Find Operation}}{50}{figure.7.8}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {A.1}{\ignorespaces Design of Crowd Science Main Page}}{A-2}{figure.A.1}
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
